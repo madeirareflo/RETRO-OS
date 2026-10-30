@@ -1,0 +1,6 @@
+.theme-classic input[type=checkbox]{appearance:none;display:inline-block;vertical-align:middle;width:13px;height:13px;padding:0;margin:0 4px 2px 0;border:2px inset #dfdfdf;background:#fff;position:relative}
+.theme-classic input[type=checkbox]:checked::after{content:'✓';position:absolute;left:0;top:-5px;font:bold 13px Tahoma;color:#000}
+.theme-classic input[type=range]{appearance:none;background:#808080;height:4px;padding:0;border:1px inset #dfdfdf;vertical-align:middle}
+.theme-classic input[type=range]::-webkit-slider-thumb{appearance:none;width:11px;height:20px;background:#c0c0c0;border:2px outset #dfdfdf;border-radius:0}
+.theme-classic input[type=range]::-moz-range-thumb{width:9px;height:17px;background:#c0c0c0;border:2px outset #dfdfdf;border-radius:0}
+@media(max-width:600px){.quick-launch{display:flex;border:0;padding:0}.quick-launch button:nth-child(2){display:none}}

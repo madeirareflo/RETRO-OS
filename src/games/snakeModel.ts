@@ -1,0 +1,2 @@
+export type Point={x:number;y:number};
+export function snakeStep(body:Point[],direction:Point,food:Point,size=20){const head={x:body[0].x+direction.x,y:body[0].y+direction.y},ate=head.x===food.x&&head.y===food.y;const hit=head.x<0||head.y<0||head.x>=size||head.y>=size||(ate?body:body.slice(0,-1)).some(p=>p.x===head.x&&p.y===head.y);return {body:hit?body:[head,...(ate?body:body.slice(0,-1))],ate,hit}}
