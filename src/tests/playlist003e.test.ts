@@ -1,0 +1,4 @@
+import {it,expect} from 'vitest';import {parseM3U,exportM3U,demoWav} from '../services/playlist';
+it('M3U importa somente referências locais, deduplica e não executa URLs',()=>{expect(parseM3U('#EXTM3U\nC:\\Musicas\\A.mp3\nA.mp3\nhttps://exemplo.invalid/tema.mp3\njavascript:alert(1)\nB.wav\n.exe')).toEqual(['A.mp3','B.wav']);expect(()=>parseM3U('x'.repeat(100001))).toThrow()});
+it('M3U exportado não permite injeção de diretivas por nomes',()=>{expect(exportM3U(['#EXTM3U\nperigoso.mp3','B.wav'])).toBe('#EXTM3U\n_EXTM3Uperigoso.mp3\nB.wav\n')});
+it('demo original possui cabeçalho WAV PCM e duração de quatro segundos',()=>{const b=demoWav(),v=new DataView(b);expect(new TextDecoder().decode(b.slice(0,4))).toBe('RIFF');expect(v.getUint32(24,true)).toBe(22050);expect(v.getUint32(40,true)).toBe(22050*4*2)});

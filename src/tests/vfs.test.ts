@@ -1,6 +1,6 @@
 import {describe,it,expect,vi,beforeEach} from 'vitest';
 import {files,saveFile} from '../storage/local';
-import {createFolder,renameFile,transferFile,deleteFile,restoreFile,trashEntries,validPath} from '../storage/vfs';
+import {createFolder,renameFile,transferFile,deleteFile,restoreFile,trashEntries,validPath,transferMany,deleteMany} from '../storage/vfs';
 const memory=new Map<string,string>();
 beforeEach(()=>{memory.clear();vi.stubGlobal('localStorage',{getItem:(k:string)=>memory.get(k)||null,setItem:(k:string,v:string)=>memory.set(k,v)})});
 describe('operações da árvore virtual',()=>{
@@ -10,4 +10,11 @@ it('envia uma árvore à lixeira e restaura sem perda',()=>{createFolder('A:','N
 it('recusa ciclo, colisão, caminho inválido e alteração de raiz',()=>{createFolder('A:','Pasta');expect(()=>transferFile('A:/Pasta','A:/Pasta')).toThrow();expect(()=>createFolder('A:','Pasta')).toThrow();expect(()=>createFolder('A:','../escape')).toThrow();expect(()=>deleteFile('C:/Meus Documentos')).toThrow();expect(validPath('C:/Meus Documentos/<script>.txt')).toBe(false);expect(()=>createFolder('C:/inexistente','Nova')).toThrow()});
 it('não remove itens quando gravação da lixeira falha',()=>{const before=files();vi.stubGlobal('localStorage',{getItem:(k:string)=>memory.get(k)||null,setItem:()=>{throw Error('quota')}});expect(()=>deleteFile('A:/SEGREDO.TXT')).toThrow();expect(files()).toEqual(before)});
 it('conflito na restauração mantém ambas as cópias seguras',()=>{saveFile('C:/Meus Documentos/Teste.txt','antigo');deleteFile('C:/Meus Documentos/Teste.txt');saveFile('C:/Meus Documentos/Teste.txt','novo');expect(()=>restoreFile(trashEntries()[0].id)).toThrow();expect(trashEntries()).toHaveLength(1);expect(files().find(f=>f.path.endsWith('/Teste.txt'))?.content).toBe('novo')});
+});
+
+describe('seleções e lotes 003E',()=>{
+it('um conflito no último item não move o primeiro',()=>{createFolder('C:','Destino');saveFile('C:/Meus Documentos/A.txt','a');saveFile('C:/Meus Documentos/B.txt','b');transferFile('C:/Meus Documentos/B.txt','C:/Destino');const before=files();expect(()=>transferMany(['C:/Meus Documentos/A.txt','C:/Meus Documentos/B.txt'],'C:/Destino',true)).toThrow();expect(files()).toEqual(before)});
+it('seleção com pasta e descendente copia a árvore uma única vez',()=>{createFolder('C:','Destino');createFolder('C:/Meus Documentos','Turma');saveFile('C:/Meus Documentos/A.txt','a');transferFile('C:/Meus Documentos/A.txt','C:/Meus Documentos/Turma',true);transferMany(['C:/Meus Documentos/Turma','C:/Meus Documentos/Turma/A.txt'],'C:/Destino');expect(files().filter(f=>f.path==='C:/Destino/Turma/A.txt')).toHaveLength(1)});
+it('exclusão múltipla gera uma entrada restaurável e preserva não selecionados',()=>{saveFile('C:/Meus Documentos/A.txt','a');saveFile('C:/Meus Documentos/B.txt','b');deleteMany(['C:/Meus Documentos/A.txt','C:/Meus Documentos/B.txt']);expect(trashEntries()).toHaveLength(1);restoreFile(trashEntries()[0].id);expect(files().filter(f=>f.path.endsWith('/A.txt')||f.path.endsWith('/B.txt'))).toHaveLength(2)});
+it('seleção protegida recusa a operação antes de alterar dados',()=>{saveFile('C:/Meus Documentos/A.txt','a');const before=files();expect(()=>deleteMany(['C:/Meus Documentos/A.txt','C:/Meus Documentos'])).toThrow();expect(files()).toEqual(before);expect(()=>transferMany([],'C:')).toThrow()});
 });

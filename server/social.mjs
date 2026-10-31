@@ -1,4 +1,4 @@
-import {initGovernance,hashPassword,verifyPassword,exportAccount,eraseAccount,moderation} from './governance.mjs';
+import {initGovernance,sweepData,hashPassword,verifyPassword,exportAccount,eraseAccount,moderation} from './governance.mjs';
 import {rankings} from './results.mjs';
 import {initNaval,naval} from './naval.mjs';
 import {initLan,lan} from './lan.mjs';
@@ -12,7 +12,7 @@ const db=new DatabaseSync(process.env.RETRO_DATABASE||'server/data/social.sqlite
 db.exec(`PRAGMA journal_mode=WAL; PRAGMA secure_delete=ON; CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,name TEXT UNIQUE,salt TEXT,hash TEXT); CREATE TABLE IF NOT EXISTS sessions(token TEXT PRIMARY KEY,user TEXT,expires INTEGER); CREATE TABLE IF NOT EXISTS friends(a TEXT,b TEXT,status TEXT,PRIMARY KEY(a,b)); CREATE TABLE IF NOT EXISTS messages(id INTEGER PRIMARY KEY,author TEXT,recipient TEXT,text TEXT,created INTEGER); CREATE TABLE IF NOT EXISTS blocks(a TEXT,b TEXT,PRIMARY KEY(a,b)); CREATE TABLE IF NOT EXISTS reports(id INTEGER PRIMARY KEY,author TEXT,message INTEGER,created INTEGER);`);
 initGovernance(db);initCommunity(db);initLan(db);initNaval(db);
 const peers=new Map(),rates=new Map(),nudges=new Map(),authRates=new Map();
-const cleanup=setInterval(()=>{const now=Date.now();for(const map of [rates,authRates])for(const [key,value] of map)if(now-value.at>60000)map.delete(key);for(const [key,value] of nudges)if(now-value>60000)nudges.delete(key);db.prepare('DELETE FROM sessions WHERE expires<=?').run(now);db.prepare('DELETE FROM audit WHERE created<?').run(now-30*86400000);db.prepare("DELETE FROM flags WHERE status<>'open' AND created<?").run(now-90*86400000)},60000);cleanup.unref();
+const cleanup=setInterval(()=>{const now=Date.now();for(const map of [rates,authRates])for(const [key,value] of map)if(now-value.at>60000)map.delete(key);for(const [key,value] of nudges)if(now-value>60000)nudges.delete(key);db.prepare('DELETE FROM sessions WHERE expires<=?').run(now);sweepData(db,now)},60000);cleanup.unref();
 const hash=t=>createHash('sha256').update(t).digest('hex');
 function transaction(fn){db.exec('BEGIN IMMEDIATE');try{const result=fn();db.exec('COMMIT');return result}catch(e){db.exec('ROLLBACK');throw e}}
 function notify(id){const set=peers.get(id);for(const res of set||[]){if(res.writableEnded||res.destroyed){set.delete(res);continue}res.write('data: update\n\n')}if(set&&!set.size)peers.delete(id)}
@@ -48,7 +48,7 @@ if(route==='/api/remove'||route==='/api/reject'){db.prepare('DELETE FROM friends
 else if(route==='/api/friend'){db.prepare("INSERT OR IGNORE INTO friends VALUES(?,?,'pending')").run(uid,target)}
 else if(route==='/api/accept'){const result=db.prepare("UPDATE friends SET status='accepted' WHERE a=? AND b=? AND status='pending'").run(target,uid);if(!result.changes)return reply(403,{error:'Solicitação não recebida'})}
 else if(route==='/api/message'){if(!friends(uid,target))return reply(403,{error:'Amizade necessária'});if(typeof data.text!=='string'||!data.text.trim()||data.text.length>2000)return reply(400,{error:'Mensagem de 1–2000 caracteres'});db.prepare('INSERT INTO messages(author,recipient,text,created) VALUES(?,?,?,?)').run(uid,target,data.text.trim(),Date.now())}
-else if(route==='/api/report'){const m=db.prepare('SELECT * FROM messages WHERE id=? AND (author=? OR recipient=?)').get(data.message,uid,uid);if(!m)return reply(403,{error:'Mensagem inacessível'});db.prepare('INSERT INTO reports(author,message,created) VALUES(?,?,?)').run(uid,m.id,Date.now())}
+else if(route==='/api/report'){const m=db.prepare('SELECT * FROM messages WHERE id=? AND (author=? OR recipient=?)').get(data.message,uid,uid);if(!m)return reply(403,{error:'Mensagem inacessível'});db.prepare('INSERT INTO reports(author,message,created) VALUES(?,?,?)').run(uid,m.id,Date.now());if(!db.prepare("SELECT 1 FROM flags WHERE author=? AND kind='message' AND target=? AND status='open'").get(uid,m.id))db.prepare("INSERT INTO flags(author,kind,target,reason,created) VALUES(?,'message',?,'Denúncia do Messenger',?)").run(uid,m.id,Date.now())}
 else return reply(404,{error:'Não encontrado'});notify(uid);notify(target);reply(200,{ok:true});
 }catch{if(!res.headersSent)reply(400,{error:'Não foi possível processar a solicitação.'})}});
 server.listen(Number(process.env.PORT||4190),process.env.HOST||'127.0.0.1',()=>console.log('RETRO social local: http://127.0.0.1:'+(process.env.PORT||4190)));

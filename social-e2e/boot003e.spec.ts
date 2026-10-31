@@ -1,0 +1,2 @@
+import {test,expect} from '@playwright/test';
+test('desktop acessível após boot automático sem botão Pular',async({page})=>{await page.goto('/');await expect(page.getByRole('button',{name:'Iniciar',exact:true})).toBeVisible({timeout:7000});await expect(page.getByRole('button',{name:'Pular inicialização'})).toHaveCount(0);await page.getByRole('button',{name:'Iniciar',exact:true}).click();await expect(page.getByRole('navigation',{name:'Menu Iniciar'})).toBeVisible()});

@@ -1,6 +1,6 @@
 # Catálogo de pesquisa 003E
 
-74 fichas. Todos os títulos pedidos estão representados; a franquia Medal of Honor inclui origem e cinco fichas de PC/expansões. Diablo usa 1997 como ano convencional; a fronteira dezembro/1996–janeiro/1997 requer nota regional. Portais Flash são categoria, não lançamento individual. Metadados preliminares NÃO são uma pesquisa histórica concluída. Sem afirmação de popularidade por título no Brasil.
+74 fichas; todos os títulos pedidos representados. 69 registros editoriais e 5 jogos originais jogáveis. Anos são originais, não popularização. Há fichas preliminares explicitamente marcadas. Requisitos de relançamentos não são requisitos originais. Sem arquivos comerciais. Diablo segue a data comemorada pela Blizzard (31/12/1996), com nota sobre janeiro/1997.
 
 ## Doom
 - Ano / era: 1993 / Clássicos Herdados: DOS/Windows 95
@@ -11,7 +11,7 @@
 - Relevância: Labirintos, chaves e combate veloz. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
 - Mecânicas: Labirintos, chaves e combate veloz
 - Requisitos: Não verificados no manual original; requisitos atuais de relançamentos não representam o lançamento.
-- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja.
+- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja. A página pode representar relançamento ou coletânea, não a distribuição original.
 - Web autorizada: Nenhuma integração web autorizada verificada. Não incluído no sistema.
 - Alternativa: Retro FPS — pesquisa, não implementado
 - Fonte: https://en.wikipedia.org/wiki/Doom_(1993_video_game)
@@ -27,7 +27,7 @@
 - Relevância: Novos inimigos e mapas conectados. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
 - Mecânicas: Novos inimigos e mapas conectados
 - Requisitos: Não verificados no manual original; requisitos atuais de relançamentos não representam o lançamento.
-- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja.
+- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja. A página pode representar relançamento ou coletânea, não a distribuição original.
 - Web autorizada: Nenhuma integração web autorizada verificada. Não incluído no sistema.
 - Alternativa: Retro FPS — pesquisa, não implementado
 - Fonte: https://en.wikipedia.org/wiki/Doom_II
@@ -43,7 +43,7 @@
 - Relevância: Ambientes tridimensionais e partidas em rede. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
 - Mecânicas: Ambientes tridimensionais e partidas em rede
 - Requisitos: Não verificados no manual original; requisitos atuais de relançamentos não representam o lançamento.
-- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja.
+- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja. A página pode representar relançamento ou coletânea, não a distribuição original.
 - Web autorizada: Nenhuma integração web autorizada verificada. Não incluído no sistema.
 - Alternativa: Retro FPS — pesquisa, não implementado
 - Fonte: https://www.gog.com/en/game/quake_the_offering
@@ -251,7 +251,7 @@
 - Relevância: Combate em terceira pessoa, planador e mira de precisão. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
 - Mecânicas: Combate em terceira pessoa, planador e mira de precisão
 - Requisitos: Não verificados no manual original; requisitos atuais de relançamentos não representam o lançamento.
-- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja.
+- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja. A página pode representar relançamento ou coletânea, não a distribuição original.
 - Web autorizada: Nenhuma integração web autorizada verificada. Não incluído no sistema.
 - Alternativa: Ação original — pesquisa
 - Fonte: https://www.gog.com/en/game/mdk
@@ -347,7 +347,7 @@
 - Relevância: Aventura gráfica com ações por contexto. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
 - Mecânicas: Aventura gráfica com ações por contexto
 - Requisitos: Não verificados no manual original; requisitos atuais de relançamentos não representam o lançamento.
-- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja.
+- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja. A página pode representar relançamento ou coletânea, não a distribuição original.
 - Web autorizada: Nenhuma integração web autorizada verificada. Não incluído no sistema.
 - Alternativa: Aventura original de enigmas — planejada
 - Fonte: https://en.wikipedia.org/wiki/Full_Throttle_(1995_video_game)
@@ -363,7 +363,7 @@
 - Relevância: Exploração e quebra-cabeças de ficção científica. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
 - Mecânicas: Exploração e quebra-cabeças de ficção científica
 - Requisitos: Não verificados no manual original; requisitos atuais de relançamentos não representam o lançamento.
-- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja.
+- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja. A página pode representar relançamento ou coletânea, não a distribuição original.
 - Web autorizada: Nenhuma integração web autorizada verificada. Não incluído no sistema.
 - Alternativa: Aventura original de enigmas — planejada
 - Fonte: https://www.gog.com/en/game/the_dig
@@ -379,7 +379,7 @@
 - Relevância: Grupo de aventureiros e exploração em grade. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
 - Mecânicas: Grupo de aventureiros e exploração em grade
 - Requisitos: Não verificados no manual original; requisitos atuais de relançamentos não representam o lançamento.
-- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja.
+- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja. A página pode representar relançamento ou coletânea, não a distribuição original.
 - Web autorizada: Nenhuma integração web autorizada verificada. Não incluído no sistema.
 - Alternativa: Retro Dungeon — planejado
 - Fonte: https://en.wikipedia.org/wiki/Eye_of_the_Beholder_(video_game)
@@ -395,7 +395,7 @@
 - Relevância: Labirintos, enigmas e combate em primeira pessoa. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
 - Mecânicas: Labirintos, enigmas e combate em primeira pessoa
 - Requisitos: Não verificados no manual original; requisitos atuais de relançamentos não representam o lançamento.
-- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja.
+- Disponibilidade: Distribuição legal consultada; confirmar edição e região na loja. A página pode representar relançamento ou coletânea, não a distribuição original.
 - Web autorizada: Nenhuma integração web autorizada verificada. Não incluído no sistema.
 - Alternativa: Retro Dungeon — planejado
 - Fonte: https://en.wikipedia.org/wiki/Eye_of_the_Beholder_II:_The_Legend_of_Darkmoon
@@ -403,19 +403,19 @@
 - Estado: Museu; Somente ficha histórica; não executa o jogo comercial
 
 ## Diablo
-- Ano / era: 1997 / Clássicos Herdados: DOS/Windows 95
+- Ano / era: 1996 / Clássicos Herdados: DOS/Windows 95
 - Desenvolvedora: Blizzard North
 - Editora original: Blizzard Entertainment
 - Plataforma original: Windows
 - Gênero: RPG
-- Relevância: Masmorras, equipamentos e progressão. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
+- Relevância: Blizzard comemora o lançamento em 31/12/1996; distribuição ampla frequentemente datada de janeiro de 1997. Masmorras, equipamentos e progressão. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
 - Mecânicas: Masmorras, equipamentos e progressão
 - Requisitos: Não verificados no manual original; requisitos atuais de relançamentos não representam o lançamento.
 - Disponibilidade: Disponibilidade atual não verificada nesta execução.
 - Web autorizada: Nenhuma integração web autorizada verificada. Não incluído no sistema.
 - Alternativa: Retro Dungeon — planejado
-- Fonte: https://en.wikipedia.org/wiki/Diablo_(video_game)
-- Conferência: Ficha preliminar; referência individual ainda requer conferência
+- Fonte: https://news.blizzard.com/en-us/article/20407578/blizzard-celebrates-20-years-of-diablo
+- Conferência: Ano confirmado em fonte primária; demais campos ainda requerem conferência.
 - Estado: Museu; Somente ficha histórica; não executa o jogo comercial
 
 ## Diablo II
@@ -744,14 +744,14 @@
 - Editora original: CipSoft
 - Plataforma original: Windows
 - Gênero: MMORPG
-- Relevância: Exploração bidimensional persistente. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
+- Relevância: Primeiro servidor público em janeiro de 1997; CipSoft foi constituída posteriormente. Exploração bidimensional persistente. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
 - Mecânicas: Exploração bidimensional persistente
 - Requisitos: Não verificados no manual original; requisitos atuais de relançamentos não representam o lançamento.
 - Disponibilidade: Disponibilidade atual não verificada nesta execução.
 - Web autorizada: Nenhuma integração web autorizada verificada. Não incluído no sistema.
 - Alternativa: LAN House e comunidades (não equivalem a MMORPG)
-- Fonte: https://en.wikipedia.org/wiki/Tibia_(video_game)
-- Conferência: Ficha preliminar; referência individual ainda requer conferência
+- Fonte: https://www.cipsoft.com/en/company
+- Conferência: Ano confirmado em fonte primária; demais campos ainda requerem conferência.
 - Estado: Museu; Somente ficha histórica; não executa o jogo comercial
 
 ## Warcraft III: Reign of Chaos
@@ -984,14 +984,14 @@
 - Editora original: Microsoft
 - Plataforma original: Windows 3.0
 - Gênero: Cartas
-- Relevância: Variante Klondike integrada ao Windows. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
+- Relevância: Edição Windows estreou em 22/05/1990 no Windows 3.0. Variante Klondike integrada ao Windows. Ficha editorial para comparar gêneros e tecnologias; não representa medição de popularidade brasileira.
 - Mecânicas: Variante Klondike integrada ao Windows
 - Requisitos: Não verificados no manual original; requisitos atuais de relançamentos não representam o lançamento.
 - Disponibilidade: Disponibilidade atual não verificada nesta execução.
 - Web autorizada: Nenhuma integração web autorizada verificada. Não incluído no sistema.
 - Alternativa: Paciência original jogável; demais variantes não implementadas
-- Fonte: https://en.wikipedia.org/wiki/Microsoft_Solitaire
-- Conferência: Ficha preliminar; referência individual ainda requer conferência
+- Fonte: https://blogs.windows.com/windowsexperience/2022/05/10/join-microsoft-solitaires-celebration-of-32-years-of-fun/
+- Conferência: Ano confirmado em fonte primária; demais campos ainda requerem conferência.
 - Estado: Museu; Somente ficha histórica; não executa o jogo comercial
 
 ## Campo Minado (Windows Minesweeper)
