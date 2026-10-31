@@ -65,7 +65,7 @@ export interface GameEntry {
   playCount: number;
   boxArtUrl?: string | null;      // Box front image or custom vector art
   screenshotUrls?: string[];      // Array of editorial / preview screenshots
-  metadataOrigin: 'builtin-museum' | 'user-imported' | 'synthetic-benchmark';
+  metadataOrigin: 'builtin-museum' | 'user-imported' | 'synthetic-benchmark' | 'licensed-builtin';
 }
 
 export interface EmulatorAdapter {

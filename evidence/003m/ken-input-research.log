@@ -1,0 +1,20 @@
+[
+  'GRAPHX.C',
+  'INIT.C',
+  'LAB3D.C',
+  'LAB3D.H',
+  'MAKEFILE',
+  'README.TXT',
+  'SUBS.C'
+]
+INIT.C 4228 while ((keystatus[1] == 0) && (keystatus[57] == 0) && (keystatus[28] == 0) && (bstatus == 0) && (clockspeed < oclockspeed+960))
+INIT.C 4739 while ((keystatus[1] == 0) && (keystatus[57] == 0) && (keystatus[28] == 0) && (bstatus == 0) && (clockspeed < 7680))
+LAB3D.C 58130 if (keystatus[keydefs[1]])
+LAB3D.C 76813 while ((x <= y) && (keystatus[1] == 0) && (keystatus[57] == 0) && (keystatus[28] == 0) && (bstatus == 0))
+LAB3D.C 77901 while ((keystatus[1] == 0) && (keystatus[57] == 0) && (keystatus[28] == 0) && (bstatus == 0))
+SUBS.C 39887 if ((keystatus[1] != 0) || (keystatus[57] != 0) || (keystatus[28] != 0) || (bstatus != 0))
+SUBS.C 61770 while ((keystatus[1] == 0) && (keystatus[57] == 0) && (keystatus[28] == 0) && (bstatus == 0))
+SUBS.C 66397 while ((death != 4096) || ((keystatus[1] == 0) && (keystatus[57] == 0) && (keystatus[28] == 0) && (bstatus == 0)))
+SUBS.C 71770 while ((leavewin == 0) || ((keystatus[1] == 0) && (keystatus[57] == 0) && (keystatus[28] == 0) && (bstatus == 0)))
+SUBS.C 102224 while ((keystatus[1] == 0) && (keystatus[57] == 0) && (keystatus[28] == 0) && (bstatus == 0));
+SUBS.C 128172 while (((keystatus[0x1c]|keystatus[0x9c]|keystatus[1]|keystatus[0x39]) == 0) && (bstatus <= obstatus))

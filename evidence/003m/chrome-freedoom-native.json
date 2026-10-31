@@ -1,0 +1,14 @@
+{
+  "id": "freedoom",
+  "channel": "chrome",
+  "saveFile": "FD1SV0.DSG",
+  "freshPatch": "75915e90",
+  "audioPeak": 0.5036689639091492,
+  "progressPatch": "7a54d8fb",
+  "bytes": 65538,
+  "sha256": "94c234f820e0f4a62362873dcaad47b841d4d6551a104a00982d44d488e97f7a",
+  "newGameBeforeLoadPatch": "deab261f",
+  "restoredPatch": "7a54d8fb",
+  "restoredSha256": "94c234f820e0f4a62362873dcaad47b841d4d6551a104a00982d44d488e97f7a",
+  "nativeProgressVerified": true
+}

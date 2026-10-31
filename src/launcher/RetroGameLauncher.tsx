@@ -109,7 +109,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
   }
 
   function toggleInstall(game: GameEntry) {
-    if(game.metadataOrigin==='user-imported'){setStatusMessage('Pacote instalado: use Remover Jogo para liberar os bytes, preservando saves.');return}
+    if(game.metadataOrigin==='licensed-builtin'){setStatusMessage('Pacote oficial incluído nesta edição, disponível em modo somente leitura.');return}if(game.metadataOrigin==='user-imported'){setStatusMessage('Pacote instalado: use Remover Jogo para liberar os bytes, preservando saves.');return}
 
     const nextInstalled = game.isInstalled
       ? read<string[]>('gameInstalled', []).filter(id => id !== game.id)

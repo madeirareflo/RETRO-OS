@@ -1,0 +1,355 @@
+
+Running 102 tests using 2 workers
+
+  ok   1 [edge] › e2e\003e.spec.ts:4:1 › 003E Game Center: museu honesto, busca, filtros, favoritos, atalho e jogo real (7.1s)
+  ok   2 [edge] › e2e\003d.spec.ts:3:1 › 003D editor localiza, substitui, salva cópia e tarefas encerram somente app virtual (7.6s)
+  ok   3 [edge] › e2e\003e.spec.ts:5:1 › 003E editor confirma descarte e salva por diálogo compartilhado (3.0s)
+  ok   4 [edge] › e2e\desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar (4.5s)
+  ok   5 [edge] › e2e\003e.spec.ts:6:1 › 003E Explorer: seleção Ctrl/Shift, arraste entre janelas e persistência (3.5s)
+  ok   6 [edge] › e2e\desktop.spec.ts:5:1 › salvar, recarregar e reabrir texto pelo arquivo virtual (3.1s)
+  ok   8 [edge] › e2e\desktop.spec.ts:6:1 › temas globais, persistência, menu e screenshots (3.7s)
+  ok   9 [edge] › e2e\desktop.spec.ts:7:1 › Paint exporta PNG real com desenho (4.2s)
+  ok   7 [edge] › e2e\dos-victory003f.spec.ts:3:1 › DOS: partida completa até vitória após recarregar save (12.2s)
+  ok  10 [edge] › e2e\desktop.spec.ts:8:1 › três jogos iniciam e aceitam jogadas (3.5s)
+  ok  12 [edge] › e2e\desktop.spec.ts:9:1 › terminal, calculadora e páginas internas sem erros de console (3.4s)
+  ok  13 [edge] › e2e\desktop.spec.ts:10:1 › mobile permanece utilizável (3.5s)
+  ok  14 [edge] › e2e\explorer003d.spec.ts:2:1 › 003D Explorer: árvore, histórico, endereço, pesquisa e ordem (2.1s)
+  ok  15 [edge] › e2e\keyboard002.spec.ts:2:1 › restaurar janela devolve foco ao campo anterior (2.4s)
+DOS load/heap 1248 67108864
+  ok  11 [edge] › e2e\emulation003f.spec.ts:4:1 › DOS original: Game Center, teclado, áudio, pausa, save e saída (14.2s)
+  ok  16 [edge] › e2e\keyboard002.spec.ts:3:1 › protetor ativa por inatividade e sai por teclado sem perder janela (2.1s)
+  ok  17 [edge] › e2e\emulation003f.spec.ts:5:1 › Paint: diálogo PNG compartilhado, gravação e descarte cancelável (3.5s)
+  ok  18 [edge] › e2e\local003f.spec.ts:3:1 › Batalha Naval local: posicionamento, troca, vitória e persistência (5.4s)
+  ok  19 [edge] › e2e\media.spec.ts:2:1 › player importa WAV original, reproduz, pausa e troca skin (2.8s)
+  ok  20 [edge] › e2e\local003f.spec.ts:4:1 › reinício do desktop respeita alterações de texto não salvas (2.5s)
+  ok  21 [edge] › e2e\media.spec.ts:3:1 › ícones arrastam, persistem e se reorganizam; menu rápido preserva aplicativos (3.0s)
+  ok  22 [edge] › e2e\media003e.spec.ts:2:1 › 003E player: demo original, skins, M3U seguro e reanexação (3.8s)
+  ok  23 [edge] › e2e\mission002.spec.ts:5:1 › discagem, erro de linha, persistência na sessão e desconexão (6.1s)
+  ok  24 [edge] › e2e\media003e.spec.ts:3:1 › 003E navegador: favoritos, histórico, pausa e retomada de download simulado (5.0s)
+  ok  25 [edge] › e2e\mission002.spec.ts:6:1 › época independente do tema, sugestões e páginas (2.8s)
+  ok  26 [edge] › e2e\offline003f.spec.ts:4:1 › museu offline navega perfis, álbum, recados e tópicos sem API social (3.9s)
+  ok  27 [edge] › e2e\mission002.spec.ts:7:1 › arquivo salvo abre pelo explorador, renomeia, copia, recorta, exclui e restaura (6.0s)
+  ok  28 [edge] › e2e\offline003f.spec.ts:5:1 › Messenger e LAN demonstrativos funcionam sem contas ou servidor (5.2s)
+  ok  29 [edge] › e2e\mission002.spec.ts:8:1 › Paint salva PNG em IndexedDB, reabre após reload e oferece refazer (3.9s)
+  ok  30 [edge] › e2e\offline003f.spec.ts:6:1 › internet museológica navega portais, fórum e perfis por época (3.5s)
+  ok  31 [edge] › e2e\mission002.spec.ts:9:1 › backup válido restaura, conflitos preservam atual e integridade inválida é recusada (5.2s)
+  ok  32 [edge] › e2e\recovery002.spec.ts:2:1 › backup de bitmap preserva original quando desenho atual já mudou (4.5s)
+  ok  34 [edge] › e2e\recovery002.spec.ts:3:1 › playlist persiste metadados, sinaliza indisponibilidade e pode reconectar arquivo (4.0s)
+  ok  33 [edge] › e2e\mission002.spec.ts:10:1 › quatro protetores reais, prévia, ativação, saída e configurações (9.1s)
+  ok  35 [edge] › e2e\system.spec.ts:2:1 › doze janelas simultâneas, foco, restauração e console (7.4s)
+  ok  36 [edge] › e2e\mission002.spec.ts:11:1 › sites internos, busca, escola e contador (3.9s)
+  ok  38 [edge] › e2e\mission002.spec.ts:12:1 › CD virtual ejeta/insere e instala somente atalhos simulados (3.3s)
+  ok  37 [edge] › e2e\system.spec.ts:3:1 › explorador navega unidades, abre imagem original e propriedades (3.6s)
+  ok  39 [edge] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 800x600 (2.5s)
+  ok  40 [edge] › e2e\visual003e.spec.ts:3:53 › 003E evidências classic (2.5s)
+  ok  42 [edge] › e2e\visual003e.spec.ts:3:53 › 003E evidências win2000 (2.9s)
+  ok  41 [edge] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1024x768 (3.9s)
+  ok  44 [edge] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1366x768 (2.7s)
+  ok  43 [edge] › e2e\visual003e.spec.ts:3:53 › 003E evidências xp (3.8s)
+  ok  45 [edge] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1920x1080 (2.9s)
+  ok  46 [edge] › e2e\visual003e.spec.ts:3:53 › 003E evidências mix (3.2s)
+  ok  48 [edge] › e2e\windows2000.spec.ts:2:1 › Windows 2000 preserva editor e preferência após recarregar (3.8s)
+  ok  49 [chrome] › e2e\003d.spec.ts:3:1 › 003D editor localiza, substitui, salva cópia e tarefas encerram somente app virtual (5.2s)
+  x   47 [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências classic (8.5s)
+  ok  50 [chrome] › e2e\003e.spec.ts:4:1 › 003E Game Center: museu honesto, busca, filtros, favoritos, atalho e jogo real (4.3s)
+  ok  52 [chrome] › e2e\003e.spec.ts:5:1 › 003E editor confirma descarte e salva por diálogo compartilhado (2.9s)
+  ok  53 [chrome] › e2e\003e.spec.ts:6:1 › 003E Explorer: seleção Ctrl/Shift, arraste entre janelas e persistência (3.5s)
+  ok  54 [chrome] › e2e\desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar (2.2s)
+  ok  55 [chrome] › e2e\desktop.spec.ts:5:1 › salvar, recarregar e reabrir texto pelo arquivo virtual (2.5s)
+  ok  56 [chrome] › e2e\desktop.spec.ts:6:1 › temas globais, persistência, menu e screenshots (4.8s)
+  ok  57 [chrome] › e2e\desktop.spec.ts:7:1 › Paint exporta PNG real com desenho (2.4s)
+  x   51 [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências win2000 (11.0s)
+  ok  58 [chrome] › e2e\desktop.spec.ts:8:1 › três jogos iniciam e aceitam jogadas (3.6s)
+  ok  59 [chrome] › e2e\desktop.spec.ts:9:1 › terminal, calculadora e páginas internas sem erros de console (3.9s)
+  ok  61 [chrome] › e2e\desktop.spec.ts:10:1 › mobile permanece utilizável (2.4s)
+  x   60 [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências xp (11.0s)
+  ok  62 [chrome] › e2e\dos-victory003f.spec.ts:3:1 › DOS: partida completa até vitória após recarregar save (10.5s)
+DOS load/heap 1259 67108864
+  ok  64 [chrome] › e2e\emulation003f.spec.ts:4:1 › DOS original: Game Center, teclado, áudio, pausa, save e saída (16.5s)
+  ok  65 [chrome] › e2e\emulation003f.spec.ts:5:1 › Paint: diálogo PNG compartilhado, gravação e descarte cancelável (5.1s)
+  ok  66 [chrome] › e2e\explorer003d.spec.ts:2:1 › 003D Explorer: árvore, histórico, endereço, pesquisa e ordem (2.1s)
+  x   63 [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências mix (12.1s)
+  ok  67 [chrome] › e2e\keyboard002.spec.ts:2:1 › restaurar janela devolve foco ao campo anterior (2.5s)
+  ok  68 [chrome] › e2e\keyboard002.spec.ts:3:1 › protetor ativa por inatividade e sai por teclado sem perder janela (4.1s)
+  ok  70 [chrome] › e2e\media.spec.ts:2:1 › player importa WAV original, reproduz, pausa e troca skin (5.2s)
+  ok  71 [chrome] › e2e\media.spec.ts:3:1 › ícones arrastam, persistem e se reorganizam; menu rápido preserva aplicativos (4.8s)
+  ok  69 [chrome] › e2e\local003f.spec.ts:3:1 › Batalha Naval local: posicionamento, troca, vitória e persistência (16.2s)
+  ok  72 [chrome] › e2e\media003e.spec.ts:2:1 › 003E player: demo original, skins, M3U seguro e reanexação (6.0s)
+  ok  73 [chrome] › e2e\local003f.spec.ts:4:1 › reinício do desktop respeita alterações de texto não salvas (4.0s)
+  ok  74 [chrome] › e2e\media003e.spec.ts:3:1 › 003E navegador: favoritos, histórico, pausa e retomada de download simulado (5.8s)
+  ok  76 [chrome] › e2e\offline003f.spec.ts:4:1 › museu offline navega perfis, álbum, recados e tópicos sem API social (3.6s)
+  ok  75 [chrome] › e2e\mission002.spec.ts:5:1 › discagem, erro de linha, persistência na sessão e desconexão (8.6s)
+  ok  78 [chrome] › e2e\mission002.spec.ts:6:1 › época independente do tema, sugestões e páginas (4.6s)
+  ok  77 [chrome] › e2e\offline003f.spec.ts:5:1 › Messenger e LAN demonstrativos funcionam sem contas ou servidor (6.3s)
+  ok  80 [chrome] › e2e\offline003f.spec.ts:6:1 › internet museológica navega portais, fórum e perfis por época (3.6s)
+  ok  79 [chrome] › e2e\mission002.spec.ts:7:1 › arquivo salvo abre pelo explorador, renomeia, copia, recorta, exclui e restaura (7.7s)
+  ok  81 [chrome] › e2e\recovery002.spec.ts:2:1 › backup de bitmap preserva original quando desenho atual já mudou (4.5s)
+  ok  82 [chrome] › e2e\mission002.spec.ts:8:1 › Paint salva PNG em IndexedDB, reabre após reload e oferece refazer (4.6s)
+  ok  83 [chrome] › e2e\recovery002.spec.ts:3:1 › playlist persiste metadados, sinaliza indisponibilidade e pode reconectar arquivo (2.7s)
+  ok  84 [chrome] › e2e\mission002.spec.ts:9:1 › backup válido restaura, conflitos preservam atual e integridade inválida é recusada (4.7s)
+  ok  85 [chrome] › e2e\system.spec.ts:2:1 › doze janelas simultâneas, foco, restauração e console (5.2s)
+  ok  87 [chrome] › e2e\system.spec.ts:3:1 › explorador navega unidades, abre imagem original e propriedades (3.4s)
+  ok  86 [chrome] › e2e\mission002.spec.ts:10:1 › quatro protetores reais, prévia, ativação, saída e configurações (6.8s)
+  ok  88 [chrome] › e2e\visual003e.spec.ts:3:53 › 003E evidências classic (3.1s)
+  ok  89 [chrome] › e2e\mission002.spec.ts:11:1 › sites internos, busca, escola e contador (3.4s)
+  ok  90 [chrome] › e2e\visual003e.spec.ts:3:53 › 003E evidências win2000 (4.1s)
+  ok  91 [chrome] › e2e\mission002.spec.ts:12:1 › CD virtual ejeta/insere e instala somente atalhos simulados (4.1s)
+  ok  92 [chrome] › e2e\visual003e.spec.ts:3:53 › 003E evidências xp (3.6s)
+  ok  93 [chrome] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 800x600 (2.9s)
+  ok  94 [chrome] › e2e\visual003e.spec.ts:3:53 › 003E evidências mix (3.3s)
+  ok  95 [chrome] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1024x768 (3.6s)
+  ok  97 [chrome] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1366x768 (2.7s)
+  ok  98 [chrome] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1920x1080 (4.0s)
+  ok  99 [chrome] › e2e\windows2000.spec.ts:2:1 › Windows 2000 preserva editor e preferência após recarregar (3.2s)
+  x   96 [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências classic (9.2s)
+  x  100 [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências win2000 (9.3s)
+  x  101 [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências xp (10.8s)
+  x  102 [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências mix (9.6s)
+
+
+  1) [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências classic ────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.control-panel-icons')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.control-panel-icons') with timeout 5000ms
+      - waiting for locator('.control-panel-icons')
+
+
+      1 | import {writeFileSync} from 'node:fs';
+      2 | import {test,expect} from '@playwright/test';
+    > 3 | for(const theme of ['classic','win2000','xp','mix'])test('003F evidências '+theme,async({page},info)=>{await page.setViewportSize({width:1366,height:768});await page.addInitScript(theme=>localStorage.setItem('retro.prefs',JSON.stringify({theme,wallpaper:['classic','win2000'].includes(theme)?'teal':'hills',boot:true,muted:true,volume:.3,xpColor:'blue'})),theme);await page.goto('/');await page.getByRole('button',{name:'Pular inicialização'}).click();await page.getByRole('button',{name:'Fechar Sobre o RETRO OS'}).click();const base='evidence/003f/visual/'+info.project.name+'-'+theme;await page.screenshot({path:base+'-desktop.png'});await page.getByRole('button',{name:'Iniciar',exact:true}).click();await page.screenshot({path:base+'-start.png'});await page.keyboard.press('Escape');await page.locator('.desktop-icons').getByRole('button',{name:'Meu Computador',exact:true}).dblclick();const title=page.getByRole('dialog',{name:'Meu Computador',exact:true}).locator('.titlebar').first();const height=await title.evaluate(e=>e.getBoundingClientRect().height);expect(height).toBeGreaterThanOrEqual(theme==='xp'?26:18);await page.getByRole('button',{name:'Exibir',exact:true}).click();await expect(page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true})).toBeVisible();await page.screenshot({path:base+'-explorer-menu.png'});await page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true}).click();await page.screenshot({path:base+'-explorer.png'});await page.getByRole('button',{name:'Menu da janela Meu Computador',exact:true}).click();await expect(page.locator('.window-system-menu')).toBeVisible();await page.screenshot({path:base+'-system-menu.png'});await page.keyboard.press('Escape');const metrics=await page.evaluate(()=>{const pick=(selector:string)=>{const e=document.querySelector(selector)!;const s=getComputedStyle(e),r=e.getBoundingClientRect();return {width:r.width,height:r.height,font:s.font,color:s.color,background:s.background,borderRadius:s.borderRadius}};return {taskbar:pick('.taskbar'),titlebar:pick('.active .titlebar'),desktop:pick('.wallpaper-art'),icon:pick('.desktop-icon'),sidebar:pick('.explorer-sidebar')}});writeFileSync(base+'-metrics.json',JSON.stringify(metrics,null,2));await page.getByRole('button',{name:'Fechar Meu Computador'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Painel de Controle',exact:true}).dblclick();await page.screenshot({path:base+'-settings.png'});await page.getByRole('button',{name:'Todos os itens do Painel de Controle'}).click();await expect(page.locator('.control-panel-icons')).toBeVisible();await page.screenshot({path:base+'-control-panel.png'});await page.getByRole('button',{name:'Fechar Painel de Controle'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Bloco de Notas',exact:true}).dblclick();await page.getByRole('button',{name:'Salvar como',exact:true}).click();await expect(page.getByRole('alertdialog',{name:'Salvar como',exact:true})).toBeVisible();await page.screenshot({path:base+'-dialog.png'})});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003M\e2e\visual003f.spec.ts:3:2632
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual003f-003F-evidências-classic-edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\visual003f-003F-evidências-classic-edge\error-context.md
+
+  2) [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências win2000 ────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.control-panel-icons')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.control-panel-icons') with timeout 5000ms
+      - waiting for locator('.control-panel-icons')
+
+
+      1 | import {writeFileSync} from 'node:fs';
+      2 | import {test,expect} from '@playwright/test';
+    > 3 | for(const theme of ['classic','win2000','xp','mix'])test('003F evidências '+theme,async({page},info)=>{await page.setViewportSize({width:1366,height:768});await page.addInitScript(theme=>localStorage.setItem('retro.prefs',JSON.stringify({theme,wallpaper:['classic','win2000'].includes(theme)?'teal':'hills',boot:true,muted:true,volume:.3,xpColor:'blue'})),theme);await page.goto('/');await page.getByRole('button',{name:'Pular inicialização'}).click();await page.getByRole('button',{name:'Fechar Sobre o RETRO OS'}).click();const base='evidence/003f/visual/'+info.project.name+'-'+theme;await page.screenshot({path:base+'-desktop.png'});await page.getByRole('button',{name:'Iniciar',exact:true}).click();await page.screenshot({path:base+'-start.png'});await page.keyboard.press('Escape');await page.locator('.desktop-icons').getByRole('button',{name:'Meu Computador',exact:true}).dblclick();const title=page.getByRole('dialog',{name:'Meu Computador',exact:true}).locator('.titlebar').first();const height=await title.evaluate(e=>e.getBoundingClientRect().height);expect(height).toBeGreaterThanOrEqual(theme==='xp'?26:18);await page.getByRole('button',{name:'Exibir',exact:true}).click();await expect(page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true})).toBeVisible();await page.screenshot({path:base+'-explorer-menu.png'});await page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true}).click();await page.screenshot({path:base+'-explorer.png'});await page.getByRole('button',{name:'Menu da janela Meu Computador',exact:true}).click();await expect(page.locator('.window-system-menu')).toBeVisible();await page.screenshot({path:base+'-system-menu.png'});await page.keyboard.press('Escape');const metrics=await page.evaluate(()=>{const pick=(selector:string)=>{const e=document.querySelector(selector)!;const s=getComputedStyle(e),r=e.getBoundingClientRect();return {width:r.width,height:r.height,font:s.font,color:s.color,background:s.background,borderRadius:s.borderRadius}};return {taskbar:pick('.taskbar'),titlebar:pick('.active .titlebar'),desktop:pick('.wallpaper-art'),icon:pick('.desktop-icon'),sidebar:pick('.explorer-sidebar')}});writeFileSync(base+'-metrics.json',JSON.stringify(metrics,null,2));await page.getByRole('button',{name:'Fechar Meu Computador'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Painel de Controle',exact:true}).dblclick();await page.screenshot({path:base+'-settings.png'});await page.getByRole('button',{name:'Todos os itens do Painel de Controle'}).click();await expect(page.locator('.control-panel-icons')).toBeVisible();await page.screenshot({path:base+'-control-panel.png'});await page.getByRole('button',{name:'Fechar Painel de Controle'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Bloco de Notas',exact:true}).dblclick();await page.getByRole('button',{name:'Salvar como',exact:true}).click();await expect(page.getByRole('alertdialog',{name:'Salvar como',exact:true})).toBeVisible();await page.screenshot({path:base+'-dialog.png'})});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003M\e2e\visual003f.spec.ts:3:2632
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual003f-003F-evidências-win2000-edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\visual003f-003F-evidências-win2000-edge\error-context.md
+
+  3) [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências xp ─────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.control-panel-icons')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.control-panel-icons') with timeout 5000ms
+      - waiting for locator('.control-panel-icons')
+
+
+      1 | import {writeFileSync} from 'node:fs';
+      2 | import {test,expect} from '@playwright/test';
+    > 3 | for(const theme of ['classic','win2000','xp','mix'])test('003F evidências '+theme,async({page},info)=>{await page.setViewportSize({width:1366,height:768});await page.addInitScript(theme=>localStorage.setItem('retro.prefs',JSON.stringify({theme,wallpaper:['classic','win2000'].includes(theme)?'teal':'hills',boot:true,muted:true,volume:.3,xpColor:'blue'})),theme);await page.goto('/');await page.getByRole('button',{name:'Pular inicialização'}).click();await page.getByRole('button',{name:'Fechar Sobre o RETRO OS'}).click();const base='evidence/003f/visual/'+info.project.name+'-'+theme;await page.screenshot({path:base+'-desktop.png'});await page.getByRole('button',{name:'Iniciar',exact:true}).click();await page.screenshot({path:base+'-start.png'});await page.keyboard.press('Escape');await page.locator('.desktop-icons').getByRole('button',{name:'Meu Computador',exact:true}).dblclick();const title=page.getByRole('dialog',{name:'Meu Computador',exact:true}).locator('.titlebar').first();const height=await title.evaluate(e=>e.getBoundingClientRect().height);expect(height).toBeGreaterThanOrEqual(theme==='xp'?26:18);await page.getByRole('button',{name:'Exibir',exact:true}).click();await expect(page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true})).toBeVisible();await page.screenshot({path:base+'-explorer-menu.png'});await page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true}).click();await page.screenshot({path:base+'-explorer.png'});await page.getByRole('button',{name:'Menu da janela Meu Computador',exact:true}).click();await expect(page.locator('.window-system-menu')).toBeVisible();await page.screenshot({path:base+'-system-menu.png'});await page.keyboard.press('Escape');const metrics=await page.evaluate(()=>{const pick=(selector:string)=>{const e=document.querySelector(selector)!;const s=getComputedStyle(e),r=e.getBoundingClientRect();return {width:r.width,height:r.height,font:s.font,color:s.color,background:s.background,borderRadius:s.borderRadius}};return {taskbar:pick('.taskbar'),titlebar:pick('.active .titlebar'),desktop:pick('.wallpaper-art'),icon:pick('.desktop-icon'),sidebar:pick('.explorer-sidebar')}});writeFileSync(base+'-metrics.json',JSON.stringify(metrics,null,2));await page.getByRole('button',{name:'Fechar Meu Computador'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Painel de Controle',exact:true}).dblclick();await page.screenshot({path:base+'-settings.png'});await page.getByRole('button',{name:'Todos os itens do Painel de Controle'}).click();await expect(page.locator('.control-panel-icons')).toBeVisible();await page.screenshot({path:base+'-control-panel.png'});await page.getByRole('button',{name:'Fechar Painel de Controle'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Bloco de Notas',exact:true}).dblclick();await page.getByRole('button',{name:'Salvar como',exact:true}).click();await expect(page.getByRole('alertdialog',{name:'Salvar como',exact:true})).toBeVisible();await page.screenshot({path:base+'-dialog.png'})});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003M\e2e\visual003f.spec.ts:3:2632
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual003f-003F-evidências-xp-edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\visual003f-003F-evidências-xp-edge\error-context.md
+
+  4) [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências mix ────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.control-panel-icons')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.control-panel-icons') with timeout 5000ms
+      - waiting for locator('.control-panel-icons')
+
+
+      1 | import {writeFileSync} from 'node:fs';
+      2 | import {test,expect} from '@playwright/test';
+    > 3 | for(const theme of ['classic','win2000','xp','mix'])test('003F evidências '+theme,async({page},info)=>{await page.setViewportSize({width:1366,height:768});await page.addInitScript(theme=>localStorage.setItem('retro.prefs',JSON.stringify({theme,wallpaper:['classic','win2000'].includes(theme)?'teal':'hills',boot:true,muted:true,volume:.3,xpColor:'blue'})),theme);await page.goto('/');await page.getByRole('button',{name:'Pular inicialização'}).click();await page.getByRole('button',{name:'Fechar Sobre o RETRO OS'}).click();const base='evidence/003f/visual/'+info.project.name+'-'+theme;await page.screenshot({path:base+'-desktop.png'});await page.getByRole('button',{name:'Iniciar',exact:true}).click();await page.screenshot({path:base+'-start.png'});await page.keyboard.press('Escape');await page.locator('.desktop-icons').getByRole('button',{name:'Meu Computador',exact:true}).dblclick();const title=page.getByRole('dialog',{name:'Meu Computador',exact:true}).locator('.titlebar').first();const height=await title.evaluate(e=>e.getBoundingClientRect().height);expect(height).toBeGreaterThanOrEqual(theme==='xp'?26:18);await page.getByRole('button',{name:'Exibir',exact:true}).click();await expect(page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true})).toBeVisible();await page.screenshot({path:base+'-explorer-menu.png'});await page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true}).click();await page.screenshot({path:base+'-explorer.png'});await page.getByRole('button',{name:'Menu da janela Meu Computador',exact:true}).click();await expect(page.locator('.window-system-menu')).toBeVisible();await page.screenshot({path:base+'-system-menu.png'});await page.keyboard.press('Escape');const metrics=await page.evaluate(()=>{const pick=(selector:string)=>{const e=document.querySelector(selector)!;const s=getComputedStyle(e),r=e.getBoundingClientRect();return {width:r.width,height:r.height,font:s.font,color:s.color,background:s.background,borderRadius:s.borderRadius}};return {taskbar:pick('.taskbar'),titlebar:pick('.active .titlebar'),desktop:pick('.wallpaper-art'),icon:pick('.desktop-icon'),sidebar:pick('.explorer-sidebar')}});writeFileSync(base+'-metrics.json',JSON.stringify(metrics,null,2));await page.getByRole('button',{name:'Fechar Meu Computador'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Painel de Controle',exact:true}).dblclick();await page.screenshot({path:base+'-settings.png'});await page.getByRole('button',{name:'Todos os itens do Painel de Controle'}).click();await expect(page.locator('.control-panel-icons')).toBeVisible();await page.screenshot({path:base+'-control-panel.png'});await page.getByRole('button',{name:'Fechar Painel de Controle'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Bloco de Notas',exact:true}).dblclick();await page.getByRole('button',{name:'Salvar como',exact:true}).click();await expect(page.getByRole('alertdialog',{name:'Salvar como',exact:true})).toBeVisible();await page.screenshot({path:base+'-dialog.png'})});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003M\e2e\visual003f.spec.ts:3:2632
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual003f-003F-evidências-mix-edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\visual003f-003F-evidências-mix-edge\error-context.md
+
+  5) [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências classic ──────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.control-panel-icons')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.control-panel-icons') with timeout 5000ms
+      - waiting for locator('.control-panel-icons')
+
+
+      1 | import {writeFileSync} from 'node:fs';
+      2 | import {test,expect} from '@playwright/test';
+    > 3 | for(const theme of ['classic','win2000','xp','mix'])test('003F evidências '+theme,async({page},info)=>{await page.setViewportSize({width:1366,height:768});await page.addInitScript(theme=>localStorage.setItem('retro.prefs',JSON.stringify({theme,wallpaper:['classic','win2000'].includes(theme)?'teal':'hills',boot:true,muted:true,volume:.3,xpColor:'blue'})),theme);await page.goto('/');await page.getByRole('button',{name:'Pular inicialização'}).click();await page.getByRole('button',{name:'Fechar Sobre o RETRO OS'}).click();const base='evidence/003f/visual/'+info.project.name+'-'+theme;await page.screenshot({path:base+'-desktop.png'});await page.getByRole('button',{name:'Iniciar',exact:true}).click();await page.screenshot({path:base+'-start.png'});await page.keyboard.press('Escape');await page.locator('.desktop-icons').getByRole('button',{name:'Meu Computador',exact:true}).dblclick();const title=page.getByRole('dialog',{name:'Meu Computador',exact:true}).locator('.titlebar').first();const height=await title.evaluate(e=>e.getBoundingClientRect().height);expect(height).toBeGreaterThanOrEqual(theme==='xp'?26:18);await page.getByRole('button',{name:'Exibir',exact:true}).click();await expect(page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true})).toBeVisible();await page.screenshot({path:base+'-explorer-menu.png'});await page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true}).click();await page.screenshot({path:base+'-explorer.png'});await page.getByRole('button',{name:'Menu da janela Meu Computador',exact:true}).click();await expect(page.locator('.window-system-menu')).toBeVisible();await page.screenshot({path:base+'-system-menu.png'});await page.keyboard.press('Escape');const metrics=await page.evaluate(()=>{const pick=(selector:string)=>{const e=document.querySelector(selector)!;const s=getComputedStyle(e),r=e.getBoundingClientRect();return {width:r.width,height:r.height,font:s.font,color:s.color,background:s.background,borderRadius:s.borderRadius}};return {taskbar:pick('.taskbar'),titlebar:pick('.active .titlebar'),desktop:pick('.wallpaper-art'),icon:pick('.desktop-icon'),sidebar:pick('.explorer-sidebar')}});writeFileSync(base+'-metrics.json',JSON.stringify(metrics,null,2));await page.getByRole('button',{name:'Fechar Meu Computador'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Painel de Controle',exact:true}).dblclick();await page.screenshot({path:base+'-settings.png'});await page.getByRole('button',{name:'Todos os itens do Painel de Controle'}).click();await expect(page.locator('.control-panel-icons')).toBeVisible();await page.screenshot({path:base+'-control-panel.png'});await page.getByRole('button',{name:'Fechar Painel de Controle'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Bloco de Notas',exact:true}).dblclick();await page.getByRole('button',{name:'Salvar como',exact:true}).click();await expect(page.getByRole('alertdialog',{name:'Salvar como',exact:true})).toBeVisible();await page.screenshot({path:base+'-dialog.png'})});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003M\e2e\visual003f.spec.ts:3:2632
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual003f-003F-evidências-classic-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\visual003f-003F-evidências-classic-chrome\error-context.md
+
+  6) [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências win2000 ──────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.control-panel-icons')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.control-panel-icons') with timeout 5000ms
+      - waiting for locator('.control-panel-icons')
+
+
+      1 | import {writeFileSync} from 'node:fs';
+      2 | import {test,expect} from '@playwright/test';
+    > 3 | for(const theme of ['classic','win2000','xp','mix'])test('003F evidências '+theme,async({page},info)=>{await page.setViewportSize({width:1366,height:768});await page.addInitScript(theme=>localStorage.setItem('retro.prefs',JSON.stringify({theme,wallpaper:['classic','win2000'].includes(theme)?'teal':'hills',boot:true,muted:true,volume:.3,xpColor:'blue'})),theme);await page.goto('/');await page.getByRole('button',{name:'Pular inicialização'}).click();await page.getByRole('button',{name:'Fechar Sobre o RETRO OS'}).click();const base='evidence/003f/visual/'+info.project.name+'-'+theme;await page.screenshot({path:base+'-desktop.png'});await page.getByRole('button',{name:'Iniciar',exact:true}).click();await page.screenshot({path:base+'-start.png'});await page.keyboard.press('Escape');await page.locator('.desktop-icons').getByRole('button',{name:'Meu Computador',exact:true}).dblclick();const title=page.getByRole('dialog',{name:'Meu Computador',exact:true}).locator('.titlebar').first();const height=await title.evaluate(e=>e.getBoundingClientRect().height);expect(height).toBeGreaterThanOrEqual(theme==='xp'?26:18);await page.getByRole('button',{name:'Exibir',exact:true}).click();await expect(page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true})).toBeVisible();await page.screenshot({path:base+'-explorer-menu.png'});await page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true}).click();await page.screenshot({path:base+'-explorer.png'});await page.getByRole('button',{name:'Menu da janela Meu Computador',exact:true}).click();await expect(page.locator('.window-system-menu')).toBeVisible();await page.screenshot({path:base+'-system-menu.png'});await page.keyboard.press('Escape');const metrics=await page.evaluate(()=>{const pick=(selector:string)=>{const e=document.querySelector(selector)!;const s=getComputedStyle(e),r=e.getBoundingClientRect();return {width:r.width,height:r.height,font:s.font,color:s.color,background:s.background,borderRadius:s.borderRadius}};return {taskbar:pick('.taskbar'),titlebar:pick('.active .titlebar'),desktop:pick('.wallpaper-art'),icon:pick('.desktop-icon'),sidebar:pick('.explorer-sidebar')}});writeFileSync(base+'-metrics.json',JSON.stringify(metrics,null,2));await page.getByRole('button',{name:'Fechar Meu Computador'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Painel de Controle',exact:true}).dblclick();await page.screenshot({path:base+'-settings.png'});await page.getByRole('button',{name:'Todos os itens do Painel de Controle'}).click();await expect(page.locator('.control-panel-icons')).toBeVisible();await page.screenshot({path:base+'-control-panel.png'});await page.getByRole('button',{name:'Fechar Painel de Controle'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Bloco de Notas',exact:true}).dblclick();await page.getByRole('button',{name:'Salvar como',exact:true}).click();await expect(page.getByRole('alertdialog',{name:'Salvar como',exact:true})).toBeVisible();await page.screenshot({path:base+'-dialog.png'})});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003M\e2e\visual003f.spec.ts:3:2632
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual003f-003F-evidências-win2000-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\visual003f-003F-evidências-win2000-chrome\error-context.md
+
+  7) [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências xp ───────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.control-panel-icons')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.control-panel-icons') with timeout 5000ms
+      - waiting for locator('.control-panel-icons')
+
+
+      1 | import {writeFileSync} from 'node:fs';
+      2 | import {test,expect} from '@playwright/test';
+    > 3 | for(const theme of ['classic','win2000','xp','mix'])test('003F evidências '+theme,async({page},info)=>{await page.setViewportSize({width:1366,height:768});await page.addInitScript(theme=>localStorage.setItem('retro.prefs',JSON.stringify({theme,wallpaper:['classic','win2000'].includes(theme)?'teal':'hills',boot:true,muted:true,volume:.3,xpColor:'blue'})),theme);await page.goto('/');await page.getByRole('button',{name:'Pular inicialização'}).click();await page.getByRole('button',{name:'Fechar Sobre o RETRO OS'}).click();const base='evidence/003f/visual/'+info.project.name+'-'+theme;await page.screenshot({path:base+'-desktop.png'});await page.getByRole('button',{name:'Iniciar',exact:true}).click();await page.screenshot({path:base+'-start.png'});await page.keyboard.press('Escape');await page.locator('.desktop-icons').getByRole('button',{name:'Meu Computador',exact:true}).dblclick();const title=page.getByRole('dialog',{name:'Meu Computador',exact:true}).locator('.titlebar').first();const height=await title.evaluate(e=>e.getBoundingClientRect().height);expect(height).toBeGreaterThanOrEqual(theme==='xp'?26:18);await page.getByRole('button',{name:'Exibir',exact:true}).click();await expect(page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true})).toBeVisible();await page.screenshot({path:base+'-explorer-menu.png'});await page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true}).click();await page.screenshot({path:base+'-explorer.png'});await page.getByRole('button',{name:'Menu da janela Meu Computador',exact:true}).click();await expect(page.locator('.window-system-menu')).toBeVisible();await page.screenshot({path:base+'-system-menu.png'});await page.keyboard.press('Escape');const metrics=await page.evaluate(()=>{const pick=(selector:string)=>{const e=document.querySelector(selector)!;const s=getComputedStyle(e),r=e.getBoundingClientRect();return {width:r.width,height:r.height,font:s.font,color:s.color,background:s.background,borderRadius:s.borderRadius}};return {taskbar:pick('.taskbar'),titlebar:pick('.active .titlebar'),desktop:pick('.wallpaper-art'),icon:pick('.desktop-icon'),sidebar:pick('.explorer-sidebar')}});writeFileSync(base+'-metrics.json',JSON.stringify(metrics,null,2));await page.getByRole('button',{name:'Fechar Meu Computador'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Painel de Controle',exact:true}).dblclick();await page.screenshot({path:base+'-settings.png'});await page.getByRole('button',{name:'Todos os itens do Painel de Controle'}).click();await expect(page.locator('.control-panel-icons')).toBeVisible();await page.screenshot({path:base+'-control-panel.png'});await page.getByRole('button',{name:'Fechar Painel de Controle'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Bloco de Notas',exact:true}).dblclick();await page.getByRole('button',{name:'Salvar como',exact:true}).click();await expect(page.getByRole('alertdialog',{name:'Salvar como',exact:true})).toBeVisible();await page.screenshot({path:base+'-dialog.png'})});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003M\e2e\visual003f.spec.ts:3:2632
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual003f-003F-evidências-xp-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\visual003f-003F-evidências-xp-chrome\error-context.md
+
+  8) [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências mix ──────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.control-panel-icons')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.control-panel-icons') with timeout 5000ms
+      - waiting for locator('.control-panel-icons')
+
+
+      1 | import {writeFileSync} from 'node:fs';
+      2 | import {test,expect} from '@playwright/test';
+    > 3 | for(const theme of ['classic','win2000','xp','mix'])test('003F evidências '+theme,async({page},info)=>{await page.setViewportSize({width:1366,height:768});await page.addInitScript(theme=>localStorage.setItem('retro.prefs',JSON.stringify({theme,wallpaper:['classic','win2000'].includes(theme)?'teal':'hills',boot:true,muted:true,volume:.3,xpColor:'blue'})),theme);await page.goto('/');await page.getByRole('button',{name:'Pular inicialização'}).click();await page.getByRole('button',{name:'Fechar Sobre o RETRO OS'}).click();const base='evidence/003f/visual/'+info.project.name+'-'+theme;await page.screenshot({path:base+'-desktop.png'});await page.getByRole('button',{name:'Iniciar',exact:true}).click();await page.screenshot({path:base+'-start.png'});await page.keyboard.press('Escape');await page.locator('.desktop-icons').getByRole('button',{name:'Meu Computador',exact:true}).dblclick();const title=page.getByRole('dialog',{name:'Meu Computador',exact:true}).locator('.titlebar').first();const height=await title.evaluate(e=>e.getBoundingClientRect().height);expect(height).toBeGreaterThanOrEqual(theme==='xp'?26:18);await page.getByRole('button',{name:'Exibir',exact:true}).click();await expect(page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true})).toBeVisible();await page.screenshot({path:base+'-explorer-menu.png'});await page.locator('.explorer-menu-popup').getByRole('button',{name:'Detalhes',exact:true}).click();await page.screenshot({path:base+'-explorer.png'});await page.getByRole('button',{name:'Menu da janela Meu Computador',exact:true}).click();await expect(page.locator('.window-system-menu')).toBeVisible();await page.screenshot({path:base+'-system-menu.png'});await page.keyboard.press('Escape');const metrics=await page.evaluate(()=>{const pick=(selector:string)=>{const e=document.querySelector(selector)!;const s=getComputedStyle(e),r=e.getBoundingClientRect();return {width:r.width,height:r.height,font:s.font,color:s.color,background:s.background,borderRadius:s.borderRadius}};return {taskbar:pick('.taskbar'),titlebar:pick('.active .titlebar'),desktop:pick('.wallpaper-art'),icon:pick('.desktop-icon'),sidebar:pick('.explorer-sidebar')}});writeFileSync(base+'-metrics.json',JSON.stringify(metrics,null,2));await page.getByRole('button',{name:'Fechar Meu Computador'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Painel de Controle',exact:true}).dblclick();await page.screenshot({path:base+'-settings.png'});await page.getByRole('button',{name:'Todos os itens do Painel de Controle'}).click();await expect(page.locator('.control-panel-icons')).toBeVisible();await page.screenshot({path:base+'-control-panel.png'});await page.getByRole('button',{name:'Fechar Painel de Controle'}).click();await page.locator('.desktop-icons').getByRole('button',{name:'Bloco de Notas',exact:true}).dblclick();await page.getByRole('button',{name:'Salvar como',exact:true}).click();await expect(page.getByRole('alertdialog',{name:'Salvar como',exact:true})).toBeVisible();await page.screenshot({path:base+'-dialog.png'})});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003M\e2e\visual003f.spec.ts:3:2632
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual003f-003F-evidências-mix-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\visual003f-003F-evidências-mix-chrome\error-context.md
+
+  8 failed
+    [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências classic ─────────────────────────────────
+    [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências win2000 ─────────────────────────────────
+    [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências xp ──────────────────────────────────────
+    [edge] › e2e\visual003f.spec.ts:3:53 › 003F evidências mix ─────────────────────────────────────
+    [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências classic ───────────────────────────────
+    [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências win2000 ───────────────────────────────
+    [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências xp ────────────────────────────────────
+    [chrome] › e2e\visual003f.spec.ts:3:53 › 003F evidências mix ───────────────────────────────────
+  94 passed (5.4m)
+(node:25896) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26108) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32648) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:540) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30360) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45316) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7620) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34260) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:22036) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

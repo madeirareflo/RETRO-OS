@@ -1,0 +1,28 @@
+{
+  "branch": "development/retro-os-003m",
+  "head": "991abc78ed75c3d23e0bab49f7d388029da700ab",
+  "workBase": "991abc78ed75c3d23e0bab49f7d388029da700ab",
+  "antiSource": "df29402832e8ff143d5c11ab20dcb6636fa6a081",
+  "publicMain": "23096cd902c9aef9c4d358bf0c8b9165c6b89ba3",
+  "protectedChanges": [],
+  "forbiddenBuildFiles": [],
+  "payloads": [
+    "dist/emulation/DISQUETE.COM",
+    "dist/games/freedoom-phase1.zip",
+    "dist/games/ken-labfull.zip",
+    "dist/games/skyroads.zip",
+    "dist/licenses/003m/FastDoom-source-1.0.0.zip",
+    "dist/vendor/js-dos-6.22.60/SOURCE.zip"
+  ],
+  "unexpectedPayloads": [],
+  "mediaInDeliveredHistory": [],
+  "databasesInHistory": [],
+  "originalCom": {
+    "sha256": "f0c50f1717cd8a12ddbdd52addb675e79e9fb1b393ceb35a8af3f44bd3084726",
+    "bytes": 1955
+  },
+  "currentTextFiles": 232,
+  "historyTextBlobs": 472,
+  "credentialPatternFindings": [],
+  "limitations": "Escaneamento de padrões/nome, não pentest nem prova absoluta de ausência de PII em imagens/arquivos compactados. Histórico examinado é HEAD, o mesmo que será incluído no bundle de branch única."
+}

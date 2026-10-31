@@ -1,0 +1,14 @@
+{
+  "id": "klab",
+  "channel": "chrome",
+  "saveFile": "SAVGAME0.DAT",
+  "freshPatch": "62723500",
+  "audioPeak": 0,
+  "progressPatch": "121adfff",
+  "bytes": 8604,
+  "sha256": "081a1300e9076bbae8ae05b1f4f34621f31758df204d6b9c9c894cb66fe924a0",
+  "newGameBeforeLoadPatch": "62723500",
+  "restoredPatch": "121adfff",
+  "restoredSha256": "081a1300e9076bbae8ae05b1f4f34621f31758df204d6b9c9c894cb66fe924a0",
+  "nativeProgressVerified": true
+}

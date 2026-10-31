@@ -1,0 +1,14 @@
+{
+  "id": "freedoom",
+  "channel": "msedge",
+  "saveFile": "FD1SV0.DSG",
+  "freshPatch": "af06ef59",
+  "audioPeak": 0.8148193359375,
+  "progressPatch": "7a54d8fb",
+  "bytes": 65538,
+  "sha256": "168eef4a1ae41759fafc2fffd31d7da0ff5e819a2d7b10cd0087de2e585201b4",
+  "newGameBeforeLoadPatch": "a9a2d18a",
+  "restoredPatch": "7a54d8fb",
+  "restoredSha256": "168eef4a1ae41759fafc2fffd31d7da0ff5e819a2d7b10cd0087de2e585201b4",
+  "nativeProgressVerified": true
+}

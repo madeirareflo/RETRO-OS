@@ -1,0 +1,79 @@
+{
+  "taskbar": {
+    "x": 0,
+    "y": 740,
+    "width": 1366,
+    "height": 28,
+    "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "title": {
+    "x": 277,
+    "y": 59,
+    "width": 612,
+    "height": 18,
+    "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(255, 255, 255)",
+    "borderRadius": "0px"
+  },
+  "desktop": {
+    "x": 0,
+    "y": 0,
+    "width": 1366,
+    "height": 768,
+    "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(0, 0, 0)",
+    "borderRadius": "0px"
+  },
+  "icon": {
+    "x": 0,
+    "y": 4,
+    "width": 75,
+    "height": 70,
+    "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "1px dotted rgb(255, 255, 255)",
+    "borderRadius": "0px"
+  },
+  "toolbar": {
+    "x": 277,
+    "y": 98,
+    "width": 612,
+    "height": 58,
+    "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "address": {
+    "x": 277,
+    "y": 156,
+    "width": 612,
+    "height": 26,
+    "font": "11px Tahoma",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "sidebar": {
+    "x": 279,
+    "y": 184,
+    "width": 170,
+    "height": 305,
+    "font": "11px / 14.85px Tahoma",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(0, 0, 0)",
+    "borderRadius": "0px"
+  }
+}

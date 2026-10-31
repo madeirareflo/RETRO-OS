@@ -1,0 +1,112 @@
+{
+  "taskbar": {
+    "x": 0,
+    "y": 740,
+    "width": 1366,
+    "height": 28,
+    "font": "11px Tahoma, Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "title": {
+    "x": 277,
+    "y": 59,
+    "width": 642,
+    "height": 18,
+    "font": "700 11px Tahoma, Arial",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(255, 255, 255)",
+    "borderRadius": "0px"
+  },
+  "startButton": {
+    "x": 2,
+    "y": 744.5,
+    "width": 64.15625,
+    "height": 22,
+    "font": "700 11px Tahoma, Arial",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "tray": {
+    "x": 1282,
+    "y": 744.5,
+    "width": 82,
+    "height": 22,
+    "font": "11px Tahoma, Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "1px inset rgb(255, 255, 255)",
+    "borderRadius": "0px"
+  },
+  "controlButtons": {
+    "x": 863,
+    "y": 61,
+    "width": 54,
+    "height": 14,
+    "font": "700 11px Tahoma, Arial",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(255, 255, 255)",
+    "borderRadius": "0px"
+  },
+  "desktop": {
+    "x": 0,
+    "y": 0,
+    "width": 1366,
+    "height": 768,
+    "font": "11px Tahoma, Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(0, 0, 0)",
+    "borderRadius": "0px"
+  },
+  "icon": {
+    "x": 0,
+    "y": 4,
+    "width": 75,
+    "height": 70,
+    "font": "11px / 13px Tahoma, Arial",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "1px dotted rgb(255, 255, 255)",
+    "borderRadius": "0px"
+  },
+  "toolbar": {
+    "x": 277,
+    "y": 98,
+    "width": 642,
+    "height": 36,
+    "font": "11px Tahoma, Arial",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "address": {
+    "x": 277,
+    "y": 134,
+    "width": 642,
+    "height": 26,
+    "font": "11px Tahoma",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "sidebar": {
+    "x": 279,
+    "y": 162,
+    "width": 190,
+    "height": 327,
+    "font": "11px / 14.85px Tahoma",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(0, 0, 0)",
+    "borderRadius": "0px"
+  }
+}

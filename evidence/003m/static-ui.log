@@ -1,0 +1,13 @@
+[WebServer] (node:39684) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:27812) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [edge] › static-e2e\ui003m.spec.ts:2:1 › 003M build estática abre Painel e Notepad sem backend (3.1s)
+(node:23040) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [chrome] › static-e2e\ui003m.spec.ts:2:1 › 003M build estática abre Painel e Notepad sem backend (2.7s)
+
+  2 passed (15.8s)

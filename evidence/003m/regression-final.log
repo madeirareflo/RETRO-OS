@@ -1,0 +1,30 @@
+
+Running 102 tests using 2 workers
+
+(node:40600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:37948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok   1 [edge] › e2e\003d.spec.ts:3:1 › 003D editor localiza, substitui, salva cópia e tarefas encerram somente app virtual (4.1s)
+  ok   2 [edge] › e2e\003e.spec.ts:4:1 › 003E Game Center: museu honesto, busca, filtros, favoritos, atalho e jogo real (5.7s)
+  ok   3 [edge] › e2e\desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar (2.2s)
+  ok   4 [edge] › e2e\003e.spec.ts:5:1 › 003E editor confirma descarte e salva por diálogo compartilhado (2.0s)
+  ok   5 [edge] › e2e\desktop.spec.ts:5:1 › salvar, recarregar e reabrir texto pelo arquivo virtual (2.1s)
+  ok   6 [edge] › e2e\003e.spec.ts:6:1 › 003E Explorer: seleção Ctrl/Shift, arraste entre janelas e persistência (2.5s)
+  ok   7 [edge] › e2e\desktop.spec.ts:6:1 › temas globais, persistência, menu e screenshots (3.1s)
+  ok   9 [edge] › e2e\desktop.spec.ts:7:1 › Paint exporta PNG real com desenho (2.3s)
+  ok  10 [edge] › e2e\desktop.spec.ts:8:1 › três jogos iniciam e aceitam jogadas (2.1s)
+  ok  11 [edge] › e2e\desktop.spec.ts:9:1 › terminal, calculadora e páginas internas sem erros de console (1.8s)
+  ok  12 [edge] › e2e\desktop.spec.ts:10:1 › mobile permanece utilizável (1.3s)
+  ok   8 [edge] › e2e\dos-victory003f.spec.ts:3:1 › DOS: partida completa até vitória após recarregar save (10.2s)
+  ok  14 [edge] › e2e\explorer003d.spec.ts:2:1 › 003D Explorer: árvore, histórico, endereço, pesquisa e ordem (2.3s)
+  ok  15 [edge] › e2e\keyboard002.spec.ts:2:1 › restaurar janela devolve foco ao campo anterior (1.5s)
+  ok  16 [edge] › e2e\keyboard002.spec.ts:3:1 › protetor ativa por inatividade e sai por teclado sem perder janela (1.9s)
+DOS load/heap 1112 67108864
+  ok  13 [edge] › e2e\emulation003f.spec.ts:4:1 › DOS original: Game Center, teclado, áudio, pausa, save e saída (11.8s)
+  ok  17 [edge] › e2e\local003f.spec.ts:3:1 › Batalha Naval local: posicionamento, troca, vitória e persistência (7.1s)
+  ok  19 [edge] › e2e\local003f.spec.ts:4:1 › reinício do desktop respeita alterações de texto não salvas (2.8s)
+  ok  18 [edge] › e2e\emulation003f.spec.ts:5:1 › Paint: diálogo PNG compartilhado, gravação e descarte cancelável (7.0s)
+  ok  20 [edge] › e2e\media.spec.ts:2:1 › player importa WAV original, reproduz, pausa e troca skin (4.0s)
+  ok  21 [edge] › e2e\media003e.spec.ts:2:1 › 003E player: demo original, skins, M3U seguro e reanexação (5.0s)
+  ok  22 [edge] › e2e\media.spec.ts:3:1 › ícones arrastam, persistem e se reorganizam; menu rápido preserva aplicativos (4.3s)

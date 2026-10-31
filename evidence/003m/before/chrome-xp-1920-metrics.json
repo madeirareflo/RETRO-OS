@@ -1,0 +1,79 @@
+{
+  "taskbar": {
+    "x": 0,
+    "y": 1049,
+    "width": 1920,
+    "height": 30,
+    "font": "11px Tahoma, Arial, sans-serif",
+    "color": "rgb(23, 35, 49)",
+    "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "title": {
+    "x": 388,
+    "y": 58,
+    "width": 752,
+    "height": 26,
+    "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(255, 255, 255)",
+    "borderRadius": "5px 5px 0px 0px"
+  },
+  "desktop": {
+    "x": 0,
+    "y": -1,
+    "width": 1920,
+    "height": 1080,
+    "font": "11px Tahoma, Arial, sans-serif",
+    "color": "rgb(23, 35, 49)",
+    "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(23, 35, 49)",
+    "borderRadius": "0px"
+  },
+  "icon": {
+    "x": 0,
+    "y": 3,
+    "width": 75,
+    "height": 70,
+    "font": "11px / 13px Tahoma, Arial, sans-serif",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "1px dotted rgb(233, 241, 255)",
+    "borderRadius": "0px"
+  },
+  "toolbar": {
+    "x": 388,
+    "y": 106,
+    "width": 752,
+    "height": 44,
+    "font": "11px Tahoma, Arial",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "address": {
+    "x": 388,
+    "y": 150,
+    "width": 752,
+    "height": 26,
+    "font": "11px Tahoma",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "sidebar": {
+    "x": 390,
+    "y": 178,
+    "width": 184,
+    "height": 400,
+    "font": "11px / 14.85px Tahoma",
+    "color": "rgb(33, 61, 117)",
+    "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(33, 61, 117)",
+    "borderRadius": "0px"
+  }
+}

@@ -1,0 +1,33 @@
+
+Running 2 tests using 1 worker
+
+(node:7528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [chrome] › qa003m\behavior.spec.ts:2:1 › SkyRoads: corrida real, movimento, salto, áudio e reabertura (14.2s)
+(node:26076) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [chrome] › qa003m\behavior.spec.ts:3:1 › Painel histórico: seleção, duplo clique, teclado, busca e detalhes (3.2s)
+
+
+  1) [chrome] › qa003m\behavior.spec.ts:2:1 › SkyRoads: corrida real, movimento, salto, áudio e reabertura 
+
+    Error: expect(received).not.toBe(expected) // Object.is equality
+
+    Expected: not "60de55f3"
+
+      1 | import {test,expect} from '@playwright/test';import fs from 'node:fs';import {boot,launch,focus,keys,hold,frame,patch,run} from './helpers';
+    > 2 | test('SkyRoads: corrida real, movimento, salto, áudio e reabertura',async({page},info)=>{await boot(page);await launch(page,'skyroads');await keys(page,['Enter'],1800);await page.waitForTimeout(1000);const before=await patch(page,'room');await page.getByRole('button',{name:'Ativar áudio do jogo',exact:true}).click();await focus(page);await hold(page,'ArrowUp',800);await page.waitForTimeout(400);expect(await patch(page,'room')).not.toBe(before);await hold(page,'Space',300);await page.waitForTimeout(500);const audio=await frame(page).evaluate(()=>window.retroDiagnostics.audioPeak);expect(audio).toBeGreaterThan(0);await page.screenshot({path:`evidence/003m/${info.project.name}-skyroads-racing.png`});await keys(page,['Escape'],1000);await page.screenshot({path:`evidence/003m/${info.project.name}-skyroads-menu.png`});await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await expect(page.locator('.dos-game')).toHaveCount(0);await launch(page,'skyroads');await expect(page.locator('.dos-game')).toHaveAttribute('data-ready','true');fs.writeFileSync(`evidence/003m/${info.project.name}-skyroads-execution.json`,JSON.stringify({video:true,movement:true,jumpKeySent:true,audioPeak:audio,reopened:true,nativeProgressSaveVerified:false},null,2))});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^
+      3 | test('Painel histórico: seleção, duplo clique, teclado, busca e detalhes',async({page},info)=>{await boot(page);await run(page,'Painel de Controle');await page.getByRole('button',{name:'Todos os itens do Painel de Controle'}).click();const panel=page.locator('.period-control-panel');await expect(panel).toBeVisible();await panel.getByRole('button',{name:'Sistema',exact:true}).click();await expect(panel.getByRole('button',{name:'Sistema',exact:true})).toHaveAttribute('aria-pressed','true');await panel.getByRole('button',{name:'Exibir',exact:true}).click();await panel.getByRole('button',{name:'Detalhes',exact:true}).click();await expect(page.locator('.cp-items')).toHaveClass(/cp-details/);await page.getByLabel('Pesquisar no Painel').fill('Sons');await expect(page.locator('.cp-items>button')).toHaveCount(1);await page.locator('.cp-items>button').focus();await page.keyboard.press('Enter');await expect(page.getByRole('tabpanel',{name:'Sons',exact:true})).toBeVisible();await page.getByRole('button',{name:'Todos os itens do Painel de Controle'}).click();await panel.getByRole('button',{name:'Vídeo',exact:true}).dblclick();await expect(page.getByRole('tabpanel',{name:'Aparência',exact:true})).toBeVisible();await page.screenshot({path:`evidence/003m/${info.project.name}-panel-behavior.png`})});
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003M\qa003m\behavior.spec.ts:2:436
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results-003m\behavior-SkyRoads-corrida--a037f-to-salto-áudio-e-reabertura-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-003m\behavior-SkyRoads-corrida--a037f-to-salto-áudio-e-reabertura-chrome\error-context.md
+
+  1 failed
+    [chrome] › qa003m\behavior.spec.ts:2:1 › SkyRoads: corrida real, movimento, salto, áudio e reabertura 
+  1 passed (20.8s)

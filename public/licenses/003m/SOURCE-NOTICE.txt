@@ -1,0 +1,11 @@
+The FastDoom binary FDOOM13H.EXE is unmodified release1.0.0 (GPL-2.0-or-later).
+FastDoom-source-1.0.0.zip contains the corresponding FASTDOOM source tree and
+available top-level build documentation/scripts from upstream tag1.0.0, commit
+c092c9d. This is a source-only repack, not the original upstream archive. Optional
+soundbank synthgs.sbk, auxiliary WAD/font/palette resources for other video modes,
+setup utilities and prebuilt executables were omitted. None is used by this
+Mode13h payload. Build toolchain dependencies (Open Watcom / assembler / DOS32A)
+are external prerequisites; this mission did not rebuild the engine. Upstream:
+https://github.com/viti95/FastDoom/tree/1.0.0
+Full upstream archive hashes and individual shipped binary/data hashes are in the
+003M asset manifest. Do not confuse the source ZIP with a playable game package.

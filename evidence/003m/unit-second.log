@@ -1,0 +1,21 @@
+
+ RUN  v3.2.7 C:/Users/Davi LRD/.codex/.chatgpt-projects/g-p-6a3eef711d7881918fb955604f45fe02/RETRO-OS-003M
+
+ ✓ src/tests/catalog003e.test.ts (3 tests) 19ms
+ ✓ src/tests/geometry003k.test.ts (3 tests) 12ms
+ ✓ src/tests/package003l.test.ts (14 tests) 21ms
+ ✓ src/tests/preferences003k.test.ts (4 tests) 6ms
+ ✓ src/tests/playlist003e.test.ts (3 tests) 26ms
+ ✓ src/tests/vfs.test.ts (10 tests) 26ms
+ ✓ src/tests/backup.test.ts (4 tests) 47ms
+ ✓ src/tests/launcher003g.test.ts (5 tests) 15ms
+ ✓ src/tests/museum003f.test.ts (4 tests) 9ms
+ ✓ src/tests/core.test.ts (16 tests) 40ms
+ ✓ src/tests/builtin003m.test.mjs (5 tests) 2103ms
+   ✓ 003M distribuições autorizadas e fronteira DOS > 'freedoom' possui pacote íntegro e executável real  1969ms
+
+ Test Files  11 passed (11)
+      Tests  71 passed (71)
+   Start at  16:50:46
+   Duration  3.74s (transform 2.24s, setup 0ms, collect 3.59s, tests 2.32s, environment 5ms, prepare 5.80s)
+

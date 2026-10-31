@@ -1,0 +1,38 @@
+
+ RUN  v3.2.7 C:/Users/Davi LRD/.codex/.chatgpt-projects/g-p-6a3eef711d7881918fb955604f45fe02/RETRO-OS-003M
+
+ ✓ src/tests/playlist003e.test.ts (3 tests) 21ms
+ ✓ src/tests/package003l.test.ts (14 tests) 15ms
+ ✓ src/tests/catalog003e.test.ts (3 tests) 18ms
+ ✓ src/tests/preferences003k.test.ts (4 tests) 5ms
+ ✓ src/tests/geometry003k.test.ts (3 tests) 5ms
+ ✓ src/tests/vfs.test.ts (10 tests) 24ms
+ ✓ src/tests/backup.test.ts (4 tests) 105ms
+ ✓ src/tests/museum003f.test.ts (4 tests) 10ms
+ ✓ src/tests/launcher003g.test.ts (5 tests) 19ms
+ ✓ src/tests/core.test.ts (16 tests) 51ms
+ ❯ src/tests/builtin003m.test.mjs (5 tests | 1 failed) 6387ms
+   × 003M distribuições autorizadas e fronteira DOS > 'freedoom' possui pacote íntegro e executável real 6114ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ 003M distribuições autorizadas e fronteira DOS > 'klab' possui pacote íntegro e executável real 136ms
+   ✓ 003M distribuições autorizadas e fronteira DOS > 'skyroads' possui pacote íntegro e executável real 132ms
+   ✓ 003M distribuições autorizadas e fronteira DOS > LE de DOS revisado não libera PE ou importações comuns 3ms
+   ✓ 003M distribuições autorizadas e fronteira DOS > IDs não se repetem nem substituem o Disquete original 0ms
+
+ Test Files  1 failed | 10 passed (11)
+      Tests  1 failed | 70 passed (71)
+   Start at  16:56:55
+   Duration  9.22s (transform 9.04s, setup 0ms, collect 10.30s, tests 6.66s, environment 6ms, prepare 9.75s)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/tests/builtin003m.test.mjs > 003M distribuições autorizadas e fronteira DOS > 'freedoom' possui pacote íntegro e executável real
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ src/tests/builtin003m.test.mjs:2:84
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+

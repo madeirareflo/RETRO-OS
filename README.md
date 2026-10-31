@@ -1,6 +1,8 @@
-# Checkpoint privado atual: RETRO OS003L
+# Checkpoint privado atual: RETRO OS 003M
 
-Integração WORK+Anti, sem publicação. Leia [relatório003L](RETRO-OS-003L-REPORT.md) e [execução Windows](EXECUTAR-003L-WINDOWS.md). Dev: http://127.0.0.1:4376. Build: npm run build. Validação: node scripts/validate-003l.mjs.
+Continuação local da 003L, sem publicação. Leia [relatório 003M](RETRO-OS-003M-REPORT.md), [execução Windows](EXECUTAR-003M.md) e [roteiro manual dos jogos](HOMOLOGACAO-MANUAL-003M.md).
+
+Dev: http://127.0.0.1:4476/ · Build: pnpm build · Verificação de interface: node scripts/validate-ui003m.mjs. Os testes adicionais de jogos ficam com o usuário por orientação posterior. Evidências já obtidas estão preservadas.
 
 Documentação histórica preservada abaixo.
 

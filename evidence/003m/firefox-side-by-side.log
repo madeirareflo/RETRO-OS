@@ -1,0 +1,10 @@
+
+TimeCreated : 31/10/2026 16:31:15
+Id          : 33
+Message     : Falha na geração de contexto de ativação para "C:\Users\Davi LRD\AppData\Local\ms-playwright\firefox-1555\firefox\firefox.exe".  Assembly dependente mozglue,language="&#x2a;",type="win32",version="1.0.0.0" não pôde ser localizado. Use o arquivo sxstrace.exe para obter um diagnóstico detalhado.
+
+TimeCreated : 31/10/2026 16:27:38
+Id          : 33
+Message     : Falha na geração de contexto de ativação para "C:\Users\Davi LRD\AppData\Local\ms-playwright\firefox-1555\firefox\firefox.exe".  Assembly dependente mozglue,language="&#x2a;",type="win32",version="1.0.0.0" não pôde ser localizado. Use o arquivo sxstrace.exe para obter um diagnóstico detalhado.
+
+

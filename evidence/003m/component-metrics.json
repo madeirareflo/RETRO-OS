@@ -1,0 +1,4658 @@
+[
+  {
+    "file": "chrome-classic-1024-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1024,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1024,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 744.5,
+        "width": 57.484375,
+        "height": 22,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 940,
+        "y": 744.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 765,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "chrome-classic-1366-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1366,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 768,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1366,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 744.5,
+        "width": 57.484375,
+        "height": 22,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 1282,
+        "y": 744.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 833,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 768,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "chrome-classic-1920-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 1052,
+        "width": 1920,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 1052,
+        "width": 1920,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 1056.5,
+        "width": 57.484375,
+        "height": 22,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 1836,
+        "y": 1056.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 944,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "chrome-classic-800-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 572,
+        "width": 800,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 164,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 164,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 164,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 166,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 572,
+        "width": 800,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 164,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 576.5,
+        "width": 57.484375,
+        "height": 22,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 716,
+        "y": 576.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 720,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 164,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 164,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 166,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "chrome-win2000-1024-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1024,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1024,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 744.5,
+        "width": 64.15625,
+        "height": 22,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 940,
+        "y": 744.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 795,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "chrome-win2000-1366-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1366,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1366,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 744.5,
+        "width": 64.15625,
+        "height": 22,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 1282,
+        "y": 744.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 863,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "chrome-win2000-1920-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 1052,
+        "width": 1920,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 1052,
+        "width": 1920,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 1056.5,
+        "width": 64.15625,
+        "height": 22,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 1836,
+        "y": 1056.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 974,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "chrome-win2000-800-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 572,
+        "width": 800,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 154,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 154,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 154,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 156,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 572,
+        "width": 800,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 154,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 576.5,
+        "width": 64.15625,
+        "height": 22,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 716,
+        "y": 576.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 740,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 154,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 154,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 156,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "chrome-xp-1024-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 737,
+        "width": 1024,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1024,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 737,
+        "width": 1024,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "startButton": {
+        "x": 0,
+        "y": 737.5,
+        "width": 107.875,
+        "height": 30,
+        "font": "italic 700 17px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(138, 199, 124), rgb(63, 152, 69) 12%, rgb(52, 130, 50) 55%, rgb(60, 150, 60) 87%, rgb(32, 104, 34)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px 13px 13px 0px"
+      },
+      "tray": {
+        "x": 924,
+        "y": 737.5,
+        "width": 100,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(32, 177, 243), rgb(18, 148, 230) 15%, rgb(13, 146, 233) 85%, rgb(8, 116, 204)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 892,
+        "y": 59.5,
+        "width": 67,
+        "height": 21,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1024,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "chrome-xp-1366-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 737,
+        "width": 1366,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1366,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 737,
+        "width": 1366,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "startButton": {
+        "x": 0,
+        "y": 737.5,
+        "width": 107.875,
+        "height": 30,
+        "font": "italic 700 17px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(138, 199, 124), rgb(63, 152, 69) 12%, rgb(52, 130, 50) 55%, rgb(60, 150, 60) 87%, rgb(32, 104, 34)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px 13px 13px 0px"
+      },
+      "tray": {
+        "x": 1266,
+        "y": 737.5,
+        "width": 100,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(32, 177, 243), rgb(18, 148, 230) 15%, rgb(13, 146, 233) 85%, rgb(8, 116, 204)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 960,
+        "y": 59.5,
+        "width": 67,
+        "height": 21,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1366,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "chrome-xp-1920-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 1049,
+        "width": 1920,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 1049,
+        "width": 1920,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "startButton": {
+        "x": 0,
+        "y": 1049.5,
+        "width": 107.875,
+        "height": 30,
+        "font": "italic 700 17px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(138, 199, 124), rgb(63, 152, 69) 12%, rgb(52, 130, 50) 55%, rgb(60, 150, 60) 87%, rgb(32, 104, 34)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px 13px 13px 0px"
+      },
+      "tray": {
+        "x": 1820,
+        "y": 1049.5,
+        "width": 100,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(32, 177, 243), rgb(18, 148, 230) 15%, rgb(13, 146, 233) 85%, rgb(8, 116, 204)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 1071,
+        "y": 59.5,
+        "width": 67,
+        "height": 21,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "chrome-xp-800-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 569,
+        "width": 800,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 44,
+        "y": 23,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 800,
+        "height": 600,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 44,
+        "y": 71,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 44,
+        "y": 115,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 46,
+        "y": 143,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 569,
+        "width": 800,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 44,
+        "y": 23,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "startButton": {
+        "x": 0,
+        "y": 569.5,
+        "width": 107.875,
+        "height": 30,
+        "font": "italic 700 17px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(138, 199, 124), rgb(63, 152, 69) 12%, rgb(52, 130, 50) 55%, rgb(60, 150, 60) 87%, rgb(32, 104, 34)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px 13px 13px 0px"
+      },
+      "tray": {
+        "x": 700,
+        "y": 569.5,
+        "width": 100,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(32, 177, 243), rgb(18, 148, 230) 15%, rgb(13, 146, 233) 85%, rgb(8, 116, 204)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 727,
+        "y": 24.5,
+        "width": 67,
+        "height": 21,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 800,
+        "height": 600,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 44,
+        "y": 71,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 44,
+        "y": 115,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 46,
+        "y": 143,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-classic-1024-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1024,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1024,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 744.5,
+        "width": 57.484375,
+        "height": 22,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 940,
+        "y": 744.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 765,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-classic-1366-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1366,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 768,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1366,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 744.5,
+        "width": 57.484375,
+        "height": 22,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 1282,
+        "y": 744.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 833,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 768,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-classic-1920-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 1052,
+        "width": 1920,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 1052,
+        "width": 1920,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 1056.5,
+        "width": 57.484375,
+        "height": 22,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 1836,
+        "y": 1056.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 944,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-classic-800-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 572,
+        "width": 800,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 164,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 164,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 164,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 166,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 572,
+        "width": 800,
+        "height": 28,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 164,
+        "y": 59,
+        "width": 612,
+        "height": 18,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 576.5,
+        "width": 57.484375,
+        "height": 22,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 716,
+        "y": 576.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 720,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 164,
+        "y": 98,
+        "width": 612,
+        "height": 58,
+        "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 164,
+        "y": 156,
+        "width": 612,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 166,
+        "y": 184,
+        "width": 170,
+        "height": 305,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-win2000-1024-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1024,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1024,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 744.5,
+        "width": 64.15625,
+        "height": 22,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 940,
+        "y": 744.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 795,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-win2000-1366-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1366,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 740,
+        "width": 1366,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 744.5,
+        "width": 64.15625,
+        "height": 22,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 1282,
+        "y": 744.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 863,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-win2000-1920-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 1052,
+        "width": 1920,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 1052,
+        "width": 1920,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 1056.5,
+        "width": 64.15625,
+        "height": 22,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 1836,
+        "y": 1056.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 974,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-win2000-800-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 572,
+        "width": 800,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 154,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 154,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 154,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 156,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 572,
+        "width": 800,
+        "height": 28,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 154,
+        "y": 59,
+        "width": 642,
+        "height": 18,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "startButton": {
+        "x": 2,
+        "y": 576.5,
+        "width": 64.15625,
+        "height": 22,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "tray": {
+        "x": 716,
+        "y": 576.5,
+        "width": 82,
+        "height": 22,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px inset rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 740,
+        "y": 61,
+        "width": 54,
+        "height": 14,
+        "font": "700 11px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 4,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 154,
+        "y": 98,
+        "width": 642,
+        "height": 36,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 154,
+        "y": 134,
+        "width": 642,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 156,
+        "y": 162,
+        "width": 190,
+        "height": 327,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-xp-1024-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 737,
+        "width": 1024,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1024,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 737,
+        "width": 1024,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 209,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "startButton": {
+        "x": 0,
+        "y": 737.5,
+        "width": 107.875,
+        "height": 30,
+        "font": "italic 700 17px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(138, 199, 124), rgb(63, 152, 69) 12%, rgb(52, 130, 50) 55%, rgb(60, 150, 60) 87%, rgb(32, 104, 34)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px 13px 13px 0px"
+      },
+      "tray": {
+        "x": 924,
+        "y": 737.5,
+        "width": 100,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(32, 177, 243), rgb(18, 148, 230) 15%, rgb(13, 146, 233) 85%, rgb(8, 116, 204)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 892,
+        "y": 59.5,
+        "width": 67,
+        "height": 21,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1024,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 209,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 209,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 211,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-xp-1366-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 737,
+        "width": 1366,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1366,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 737,
+        "width": 1366,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 277,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "startButton": {
+        "x": 0,
+        "y": 737.5,
+        "width": 107.875,
+        "height": 30,
+        "font": "italic 700 17px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(138, 199, 124), rgb(63, 152, 69) 12%, rgb(52, 130, 50) 55%, rgb(60, 150, 60) 87%, rgb(32, 104, 34)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px 13px 13px 0px"
+      },
+      "tray": {
+        "x": 1266,
+        "y": 737.5,
+        "width": 100,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(32, 177, 243), rgb(18, 148, 230) 15%, rgb(13, 146, 233) 85%, rgb(8, 116, 204)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 960,
+        "y": 59.5,
+        "width": 67,
+        "height": 21,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1366,
+        "height": 768,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 277,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 277,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 279,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-xp-1920-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 1049,
+        "width": 1920,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 1049,
+        "width": 1920,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 388,
+        "y": 58,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "startButton": {
+        "x": 0,
+        "y": 1049.5,
+        "width": 107.875,
+        "height": 30,
+        "font": "italic 700 17px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(138, 199, 124), rgb(63, 152, 69) 12%, rgb(52, 130, 50) 55%, rgb(60, 150, 60) 87%, rgb(32, 104, 34)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px 13px 13px 0px"
+      },
+      "tray": {
+        "x": 1820,
+        "y": 1049.5,
+        "width": 100,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(32, 177, 243), rgb(18, 148, 230) 15%, rgb(13, 146, 233) 85%, rgb(8, 116, 204)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 1071,
+        "y": 59.5,
+        "width": 67,
+        "height": 21,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 1920,
+        "height": 1080,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 388,
+        "y": 106,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 388,
+        "y": 150,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 390,
+        "y": 178,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  {
+    "file": "edge-xp-800-metrics.json",
+    "before": {
+      "taskbar": {
+        "x": 0,
+        "y": 569,
+        "width": 800,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 44,
+        "y": 23,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 800,
+        "height": 600,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 44,
+        "y": 71,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 44,
+        "y": 115,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 46,
+        "y": 143,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    },
+    "after": {
+      "taskbar": {
+        "x": 0,
+        "y": 569,
+        "width": 800,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(63, 137, 237), rgb(40, 98, 219) 12%, rgb(36, 94, 219) 88%, rgb(25, 66, 170)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "title": {
+        "x": 44,
+        "y": 23,
+        "width": 752,
+        "height": 26,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(111, 167, 255) 0px, rgb(20, 113, 245) 10%, rgb(0, 85, 229) 48%, rgb(6, 89, 219) 80%, rgb(0, 63, 180)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "5px 5px 0px 0px"
+      },
+      "startButton": {
+        "x": 0,
+        "y": 569.5,
+        "width": 107.875,
+        "height": 30,
+        "font": "italic 700 17px Tahoma, Arial",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(138, 199, 124), rgb(63, 152, 69) 12%, rgb(52, 130, 50) 55%, rgb(60, 150, 60) 87%, rgb(32, 104, 34)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px 13px 13px 0px"
+      },
+      "tray": {
+        "x": 700,
+        "y": 569.5,
+        "width": 100,
+        "height": 30,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(32, 177, 243), rgb(18, 148, 230) 15%, rgb(13, 146, 233) 85%, rgb(8, 116, 204)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "controlButtons": {
+        "x": 727,
+        "y": 24.5,
+        "width": 67,
+        "height": 21,
+        "font": "700 13.3333px \"Trebuchet MS\", Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      "desktop": {
+        "x": 0,
+        "y": -1,
+        "width": 800,
+        "height": 600,
+        "font": "11px Tahoma, Arial, sans-serif",
+        "color": "rgb(23, 35, 49)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(23, 35, 49)",
+        "borderRadius": "0px"
+      },
+      "icon": {
+        "x": 0,
+        "y": 3,
+        "width": 75,
+        "height": 70,
+        "font": "11px / 13px Tahoma, Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "1px dotted rgb(233, 241, 255)",
+        "borderRadius": "0px"
+      },
+      "toolbar": {
+        "x": 44,
+        "y": 71,
+        "width": 752,
+        "height": 44,
+        "font": "11px Tahoma, Arial",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(238, 236, 228) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "address": {
+        "x": 44,
+        "y": 115,
+        "width": 752,
+        "height": 26,
+        "font": "11px Tahoma",
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(236, 233, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "",
+        "borderRadius": "0px"
+      },
+      "sidebar": {
+        "x": 46,
+        "y": 143,
+        "width": 184,
+        "height": 400,
+        "font": "11px / 14.85px Tahoma",
+        "color": "rgb(33, 61, 117)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(123, 153, 225), rgb(99, 126, 214)) repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(33, 61, 117)",
+        "borderRadius": "0px"
+      }
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    name: 'freedoom-phase1.zip',
+    sha256: 'd5339ddcb11816ae44c7b14cf5ac19f083481d0b75b1fd11203efe147d63ed44',
+    bytes: 10909138
+  },
+  {
+    name: 'ken-labfull.zip',
+    sha256: '643aa0ca8d1a7d2c88afecd952da00f3b912be8b83c4c1d2f4ab9b50491fadfd',
+    bytes: 940242
+  },
+  {
+    name: 'skyroads.zip',
+    sha256: '24762fe14196a642224288fe2063c9d0c0033be9c5b4b2f97fded09390803ee4',
+    bytes: 593740
+  }
+]

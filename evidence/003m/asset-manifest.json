@@ -1,0 +1,100 @@
+{
+  "origin": {
+    "freedoom": "https://github.com/freedoom/freedoom/releases/tag/v0.13.0",
+    "fastdoom": "https://github.com/viti95/FastDoom/releases/tag/1.0.0",
+    "ken": "https://advsys.net/ken/klab/labfull.zip",
+    "skyroads": "http://www.bluemoon.ee/history/skyroads/skyroads.zip"
+  },
+  "packages": [
+    {
+      "name": "freedoom-phase1.zip",
+      "sha256": "d5339ddcb11816ae44c7b14cf5ac19f083481d0b75b1fd11203efe147d63ed44",
+      "bytes": 10909138
+    },
+    {
+      "name": "ken-labfull.zip",
+      "sha256": "643aa0ca8d1a7d2c88afecd952da00f3b912be8b83c4c1d2f4ab9b50491fadfd",
+      "bytes": 940242
+    },
+    {
+      "name": "skyroads.zip",
+      "sha256": "24762fe14196a642224288fe2063c9d0c0033be9c5b4b2f97fded09390803ee4",
+      "bytes": 593740
+    }
+  ],
+  "freedoomFiles": [
+    {
+      "name": "FDOOM.CFG",
+      "sha256": "0fd4b3bf580566895dd8361722e8daa7a8c15ba5138f11df29e5e4c5ec008a1f",
+      "bytes": 77
+    },
+    {
+      "name": "FDOOM13H.EXE",
+      "sha256": "ed51e5cdaa55e3375b87505d6df7c36b2dc2605c63b2c67090560c5a933d52b8",
+      "bytes": 840496
+    },
+    {
+      "name": "FREEDM1.WAD",
+      "sha256": "7323bcc168c5a45ff10749b339960e98314740a734c30d4b9f3337001f9e703d",
+      "bytes": 28795076
+    },
+    {
+      "name": "FREEDOOM-COPYING.txt",
+      "sha256": "7c62f2c520769c798774f416637eec4921e5f0aafdac1245ae7c8a8cf65fe102",
+      "bytes": 1644
+    },
+    {
+      "name": "FREEDOOM-CREDITS.txt",
+      "sha256": "72364333d295c598d75ef9553d3b3661ad0b60e27271c87b7637c74b2f46918a",
+      "bytes": 15872
+    },
+    {
+      "name": "FREEDOOM-MUSIC-CREDITS.txt",
+      "sha256": "2bb77677bbc4e587bba44ccb6514ee0f5397c7bb8ae9580b9188d3d6a57c0a31",
+      "bytes": 9388
+    },
+    {
+      "name": "FASTDOOM-LICENSE.txt",
+      "sha256": "db296f2f7f35bca3a174efb0eb392b3b17bd94b341851429a3dff411b1c2fc73",
+      "bytes": 18046
+    },
+    {
+      "name": "FASTDOOM-README.txt",
+      "sha256": "4ea4c52667a7e7687cea322aa2c216f733636efd935adcbbc165e56e70ff7169",
+      "bytes": 15871
+    }
+  ],
+  "upstream": [
+    {
+      "name": "freedoom-0.13.0.zip",
+      "sha256": "3f9b264f3e3ce503b4fb7f6bdcb1f419d93c7b546f4df3e874dd878db9688f59",
+      "bytes": 24143781
+    },
+    {
+      "name": "FastDoom_1.0.0.zip",
+      "sha256": "48abba2b53c4965b66416cc29bced6a17c226fd033e482325bcb28f8dc0b7be9",
+      "bytes": 15056515
+    },
+    {
+      "name": "FastDoom-source-1.0.0.zip",
+      "sha256": "c079b3c8d3ad93765063ad35de14957aa1f9daaae91331302538024370efff25",
+      "bytes": 2295922
+    },
+    {
+      "name": "labfull.zip",
+      "sha256": "643aa0ca8d1a7d2c88afecd952da00f3b912be8b83c4c1d2f4ab9b50491fadfd",
+      "bytes": 940242
+    },
+    {
+      "name": "skyroads.zip",
+      "sha256": "24762fe14196a642224288fe2063c9d0c0033be9c5b4b2f97fded09390803ee4",
+      "bytes": 593740
+    }
+  ],
+  "correspondingSource": {
+    "name": "public/licenses/003m/FastDoom-source-1.0.0.zip",
+    "bytes": 848456,
+    "sha256": "290ed283fdb7a12b6089214bf04cf8c366efade4da16e8c0116c90f92a7c7b9e",
+    "format": "source-only repack; see SOURCE-NOTICE.txt"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "taskbar": {
+    "width": 1366,
+    "height": 28,
+    "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(192, 192, 192)",
+    "borderRadius": "0px"
+  },
+  "titlebar": {
+    "width": 612,
+    "height": 18,
+    "font": "700 11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+    "color": "rgb(255, 255, 255)",
+    "background": "linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208))",
+    "borderRadius": "0px"
+  },
+  "desktop": {
+    "width": 1366,
+    "height": 768,
+    "font": "11px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(0, 128, 128)",
+    "borderRadius": "0px"
+  },
+  "icon": {
+    "width": 75,
+    "height": 70,
+    "font": "11px / 13px \"MS Sans Serif\", \"Microsoft Sans Serif\", Arial, sans-serif",
+    "color": "rgb(255, 255, 255)",
+    "background": "none",
+    "borderRadius": "0px"
+  },
+  "sidebar": {
+    "width": 170,
+    "height": 305,
+    "font": "11px / 14.85px Tahoma",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(255, 255, 255)",
+    "borderRadius": "0px"
+  }
+}
