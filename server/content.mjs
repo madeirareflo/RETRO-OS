@@ -1,0 +1,1 @@
+export function removePost(db,id){db.prepare('WITH RECURSIVE tree(id) AS (SELECT id FROM posts WHERE id=? UNION ALL SELECT p.id FROM posts p JOIN tree t ON p.parent=t.id) DELETE FROM posts WHERE id IN (SELECT id FROM tree)').run(id)}
