@@ -1,0 +1,21 @@
+
+Running 1 test using 1 worker
+
+(node:28516) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [firefox] › e2e\desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar (8ms)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [firefox] › e2e\desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar 
+
+    Error: browserType.launch: spawn UNKNOWN
+    Call log:
+      - <launching> C:\Users\Davi LRD\AppData\Local\ms-playwright\firefox-1555\firefox\firefox.exe -no-remote -headless -profile C:\Users\DAVILR~1\AppData\Local\Temp\playwright_firefoxdev_profile-oftJHA -juggler-pipe -silent
+
+
+    Error Context: test-results\desktop-BIOS-janelas-multi-05b9b-inimizar-maximizar-e-fechar-firefox\error-context.md
+
+  1 failed
+    [firefox] › e2e\desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar 
+  1 error was not a part of any test, see above for details

@@ -1,3 +1,9 @@
+# Checkpoint privado atual: RETRO OS003L
+
+Integração WORK+Anti, sem publicação. Leia [relatório003L](RETRO-OS-003L-REPORT.md) e [execução Windows](EXECUTAR-003L-WINDOWS.md). Dev: http://127.0.0.1:4376. Build: npm run build. Validação: node scripts/validate-003l.mjs.
+
+Documentação histórica preservada abaixo.
+
 # RETRO OS 003F — museu offline
 
 Continuação privada do RETRO OS, sem reconstrução. Desktop nostálgico com temas

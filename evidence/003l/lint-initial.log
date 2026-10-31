@@ -1,0 +1,6 @@
+
+C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003L-INTEGRATION\src\launcher\RetroGameLauncher.tsx
+  3:61  error  'saveCustomGame' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+

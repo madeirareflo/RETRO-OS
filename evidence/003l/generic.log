@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:25228) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chrome] › qa003l\integration.spec.ts:12:1 › Pacote genérico não herda contador ou controles exclusivos do original (7.3s)
+
+  1 passed (11.5s)

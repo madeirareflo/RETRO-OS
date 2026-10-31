@@ -1,0 +1,87 @@
+[
+  {
+    "game": "skyroads",
+    "bytes": 591011,
+    "sha256": "5a0a07c13bd06b3e9ab323e8426008f230565cea402d4c49aa2e2a6da235da6b",
+    "files": [
+      "ANIM.LZS",
+      "CARS.LZS",
+      "DASHBRD.LZS",
+      "DEMO.REC",
+      "FUL_DISP.DAT",
+      "GOMENU.LZS",
+      "HELPMENU.LZS",
+      "INTRO.LZS",
+      "INTRO.SND",
+      "MAINMENU.LZS",
+      "MUZAX.LZS",
+      "OXY_DISP.DAT",
+      "readme.txt",
+      "ROADS.LZS",
+      "SETMENU.LZS",
+      "SFX.SND",
+      "SKYROADS.EXE",
+      "SPEED.DAT",
+      "TREKDAT.LZS",
+      "WORLD0.LZS",
+      "WORLD1.LZS",
+      "WORLD2.LZS",
+      "WORLD3.LZS",
+      "WORLD4.LZS",
+      "WORLD5.LZS",
+      "WORLD6.LZS",
+      "WORLD7.LZS",
+      "WORLD8.LZS",
+      "WORLD9.LZS"
+    ],
+    "licenseCandidates": [
+      "readme.txt"
+    ],
+    "distributedIn003L": false
+  },
+  {
+    "game": "klab",
+    "bytes": 957196,
+    "sha256": "21621c1d85503e7c865b103aaaf97f6abffc43ee84f6863e3547a5e2bdcad7d6",
+    "files": [
+      "BOARDS.KZP",
+      "HELPME.DOC",
+      "HINTS.TXT",
+      "HISCORE.DAT",
+      "INSTS.DAT",
+      "KEN.EXE",
+      "KENSBFIX.EXE",
+      "LAB3D.KZP",
+      "README.TXT",
+      "SAVGAME4.DAT",
+      "SAVGAME5.DAT",
+      "SAVGAME6.DAT",
+      "SAVGAME7.DAT",
+      "SETUP.EXE",
+      "SONGS.KZP",
+      "SOUNDS.KZP",
+      "STORY.KZP",
+      "TABLES.DAT",
+      "WALLS.KZP"
+    ],
+    "licenseCandidates": [
+      "README.TXT"
+    ],
+    "distributedIn003L": false
+  },
+  {
+    "game": "freedoom",
+    "bytes": 10658972,
+    "sha256": "17fba0995d0793eb4cb90bf4d84830f900d27aabd9e5cf5b2bb8c09de33b24f0",
+    "files": [
+      "DOOM.BAT",
+      "DOOM.WAD",
+      "FDOOM.EXE",
+      "FREEDOOM_COPYING.txt"
+    ],
+    "licenseCandidates": [
+      "FREEDOOM_COPYING.txt"
+    ],
+    "distributedIn003L": false
+  }
+]

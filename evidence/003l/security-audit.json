@@ -1,0 +1,24 @@
+{
+  "branch": "development/retro-os-003l-integration",
+  "head": "0d43f13c0daa33251ce19d826fe212959bfc13a0",
+  "workBase": "0d43f13c0daa33251ce19d826fe212959bfc13a0",
+  "antiSource": "df29402832e8ff143d5c11ab20dcb6636fa6a081",
+  "publicMain": "23096cd902c9aef9c4d358bf0c8b9165c6b89ba3",
+  "protectedChanges": [],
+  "forbiddenBuildFiles": [],
+  "payloads": [
+    "dist/emulation/DISQUETE.COM",
+    "dist/vendor/js-dos-6.22.60/SOURCE.zip"
+  ],
+  "unexpectedPayloads": [],
+  "mediaInDeliveredHistory": [],
+  "databasesInHistory": [],
+  "originalCom": {
+    "sha256": "f0c50f1717cd8a12ddbdd52addb675e79e9fb1b393ceb35a8af3f44bd3084726",
+    "bytes": 1955
+  },
+  "currentTextFiles": 200,
+  "historyTextBlobs": 416,
+  "credentialPatternFindings": [],
+  "limitations": "Escaneamento de padrões/nome, não pentest nem prova absoluta de ausência de PII em imagens/arquivos compactados. Histórico examinado é HEAD, o mesmo que será incluído no bundle de branch única."
+}

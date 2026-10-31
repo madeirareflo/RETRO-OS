@@ -1,0 +1,11 @@
+
+Running 21 tests using 2 workers
+
+(node:43208) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:10204) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chrome] › qa003l\native.spec.ts:2:1 › Pacote real, save nativo, encerramento do navegador e restauração no jogo (17.1s)
+  x   2 [chrome] › qa003l\integration.spec.ts:2:1 › Validação negativa, cancelamento, duplicados e isolamento de remoção (1.5m)
+(node:10208) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

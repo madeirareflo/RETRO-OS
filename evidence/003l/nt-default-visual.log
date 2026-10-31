@@ -1,0 +1,17 @@
+
+Running 8 tests using 2 workers
+
+(node:19752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21108) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [edge] › qa003l\integration.spec.ts:6:127 › Visual win2000 800x600 (7.6s)
+  ok 2 [chrome] › qa003l\integration.spec.ts:6:127 › Visual win2000 800x600 (7.5s)
+  ok 3 [edge] › qa003l\integration.spec.ts:6:127 › Visual win2000 1024x768 (6.0s)
+  ok 4 [chrome] › qa003l\integration.spec.ts:6:127 › Visual win2000 1024x768 (5.9s)
+  ok 6 [chrome] › qa003l\integration.spec.ts:6:127 › Visual win2000 1366x768 (6.3s)
+  ok 5 [edge] › qa003l\integration.spec.ts:6:127 › Visual win2000 1366x768 (6.4s)
+  ok 8 [edge] › qa003l\integration.spec.ts:6:127 › Visual win2000 1920x1080 (6.2s)
+  ok 7 [chrome] › qa003l\integration.spec.ts:6:127 › Visual win2000 1920x1080 (6.3s)
+
+  8 passed (28.7s)

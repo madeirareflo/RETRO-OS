@@ -1,0 +1,40 @@
+{
+  "channel": "msedge",
+  "fixtureSha256": "fc326a0569d1ce2a535cf8eae8f10c7562d4991b0eefe99176f1d4426f7649b7",
+  "gameId": "imported-7745e093-8bd8-423d-aba3-0328662cda93",
+  "nativeSave": {
+    "bytes": 8,
+    "sha256": "0dc7a7d92c2e5e82efc29afd7d87afff7fd4441940a9c4070c5626708cb8986a",
+    "values": [
+      34,
+      0,
+      1,
+      3,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  "restoredSaveSha256": "0dc7a7d92c2e5e82efc29afd7d87afff7fd4441940a9c4070c5626708cb8986a",
+  "restoredState": [
+    34,
+    0,
+    1,
+    3,
+    0,
+    0,
+    1,
+    1
+  ],
+  "freshState": [
+    33,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    1
+  ]
+}

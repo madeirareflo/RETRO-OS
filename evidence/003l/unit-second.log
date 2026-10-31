@@ -1,0 +1,19 @@
+
+ RUN  v3.2.7 C:/Users/Davi LRD/.codex/.chatgpt-projects/g-p-6a3eef711d7881918fb955604f45fe02/RETRO-OS-003L-INTEGRATION
+
+ ✓ src/tests/package003l.test.ts (14 tests) 14ms
+ ✓ src/tests/playlist003e.test.ts (3 tests) 19ms
+ ✓ src/tests/backup.test.ts (4 tests) 36ms
+ ✓ src/tests/vfs.test.ts (10 tests) 17ms
+ ✓ src/tests/catalog003e.test.ts (3 tests) 10ms
+ ✓ src/tests/launcher003g.test.ts (5 tests) 16ms
+ ✓ src/tests/geometry003k.test.ts (3 tests) 4ms
+ ✓ src/tests/core.test.ts (16 tests) 45ms
+ ✓ src/tests/museum003f.test.ts (4 tests) 8ms
+ ✓ src/tests/preferences003k.test.ts (4 tests) 4ms
+
+ Test Files  10 passed (10)
+      Tests  66 passed (66)
+   Start at  15:27:15
+   Duration  1.56s (transform 1.01s, setup 0ms, collect 2.17s, tests 175ms, environment 3ms, prepare 4.28s)
+

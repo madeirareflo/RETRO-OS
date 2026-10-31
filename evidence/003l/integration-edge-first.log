@@ -1,0 +1,32 @@
+
+Running 23 tests using 2 workers
+
+(node:19592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28096) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  2 [edge] › qa003l\integration.spec.ts:2:1 › Validação negativa, cancelamento, duplicados e isolamento de remoção (5.9s)
+  ok  3 [edge] › qa003l\integration.spec.ts:3:1 › Quota insuficiente não cria entrada nem pacote parcial (1.9s)
+  ok  4 [edge] › qa003l\integration.spec.ts:4:1 › Corrupção no IndexedDB é detectada sem executar outro jogo (2.1s)
+  ok  5 [edge] › qa003l\integration.spec.ts:5:1 › Biblioteca compartilhada, atalho Explorer e metadados legados (3.3s)
+  ok  6 [edge] › qa003l\integration.spec.ts:6:127 › Visual classic 800x600 (3.0s)
+  ok  7 [edge] › qa003l\integration.spec.ts:6:127 › Visual classic 1024x768 (2.3s)
+  ok  8 [edge] › qa003l\integration.spec.ts:6:127 › Visual classic 1366x768 (2.5s)
+  ok  1 [edge] › qa003l\native.spec.ts:2:1 › Pacote real, save nativo, encerramento do navegador e restauração no jogo (23.7s)
+  ok  9 [edge] › qa003l\integration.spec.ts:6:127 › Visual classic 1920x1080 (2.3s)
+  ok 11 [edge] › qa003l\integration.spec.ts:6:127 › Visual win2000 800x600 (2.4s)
+  ok 10 [edge] › qa003l\storage.spec.ts:2:1 › Migração IndexedDB v1 preserva pacote, save e documentos virtuais (2.4s)
+  ok 13 [edge] › qa003l\storage.spec.ts:3:1 › Metadados malformados não derrubam o Launcher (1.5s)
+  ok 12 [edge] › qa003l\integration.spec.ts:6:127 › Visual win2000 1024x768 (2.5s)
+  ok 14 [edge] › qa003l\integration.spec.ts:6:127 › Visual win2000 1366x768 (2.1s)
+  ok 15 [edge] › qa003l\integration.spec.ts:6:127 › Visual win2000 1920x1080 (2.7s)
+  ok 16 [edge] › qa003l\integration.spec.ts:6:127 › Visual xp 800x600 (2.4s)
+  ok 17 [edge] › qa003l\integration.spec.ts:6:127 › Visual xp 1024x768 (1.9s)
+  ok 18 [edge] › qa003l\integration.spec.ts:6:127 › Visual xp 1366x768 (2.1s)
+  ok 19 [edge] › qa003l\integration.spec.ts:6:127 › Visual xp 1920x1080 (2.7s)
+  ok 20 [edge] › qa003l\integration.spec.ts:6:127 › Visual mix 800x600 (1.8s)
+  ok 21 [edge] › qa003l\integration.spec.ts:6:127 › Visual mix 1024x768 (1.9s)
+  ok 22 [edge] › qa003l\integration.spec.ts:6:127 › Visual mix 1366x768 (2.1s)
+  ok 23 [edge] › qa003l\integration.spec.ts:6:127 › Visual mix 1920x1080 (2.7s)
+
+  23 passed (53.6s)

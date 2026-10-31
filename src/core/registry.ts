@@ -25,6 +25,8 @@ export const registry=[
 {id:'community',name:'Comunidades e Perfis',icon:'chat',group:'Programas'},
 {id:'messenger',name:'Retro Messenger',icon:'chat',group:'Programas'},
 {id:'dosgame',name:'Disquete Perdido DOS',icon:'floppy',group:'Jogos'},
+{id:'retrolauncher',name:'Retro Game Launcher',icon:'games',group:'Jogos'},
+{id:'dos-imported',name:'Jogo DOS importado',icon:'floppy',group:'Jogos'},
 {id:'gamecenter',name:'Retro Game Center',icon:'games',group:'Jogos'},
 {id:'naval',name:'Batalha Naval',icon:'games',group:'Jogos'},
 {id:'tasks',name:'Gerenciador de Tarefas',icon:'computer',group:'Acessórios'},

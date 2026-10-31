@@ -1,0 +1,42 @@
+
+Running 1 test using 1 worker
+
+(node:39728) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [chrome] › qa003l\native.spec.ts:2:1 › Pacote real, save nativo, encerramento do navegador e restauração no jogo (2.7s)
+
+
+  1) [chrome] › qa003l\native.spec.ts:2:1 › Pacote real, save nativo, encerramento do navegador e restauração no jogo 
+
+    Error: locator.click: Error: strict mode violation: getByRole('button', { name: 'Disquete local 003L', exact: true }) resolved to 2 elements:
+        1) <div tabindex="0" role="button" class="grid-card selected" aria-label="Disquete local 003L">…</div> aka getByRole('button', { name: 'Disquete local 003L' }).first()
+        2) <div tabindex="0" role="button" class="grid-card selected" aria-label="Disquete local 003L">…</div> aka getByRole('button', { name: 'Disquete local 003L' }).nth(1)
+
+    Call log:
+      - waiting for getByRole('button', { name: 'Disquete local 003L', exact: true })
+
+
+       at helpers.ts:7
+
+       5 | export async function boot(page:Page){await page.goto('/');const skip=page.getByRole('button',{name:'Pular inicialização'});if(await skip.isVisible())await skip.click();const about=page.getByRole('button',{name:'Fechar Sobre o RETRO OS'});if(await about.isVisible())await about.click()}
+       6 | export async function run(page:Page,name:string){await page.getByRole('button',{name:'Iniciar',exact:true}).click();await page.getByRole('button',{name:'Executar ▸',exact:true}).click();await page.getByLabel('Programa a executar').fill(name);await page.getByRole('dialog',{name:'Executar',exact:true}).getByRole('button',{name:'Executar',exact:true}).click()}
+    >  7 | export async function install(page:Page,title='Disquete local 003L'){await run(page,'launcher');await page.getByRole('button',{name:'+ Adicionar Jogo',exact:true}).click();await page.getByLabel('Pacote DOS').setInputFiles({name:'original.zip',mimeType:'application/zip',buffer:fixture});await expect(page.getByRole('status').filter({hasText:'arquivos validados'})).toBeVisible();await page.getByLabel('Título do jogo').fill(title);await page.getByRole('button',{name:'Instalar pacote',exact:true}).click();await expect(page.getByRole('alertdialog',{name:'Adicionar jogo DOS'})).toHaveCount(0);await page.getByLabel('Buscar:',{exact:true}).fill(title);await page.getByRole('button',{name:title,exact:true}).click();return title}
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^
+       8 | export async function play(page:Page){await page.getByRole('button',{name:'▶ Iniciar Jogo',exact:true}).click();await page.getByRole('button',{name:'Iniciar jogo DOS',exact:true}).click();await expect(page.locator('.dos-game')).toHaveAttribute('data-ready','true',{timeout:35000})}
+       9 | export async function rows(page:Page,store:string){return page.evaluate(store=>new Promise<any[]>((resolve,reject)=>{const r=indexedDB.open('RetroOS_GamesStorage',1);r.onsuccess=()=>{const db=r.result,q=db.transaction(store).objectStore(store).getAll();q.onsuccess=()=>{db.close();resolve(q.result)};q.onerror=()=>reject(q.error)}}),store)}
+      10 |
+        at install (C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003L-INTEGRATION\qa003l\helpers.ts:7:707)
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003L-INTEGRATION\qa003l\native.spec.ts:2:525
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results-003l\native-Pacote-real-save-na-f84fd-gador-e-restauração-no-jogo-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results-003l\native-Pacote-real-save-na-f84fd-gador-e-restauração-no-jogo-chrome\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-003l\native-Pacote-real-save-na-f84fd-gador-e-restauração-no-jogo-chrome\error-context.md
+
+  1 failed
+    [chrome] › qa003l\native.spec.ts:2:1 › Pacote real, save nativo, encerramento do navegador e restauração no jogo 
