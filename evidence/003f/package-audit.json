@@ -1,0 +1,9 @@
+{
+  "scope": "Current frontend, adapter and original game only. Not a complete Git history or archived-backend audit.",
+  "forbiddenBuildFiles": [],
+  "credentialPatternFindings": [],
+  "mainCommit": "23096cd902c9aef9c4d358bf0c8b9165c6b89ba3",
+  "public002Preserved": true,
+  "originalCatalogEqual": true,
+  "buildBytes": 4462996
+}

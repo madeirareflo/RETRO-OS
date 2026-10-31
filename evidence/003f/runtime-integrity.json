@@ -1,0 +1,42 @@
+[
+  {
+    "path": "public/emulation/adapter.js",
+    "bytes": 4842,
+    "sha256": "b89ea39e927a326e34177a39f480cee5257651be4bf87b749ba2b263f09b0e7c"
+  },
+  {
+    "path": "public/emulation/player.html",
+    "bytes": 816,
+    "sha256": "69277e6481d837d8c704327ae416521570ec203c509a6e792758b89d43d29a47"
+  },
+  {
+    "path": "public/vendor/js-dos-6.22.60/js-dos.js",
+    "bytes": 108367,
+    "sha256": "774742a2f89762b51497c6e060d7bace465470e7874a2810b59a21a0ec61a8a1"
+  },
+  {
+    "path": "public/vendor/js-dos-6.22.60/wdosbox.js",
+    "bytes": 189751,
+    "sha256": "06feec57a69b93f84722c4d0c5ed483484052e6e1d144dc4a98ee10af1d82044"
+  },
+  {
+    "path": "public/vendor/js-dos-6.22.60/wdosbox.wasm.js",
+    "bytes": 1808397,
+    "sha256": "84b873c1e5484a0f1d1adb25871f0daa92f1efc0339a9b54e84e450062182fb0"
+  },
+  {
+    "path": "public/vendor/js-dos-6.22.60/SOURCE.zip",
+    "bytes": 1789459,
+    "sha256": "afeb2f5a4046bdea52fd9e3dc7803e770b3760657cd42df63d678c317b1d346a"
+  },
+  {
+    "path": "public/emulation/DISQUETE.COM",
+    "bytes": 1955,
+    "sha256": "f0c50f1717cd8a12ddbdd52addb675e79e9fb1b393ceb35a8af3f44bd3084726"
+  },
+  {
+    "path": "games-source/disquete-perdido/game.asm",
+    "bytes": 6204,
+    "sha256": "0bc0edf05c13abd69d10bc73c4f9c8c641c8cf44f5ae9206ee89621587ae440d"
+  }
+]

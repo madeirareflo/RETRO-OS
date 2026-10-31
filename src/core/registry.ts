@@ -24,10 +24,8 @@ export const registry=[
 {id:'lan',name:'LAN House',icon:'computer',group:'Programas'},
 {id:'community',name:'Comunidades e Perfis',icon:'chat',group:'Programas'},
 {id:'messenger',name:'Retro Messenger',icon:'chat',group:'Programas'},
+{id:'dosgame',name:'Disquete Perdido DOS',icon:'floppy',group:'Jogos'},
 {id:'gamecenter',name:'Retro Game Center',icon:'games',group:'Jogos'},
-{id:'account',name:'Minha Conta e Privacidade',icon:'chat',group:'Configurações'},
-{id:'admin',name:'Administração Social',icon:'settings',group:'Configurações'},
-{id:'rankings',name:'Placares da LAN',icon:'games',group:'Jogos'},
 {id:'naval',name:'Batalha Naval',icon:'games',group:'Jogos'},
 {id:'tasks',name:'Gerenciador de Tarefas',icon:'computer',group:'Acessórios'},
 {id:'media',name:'Central de Discos',icon:'disc',group:'Programas'}

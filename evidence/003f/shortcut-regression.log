@@ -1,0 +1,41 @@
+[WebServer] (node:24236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 24 tests using 2 workers
+
+(node:43472) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [edge] › e2e\desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar (6.5s)
+  ok  2 [edge] › e2e\003e.spec.ts:4:1 › 003E Game Center: museu honesto, busca, filtros, favoritos, atalho e jogo real (8.3s)
+  ok  3 [edge] › e2e\desktop.spec.ts:5:1 › salvar, recarregar e reabrir texto pelo arquivo virtual (2.7s)
+  ok  4 [edge] › e2e\003e.spec.ts:5:1 › 003E editor confirma descarte e salva por diálogo compartilhado (2.4s)
+  ok  5 [edge] › e2e\desktop.spec.ts:6:1 › temas globais, persistência, menu e screenshots (2.8s)
+  ok  6 [edge] › e2e\003e.spec.ts:6:1 › 003E Explorer: seleção Ctrl/Shift, arraste entre janelas e persistência (2.9s)
+  ok  7 [edge] › e2e\desktop.spec.ts:7:1 › Paint exporta PNG real com desenho (2.5s)
+  ok  9 [edge] › e2e\desktop.spec.ts:8:1 › três jogos iniciam e aceitam jogadas (2.7s)
+  ok 10 [edge] › e2e\desktop.spec.ts:9:1 › terminal, calculadora e páginas internas sem erros de console (2.5s)
+  ok 11 [edge] › e2e\desktop.spec.ts:10:1 › mobile permanece utilizável (1.6s)
+(node:34220) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+DOS load/heap 1087 67108864
+  ok  8 [edge] › e2e\emulation003f.spec.ts:4:1 › DOS original: Game Center, teclado, áudio, pausa, save e saída (11.0s)
+  ok 12 [chrome] › e2e\003e.spec.ts:4:1 › 003E Game Center: museu honesto, busca, filtros, favoritos, atalho e jogo real (5.3s)
+  ok 13 [edge] › e2e\emulation003f.spec.ts:5:1 › Paint: diálogo PNG compartilhado, gravação e descarte cancelável (5.3s)
+  ok 14 [chrome] › e2e\003e.spec.ts:5:1 › 003E editor confirma descarte e salva por diálogo compartilhado (2.6s)
+(node:13328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 15 [chrome] › e2e\003e.spec.ts:6:1 › 003E Explorer: seleção Ctrl/Shift, arraste entre janelas e persistência (3.3s)
+  ok 16 [chrome] › e2e\desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar (3.8s)
+  ok 18 [chrome] › e2e\desktop.spec.ts:5:1 › salvar, recarregar e reabrir texto pelo arquivo virtual (2.0s)
+  ok 19 [chrome] › e2e\desktop.spec.ts:6:1 › temas globais, persistência, menu e screenshots (2.7s)
+DOS load/heap 1110 67108864
+  ok 17 [chrome] › e2e\emulation003f.spec.ts:4:1 › DOS original: Game Center, teclado, áudio, pausa, save e saída (11.5s)
+  ok 20 [chrome] › e2e\desktop.spec.ts:7:1 › Paint exporta PNG real com desenho (3.4s)
+  ok 22 [chrome] › e2e\desktop.spec.ts:8:1 › três jogos iniciam e aceitam jogadas (3.7s)
+  ok 21 [chrome] › e2e\emulation003f.spec.ts:5:1 › Paint: diálogo PNG compartilhado, gravação e descarte cancelável (5.3s)
+  ok 23 [chrome] › e2e\desktop.spec.ts:9:1 › terminal, calculadora e páginas internas sem erros de console (2.9s)
+  ok 24 [chrome] › e2e\desktop.spec.ts:10:1 › mobile permanece utilizável (2.3s)
+
+  24 passed (1.0m)

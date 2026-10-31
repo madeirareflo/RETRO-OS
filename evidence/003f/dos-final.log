@@ -1,0 +1,19 @@
+[WebServer] (node:6032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:27184) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [edge] › e2e\dos-victory003f.spec.ts:3:1 › DOS: partida completa até vitória após recarregar save (11.1s)
+DOS load/heap 1030 67108864
+  ok 2 [edge] › e2e\emulation003f.spec.ts:4:1 › DOS original: Game Center, teclado, áudio, pausa, save e saída (10.1s)
+  ok 3 [edge] › e2e\emulation003f.spec.ts:5:1 › Paint: diálogo PNG compartilhado, gravação e descarte cancelável (2.6s)
+(node:37772) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 [chrome] › e2e\dos-victory003f.spec.ts:3:1 › DOS: partida completa até vitória após recarregar save (10.1s)
+DOS load/heap 1039 67108864
+  ok 5 [chrome] › e2e\emulation003f.spec.ts:4:1 › DOS original: Game Center, teclado, áudio, pausa, save e saída (10.0s)
+  ok 6 [chrome] › e2e\emulation003f.spec.ts:5:1 › Paint: diálogo PNG compartilhado, gravação e descarte cancelável (9.2s)
+
+  6 passed (58.3s)

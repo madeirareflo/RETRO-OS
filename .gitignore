@@ -6,3 +6,5 @@ playwright-report/
 *.local
 server/data/
 social-test-results/
+
+archive/social-003e/server/data/

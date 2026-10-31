@@ -1,0 +1,15 @@
+[WebServer] (node:42584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:12584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [edge] › e2e\local003f.spec.ts:3:1 › Batalha Naval local: posicionamento, troca, vitória e persistência (4.7s)
+  ok 2 [edge] › e2e\local003f.spec.ts:4:1 › reinício do desktop respeita alterações de texto não salvas (1.2s)
+(node:14616) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 3 [chrome] › e2e\local003f.spec.ts:3:1 › Batalha Naval local: posicionamento, troca, vitória e persistência (4.2s)
+  ok 4 [chrome] › e2e\local003f.spec.ts:4:1 › reinício do desktop respeita alterações de texto não salvas (1.3s)
+
+  4 passed (16.1s)

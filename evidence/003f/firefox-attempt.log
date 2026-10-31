@@ -1,0 +1,47 @@
+[WebServer] (node:18068) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:40752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [firefox] › e2e\offline003f.spec.ts:4:1 › museu offline navega perfis, álbum, recados e tópicos sem API social (6ms)
+(node:36908) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  2 [firefox] › e2e\offline003f.spec.ts:5:1 › Messenger e LAN demonstrativos funcionam sem contas ou servidor (3ms)
+(node:42260) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  3 [firefox] › e2e\offline003f.spec.ts:6:1 › internet museológica navega portais, fórum e perfis por época (3ms)
+
+
+  1) [firefox] › e2e\offline003f.spec.ts:4:1 › museu offline navega perfis, álbum, recados e tópicos sem API social 
+
+    Error: browserType.launch: spawn UNKNOWN
+    Call log:
+      - <launching> C:\Users\Davi LRD\AppData\Local\ms-playwright\firefox-1555\firefox\firefox.exe -no-remote -headless -profile C:\Users\DAVILR~1\AppData\Local\Temp\playwright_firefoxdev_profile-NlPmPj -juggler-pipe -silent
+
+
+    Error Context: test-results\offline003f-museu-offline--32d0e-os-e-tópicos-sem-API-social-firefox\error-context.md
+
+  2) [firefox] › e2e\offline003f.spec.ts:5:1 › Messenger e LAN demonstrativos funcionam sem contas ou servidor 
+
+    Error: browserType.launch: spawn UNKNOWN
+    Call log:
+      - <launching> C:\Users\Davi LRD\AppData\Local\ms-playwright\firefox-1555\firefox\firefox.exe -no-remote -headless -profile C:\Users\DAVILR~1\AppData\Local\Temp\playwright_firefoxdev_profile-XDxb0i -juggler-pipe -silent
+
+
+    Error Context: test-results\offline003f-Messenger-e-LA-b8415-onam-sem-contas-ou-servidor-firefox\error-context.md
+
+  3) [firefox] › e2e\offline003f.spec.ts:6:1 › internet museológica navega portais, fórum e perfis por época 
+
+    Error: browserType.launch: spawn UNKNOWN
+    Call log:
+      - <launching> C:\Users\Davi LRD\AppData\Local\ms-playwright\firefox-1555\firefox\firefox.exe -no-remote -headless -profile C:\Users\DAVILR~1\AppData\Local\Temp\playwright_firefoxdev_profile-SnN0Tt -juggler-pipe -silent
+
+
+    Error Context: test-results\offline003f-internet-museo-e40b6-is-fórum-e-perfis-por-época-firefox\error-context.md
+
+  3 failed
+    [firefox] › e2e\offline003f.spec.ts:4:1 › museu offline navega perfis, álbum, recados e tópicos sem API social 
+    [firefox] › e2e\offline003f.spec.ts:5:1 › Messenger e LAN demonstrativos funcionam sem contas ou servidor 
+    [firefox] › e2e\offline003f.spec.ts:6:1 › internet museológica navega portais, fórum e perfis por época 
