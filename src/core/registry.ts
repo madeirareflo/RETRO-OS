@@ -24,6 +24,8 @@ export const registry=[
 {id:'lan',name:'LAN House',icon:'computer',group:'Programas'},
 {id:'community',name:'Comunidades e Perfis',icon:'chat',group:'Programas'},
 {id:'messenger',name:'Retro Messenger',icon:'chat',group:'Programas'},
+{id:'naval',name:'Batalha Naval',icon:'games',group:'Jogos'},
+{id:'tasks',name:'Gerenciador de Tarefas',icon:'computer',group:'Acessórios'},
 {id:'media',name:'Central de Discos',icon:'disc',group:'Programas'}
 ] as const;
 export type AppId=typeof registry[number]['id'];
