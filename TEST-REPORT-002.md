@@ -15,7 +15,7 @@ Data: 30/10/2026. Windows, Node 24.22.1, React 19.3.1, TypeScript 5.9.3, Vite 7.
 | Rodada completa Edge + Chrome | **54 passaram, zero falhas, aproximadamente 1,2 minuto** |
 | Firefox | **23 tentativas bloqueadas na inicialização do navegador** na primeira matriz; nenhum fluxo da aplicação validado |
 
-Depois do ajuste final de leitura animada do disquete e contagem de unidades, os quatro testes afetados (explorador/CD, Edge e Chrome) foram repetidos. A aplicação continua sem publicação em produção.
+Depois do ajuste final de leitura animada do disquete e contagem de unidades, os quatro testes afetados (explorador/CD, Edge e Chrome) foram repetidos e passaram. TypeScript, lint, 26 unitários e build também foram repetidos com sucesso. A comparação interativa foi aberta nos dois navegadores e a troca de tema/resolução foi verificada; as capturas dos protetores foram atualizadas após 1,5 segundo de animação. A aplicação continua sem publicação em produção.
 
 ## Cobertura executada
 

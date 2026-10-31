@@ -2,6 +2,8 @@
 
 Data: 30/10/2026. Evolução do projeto existente RETRO-OS, sem recriação. Base de recuperação: **tag retro-os-001 / commit 49137ac**. Repositório privado: [madeirareflo/RETRO-OS](https://github.com/madeirareflo/RETRO-OS). Destino da entrega: **G:\Meu Drive\WORKGPT\RETRO-OS**. Não houve publicação em produção.
 
+Commit de implementação: **cfdfd0d**. Os commits posteriores registram evidências e a documentação final; consulte `git log -1` para o HEAD da entrega.
+
 ## Resultado por critério
 
 | Critério | Entrega e evidência |

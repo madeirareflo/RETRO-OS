@@ -20,3 +20,11 @@ Referências consultadas: [Windows 98 no GUIdebook](https://guidebookgallery.org
 | Contexto | Menu genérico, sem operações de arquivos | Contexto quadrado com divisores, estados habilitados e comandos reais |
 
 Não haverá afirmação de fidelidade pixel a pixel. Fontes, escala do sistema e controles de navegador podem variar. Meta: geometria e padrões históricos substancialmente mais próximos, demonstrados por antes/depois.
+
+## Resultado inspecionado
+
+Foram abertas e examinadas as capturas reais do menu clássico 800×600, explorador clássico 800×600 e 1024×768, menu XP 800×600, explorador XP 1024×768 e menu MIX 1366×768. As demais resoluções constam da matriz automatizada e da comparação. As capturas históricas públicas de desktop 98 e menu Luna foram inspecionadas em arquivos temporários, sem inclusão na entrega.
+
+O menu clássico agora tem geometria vertical e submenu externo; o XP tem aplicativos à esquerda e atalhos à direita. Barra, títulos e glifos ficaram menores e mais estáveis. O explorador XP ganhou painel de tarefas e o clássico usa controles em relevo, estados desabilitados e status de unidades coerente. A versão 001 permanece nas 24 imagens de before; after tem 24 imagens correspondentes. comparison.html permite alternar tema, resolução e tarefa.
+
+Ainda diferem: ícones originais e não Microsoft, wallpaper estilizado, métrica de fonte dependente do SO, menus de aplicativos simplificados e Painel de Controle focado em vídeo/sons. As evidências sustentam evolução visual, sem sustentar fidelidade absoluta.
