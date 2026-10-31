@@ -29,3 +29,6 @@ A matriz Edge/Chrome inclui 800×600, 1024×768, 1366×768 e 1920×1080 nos test
 - Firefox continua bloqueado no executável firefox-1555. Não é alegação de incompatibilidade funcional comprovada, pois a aplicação não chegou a abrir.
 
 Scripts de início privado foram revisados e tiveram sintaxe PowerShell conferida; o lançamento por duplo clique não foi testado. Os comandos frontend/backend equivalentes foram executados pelos testes. Não se afirma teste de recursos que não foram implementados.
+
+## Recuperação privada
+O teste adicional de clone identificou que o bundle de uma única branch não fornece HEAD remoto padrão. Guia corrigido para git clone --branch development/retro-os-003e. A entrega inclui recibo com HEAD e hash conferidos depois da restauração final em diretório temporário. Não houve instalação de dependências nem execução de dados locais nessa recuperação.

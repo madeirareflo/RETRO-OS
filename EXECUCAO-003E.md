@@ -16,7 +16,7 @@ Retro Game Center tem ícone no desktop e está em Jogos. Pelo Executar, abra Re
 Crie uma conta pelo Messenger e confira qual conta receberá privilégio. No terminal da raiz: node server/admin.mjs grant SEU_APELIDO. Revogar: node server/admin.mjs revoke SEU_APELIDO. Essa ferramenta usa o banco local e não envia senha. Nenhuma rota HTTP concede papel. Se RETRO_DATABASE for personalizado, o comando deve usar a mesma variável. Não há admin padrão.
 
 ## Dados e recuperação
-Banco em server/data/social.sqlite, ignorado pelo Git. Não copiar dados reais para o repo público. Backup Git: git clone RETRO-OS-003E-PRIVATE.bundle RETRO-OS-recuperado. Depois instale dependências e execute. O bundle inclui histórico/código/relatórios/evidências, não banco, node_modules ou dados do navegador. Backups de banco exigem procedimento privado separado e teste de restauração. Nunca apagar checkpoints anteriores.
+Banco em server/data/social.sqlite, ignorado pelo Git. Não copiar dados reais para o repo público. Backup Git: git clone --branch development/retro-os-003e RETRO-OS-003E-PRIVATE.bundle RETRO-OS-recuperado. Depois instale dependências e execute. O bundle inclui histórico/código/relatórios/evidências, não banco, node_modules ou dados do navegador. Backups de banco exigem procedimento privado separado e teste de restauração. Nunca apagar checkpoints anteriores.
 
 ## Verificações
 node node_modules/typescript/bin/tsc --noEmit
@@ -28,3 +28,5 @@ node node_modules/@playwright/test/cli.js test --project=edge --project=chrome
 node node_modules/@playwright/test/cli.js test --config=playwright.social.config.ts
 
 Na entrega WORKGPT, descompacte o ZIP de código numa pasta local para desenvolver. Evite operar o SQLite ativo em unidade sincronizada; guarde no WORKGPT os artefatos de backup. O Git bundle não contém banco ou dados do navegador.
+
+O bundle guarda a branch privada; sempre informe --branch ao clonar. Um clone sem essa opção pode trazer objetos mas não fazer checkout por ausência de HEAD remoto. A restauração final com branch explícita é verificada no recibo da entrega.
