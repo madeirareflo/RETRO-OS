@@ -1,0 +1,33 @@
+import http from 'node:http';
+import {DatabaseSync} from 'node:sqlite';
+import {randomBytes,scryptSync,timingSafeEqual,createHash} from 'node:crypto';
+import fs from 'node:fs';
+fs.mkdirSync('server/data',{recursive:true});
+const db=new DatabaseSync(process.env.RETRO_DATABASE||'server/data/social.sqlite');
+db.exec(`PRAGMA journal_mode=WAL; CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,name TEXT UNIQUE,salt TEXT,hash TEXT); CREATE TABLE IF NOT EXISTS sessions(token TEXT PRIMARY KEY,user TEXT,expires INTEGER); CREATE TABLE IF NOT EXISTS friends(a TEXT,b TEXT,status TEXT,PRIMARY KEY(a,b)); CREATE TABLE IF NOT EXISTS messages(id INTEGER PRIMARY KEY,author TEXT,recipient TEXT,text TEXT,created INTEGER); CREATE TABLE IF NOT EXISTS blocks(a TEXT,b TEXT,PRIMARY KEY(a,b)); CREATE TABLE IF NOT EXISTS reports(id INTEGER PRIMARY KEY,author TEXT,message INTEGER,created INTEGER);`);
+const peers=new Map(),rates=new Map();
+const hash=t=>createHash('sha256').update(t).digest('hex');
+function notify(id){for(const res of peers.get(id)||[])res.write('data: update\n\n')}
+function blocked(a,b){return !!db.prepare('SELECT 1 FROM blocks WHERE (a=? AND b=?) OR (a=? AND b=?)').get(a,b,b,a)}
+function friends(a,b){return !!db.prepare("SELECT 1 FROM friends WHERE ((a=? AND b=?) OR (a=? AND b=?)) AND status='accepted'").get(a,b,b,a)}
+const server=http.createServer(async(req,res)=>{res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');const reply=(status,data)=>{res.writeHead(status,{'Content-Type':'application/json'});res.end(JSON.stringify(data))};try{const url=new URL(req.url,'http://localhost'),route=url.pathname;const cookie=req.headers.cookie?.match(/(?:^|; )retro_session=([a-f0-9]+)/)?.[1];const session=cookie&&db.prepare('SELECT user FROM sessions WHERE token=? AND expires>?').get(hash(cookie),Date.now());const uid=session?.user;
+if(req.method==='GET'&&route==='/api/health')return reply(200,{status:'local',version:3});
+if(req.method==='GET'&&route==='/api/events'){if(!uid)return reply(401,{error:'Entre na conta.'});res.writeHead(200,{'Content-Type':'text/event-stream','Connection':'keep-alive'});res.write('data: connected\n\n');const set=peers.get(uid)||new Set();set.add(res);peers.set(uid,set);const timer=setInterval(()=>res.write(': heartbeat\n\n'),15000);req.on('close',()=>{clearInterval(timer);set.delete(res);if(!set.size)peers.delete(uid)});return}
+if(req.method==='GET'&&route==='/api/state'){if(!uid)return reply(401,{error:'Visitante'});return reply(200,{me:db.prepare('SELECT id,name FROM users WHERE id=?').get(uid),users:db.prepare('SELECT id,name FROM users WHERE id<>? LIMIT 100').all(uid).map(u=>({...u,online:peers.has(u.id),blocked:blocked(uid,u.id)})),friends:db.prepare('SELECT * FROM friends WHERE a=? OR b=?').all(uid,uid),messages:db.prepare('SELECT * FROM messages WHERE author=? OR recipient=? ORDER BY id DESC LIMIT 200').all(uid,uid).reverse()})}
+if(req.method!=='POST')return reply(404,{error:'Não encontrado'});
+const origin=req.headers.origin;if(origin&&origin!==`http://${req.headers.host}`)return reply(403,{error:'Origem não autorizada'});
+if(!req.headers['content-type']?.startsWith('application/json'))return reply(415,{error:'Use JSON'});
+const key=uid||req.socket.remoteAddress,rate=rates.get(key)||{at:Date.now(),count:0};if(Date.now()-rate.at>60000){rate.at=Date.now();rate.count=0}if(++rate.count>60)return reply(429,{error:'Aguarde um minuto.'});rates.set(key,rate);let bytes=0,body='';for await(const chunk of req){bytes+=chunk.length;if(bytes>8192)return reply(413,{error:'Conteúdo muito grande'});body+=chunk}const data=JSON.parse(body||'{}');
+if(route==='/api/register'||route==='/api/login'){if(typeof data.name!=='string'||!/^[-a-zA-Z0-9_]{3,30}$/.test(data.name)||typeof data.password!=='string'||data.password.length<12||data.password.length>128)return reply(400,{error:'Apelido de 3–30 letras/números; senha de 12–128 caracteres.'});let user=db.prepare('SELECT * FROM users WHERE name=?').get(data.name.toLowerCase());if(route==='/api/register'){if(user)return reply(409,{error:'Apelido indisponível'});const salt=randomBytes(16).toString('hex'),id=randomBytes(16).toString('hex');db.prepare('INSERT INTO users VALUES(?,?,?,?)').run(id,data.name.toLowerCase(),salt,scryptSync(data.password,salt,64).toString('hex'));user=db.prepare('SELECT * FROM users WHERE id=?').get(id)}else if(!user||!timingSafeEqual(Buffer.from(user.hash,'hex'),scryptSync(data.password,user.salt,64)))return reply(401,{error:'Credenciais inválidas'});const token=randomBytes(32).toString('hex');db.prepare('INSERT INTO sessions VALUES(?,?,?)').run(hash(token),user.id,Date.now()+86400000);res.setHeader('Set-Cookie',`retro_session=${token}; HttpOnly; SameSite=Strict; Path=/api; Max-Age=86400`);return reply(200,{id:user.id,name:user.name})}
+if(!uid)return reply(401,{error:'Entre na conta.'});
+if(route==='/api/logout'){db.prepare('DELETE FROM sessions WHERE token=?').run(hash(cookie));return reply(200,{ok:true})}
+const target=data.to;if(typeof target!=='string'||target===uid||!db.prepare('SELECT id FROM users WHERE id=?').get(target))return reply(400,{error:'Destinatário inválido'});
+if(route==='/api/block'){db.prepare('INSERT OR IGNORE INTO blocks VALUES(?,?)').run(uid,target);notify(target);notify(uid);return reply(200,{ok:true})}
+if(blocked(uid,target))return reply(403,{error:'Contato bloqueado'});
+if(route==='/api/friend'){db.prepare("INSERT OR IGNORE INTO friends VALUES(?,?,'pending')").run(uid,target)}
+else if(route==='/api/accept'){const result=db.prepare("UPDATE friends SET status='accepted' WHERE a=? AND b=? AND status='pending'").run(target,uid);if(!result.changes)return reply(403,{error:'Solicitação não recebida'})}
+else if(route==='/api/message'){if(!friends(uid,target))return reply(403,{error:'Amizade necessária'});if(typeof data.text!=='string'||!data.text.trim()||data.text.length>2000)return reply(400,{error:'Mensagem de 1–2000 caracteres'});db.prepare('INSERT INTO messages(author,recipient,text,created) VALUES(?,?,?,?)').run(uid,target,data.text.trim(),Date.now())}
+else if(route==='/api/report'){const m=db.prepare('SELECT * FROM messages WHERE id=? AND (author=? OR recipient=?)').get(data.message,uid,uid);if(!m)return reply(403,{error:'Mensagem inacessível'});db.prepare('INSERT INTO reports(author,message,created) VALUES(?,?,?)').run(uid,m.id,Date.now())}
+else return reply(404,{error:'Não encontrado'});notify(uid);notify(target);reply(200,{ok:true});
+}catch{if(!res.headersSent)reply(400,{error:'Não foi possível processar a solicitação.'})}});
+server.listen(Number(process.env.PORT||4190),process.env.HOST||'127.0.0.1',()=>console.log('RETRO social local: http://127.0.0.1:'+(process.env.PORT||4190)));

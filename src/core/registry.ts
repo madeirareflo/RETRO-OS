@@ -21,6 +21,7 @@ export const registry=[
 {id:'timemachine',name:'Máquina do Tempo',icon:'disc',group:'Programas'},
 {id:'saver',name:'Protetor de Tela',icon:'computer',group:'Configurações'},
 {id:'backup',name:'Backup e Restauração',icon:'floppy',group:'Configurações'},
+{id:'messenger',name:'Retro Messenger',icon:'chat',group:'Programas'},
 {id:'media',name:'Central de Discos',icon:'disc',group:'Programas'}
 ] as const;
 export type AppId=typeof registry[number]['id'];
