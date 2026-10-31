@@ -1,3 +1,4 @@
+import {reconcile37} from './runtime37/integration';
 import {builtinCatalog} from './builtinGames';
 import {catalog as rawCatalog} from '../museum/gameCatalog';
 import {read, write} from '../storage/local';
@@ -79,7 +80,7 @@ export function loadBaseCatalog(): GameEntry[] {
     };
   });
 
-  return [...baseEntries,...builtinCatalog().map(g=>({...g,isFavorite:favorites.includes(g.id)})), ...custom.filter(g=>g&&typeof g.id==='string'&&typeof g.title==='string').map<GameEntry>(g=>({...g,isFavorite:favorites.includes(g.id)||(localStorage.getItem('retro.gameFavorites')===null&&g.isFavorite),appId:g.metadataOrigin==='user-imported'?'dos-imported':null,isPlayable:g.metadataOrigin==='user-imported'&&g.id.startsWith('imported-')&&g.engineId==='dosbox-wasm',isInstalled:g.id.startsWith('imported-'),status:g.id.startsWith('imported-')?'installed':'requires_files',externalUrl:typeof g.externalUrl==='string'&&g.externalUrl.startsWith('https://')?g.externalUrl:null}))];
+  return reconcile37([...baseEntries,...builtinCatalog().map(g=>({...g,isFavorite:favorites.includes(g.id)})), ...custom.filter(g=>g&&typeof g.id==='string'&&typeof g.title==='string').map<GameEntry>(g=>({...g,isFavorite:favorites.includes(g.id)||(localStorage.getItem('retro.gameFavorites')===null&&g.isFavorite),appId:g.metadataOrigin==='user-imported'?'dos-imported':null,isPlayable:g.metadataOrigin==='user-imported'&&g.id.startsWith('imported-')&&g.engineId==='dosbox-wasm',isInstalled:g.id.startsWith('imported-'),status:g.id.startsWith('imported-')?'installed':'requires_files',externalUrl:typeof g.externalUrl==='string'&&g.externalUrl.startsWith('https://')?g.externalUrl:null}))]);
 }
 
 // Generate synthetic benchmarks for 1,000 to 10,000 items (Phase 15 requirement)

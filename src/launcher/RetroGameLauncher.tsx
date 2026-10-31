@@ -1,3 +1,4 @@
+import {RuntimeLibrary} from './runtime37/RuntimeLibrary';import {runtimeAction,runtimeProfileId} from './runtime37/integration';
 import {gameControlsManual,type ControlsManual} from './gameControls';
 import {GameControlsHelp} from './GameControlsHelp';
 import {installLocalPrivateGames} from './privateInstall';
@@ -41,6 +42,7 @@ const PREDEFINED_COLLECTIONS = [
 ];
 
 export function RetroGameLauncher({open}: RetroGameLauncherProps) {
+  const [runtimeOpen,setRuntimeOpen]=useState(false);const [runtimeInitial,setRuntimeInitial]=useState<string|undefined>();
   const [controlsManual,setControlsManual]=useState<ControlsManual|null>(null);
   const [manualOpen,setManualOpen]=useState(false);
   const [catalog, setCatalog] = useState<GameEntry[]>(() => loadBaseCatalog());
@@ -214,7 +216,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
           <h1 style={{fontSize: '14px', margin: 0, fontWeight: 'bold', display: 'inline'}}>Retro Game Launcher</h1>
           <span> — Biblioteca Pessoal DOS</span>
         </div>
-        <div className="rgl-actions"><button onClick={()=>setManualOpen(v=>!v)}>Teste manual / perfis 003N</button>
+        <div className="rgl-actions"><button onClick={()=>{setRuntimeInitial(undefined);setRuntimeOpen(true)}}>37 clássicos / Instalar</button><button onClick={()=>setManualOpen(v=>!v)}>Teste manual / perfis 003N</button>
           <button className="add-game-btn" onClick={() => setIsWizardOpen(true)}>
             + Adicionar Jogo
           </button>
@@ -397,7 +399,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
                 <span className="platform-pill">{selectedGame.platformDisplay}</span>
               </div>
 
-              <div className="details-actions">{gameControlsManual(selectedGame.preparedProfileId,selectedGame.title)&&<button onClick={()=>setControlsManual(gameControlsManual(selectedGame.preparedProfileId,selectedGame.title))}>Controles / Ajuda</button>}
+              <div className="details-actions">{runtimeProfileId(selectedGame)&&<button onClick={()=>{setRuntimeInitial(runtimeProfileId(selectedGame));setRuntimeOpen(true)}}>{runtimeAction(selectedGame)?.canPlay?'Gerenciar instalação':runtimeAction(selectedGame)?.buttonLabel||'37 clássicos'}</button>}{gameControlsManual(selectedGame.preparedProfileId,selectedGame.title)&&<button onClick={()=>setControlsManual(gameControlsManual(selectedGame.preparedProfileId,selectedGame.title))}>Controles / Ajuda</button>}
                 {selectedGame.isPlayable ? (
                   <button className="play-button" onClick={() => handlePlay(selectedGame)}>
                     ▶ Iniciar Jogo
@@ -504,6 +506,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
         <span>Total no Catálogo: {catalog.length}</span>
       </footer>
 
+      {runtimeOpen&&<RuntimeLibrary initial={runtimeInitial} onClose={()=>{setRuntimeOpen(false);setCatalog(loadBaseCatalog())}} onPlay={handlePlay}/>}
       {controlsManual&&<GameControlsHelp manual={controlsManual} onClose={()=>setControlsManual(null)}/>}
       {/* 10-step Add Game Wizard */}
       <AddGameWizard
