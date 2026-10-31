@@ -1,0 +1,18 @@
+{
+  "screenshotsActuallyInspected": true,
+  "technicalBootConfirmed": [
+    "prince-demo",
+    "doom-shareware",
+    "duke-shareware"
+  ],
+  "princeEdition": "Demo DOS 1.0, não jogo completo",
+  "firstDukeFailuresObserved": [
+    "Auxiliar SWCBBS.EXE sem MZ recusado pelo validador",
+    "ReadSetup: DUKE3D.CFG does not exist; Please run SETUP.EXE"
+  ],
+  "dukeFinalCapture": "duke-shareware-native-start.png",
+  "dukeConfigGeneratedByNativeSetup": true,
+  "dukeAudioEnabledInInitialConfig": false,
+  "ownerGameplayApproved": false,
+  "savesVerified": false
+}

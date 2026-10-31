@@ -1,0 +1,115 @@
+{
+  "browser": "Chrome",
+  "games": [
+    {
+      "title": "Duke Nukem 3D — shareware DOS v1.3d",
+      "id": "imported-private-duke-shareware",
+      "executable": "DUKE3D.EXE",
+      "files": [
+        "CATALOG.EXE",
+        "COMMIT.EXE",
+        "DEFS.CON",
+        "DEMO1.DMO",
+        "DEMO2.DMO",
+        "DEMO3.DMO",
+        "DN3DHELP.EXE",
+        "DUKE.RTS",
+        "DUKE3D.EXE",
+        "DUKE3D.GRP",
+        "GAME.CON",
+        "LICENSE.DOC",
+        "MODEM.PCK",
+        "ORDER.FRM",
+        "README.DOC",
+        "SETMAIN.EXE",
+        "SETUP.EXE",
+        "SWCBBS.EXE",
+        "ULTRAMID.INI",
+        "USER.CON"
+      ],
+      "diagnostics": {
+        "ready": true,
+        "heap": 67108864,
+        "canvas": {
+          "width": 640,
+          "height": 400
+        },
+        "error": ""
+      }
+    },
+    {
+      "title": "DOOM — shareware DOS v1.9",
+      "id": "imported-private-doom-shareware",
+      "executable": "DOOM.EXE",
+      "files": [
+        "DM.DOC",
+        "DM.EXE",
+        "DMFAQ66A.TXT",
+        "DMFAQ66B.TXT",
+        "DMFAQ66C.TXT",
+        "DMFAQ66D.TXT",
+        "DOOM.EXE",
+        "DOOM1.WAD",
+        "DWANGO.DOC",
+        "DWANGO.EXE",
+        "DWANGO.STR",
+        "HELPME.TXT",
+        "IPXSETUP.EXE",
+        "MODEM.CFG",
+        "MODEM.NUM",
+        "MODEM.STR",
+        "ORDER.FRM",
+        "README.TXT",
+        "SERSETUP.EXE",
+        "SETUP.EXE"
+      ],
+      "diagnostics": {
+        "ready": true,
+        "heap": 67108864,
+        "canvas": {
+          "width": 320,
+          "height": 200
+        },
+        "error": ""
+      }
+    },
+    {
+      "title": "Prince of Persia — demo DOS 1.0",
+      "id": "imported-private-prince",
+      "executable": "PRINCE.EXE",
+      "files": [
+        "CDUNGEON.DAT",
+        "DIGISND1.DAT",
+        "DIGISND2.DAT",
+        "DIGISND3.DAT",
+        "EDUNGEON.DAT",
+        "GUARD.DAT",
+        "GUARD2.DAT",
+        "IBM_SND1.DAT",
+        "IBM_SND2.DAT",
+        "KID.DAT",
+        "LEVELS.DAT",
+        "MIDISND1.DAT",
+        "MIDISND2.DAT",
+        "PRINCE.DAT",
+        "PRINCE.EXE",
+        "PV.DAT",
+        "TITLE.DAT",
+        "VDUNGEON.DAT",
+        "DEMOINFO.TXT"
+      ],
+      "diagnostics": {
+        "ready": true,
+        "heap": 67108864,
+        "canvas": {
+          "width": 320,
+          "height": 200
+        },
+        "error": ""
+      }
+    }
+  ],
+  "pageErrors": [],
+  "gameplayVerified": false,
+  "savesVerified": false
+}

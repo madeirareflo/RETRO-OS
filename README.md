@@ -1,3 +1,9 @@
+# Instalação privada atual: RETRO OS 003N-FIX
+
+Três jogos com abertura técnica verificada: Prince demo DOS 1.0, DOOM shareware v1.9 e Duke shareware v1.3d. Dados ficam fora do código/build. [Relatório](RETRO-OS-003N-FIX-REPORT.md), [iniciar](MANUAL-TEST-INSTRUCTIONS.md), preview http://127.0.0.1:4676/. Iniciar via scripts/start-private-three-games.ps1 para carregar a pasta pessoal.
+
+Histórico preservado abaixo.
+
 # Checkpoint privado atual: RETRO OS 003N
 
 Perfis DOS e importação guiada, sem redistribuição de novos dados comerciais. [Relatório](RETRO-OS-003N-REPORT.md), [execução Windows](EXECUTAR-003N.md) e [checklist manual](MANUAL-TEST-CHECKLIST-003N.md). Preview: http://127.0.0.1:4576/. Nenhum jogo novo homologado em nome do proprietário.

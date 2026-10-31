@@ -1,0 +1,337 @@
+{
+  "privateDirectory": "../RETRO-OS-003N-FIX-PRIVATE/",
+  "notInGitOrBuild": true,
+  "packages": [
+    {
+      "id": "imported-private-prince",
+      "profileId": "prince",
+      "title": "Prince of Persia — demo DOS 1.0",
+      "fileName": "prince-demo-private.zip",
+      "bytes": 254145,
+      "sha256": "d6762fd72bf74ef21f8ea34c5db87506b29a9c8ac89456ae56aaf675e66c4f1c",
+      "files": [
+        {
+          "name": "CDUNGEON.DAT",
+          "bytes": 7662,
+          "sha256": "338cb30a09ba74b83b9e1cebbc8495b54e893e44231b258e2d8c7171c6697446"
+        },
+        {
+          "name": "DIGISND1.DAT",
+          "bytes": 33199,
+          "sha256": "fea7a1c8e220a16166aa9825b4c9d2599ba7428a066028cf6bf47111bda522a0"
+        },
+        {
+          "name": "DIGISND2.DAT",
+          "bytes": 7971,
+          "sha256": "7b2173194489b8f7a74e700f579e3a69543cdee990153c2690e056ad5fd6a907"
+        },
+        {
+          "name": "DIGISND3.DAT",
+          "bytes": 20974,
+          "sha256": "203571512dbcf865141cf24e2dbb3c3034437bc72c3268331c5acfdf9182bc0d"
+        },
+        {
+          "name": "EDUNGEON.DAT",
+          "bytes": 8408,
+          "sha256": "8a6d810ab2aeedb7dce72d666faf3378923a2c0350904f14e27c9efad6681956"
+        },
+        {
+          "name": "GUARD.DAT",
+          "bytes": 6950,
+          "sha256": "dcedc140dcab0945dea02d24c248642cbff25f1b1288808ffd71a70fc529c5cc"
+        },
+        {
+          "name": "GUARD2.DAT",
+          "bytes": 117,
+          "sha256": "d8cef76e51a32b5d12e48c140e046b89b9dab4c7de457b1a909a2e1a2b20ae26"
+        },
+        {
+          "name": "IBM_SND1.DAT",
+          "bytes": 4219,
+          "sha256": "6930b6a3520e4f596a9afc2e1a1e56a2075304d8cb58418f72cabd8b8c0843ae"
+        },
+        {
+          "name": "IBM_SND2.DAT",
+          "bytes": 1928,
+          "sha256": "fe4d56936310a01d741ac3403e007df51aa8f4fbc6cffb653c8dc6b6193a56cf"
+        },
+        {
+          "name": "KID.DAT",
+          "bytes": 37149,
+          "sha256": "4b0d007162f683954d7a7d35c77d83174505d499b6c1f8e8b69caa3971f942a0"
+        },
+        {
+          "name": "LEVELS.DAT",
+          "bytes": 6950,
+          "sha256": "33de8741b7f8e706f9c2a3bec16a60a99cb8722ff3b3dba54d269b2ad8ccafaa"
+        },
+        {
+          "name": "MIDISND1.DAT",
+          "bytes": 5097,
+          "sha256": "b01db882ca1b250b4e876af08938318b6960abf27ad356a0eb971c8282f11308"
+        },
+        {
+          "name": "MIDISND2.DAT",
+          "bytes": 5626,
+          "sha256": "ee88717517fb3103329af0b658c7842d9e6b46dd3cc304dbfaa8588dcf5f928c"
+        },
+        {
+          "name": "PRINCE.DAT",
+          "bytes": 3278,
+          "sha256": "28d8b3a8c48ed6b7b280b16bcb3c2e1ac446f2a210a508d85937fbeb2196bf48"
+        },
+        {
+          "name": "PRINCE.EXE",
+          "bytes": 123335,
+          "sha256": "40039bf551be9541c76bdc5db18f4ca7837276f50bccf6155d5fc6582b2e1aa6"
+        },
+        {
+          "name": "PV.DAT",
+          "bytes": 25829,
+          "sha256": "418be33393e8ae25b724670d74f9b1fd6f1fd2eef38639e2f679701ddb8a4df2"
+        },
+        {
+          "name": "TITLE.DAT",
+          "bytes": 34904,
+          "sha256": "7fac03e153d9734262db8b53a6c84ac16b7aa077a8b90d43ca2947ab458e90f9"
+        },
+        {
+          "name": "VDUNGEON.DAT",
+          "bytes": 11845,
+          "sha256": "4221665993c10b420b8bb09321d1733c3b5a911026389f6717474a02f5ba823d"
+        },
+        {
+          "name": "DEMOINFO.TXT",
+          "bytes": 362,
+          "sha256": "eba1253804bab948adfa04d13e2d590499404e1459b5fe560fe9616c653fa165"
+        }
+      ]
+    },
+    {
+      "id": "imported-private-doom-shareware",
+      "profileId": "doom-shareware",
+      "title": "DOOM — shareware DOS v1.9",
+      "fileName": "doom-shareware-private.zip",
+      "bytes": 2493854,
+      "sha256": "0010d4a4851aa88344a87a8079d5c1ec15c688a20cb4e6ad2919a13d1f828a70",
+      "files": [
+        {
+          "name": "DM.DOC",
+          "bytes": 6397,
+          "sha256": "aade82ddad8b05b9e57121b80158893d2b3f2f8a2eed9147e720947dd9821b4e"
+        },
+        {
+          "name": "DM.EXE",
+          "bytes": 33640,
+          "sha256": "2725df25c7536aa98a4e6282e61e17186777f54074e6fa56d9a38825dd1c7e09"
+        },
+        {
+          "name": "DMFAQ66A.TXT",
+          "bytes": 120201,
+          "sha256": "794a4c94f78b724dcffa6a4ee44337e0e2bb41be612967d2cae5a9380f67638b"
+        },
+        {
+          "name": "DMFAQ66B.TXT",
+          "bytes": 140594,
+          "sha256": "ba677bc04a55e5c829befb3cc3ba950c5056247269f7620327714dde93023900"
+        },
+        {
+          "name": "DMFAQ66C.TXT",
+          "bytes": 76898,
+          "sha256": "43163af971e20064e3431fdde14977c66928b064e8fab1e48c343d44ac26be19"
+        },
+        {
+          "name": "DMFAQ66D.TXT",
+          "bytes": 34572,
+          "sha256": "9776b1976fb00c14cbe3c89d882c52bea0e3fe6a4522a4305763d58b31068471"
+        },
+        {
+          "name": "DOOM.EXE",
+          "bytes": 709905,
+          "sha256": "b8020523561a5ad9706e009a52d61c578f37faafd85ac471962308406292ce27"
+        },
+        {
+          "name": "DOOM1.WAD",
+          "bytes": 4196020,
+          "sha256": "1d7d43be501e67d927e415e0b8f3e29c3bf33075e859721816f652a526cac771"
+        },
+        {
+          "name": "DWANGO.DOC",
+          "bytes": 10623,
+          "sha256": "2300bcb497b18389de4fa8ed7c2822710967b4a26d6d162bccae9cd8cebd0cee"
+        },
+        {
+          "name": "DWANGO.EXE",
+          "bytes": 65021,
+          "sha256": "724486508cb23da93986c34336299972fbfaa2509a9ed18b0ec2832e07d600ca"
+        },
+        {
+          "name": "DWANGO.STR",
+          "bytes": 2536,
+          "sha256": "b4f93bc9d74e22f3b489e574b71189a931f963e76f4ea8da4d34e22c8be0971c"
+        },
+        {
+          "name": "HELPME.TXT",
+          "bytes": 4690,
+          "sha256": "b8ee1678923e1130700ec6a73cf50ed320091c9f79a933124e8c99e347aae5f5"
+        },
+        {
+          "name": "IPXSETUP.EXE",
+          "bytes": 18051,
+          "sha256": "1e5eeb2e3b6f526d603f19ed08c00668e04bd2b7e6439c109b84b1c61d283d51"
+        },
+        {
+          "name": "MODEM.CFG",
+          "bytes": 67,
+          "sha256": "0eb17ba5df3f319a02325401c9fbe212a3aa9065d63d4b7bd49d75bd2bb0268b"
+        },
+        {
+          "name": "MODEM.NUM",
+          "bytes": 67,
+          "sha256": "604a8033fa26c634a758006e318573206d123419fefc9df8cf76f2b1e67ba105"
+        },
+        {
+          "name": "MODEM.STR",
+          "bytes": 3405,
+          "sha256": "84a5af6596ce180bdb03a0bee414421538c27df5b0722041213cec953099d1d2"
+        },
+        {
+          "name": "ORDER.FRM",
+          "bytes": 4617,
+          "sha256": "a7fa68a0021b3d04abd781e74175511a1a96d923c544fce19805ea5a9696df86"
+        },
+        {
+          "name": "README.TXT",
+          "bytes": 21631,
+          "sha256": "17878ebe5ca179de7ec2cc90bbabbc922ab69924118be168a25f8d317f65a2ff"
+        },
+        {
+          "name": "SERSETUP.EXE",
+          "bytes": 20257,
+          "sha256": "94cf23eac5fc43da942f9529e9ff4dd6dc5aab82fe348bd72eb7de971d9170f5"
+        },
+        {
+          "name": "SETUP.EXE",
+          "bytes": 45884,
+          "sha256": "c9d328bff268854414feae5459870aac6f779e55a9cbf4568a83fef9b7be6e15"
+        }
+      ]
+    },
+    {
+      "id": "imported-private-duke-shareware",
+      "profileId": "duke-shareware",
+      "title": "Duke Nukem 3D — shareware DOS v1.3d",
+      "fileName": "duke-shareware-private.zip",
+      "bytes": 5963697,
+      "sha256": "8ce1cc14233a4b7dfdc82bd944506c1d09545c83754b9741642e5519f4b5f30e",
+      "files": [
+        {
+          "name": "CATALOG.EXE",
+          "bytes": 27032,
+          "sha256": "3001d5d034945f48f7de169b03a1648c37fe1b0ab2ca7d23ed439d439ff8b60a"
+        },
+        {
+          "name": "COMMIT.EXE",
+          "bytes": 25942,
+          "sha256": "63c12997aaed8048cff56944603d17b7202d096812b05ab2b53cc4d407c6d8c4"
+        },
+        {
+          "name": "DEFS.CON",
+          "bytes": 28893,
+          "sha256": "20d415b974191ac53ca1d453ced487408462a6c627f8dff409b20e05d5a6d839"
+        },
+        {
+          "name": "DEMO1.DMO",
+          "bytes": 6226,
+          "sha256": "28e05772cdf1e6b4d8c11649f96fbd3a76bf73e335ba7fe255dc8f6ab4a938a3"
+        },
+        {
+          "name": "DEMO2.DMO",
+          "bytes": 9701,
+          "sha256": "5c6021b85a8a23ba235819c6498a8c4b0a4015d64bff24d1a8d48d2ed4dbb780"
+        },
+        {
+          "name": "DEMO3.DMO",
+          "bytes": 3759,
+          "sha256": "c86efbdef20dbdefbb1aa2480bc02e096225e9ef7f9f01fb5d970c382196ba6d"
+        },
+        {
+          "name": "DN3DHELP.EXE",
+          "bytes": 73594,
+          "sha256": "5dccdf4da37aff04cca4a64af129587ebeead7c39a3986acf4afba5f4f26d177"
+        },
+        {
+          "name": "DUKE.RTS",
+          "bytes": 188954,
+          "sha256": "3fbc1d9b221f2a6952825a511ed63756f8eac4f98001eb094a81f17cb0fd05e5"
+        },
+        {
+          "name": "DUKE3D.CFG",
+          "bytes": 5076,
+          "sha256": "193f9061d695cea91b956fbde1cc1de2b2fcc68947de3318168ea727326f5d88"
+        },
+        {
+          "name": "DUKE3D.EXE",
+          "bytes": 1178963,
+          "sha256": "6e6f5159f21e795302221622df8be89325ede968c099126d5421dbec589ab3be"
+        },
+        {
+          "name": "DUKE3D.GRP",
+          "bytes": 11035779,
+          "sha256": "f943d0c2e2a0803a644a2107c81ea897dec87596d9dd1a6a432131ad6f5818d6"
+        },
+        {
+          "name": "GAME.CON",
+          "bytes": 99639,
+          "sha256": "b3095352dc2303b5616d6180bffbe24ddd1a853d2105b384dab0e8535814e0e4"
+        },
+        {
+          "name": "LICENSE.DOC",
+          "bytes": 9402,
+          "sha256": "3569cefe7316a5c682f75cd8dd7f3f432940f8a657df82da5abea7a08f8d87a5"
+        },
+        {
+          "name": "MODEM.PCK",
+          "bytes": 4125,
+          "sha256": "8a4a11b45eb361f7f5bc8dd0369ec4604f90bbcd2d301b46d2e600bd414e42fa"
+        },
+        {
+          "name": "ORDER.FRM",
+          "bytes": 3866,
+          "sha256": "d5096c1ddc1f7cd5eaef8094bfa069789dfb92b8f2f9fd114eef24f773f894cf"
+        },
+        {
+          "name": "README.DOC",
+          "bytes": 2760,
+          "sha256": "bba1b4050f8f6d9d80d125dd911fa229c6883a1d6314a8d31a488a6c7b5f719e"
+        },
+        {
+          "name": "SETMAIN.EXE",
+          "bytes": 95177,
+          "sha256": "09012d6a5ea099e1fcfaa92f28dbb4ff34526c8e50943732d5ab69e07cf2c735"
+        },
+        {
+          "name": "SETUP.EXE",
+          "bytes": 27153,
+          "sha256": "79154ab8d112fcf534c4f61392896e15bf40575bba9a0f97a429cf61be84ba92"
+        },
+        {
+          "name": "SWCBBS.EXE",
+          "bytes": 4960,
+          "sha256": "12622c52fa30e57a7bbd8c42c936ce0c278c0fa50bf8027604657cc49eb5119c"
+        },
+        {
+          "name": "ULTRAMID.INI",
+          "bytes": 6871,
+          "sha256": "2df529ccb0188fa861e40326a03b88bdda5b858c6dd0b26c095a4adbdb4e6cfe"
+        },
+        {
+          "name": "USER.CON",
+          "bytes": 36960,
+          "sha256": "1e872508f1abaa9f5e0504292e275de73a86bc57b29bce35f210c61d29b7255f"
+        }
+      ]
+    }
+  ],
+  "dukeGrpMd5": "c03558e3a78d1c5356dc69b6134c5b55"
+}

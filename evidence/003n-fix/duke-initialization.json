@@ -1,0 +1,45 @@
+{
+  "browser": "Chrome",
+  "games": [
+    {
+      "title": "Duke Nukem 3D — shareware DOS v1.3d",
+      "id": "imported-private-duke-shareware",
+      "executable": "DUKE3D.EXE",
+      "files": [
+        "CATALOG.EXE",
+        "COMMIT.EXE",
+        "DEFS.CON",
+        "DEMO1.DMO",
+        "DEMO2.DMO",
+        "DEMO3.DMO",
+        "DN3DHELP.EXE",
+        "DUKE.RTS",
+        "DUKE3D.CFG",
+        "DUKE3D.EXE",
+        "DUKE3D.GRP",
+        "GAME.CON",
+        "LICENSE.DOC",
+        "MODEM.PCK",
+        "ORDER.FRM",
+        "README.DOC",
+        "SETMAIN.EXE",
+        "SETUP.EXE",
+        "SWCBBS.EXE",
+        "ULTRAMID.INI",
+        "USER.CON"
+      ],
+      "diagnostics": {
+        "ready": true,
+        "heap": 67108864,
+        "canvas": {
+          "width": 320,
+          "height": 200
+        },
+        "error": ""
+      }
+    }
+  ],
+  "pageErrors": [],
+  "gameplayVerified": false,
+  "savesVerified": false
+}

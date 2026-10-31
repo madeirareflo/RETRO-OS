@@ -1,3 +1,4 @@
+import {installLocalPrivateGames} from './privateInstall';
 import {ManualTestPanel} from './ManualTestPanel';
 import {useEffect, useState, useMemo} from 'react';
 import type {GameEntry, GameStatus} from './types';
@@ -20,6 +21,7 @@ interface RetroGameLauncherProps {
 
 const PREDEFINED_COLLECTIONS = [
   'Todas',
+  'Prince / DOOM / Duke',
   'Favoritos',
   'Instalados',
   'Jogáveis',
@@ -52,6 +54,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
   const [statusMessage, setStatusMessage] = useState('Pronto para navegar pela biblioteca.');
 
   useEffect(()=>{const update=()=>setCatalog(loadBaseCatalog());window.addEventListener('retro:library-change',update);return ()=>window.removeEventListener('retro:library-change',update)},[]);
+  useEffect(()=>{let live=true;void installLocalPrivateGames().then(message=>{if(live&&message){setStatusMessage(message);const games=loadBaseCatalog();const first=games.find(g=>g.id.startsWith('imported-private-'));if(first){setActiveCollection('Prince / DOOM / Duke');setSelectedId(first.id)}}}).catch(e=>{if(live)setStatusMessage('Erro de instalação privada: '+String(e))});return ()=>{live=false}},[]);
   // Selected game
   const selectedGame = useMemo(() => {
     return catalog.find(g => g.id === selectedId) || catalog[0];
@@ -72,6 +75,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
       }
 
       // Predefined Collections
+      if (activeCollection === 'Prince / DOOM / Duke') return !!game.preparedProfileId;
       if (activeCollection === 'Favoritos') return game.isFavorite;
       if (activeCollection === 'Instalados') return game.isInstalled;
       if (activeCollection === 'Jogáveis') return game.isPlayable;

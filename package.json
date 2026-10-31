@@ -4,13 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 127.0.0.1 --port 4576 --strictPort",
+    "dev": "vite --host 127.0.0.1 --port 4676 --strictPort",
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src",
     "test": "vitest run",
     "test:e2e": "playwright test --project=edge --project=chrome",
-    "preview": "vite preview --host 127.0.0.1 --port 4577 --strictPort",
+    "preview": "vite preview --host 127.0.0.1 --port 4677 --strictPort",
     "test:e2e:all": "playwright test"
   },
   "dependencies": {
