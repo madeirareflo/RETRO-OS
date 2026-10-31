@@ -16,7 +16,12 @@ export const registry=[
 {id:'mines',name:'Campo Minado',icon:'mine',group:'Jogos'},
 {id:'snake',name:'Snake',icon:'snake',group:'Jogos'},
 {id:'solitaire',name:'Paciência',icon:'cards',group:'Jogos'},
-{id:'run',name:'Executar',icon:'terminal',group:'Programas'}
+{id:'run',name:'Executar',icon:'terminal',group:'Programas'},
+{id:'dialup',name:'Conectar à Internet',icon:'globe',group:'Programas'},
+{id:'timemachine',name:'Máquina do Tempo',icon:'disc',group:'Programas'},
+{id:'saver',name:'Protetor de Tela',icon:'computer',group:'Configurações'},
+{id:'backup',name:'Backup e Restauração',icon:'floppy',group:'Configurações'},
+{id:'media',name:'Central de Discos',icon:'disc',group:'Programas'}
 ] as const;
 export type AppId=typeof registry[number]['id'];
 export const appInfo=(id:AppId)=>registry.find(a=>a.id===id)!;

@@ -1,0 +1,5 @@
+import {useState} from 'react';
+import {trashEntries,restoreFile,useFiles} from '../storage/vfs';
+import {Icon} from '../components/Icon';
+import {sound} from '../services/audio';
+export function Trash(){useFiles();const [status,setStatus]=useState('EASTER EGG: suas desculpas para não salvar o trabalho foram recicladas.');const entries=trashEntries();return <div className="app-fill"><nav className="menubar"><span>Arquivo · Editar · Exibir · Ajuda</span></nav><div className="file-grid">{entries.length?entries.map(e=><article key={e.id}><Icon name={e.items[0].kind==='folder'?'folder':'note'}/><p>{e.items[0].path.split('/').pop()}</p><small>{e.items[0].path}</small><p><button onClick={()=>{try{restoreFile(e.id);sound('trash');setStatus('Arquivo restaurado.')}catch(error){setStatus(String(error))}}}>Restaurar</button></p></article>):<div className="dialog-message"><Icon name="trash" size={48}/><h2>Lixeira vazia</h2><p>Nenhum arquivo pessoal foi apagado.</p></div>}</div><footer className="statusbar" role="status">{entries.length} item(ns) · {status}</footer></div>}
