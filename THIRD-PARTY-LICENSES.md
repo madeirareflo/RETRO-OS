@@ -1,0 +1,218 @@
+# Inventário de terceiros — 003E
+
+Nenhum jogo comercial, fonte Microsoft, ROM, ISO, gravação comercial ou screenshot histórico foi integrado à distribuição. As imagens históricas foram consultadas apenas em arquivos temporários para estudo. Arte editorial, ícones vetoriais e demo Coruja digital são originais do Projeto Davi. Não se concede aqui uma licença geral ao código original do usuário.
+
+A aplicação usa dependências de código aberto; o inventário abaixo registra metadados de pacotes instalados, não substitui leitura jurídica de todas as licenças. Arquivos de licença originais permanecem com os pacotes. Não foram copiadas implementações de 98.css ou XP.css. Esses projetos foram somente referências.
+
+- @babel/code-frame 7.29.7 — MIT; arquivo LICENSE
+- @babel/compat-data 7.29.7 — MIT; arquivo LICENSE
+- @babel/core 7.29.7 — MIT; arquivo LICENSE
+- @babel/generator 7.29.12 — MIT; arquivo LICENSE
+- @babel/helper-compilation-targets 7.29.7 — MIT; arquivo LICENSE
+- @babel/helper-globals 7.29.7 — MIT; arquivo LICENSE
+- @babel/helper-module-imports 7.29.7 — MIT; arquivo LICENSE
+- @babel/helper-module-transforms 7.29.7 — MIT; arquivo LICENSE
+- @babel/helper-plugin-utils 7.29.7 — MIT; arquivo LICENSE
+- @babel/helper-string-parser 7.29.11 — MIT; arquivo LICENSE
+- @babel/helper-validator-identifier 7.29.7 — MIT; arquivo LICENSE
+- @babel/helper-validator-option 7.29.7 — MIT; arquivo LICENSE
+- @babel/helpers 7.29.10 — MIT; arquivo LICENSE
+- @babel/parser 7.29.12 — MIT; arquivo LICENSE
+- @babel/plugin-transform-react-jsx-self 7.29.7 — MIT; arquivo LICENSE
+- @babel/plugin-transform-react-jsx-source 7.29.7 — MIT; arquivo LICENSE
+- @babel/template 7.29.7 — MIT; arquivo LICENSE
+- @babel/traverse 7.29.12 — MIT; arquivo LICENSE
+- @babel/types 7.29.11 — MIT; arquivo LICENSE
+- @esbuild/win32-x64 0.28.2 — MIT; arquivo não localizado no nível principal
+- @eslint-community/eslint-utils 4.10.1 — MIT; arquivo LICENSE
+- @eslint-community/regexpp 4.12.2 — MIT; arquivo LICENSE
+- @eslint/config-array 0.21.2 — Apache-2.0; arquivo LICENSE
+- @eslint/config-helpers 0.4.2 — Apache-2.0; arquivo LICENSE
+- @eslint/core 0.17.0 — Apache-2.0; arquivo LICENSE
+- @eslint/eslintrc 3.3.7 — MIT; arquivo LICENSE
+- @eslint/js 9.39.5 — MIT; arquivo LICENSE
+- @eslint/object-schema 2.1.7 — Apache-2.0; arquivo LICENSE
+- @eslint/plugin-kit 0.4.1 — Apache-2.0; arquivo LICENSE
+- @humanfs/core 0.19.2 — Apache-2.0; arquivo LICENSE
+- @humanfs/node 0.16.8 — Apache-2.0; arquivo LICENSE
+- @humanfs/types 0.15.0 — Apache-2.0; arquivo não localizado no nível principal
+- @humanwhocodes/module-importer 1.0.1 — Apache-2.0; arquivo LICENSE
+- @humanwhocodes/retry 0.4.3 — Apache-2.0; arquivo LICENSE
+- @jridgewell/gen-mapping 0.3.13 — MIT; arquivo LICENSE
+- @jridgewell/remapping 2.3.5 — MIT; arquivo LICENSE
+- @jridgewell/resolve-uri 3.1.2 — MIT; arquivo LICENSE
+- @jridgewell/sourcemap-codec 1.6.0 — MIT; arquivo LICENSE
+- @jridgewell/trace-mapping 0.3.31 — MIT; arquivo LICENSE
+- @playwright/test 1.64.1 — Apache-2.0; arquivo LICENSE
+- @rolldown/pluginutils 1.0.0-rc.3 — MIT; arquivo LICENSE
+- @rollup/rollup-win32-x64-gnu 4.66.0 — MIT; arquivo não localizado no nível principal
+- @rollup/rollup-win32-x64-msvc 4.66.0 — MIT; arquivo não localizado no nível principal
+- @types/babel__core 7.20.5 — MIT; arquivo LICENSE
+- @types/babel__generator 7.27.0 — MIT; arquivo LICENSE
+- @types/babel__template 7.4.4 — MIT; arquivo LICENSE
+- @types/babel__traverse 7.28.0 — MIT; arquivo LICENSE
+- @types/chai 5.2.3 — MIT; arquivo LICENSE
+- @types/deep-eql 4.0.2 — MIT; arquivo LICENSE
+- @types/estree 1.0.10 — MIT; arquivo LICENSE
+- @types/estree 1.0.9 — MIT; arquivo LICENSE
+- @types/json-schema 7.0.15 — MIT; arquivo LICENSE
+- @types/react 19.3.0 — MIT; arquivo LICENSE
+- @types/react-dom 19.3.0 — MIT; arquivo LICENSE
+- @typescript-eslint/eslint-plugin 8.72.1 — MIT; arquivo LICENSE
+- @typescript-eslint/parser 8.72.1 — MIT; arquivo LICENSE
+- @typescript-eslint/project-service 8.72.1 — MIT; arquivo LICENSE
+- @typescript-eslint/scope-manager 8.72.1 — MIT; arquivo LICENSE
+- @typescript-eslint/tsconfig-utils 8.72.1 — MIT; arquivo LICENSE
+- @typescript-eslint/type-utils 8.72.1 — MIT; arquivo LICENSE
+- @typescript-eslint/types 8.72.1 — MIT; arquivo LICENSE
+- @typescript-eslint/typescript-estree 8.72.1 — MIT; arquivo LICENSE
+- @typescript-eslint/utils 8.72.1 — MIT; arquivo LICENSE
+- @typescript-eslint/visitor-keys 8.72.1 — MIT; arquivo LICENSE
+- @vitejs/plugin-react 5.2.0 — MIT; arquivo LICENSE
+- @vitest/expect 3.2.7 — MIT; arquivo LICENSE
+- @vitest/mocker 3.2.7 — MIT; arquivo LICENSE
+- @vitest/pretty-format 3.2.7 — MIT; arquivo LICENSE
+- @vitest/runner 3.2.7 — MIT; arquivo LICENSE
+- @vitest/snapshot 3.2.7 — MIT; arquivo LICENSE
+- @vitest/spy 3.2.7 — MIT; arquivo LICENSE
+- @vitest/utils 3.2.7 — MIT; arquivo LICENSE
+- acorn 8.19.0 — MIT; arquivo LICENSE
+- acorn-jsx 5.3.2 — MIT; arquivo LICENSE
+- ajv 6.15.0 — MIT; arquivo LICENSE
+- ansi-styles 4.3.0 — MIT; arquivo LICENSE
+- argparse 2.0.1 — Python-2.0; arquivo LICENSE
+- assertion-error 2.0.1 — MIT; arquivo LICENSE
+- balanced-match 1.0.2 — MIT; arquivo LICENSE.md
+- balanced-match 4.0.4 — MIT; arquivo LICENSE.md
+- baseline-browser-mapping 2.11.34 — Apache-2.0; arquivo LICENSE.txt
+- brace-expansion 1.1.21 — MIT; arquivo LICENSE
+- brace-expansion 5.0.12 — MIT; arquivo LICENSE
+- browserslist 4.29.5 — MIT; arquivo LICENSE
+- cac 6.7.14 — MIT; arquivo LICENSE
+- callsites 3.1.0 — MIT; arquivo LICENSE
+- caniuse-lite 1.0.30001820 — CC-BY-4.0; arquivo LICENSE
+- chai 5.3.3 — MIT; arquivo LICENSE
+- chalk 4.1.2 — MIT; arquivo LICENSE
+- check-error 2.1.3 — MIT; arquivo LICENSE
+- color-convert 2.0.1 — MIT; arquivo LICENSE
+- color-name 1.1.4 — MIT; arquivo LICENSE
+- concat-map 0.0.1 — MIT; arquivo LICENSE
+- convert-source-map 2.0.0 — MIT; arquivo LICENSE
+- cross-spawn 7.0.6 — MIT; arquivo LICENSE
+- csstype 3.2.3 — MIT; arquivo LICENSE
+- debug 4.4.3 — MIT; arquivo LICENSE
+- deep-eql 5.0.2 — MIT; arquivo LICENSE
+- deep-is 0.1.4 — MIT; arquivo LICENSE
+- electron-to-chromium 1.5.467 — ISC; arquivo LICENSE
+- es-module-lexer 1.7.0 — MIT; arquivo LICENSE
+- esbuild 0.28.2 — MIT; arquivo LICENSE.md
+- escalade 3.2.0 — MIT; arquivo LICENSE
+- escape-string-regexp 4.0.0 — MIT; arquivo LICENSE
+- eslint 9.39.5 — MIT; arquivo LICENSE
+- eslint-scope 8.4.0 — BSD-2-Clause; arquivo LICENSE
+- eslint-visitor-keys 3.4.3 — Apache-2.0; arquivo LICENSE
+- eslint-visitor-keys 5.0.1 — Apache-2.0; arquivo LICENSE
+- eslint-visitor-keys 4.2.1 — Apache-2.0; arquivo LICENSE
+- espree 10.4.0 — BSD-2-Clause; arquivo LICENSE
+- esquery 1.7.0 — BSD-3-Clause; arquivo LICENSE.txt
+- esrecurse 4.3.0 — BSD-2-Clause; arquivo não localizado no nível principal
+- estraverse 5.3.0 — BSD-2-Clause; arquivo não localizado no nível principal
+- estree-walker 3.0.3 — MIT; arquivo LICENSE
+- esutils 2.0.3 — BSD-2-Clause; arquivo não localizado no nível principal
+- expect-type 1.4.0 — Apache-2.0; arquivo LICENSE
+- fast-deep-equal 3.1.3 — MIT; arquivo LICENSE
+- fast-json-stable-stringify 2.1.0 — MIT; arquivo LICENSE
+- fast-levenshtein 2.0.6 — MIT; arquivo LICENSE.md
+- fdir 6.5.0 — MIT; arquivo LICENSE
+- file-entry-cache 8.0.0 — MIT; arquivo LICENSE
+- find-up 5.0.0 — MIT; arquivo LICENSE
+- flat-cache 4.0.1 — MIT; arquivo LICENSE
+- flatted 3.4.4 — ISC; arquivo LICENSE
+- gensync 1.0.0-beta.2 — MIT; arquivo LICENSE
+- glob-parent 6.0.2 — ISC; arquivo LICENSE
+- globals 14.0.0 — MIT; arquivo LICENSE
+- has-flag 4.0.0 — MIT; arquivo LICENSE
+- ignore 5.3.2 — MIT; arquivo não localizado no nível principal
+- ignore 7.0.14 — MIT; arquivo não localizado no nível principal
+- import-fresh 3.3.1 — MIT; arquivo LICENSE
+- imurmurhash 0.1.4 — MIT; arquivo não localizado no nível principal
+- is-extglob 2.1.1 — MIT; arquivo LICENSE
+- is-glob 4.0.3 — MIT; arquivo LICENSE
+- isexe 2.0.0 — ISC; arquivo LICENSE
+- js-tokens 4.0.0 — MIT; arquivo LICENSE
+- js-tokens 9.0.1 — MIT; arquivo LICENSE
+- js-yaml 4.3.2 — MIT; arquivo LICENSE
+- jsesc 3.1.0 — MIT; arquivo não localizado no nível principal
+- json-buffer 3.0.1 — MIT; arquivo LICENSE
+- json-schema-traverse 0.4.1 — MIT; arquivo LICENSE
+- json-stable-stringify-without-jsonify 1.0.1 — MIT; arquivo LICENSE
+- json5 2.2.3 — MIT; arquivo LICENSE.md
+- keyv 4.5.4 — MIT; arquivo não localizado no nível principal
+- levn 0.4.1 — MIT; arquivo LICENSE
+- locate-path 6.0.0 — MIT; arquivo LICENSE
+- lodash.merge 4.6.2 — MIT; arquivo LICENSE
+- loupe 3.2.1 — MIT; arquivo LICENSE
+- lru-cache 5.1.1 — ISC; arquivo LICENSE
+- magic-string 0.30.21 — MIT; arquivo LICENSE
+- minimatch 3.1.5 — ISC; arquivo LICENSE
+- minimatch 10.2.6 — BlueOak-1.0.0; arquivo LICENSE.md
+- ms 2.1.3 — MIT; arquivo LICENSE.md
+- nanoid 3.3.20 — MIT; arquivo LICENSE
+- natural-compare 1.4.0 — MIT; arquivo não localizado no nível principal
+- node-releases 2.0.61 — MIT; arquivo LICENSE
+- optionator 0.9.4 — MIT; arquivo LICENSE
+- p-limit 3.1.0 — MIT; arquivo LICENSE
+- p-locate 5.0.0 — MIT; arquivo LICENSE
+- parent-module 1.0.1 — MIT; arquivo LICENSE
+- path-exists 4.0.0 — MIT; arquivo LICENSE
+- path-key 3.1.1 — MIT; arquivo LICENSE
+- pathe 2.0.3 — MIT; arquivo LICENSE
+- pathval 2.0.1 — MIT; arquivo LICENSE
+- picocolors 1.1.1 — ISC; arquivo LICENSE
+- picomatch 4.0.7 — MIT; arquivo LICENSE
+- playwright 1.64.1 — Apache-2.0; arquivo LICENSE
+- playwright-core 1.64.1 — Apache-2.0; arquivo LICENSE
+- postcss 8.5.32 — MIT; arquivo LICENSE
+- prelude-ls 1.2.1 — MIT; arquivo LICENSE
+- punycode 2.3.1 — MIT; arquivo não localizado no nível principal
+- react 19.3.1 — MIT; arquivo LICENSE
+- react-dom 19.3.1 — MIT; arquivo LICENSE
+- react-refresh 0.18.0 — MIT; arquivo LICENSE
+- resolve-from 4.0.0 — MIT; arquivo LICENSE
+- rollup 4.66.0 — MIT; arquivo LICENSE.md
+- scheduler 0.28.0 — MIT; arquivo LICENSE
+- semver 6.3.1 — ISC; arquivo LICENSE
+- semver 7.8.5 — ISC; arquivo LICENSE
+- shebang-command 2.0.0 — MIT; arquivo LICENSE
+- shebang-regex 3.0.0 — MIT; arquivo LICENSE
+- siginfo 2.0.0 — ISC; arquivo LICENSE
+- source-map-js 1.2.2 — BSD-3-Clause; arquivo LICENSE
+- stackback 0.0.2 — MIT; arquivo não localizado no nível principal
+- std-env 3.10.0 — MIT; arquivo não localizado no nível principal
+- strip-json-comments 3.1.1 — MIT; arquivo LICENSE
+- strip-literal 3.1.0 — MIT; arquivo LICENSE
+- supports-color 7.2.0 — MIT; arquivo LICENSE
+- tinybench 2.9.0 — MIT; arquivo LICENSE
+- tinyexec 0.3.2 — MIT; arquivo LICENSE
+- tinyglobby 0.2.17 — MIT; arquivo LICENSE
+- tinypool 1.1.1 — MIT; arquivo LICENSE
+- tinyrainbow 2.0.0 — MIT; arquivo não localizado no nível principal
+- tinyspy 4.0.6 — MIT; arquivo não localizado no nível principal
+- ts-api-utils 2.5.0 — MIT; arquivo LICENSE.md
+- type-check 0.4.0 — MIT; arquivo LICENSE
+- typescript 5.9.3 — Apache-2.0; arquivo LICENSE.txt
+- typescript-eslint 8.72.1 — MIT; arquivo LICENSE
+- update-browserslist-db 1.3.4 — MIT; arquivo LICENSE
+- uri-js 4.4.1 — BSD-2-Clause; arquivo LICENSE
+- vite 7.3.7 — MIT; arquivo LICENSE.md
+- vite-node 3.2.4 — MIT; arquivo LICENSE
+- vitest 3.2.7 — MIT; arquivo LICENSE.md
+- which 2.0.2 — ISC; arquivo LICENSE
+- why-is-node-running 2.3.0 — MIT; arquivo LICENSE
+- word-wrap 1.2.5 — MIT; arquivo LICENSE
+- yallist 3.1.1 — ISC; arquivo LICENSE
+- yocto-queue 0.1.0 — MIT; arquivo LICENSE
+
+Nomes de artistas, programas e jogos são referências editoriais às respectivas marcas. Links de loja não autorizam incorporação de arquivos. Requisitos e disponibilidade de cada título precisam da conferência indicada no catálogo. A demo sonora não imita faixa comercial identificável.
+
+Textos integrais MIT dos pacotes de runtime React, React DOM e Scheduler estão em docs/licenses/*-LICENSE.txt. Os demais metadados incluem ferramentas de desenvolvimento, que não são copiadas como executáveis nesta entrega.

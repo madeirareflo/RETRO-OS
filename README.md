@@ -84,3 +84,8 @@ O build está em `dist/`. Publicar os arquivos de dist requer autorização do r
 Para adicionar um app, registre o metadado em `src/core/registry.ts`, crie seu componente em `src/apps/` e conecte-o em `AppHost.tsx`. O núcleo de janelas não muda. Mantenha I/O como dados; novos recursos sociais devem implementar `SocialAdapter`.
 
 Consulte [relatório 002](RETRO-OS-002-REPORT.md), [testes 002](TEST-REPORT-002.md), [auditoria visual](docs/VISUAL-AUDIT-002.md), [comparação antes/depois](evidence/002/comparison.html), [compatibilidade](docs/COMPATIBILITY-002.md) e [pendências / RETRO OS 003](docs/BACKLOG-003.md). Os relatórios da 001 foram preservados como documentação histórica.
+
+
+## Desenvolvimento privado 003E
+
+A versão 003E está em branch local, sem publicação. Leia EXECUCAO-003E.md e RETRO-OS-003E-REPORT.md. Novo início local: INICIAR-PRIVADO.cmd. Não enviar esta branch ao repositório público. O site público continua na linha estável 002.

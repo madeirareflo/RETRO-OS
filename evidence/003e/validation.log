@@ -1,0 +1,165 @@
+
+Verificando: TypeScript
+
+Verificando: ESLint
+
+Verificando: Vitest
+
+ RUN  v3.2.7 C:/Users/Davi LRD/.codex/.chatgpt-projects/g-p-6a3eef711d7881918fb955604f45fe02/RETRO-OS
+
+ ✓ src/tests/playlist003e.test.ts (3 tests) 13ms
+ ✓ src/tests/catalog003e.test.ts (3 tests) 13ms
+ ✓ src/tests/vfs.test.ts (10 tests) 17ms
+ ✓ src/tests/backup.test.ts (4 tests) 25ms
+ ✓ src/tests/core.test.ts (16 tests) 38ms
+
+ Test Files  5 passed (5)
+      Tests  36 passed (36)
+   Start at  09:29:27
+   Duration  836ms (transform 241ms, setup 0ms, collect 551ms, tests 106ms, environment 1ms, prepare 1.13s)
+
+
+Verificando: Build
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 80 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.61 kB │ gzip:   0.39 kB
+dist/assets/index-CTdKUbly.css   53.65 kB │ gzip:  12.66 kB
+dist/assets/index-DMd-KyiB.js   459.06 kB │ gzip: 125.83 kB
+✓ built in 1.13s
+
+Verificando: Servidor HTTP, domínio e migrações
+✔ 003E HTTP: três contas, moderação protegida, rankings, exportação e exclusão (775.8788ms)
+✔ duas sessões reais, SSE, amizade, histórico, bloqueio e isolamento (575.7628ms)
+✔ migração 003D preserva biografia; recados, moderadores e respostas respeitam permissões (6.114ms)
+✔ rankings: idempotência, pares repetidos, abandono e semana UTC (2.126ms)
+✔ denúncias legadas migram sem duplicação e retenção expira logs e denúncias (1.1708ms)
+✔ ranking geral agrega mais de 5000 resultados sem truncar pontuação (23.8005ms)
+✔ Batalha Naval completa: aceite, frota secreta, autorização, turnos, vitória e histórico (7.9212ms)
+✔ 003D: privacidade, migração, JSON, SSE e limite de autenticação (479.5815ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3562.331
+
+Verificando: Regressão Edge/Chrome
+[WebServer] (node:33420) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 78 tests using 2 workers
+
+(node:36012) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:40956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [edge] › e2e\003d.spec.ts:3:1 › 003D editor localiza, substitui, salva cópia e tarefas encerram somente app virtual (3.3s)
+  ok  2 [edge] › e2e\003e.spec.ts:4:1 › 003E Game Center: museu honesto, busca, filtros, favoritos, atalho e jogo real (3.9s)
+  ok  3 [edge] › e2e\desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar (1.7s)
+  ok  4 [edge] › e2e\003e.spec.ts:5:1 › 003E editor confirma descarte e salva por diálogo compartilhado (1.6s)
+  ok  5 [edge] › e2e\desktop.spec.ts:5:1 › salvar, recarregar e reabrir texto pelo arquivo virtual (1.6s)
+  ok  6 [edge] › e2e\003e.spec.ts:6:1 › 003E Explorer: seleção Ctrl/Shift, arraste entre janelas e persistência (2.2s)
+  ok  7 [edge] › e2e\desktop.spec.ts:6:1 › temas globais, persistência, menu e screenshots (2.2s)
+  ok  8 [edge] › e2e\explorer003d.spec.ts:2:1 › 003D Explorer: árvore, histórico, endereço, pesquisa e ordem (1.5s)
+  ok 10 [edge] › e2e\keyboard002.spec.ts:2:1 › restaurar janela devolve foco ao campo anterior (1.2s)
+  ok  9 [edge] › e2e\desktop.spec.ts:7:1 › Paint exporta PNG real com desenho (1.9s)
+  ok 11 [edge] › e2e\keyboard002.spec.ts:3:1 › protetor ativa por inatividade e sai por teclado sem perder janela (1.3s)
+  ok 12 [edge] › e2e\desktop.spec.ts:8:1 › três jogos iniciam e aceitam jogadas (2.0s)
+  ok 13 [edge] › e2e\media.spec.ts:2:1 › player importa WAV original, reproduz, pausa e troca skin (1.7s)
+  ok 14 [edge] › e2e\desktop.spec.ts:9:1 › terminal, calculadora e páginas internas sem erros de console (2.0s)
+  ok 15 [edge] › e2e\media.spec.ts:3:1 › ícones arrastam, persistem e se reorganizam; menu rápido preserva aplicativos (1.8s)
+  ok 16 [edge] › e2e\desktop.spec.ts:10:1 › mobile permanece utilizável (1.3s)
+  ok 17 [edge] › e2e\media003e.spec.ts:2:1 › 003E player: demo original, skins, M3U seguro e reanexação (2.0s)
+  ok 19 [edge] › e2e\media003e.spec.ts:3:1 › 003E navegador: favoritos, histórico, pausa e retomada de download simulado (4.5s)
+  ok 18 [edge] › e2e\mission002.spec.ts:5:1 › discagem, erro de linha, persistência na sessão e desconexão (5.9s)
+  ok 20 [edge] › e2e\recovery002.spec.ts:2:1 › backup de bitmap preserva original quando desenho atual já mudou (1.8s)
+  ok 21 [edge] › e2e\mission002.spec.ts:6:1 › época independente do tema, sugestões e páginas (1.7s)
+  ok 22 [edge] › e2e\recovery002.spec.ts:3:1 › playlist persiste metadados, sinaliza indisponibilidade e pode reconectar arquivo (1.6s)
+  ok 23 [edge] › e2e\mission002.spec.ts:7:1 › arquivo salvo abre pelo explorador, renomeia, copia, recorta, exclui e restaura (2.6s)
+  ok 24 [edge] › e2e\system.spec.ts:2:1 › doze janelas simultâneas, foco, restauração e console (2.3s)
+  ok 25 [edge] › e2e\mission002.spec.ts:8:1 › Paint salva PNG em IndexedDB, reabre após reload e oferece refazer (2.0s)
+  ok 26 [edge] › e2e\system.spec.ts:3:1 › explorador navega unidades, abre imagem original e propriedades (2.2s)
+  ok 27 [edge] › e2e\mission002.spec.ts:9:1 › backup válido restaura, conflitos preservam atual e integridade inválida é recusada (2.3s)
+  ok 28 [edge] › e2e\visual003e.spec.ts:3:53 › 003E evidências classic (1.7s)
+  ok 29 [edge] › e2e\mission002.spec.ts:10:1 › quatro protetores reais, prévia, ativação, saída e configurações (2.5s)
+  ok 30 [edge] › e2e\visual003e.spec.ts:3:53 › 003E evidências win2000 (1.6s)
+  ok 31 [edge] › e2e\mission002.spec.ts:11:1 › sites internos, busca, escola e contador (1.4s)
+  ok 32 [edge] › e2e\visual003e.spec.ts:3:53 › 003E evidências xp (2.4s)
+  ok 33 [edge] › e2e\mission002.spec.ts:12:1 › CD virtual ejeta/insere e instala somente atalhos simulados (2.3s)
+  ok 34 [edge] › e2e\visual003e.spec.ts:3:53 › 003E evidências mix (2.2s)
+  ok 35 [edge] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 800x600 (1.3s)
+  ok 37 [edge] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1024x768 (1.4s)
+  ok 36 [edge] › e2e\windows2000.spec.ts:2:1 › Windows 2000 preserva editor e preferência após recarregar (1.7s)
+(node:9980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 38 [edge] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1366x768 (1.6s)
+  ok 40 [edge] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1920x1080 (2.2s)
+  ok 39 [chrome] › e2e\003d.spec.ts:3:1 › 003D editor localiza, substitui, salva cópia e tarefas encerram somente app virtual (2.5s)
+(node:11824) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 41 [chrome] › e2e\desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar (1.8s)
+  ok 43 [chrome] › e2e\desktop.spec.ts:5:1 › salvar, recarregar e reabrir texto pelo arquivo virtual (1.6s)
+  ok 42 [chrome] › e2e\003e.spec.ts:4:1 › 003E Game Center: museu honesto, busca, filtros, favoritos, atalho e jogo real (3.3s)
+  ok 44 [chrome] › e2e\desktop.spec.ts:6:1 › temas globais, persistência, menu e screenshots (2.3s)
+  ok 45 [chrome] › e2e\003e.spec.ts:5:1 › 003E editor confirma descarte e salva por diálogo compartilhado (1.7s)
+  ok 46 [chrome] › e2e\desktop.spec.ts:7:1 › Paint exporta PNG real com desenho (1.7s)
+  ok 47 [chrome] › e2e\003e.spec.ts:6:1 › 003E Explorer: seleção Ctrl/Shift, arraste entre janelas e persistência (2.2s)
+  ok 48 [chrome] › e2e\desktop.spec.ts:8:1 › três jogos iniciam e aceitam jogadas (2.2s)
+  ok 49 [chrome] › e2e\explorer003d.spec.ts:2:1 › 003D Explorer: árvore, histórico, endereço, pesquisa e ordem (1.4s)
+  ok 51 [chrome] › e2e\keyboard002.spec.ts:2:1 › restaurar janela devolve foco ao campo anterior (1.4s)
+  ok 50 [chrome] › e2e\desktop.spec.ts:9:1 › terminal, calculadora e páginas internas sem erros de console (2.1s)
+  ok 52 [chrome] › e2e\keyboard002.spec.ts:3:1 › protetor ativa por inatividade e sai por teclado sem perder janela (1.5s)
+  ok 53 [chrome] › e2e\desktop.spec.ts:10:1 › mobile permanece utilizável (1.8s)
+  ok 54 [chrome] › e2e\media.spec.ts:2:1 › player importa WAV original, reproduz, pausa e troca skin (1.9s)
+  ok 55 [chrome] › e2e\media003e.spec.ts:2:1 › 003E player: demo original, skins, M3U seguro e reanexação (2.7s)
+  ok 56 [chrome] › e2e\media.spec.ts:3:1 › ícones arrastam, persistem e se reorganizam; menu rápido preserva aplicativos (2.7s)
+  ok 57 [chrome] › e2e\media003e.spec.ts:3:1 › 003E navegador: favoritos, histórico, pausa e retomada de download simulado (4.6s)
+  ok 59 [chrome] › e2e\recovery002.spec.ts:2:1 › backup de bitmap preserva original quando desenho atual já mudou (1.9s)
+  ok 58 [chrome] › e2e\mission002.spec.ts:5:1 › discagem, erro de linha, persistência na sessão e desconexão (5.9s)
+  ok 60 [chrome] › e2e\recovery002.spec.ts:3:1 › playlist persiste metadados, sinaliza indisponibilidade e pode reconectar arquivo (1.9s)
+  ok 61 [chrome] › e2e\mission002.spec.ts:6:1 › época independente do tema, sugestões e páginas (2.0s)
+  ok 62 [chrome] › e2e\system.spec.ts:2:1 › doze janelas simultâneas, foco, restauração e console (2.6s)
+  ok 63 [chrome] › e2e\mission002.spec.ts:7:1 › arquivo salvo abre pelo explorador, renomeia, copia, recorta, exclui e restaura (2.6s)
+  ok 64 [chrome] › e2e\system.spec.ts:3:1 › explorador navega unidades, abre imagem original e propriedades (2.3s)
+  ok 65 [chrome] › e2e\mission002.spec.ts:8:1 › Paint salva PNG em IndexedDB, reabre após reload e oferece refazer (2.0s)
+  ok 66 [chrome] › e2e\visual003e.spec.ts:3:53 › 003E evidências classic (1.8s)
+  ok 67 [chrome] › e2e\mission002.spec.ts:9:1 › backup válido restaura, conflitos preservam atual e integridade inválida é recusada (2.4s)
+  ok 68 [chrome] › e2e\visual003e.spec.ts:3:53 › 003E evidências win2000 (1.8s)
+  ok 69 [chrome] › e2e\mission002.spec.ts:10:1 › quatro protetores reais, prévia, ativação, saída e configurações (2.6s)
+  ok 70 [chrome] › e2e\visual003e.spec.ts:3:53 › 003E evidências xp (2.4s)
+  ok 71 [chrome] › e2e\mission002.spec.ts:11:1 › sites internos, busca, escola e contador (1.5s)
+  ok 72 [chrome] › e2e\visual003e.spec.ts:3:53 › 003E evidências mix (2.3s)
+  ok 73 [chrome] › e2e\mission002.spec.ts:12:1 › CD virtual ejeta/insere e instala somente atalhos simulados (2.5s)
+  ok 74 [chrome] › e2e\windows2000.spec.ts:2:1 › Windows 2000 preserva editor e preferência após recarregar (1.8s)
+  ok 75 [chrome] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 800x600 (1.4s)
+  ok 76 [chrome] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1024x768 (1.4s)
+  ok 77 [chrome] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1366x768 (1.7s)
+  ok 78 [chrome] › e2e\mission002.spec.ts:13:75 › geometria, temas e console 1920x1080 (1.9s)
+
+  78 passed (1.6m)
+
+Verificando: Social gráfico real
+[WebServer] (node:38836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:38452) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:40768) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 social-e2e\boot003e.spec.ts:2:1 › desktop acessível após boot automático sem botão Pular (4.5s)
+  ok 2 social-e2e\community.spec.ts:4:1 › comunidade e perfil persistentes em duas sessões reais (3.7s)
+(node:31280) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 3 social-e2e\governance003e.spec.ts:4:1 › 003E três sessões: avatar privado, denúncia, administração, exportação e exclusão (6.2s)
+  ok 4 social-e2e\lan.spec.ts:4:1 › LAN real e Jogo da Velha completo entre dois navegadores (4.3s)
+  ok 5 social-e2e\messenger.spec.ts:4:1 › duas contas pela interface, amizade, SSE, resposta, atenção e bloqueio (2.9s)
+  ok 6 social-e2e\naval.spec.ts:4:1 › Batalha Naval entre duas sessões: convite, posicionamento, ataque e reconexão (8.3s)
+
+  6 passed (33.5s)

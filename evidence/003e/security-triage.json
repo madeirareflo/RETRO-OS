@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-31T12:34:28.340Z",
+  "trackedSensitivePaths": [],
+  "knownPatternHistoryCommits": [],
+  "scope": "Triagem por nomes/padrões conhecidos; não é auditoria independente de todo histórico ou dados pessoais",
+  "publicPush": false,
+  "checkedSourceCommit": "d1f626d69870c386f32988c51e2eb94ea4e0d505"
+}
