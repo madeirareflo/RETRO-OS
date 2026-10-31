@@ -1,3 +1,5 @@
+import {initLan,lan} from './lan.mjs';
+import {initCommunity,community} from './community.mjs';
 import http from 'node:http';
 import {DatabaseSync} from 'node:sqlite';
 import {randomBytes,scryptSync,timingSafeEqual,createHash} from 'node:crypto';
@@ -5,6 +7,7 @@ import fs from 'node:fs';
 fs.mkdirSync('server/data',{recursive:true});
 const db=new DatabaseSync(process.env.RETRO_DATABASE||'server/data/social.sqlite');
 db.exec(`PRAGMA journal_mode=WAL; CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,name TEXT UNIQUE,salt TEXT,hash TEXT); CREATE TABLE IF NOT EXISTS sessions(token TEXT PRIMARY KEY,user TEXT,expires INTEGER); CREATE TABLE IF NOT EXISTS friends(a TEXT,b TEXT,status TEXT,PRIMARY KEY(a,b)); CREATE TABLE IF NOT EXISTS messages(id INTEGER PRIMARY KEY,author TEXT,recipient TEXT,text TEXT,created INTEGER); CREATE TABLE IF NOT EXISTS blocks(a TEXT,b TEXT,PRIMARY KEY(a,b)); CREATE TABLE IF NOT EXISTS reports(id INTEGER PRIMARY KEY,author TEXT,message INTEGER,created INTEGER);`);
+initCommunity(db);initLan(db);
 const peers=new Map(),rates=new Map(),nudges=new Map();
 const hash=t=>createHash('sha256').update(t).digest('hex');
 function notify(id){for(const res of peers.get(id)||[])res.write('data: update\n\n')}
@@ -14,6 +17,8 @@ const server=http.createServer(async(req,res)=>{res.setHeader('Cache-Control','n
 if(req.method==='GET'&&route==='/api/health')return reply(200,{status:'local',version:3});
 if(req.method==='GET'&&route==='/api/events'){if(!uid)return reply(401,{error:'Entre na conta.'});res.writeHead(200,{'Content-Type':'text/event-stream','Connection':'keep-alive'});res.write('data: connected\n\n');const set=peers.get(uid)||new Set();set.add(res);peers.set(uid,set);const timer=setInterval(()=>{if(!db.prepare('SELECT 1 FROM sessions WHERE token=? AND expires>?').get(hash(cookie),Date.now())){res.end();return}res.write(': heartbeat\n\n')},1000);req.on('close',()=>{clearInterval(timer);set.delete(res);if(!set.size)peers.delete(uid)});return}
 if(req.method==='GET'&&route==='/api/state'){if(!uid)return reply(401,{error:'Visitante'});return reply(200,{me:db.prepare('SELECT id,name FROM users WHERE id=?').get(uid),users:db.prepare('SELECT id,name FROM users WHERE id<>? LIMIT 100').all(uid).map(u=>({...u,online:peers.has(u.id),blocked:blocked(uid,u.id)})),friends:db.prepare('SELECT * FROM friends WHERE a=? OR b=?').all(uid,uid),messages:db.prepare('SELECT * FROM messages WHERE author=? OR recipient=? ORDER BY id DESC LIMIT 200').all(uid,uid).reverse()})}
+if(req.method==='GET'&&route==='/api/social'){if(!uid)return reply(401,{error:'Entre na conta'});const r=community(db,uid,route,{},blocked);return reply(r.status,r.body)}
+if(req.method==='GET'&&route==='/api/lan'){if(!uid)return reply(401,{error:'Entre na conta'});const r=lan(db,uid,route,{},blocked);return reply(r.status,r.body)}
 if(req.method!=='POST')return reply(404,{error:'Não encontrado'});
 const origin=req.headers.origin;if(origin&&origin!==`http://${req.headers.host}`)return reply(403,{error:'Origem não autorizada'});
 if(!req.headers['content-type']?.startsWith('application/json'))return reply(415,{error:'Use JSON'});
@@ -21,6 +26,8 @@ const key=uid||req.socket.remoteAddress,rate=rates.get(key)||{at:Date.now(),coun
 if(route==='/api/register'||route==='/api/login'){if(typeof data.name!=='string'||!/^[-a-zA-Z0-9_]{3,30}$/.test(data.name)||typeof data.password!=='string'||data.password.length<12||data.password.length>128)return reply(400,{error:'Apelido de 3–30 letras/números; senha de 12–128 caracteres.'});let user=db.prepare('SELECT * FROM users WHERE name=?').get(data.name.toLowerCase());if(route==='/api/register'){if(user)return reply(409,{error:'Apelido indisponível'});const salt=randomBytes(16).toString('hex'),id=randomBytes(16).toString('hex');db.prepare('INSERT INTO users VALUES(?,?,?,?)').run(id,data.name.toLowerCase(),salt,scryptSync(data.password,salt,64).toString('hex'));user=db.prepare('SELECT * FROM users WHERE id=?').get(id)}else if(!user||!timingSafeEqual(Buffer.from(user.hash,'hex'),scryptSync(data.password,user.salt,64)))return reply(401,{error:'Credenciais inválidas'});const token=randomBytes(32).toString('hex');db.prepare('INSERT INTO sessions VALUES(?,?,?)').run(hash(token),user.id,Date.now()+86400000);res.setHeader('Set-Cookie',`retro_session=${token}; HttpOnly; SameSite=Strict; Path=/api; Max-Age=86400`);return reply(200,{id:user.id,name:user.name})}
 if(!uid)return reply(401,{error:'Entre na conta.'});
 if(route==='/api/logout'){db.prepare('DELETE FROM sessions WHERE token=?').run(hash(cookie));res.setHeader('Set-Cookie','retro_session=; HttpOnly; SameSite=Strict; Path=/api; Max-Age=0');return reply(200,{ok:true})}
+if(route==='/api/profile'||route.startsWith('/api/community/')||route.startsWith('/api/scrap')){const result=community(db,uid,route,data,blocked);if(result.status===200){notify(uid);for(const id of peers.keys())notify(id)}return reply(result.status,result.body)}
+if(route.startsWith('/api/room/')||route.startsWith('/api/game/')){const r=lan(db,uid,route,data,blocked);if(r.status===200)for(const id of peers.keys())notify(id);return reply(r.status,r.body)}
 const target=data.to;if(typeof target!=='string'||target===uid||!db.prepare('SELECT id FROM users WHERE id=?').get(target))return reply(400,{error:'Destinatário inválido'});
 if(route==='/api/block'){db.prepare('INSERT OR IGNORE INTO blocks VALUES(?,?)').run(uid,target);notify(target);notify(uid);return reply(200,{ok:true})}
 if(route==='/api/nudge'){if(blocked(uid,target)||!friends(uid,target))return reply(403,{error:'Contato não autorizado'});const key=uid+':'+target;if(Date.now()-(nudges.get(key)||0)<15000)return reply(429,{error:'Aguarde 15 segundos para chamar atenção novamente.'});nudges.set(key,Date.now());db.prepare('INSERT INTO messages(author,recipient,text,created) VALUES(?,?,?,?)').run(uid,target,'[chamou sua atenção]',Date.now());notify(uid);notify(target);return reply(200,{ok:true})}
