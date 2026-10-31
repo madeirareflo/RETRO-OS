@@ -1,11 +1,11 @@
-# Pendências obrigatórias
+# Pendências após 003D
 
-Entrega 003C PARCIAL, NO-GO para produção social.
+Prioridade crítica: moderação operacional/admin com autorização no servidor; exclusão de conta; privacidade por recurso; política de retenção aplicada; autenticação assíncrona e rate limits distribuídos; revisão independente e varredura histórica antes de qualquer publicação.
 
-1. Completar matriz visual histórica 98/2000/XP; desktop avançado, Explorer, Painel de Controle e recursos dos aplicativos ainda não implementados nesta missão.
-2. Perfis completos (avatar, privacidade), tópicos/respostas, busca e moderação de comunidades/recados.
-3. Administração autenticada, revisão de denúncias, exclusão/recuperação de conta, retenção, auditoria de segurança e limites robustos.
-4. Aceite e cancelamento de desafios, administração de salas, presença/expiração refinada, rankings verificados e Batalha Naval.
-5. Backup completo de preferências/playlists e coleta segura de blobs órfãos.
-6. Firefox funcional, dispositivos físicos, acessibilidade, benchmarks e matriz visual completa.
-7. Revisar o histórico e segredos antes de pedir nova autorização. Nenhum push público está autorizado. Preservar main e a versão 002.
+Visual: comparar referência/screenshot medidos por tema; menus e diálogos completos; ícones e densidade; Painel de Controle expandido; multisseleção e drag/drop no Explorer; diálogos Abrir/Salvar universais.
+
+Apps: Paint texto/zoom/seleção/importação; Notepad confirmar descarte e substituir seleção; calculadora científica; MP3 metadados completos; terminal expandido.
+
+Social: avatar seguro, tópicos/respostas, papéis/moderadores, paginação, convites LAN com recusa, expulsão e denúncias operacionais. Velha aceite/revanche/ranking. Naval revanche, tradução de estados, antifraude, ranking semanal/geral competitivo e teste gráfico de partida completa até vitória. Incluir testes mobile físicos e Firefox funcional.
+
+003D permanece PARCIAL. Não confundir total estatístico de partidas com classificação competitiva homologada.
