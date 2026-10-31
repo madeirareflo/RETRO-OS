@@ -1,0 +1,41 @@
+{
+  "branch": "development/retro-os-003n-games",
+  "head": "5d51807408240cf2494c754126a1d41b327fa8c6",
+  "workBase": "5d51807408240cf2494c754126a1d41b327fa8c6",
+  "antiSource": "df29402832e8ff143d5c11ab20dcb6636fa6a081",
+  "publicMain": "23096cd902c9aef9c4d358bf0c8b9165c6b89ba3",
+  "protectedChanges": [],
+  "forbiddenBuildFiles": [],
+  "payloads": [
+    "dist/emulation/DISQUETE.COM",
+    "dist/games/freedoom-phase1.zip",
+    "dist/games/ken-labfull.zip",
+    "dist/games/skyroads.zip",
+    "dist/licenses/003m/FastDoom-source-1.0.0.zip",
+    "dist/vendor/js-dos-6.22.60/SOURCE.zip"
+  ],
+  "unexpectedPayloads": [],
+  "mediaInDeliveredHistory": [
+    {
+      "sha": "2306173e287fb2d7121f934d350711abcbc42a94",
+      "path": "public/games/freedoom-phase1.zip"
+    },
+    {
+      "sha": "1321844ce77b10ee4fa46d0e146f3114f15c84f0",
+      "path": "public/games/ken-labfull.zip"
+    },
+    {
+      "sha": "ec61542958d9fa708e8ea58618d3552df41a3615",
+      "path": "public/games/skyroads.zip"
+    }
+  ],
+  "databasesInHistory": [],
+  "originalCom": {
+    "sha256": "f0c50f1717cd8a12ddbdd52addb675e79e9fb1b393ceb35a8af3f44bd3084726",
+    "bytes": 1955
+  },
+  "currentTextFiles": 244,
+  "historyTextBlobs": 565,
+  "credentialPatternFindings": [],
+  "limitations": "Escaneamento de padrões/nome, não pentest nem prova absoluta de ausência de PII em imagens/arquivos compactados. Histórico examinado é HEAD, o mesmo que será incluído no bundle de branch única."
+}

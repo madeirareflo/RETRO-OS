@@ -28,6 +28,8 @@ export type EngineAdapterId =
 
 export interface GameEntry {
   id: string;                     // Unique identifier e.g. "dos-disquete" or "museum-1"
+  preparedProfileId?: string;
+  packageFileNames?: string[];
   title: string;                  // Display title e.g. "Disquete Perdido DOS"
   sortTitle?: string;             // For alphabetical sorting
   year: number;                   // Launch year e.g. 1993, 2026

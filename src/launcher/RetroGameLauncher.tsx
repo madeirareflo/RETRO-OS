@@ -1,3 +1,4 @@
+import {ManualTestPanel} from './ManualTestPanel';
 import {useEffect, useState, useMemo} from 'react';
 import type {GameEntry, GameStatus} from './types';
 import {loadBaseCatalog, generateSyntheticBenchmarkCatalog} from './catalogStore';
@@ -36,6 +37,7 @@ const PREDEFINED_COLLECTIONS = [
 ];
 
 export function RetroGameLauncher({open}: RetroGameLauncherProps) {
+  const [manualOpen,setManualOpen]=useState(false);
   const [catalog, setCatalog] = useState<GameEntry[]>(() => loadBaseCatalog());
   const [query, setQuery] = useState('');
   const [activeCollection, setActiveCollection] = useState<string>('Todas');
@@ -205,7 +207,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
           <h1 style={{fontSize: '14px', margin: 0, fontWeight: 'bold', display: 'inline'}}>Retro Game Launcher</h1>
           <span> — Biblioteca Pessoal DOS</span>
         </div>
-        <div className="rgl-actions">
+        <div className="rgl-actions"><button onClick={()=>setManualOpen(v=>!v)}>Teste manual / perfis 003N</button>
           <button className="add-game-btn" onClick={() => setIsWizardOpen(true)}>
             + Adicionar Jogo
           </button>
@@ -231,6 +233,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
         </div>
       </header>
 
+      {manualOpen?<ManualTestPanel catalog={catalog} play={handlePlay} close={()=>setManualOpen(false)}/>:<>
       {/* Main Workspace Layout */}
       <div className="rgl-workspace">
         {/* Left Sidebar: Collections & Categorization */}
@@ -487,6 +490,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
         </aside>
       </div>
 
+      </>}
       {/* Status Bar */}
       <footer className="rgl-statusbar" role="status">
         <span>{statusMessage}</span>

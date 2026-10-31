@@ -1,3 +1,9 @@
+# Checkpoint privado atual: RETRO OS 003N
+
+Perfis DOS e importação guiada, sem redistribuição de novos dados comerciais. [Relatório](RETRO-OS-003N-REPORT.md), [execução Windows](EXECUTAR-003N.md) e [checklist manual](MANUAL-TEST-CHECKLIST-003N.md). Preview: http://127.0.0.1:4576/. Nenhum jogo novo homologado em nome do proprietário.
+
+Documentação anterior preservada abaixo.
+
 # Checkpoint privado atual: RETRO OS 003M
 
 Continuação local da 003L, sem publicação. Leia [relatório 003M](RETRO-OS-003M-REPORT.md), [execução Windows](EXECUTAR-003M.md) e [roteiro manual dos jogos](HOMOLOGACAO-MANUAL-003M.md).
