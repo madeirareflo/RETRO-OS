@@ -1,6 +1,6 @@
 # RETRO-OS-001 — relatório técnico
 
-Data: 30/10/2026. Entrega local no workspace Davi, pasta RETRO-OS. Não publicada.
+Data: 30/10/2026. Entrega local no workspace Davi, pasta RETRO-OS. Código também no repositório privado [madeirareflo/RETRO-OS](https://github.com/madeirareflo/RETRO-OS). Site não publicado.
 
 ## Pesquisa e limites da referência
 
@@ -45,7 +45,7 @@ Segredos descobríveis: menu “botão turbo” no desktop; lixeira; SEGREDO.TXT
 
 ## Não implementado
 
-Backend, login, contas, amigos reais, presença online, comunidades, ranking global, compartilhamento remoto, IndexedDB para mídia, service worker, Pinball/FreeCell/memória/quebra-cabeças e protetor de tela. Não há GitHub remoto nem hospedagem em produção. Esses itens estão organizados em docs/BACKLOG.md.
+Backend, login, contas, amigos reais, presença online, comunidades, ranking global, compartilhamento remoto, IndexedDB para mídia, service worker, Pinball/FreeCell/memória/quebra-cabeças e protetor de tela. Não há hospedagem em produção. Esses itens estão organizados em docs/BACKLOG.md.
 
 ## Segurança e autoria
 

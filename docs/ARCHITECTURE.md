@@ -38,4 +38,4 @@ O registro contém identidade, ícone e grupo. AppHost resolve componentes na ca
 
 ## ADR 007 — Entrega local e rastreável
 
-Pasta independente RETRO-OS, Git próprio e scripts Windows. Nada em sources foi alterado. A pasta central do Drive foi consultada em modo leitura. Não foi criado repositório GitHub porque não havia um destino designado ou conexão GitHub utilizável estabelecida nesta tarefa. Não foi criado Site hospedado nem feita publicação. O workflow Sites foi usado apenas no modo local autorizado pelo pedido.
+Pasta independente RETRO-OS, Git próprio e scripts Windows. Nada em sources foi alterado. A pasta central do Drive foi consultada em modo leitura. O conector GitHub identificou a conta madeirareflo e não encontrou repositório RETRO OS; como o conector não oferece criação de repositório, foi usado o CLI autenticado fora do sandbox para criar e enviar o código ao repositório privado https://github.com/madeirareflo/RETRO-OS. Não foi criado Site hospedado nem feita publicação em produção. O workflow Sites foi usado apenas no modo local autorizado pelo pedido.

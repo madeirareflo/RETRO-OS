@@ -2,6 +2,8 @@
 
 Um computador brasileiro de boas memórias, dentro do navegador. Projeto Davi. React + TypeScript + Vite. Não é uma instalação de Windows nem um emulador de executáveis.
 
+Código: [repositório privado madeirareflo/RETRO-OS](https://github.com/madeirareflo/RETRO-OS). O site não foi publicado em produção.
+
 ## Iniciar no Windows
 
 Requisito: Node.js 22.12+ (ou 24 LTS), com npm; para os testes E2E, Microsoft Edge instalado. Abra um terminal **nesta pasta**:
