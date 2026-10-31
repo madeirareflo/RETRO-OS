@@ -2,5 +2,5 @@ $ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath (Split-Path -Parent $PSScriptRoot)
 if (-not (Get-Command node -ErrorAction SilentlyContinue)) { throw 'Instale Node.js 22.12+ e reabra o terminal.' }
 if (-not (Test-Path -LiteralPath 'node_modules/vite/bin/vite.js')) { throw 'Execute INSTALAR.cmd primeiro.' }
-Write-Host 'RETRO OS 003F privado: http://127.0.0.1:4186 — sem backend social'
-node node_modules/vite/bin/vite.js --host 127.0.0.1 --port 4186 --strictPort
+Write-Host 'RETRO OS 003K WORK privado: http://127.0.0.1:4276 — sem backend social'
+node node_modules/vite/bin/vite.js --host 127.0.0.1 --port 4276 --strictPort

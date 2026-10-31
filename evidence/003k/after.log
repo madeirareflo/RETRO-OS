@@ -1,0 +1,35 @@
+[WebServer] (node:17820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 24 tests using 2 workers
+
+(node:31276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:24604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [edge] › qa003k\visual.spec.ts:3:121 › classic 800×600 (2.4s)
+  ok  2 [chrome] › qa003k\visual.spec.ts:3:121 › classic 800×600 (2.3s)
+  ok  3 [edge] › qa003k\visual.spec.ts:3:121 › classic 1024×768 (1.7s)
+  ok  4 [chrome] › qa003k\visual.spec.ts:3:121 › classic 1024×768 (1.7s)
+  ok  5 [edge] › qa003k\visual.spec.ts:3:121 › classic 1366×768 (1.9s)
+  ok  6 [chrome] › qa003k\visual.spec.ts:3:121 › classic 1366×768 (1.8s)
+  ok  7 [edge] › qa003k\visual.spec.ts:3:121 › classic 1920×1080 (2.1s)
+  ok  8 [chrome] › qa003k\visual.spec.ts:3:121 › classic 1920×1080 (2.0s)
+  ok  9 [edge] › qa003k\visual.spec.ts:3:121 › win2000 800×600 (1.6s)
+  ok 10 [chrome] › qa003k\visual.spec.ts:3:121 › win2000 800×600 (1.5s)
+  ok 11 [edge] › qa003k\visual.spec.ts:3:121 › win2000 1024×768 (2.0s)
+  ok 12 [chrome] › qa003k\visual.spec.ts:3:121 › win2000 1024×768 (1.9s)
+  ok 13 [edge] › qa003k\visual.spec.ts:3:121 › win2000 1366×768 (1.8s)
+  ok 14 [chrome] › qa003k\visual.spec.ts:3:121 › win2000 1366×768 (1.8s)
+  ok 15 [edge] › qa003k\visual.spec.ts:3:121 › win2000 1920×1080 (2.0s)
+  ok 16 [chrome] › qa003k\visual.spec.ts:3:121 › win2000 1920×1080 (2.1s)
+  ok 18 [chrome] › qa003k\visual.spec.ts:3:121 › xp 800×600 (3.5s)
+  ok 17 [edge] › qa003k\visual.spec.ts:3:121 › xp 800×600 (3.6s)
+  ok 20 [edge] › qa003k\visual.spec.ts:3:121 › xp 1024×768 (2.5s)
+  ok 19 [chrome] › qa003k\visual.spec.ts:3:121 › xp 1024×768 (2.6s)
+  ok 22 [chrome] › qa003k\visual.spec.ts:3:121 › xp 1366×768 (2.7s)
+  ok 21 [edge] › qa003k\visual.spec.ts:3:121 › xp 1366×768 (2.8s)
+  ok 23 [chrome] › qa003k\visual.spec.ts:3:121 › xp 1920×1080 (3.4s)
+  ok 24 [edge] › qa003k\visual.spec.ts:3:121 › xp 1920×1080 (3.3s)
+
+  24 passed (32.2s)

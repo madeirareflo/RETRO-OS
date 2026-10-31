@@ -1,0 +1,41 @@
+[WebServer] (node:30316) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 30 tests using 2 workers
+
+(node:11328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:33960) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chrome] › qa003k\behavior.spec.ts:5:2 › classic Iniciar: cascata por intenção, teclado e Executar compacto (2.0s)
+  ok  2 [edge] › qa003k\behavior.spec.ts:5:2 › classic Iniciar: cascata por intenção, teclado e Executar compacto (2.4s)
+  ok  3 [chrome] › qa003k\behavior.spec.ts:6:2 › classic Explorer: seleção simples, abertura dupla, pastas e modo de exibição (1.5s)
+  ok  4 [edge] › qa003k\behavior.spec.ts:6:2 › classic Explorer: seleção simples, abertura dupla, pastas e modo de exibição (1.4s)
+  ok  5 [chrome] › qa003k\behavior.spec.ts:7:2 › classic janelas: menu de sistema, mover/dimensionar por teclado e cancelar (1.5s)
+  ok  6 [edge] › qa003k\behavior.spec.ts:7:2 › classic janelas: menu de sistema, mover/dimensionar por teclado e cancelar (1.5s)
+  ok  7 [chrome] › qa003k\behavior.spec.ts:8:2 › classic Abrir/Salvar: validação, confirmação e persistência de documento (2.1s)
+  ok  8 [edge] › qa003k\behavior.spec.ts:8:2 › classic Abrir/Salvar: validação, confirmação e persistência de documento (2.0s)
+  ok  9 [chrome] › qa003k\behavior.spec.ts:9:2 › classic Painel de Controle, cancelar prévia e museu sem API (4.1s)
+  ok 10 [edge] › qa003k\behavior.spec.ts:9:2 › classic Painel de Controle, cancelar prévia e museu sem API (4.1s)
+  ok 11 [chrome] › qa003k\behavior.spec.ts:5:2 › win2000 Iniciar: cascata por intenção, teclado e Executar compacto (1.3s)
+  ok 12 [edge] › qa003k\behavior.spec.ts:5:2 › win2000 Iniciar: cascata por intenção, teclado e Executar compacto (1.3s)
+  ok 13 [chrome] › qa003k\behavior.spec.ts:6:2 › win2000 Explorer: seleção simples, abertura dupla, pastas e modo de exibição (1.5s)
+  ok 14 [edge] › qa003k\behavior.spec.ts:6:2 › win2000 Explorer: seleção simples, abertura dupla, pastas e modo de exibição (1.4s)
+  ok 15 [chrome] › qa003k\behavior.spec.ts:7:2 › win2000 janelas: menu de sistema, mover/dimensionar por teclado e cancelar (1.5s)
+  ok 16 [edge] › qa003k\behavior.spec.ts:7:2 › win2000 janelas: menu de sistema, mover/dimensionar por teclado e cancelar (1.5s)
+  ok 17 [chrome] › qa003k\behavior.spec.ts:8:2 › win2000 Abrir/Salvar: validação, confirmação e persistência de documento (2.0s)
+  ok 18 [edge] › qa003k\behavior.spec.ts:8:2 › win2000 Abrir/Salvar: validação, confirmação e persistência de documento (2.1s)
+  ok 19 [chrome] › qa003k\behavior.spec.ts:9:2 › win2000 Painel de Controle, cancelar prévia e museu sem API (3.2s)
+  ok 20 [edge] › qa003k\behavior.spec.ts:9:2 › win2000 Painel de Controle, cancelar prévia e museu sem API (3.1s)
+  ok 21 [chrome] › qa003k\behavior.spec.ts:5:2 › xp Iniciar: cascata por intenção, teclado e Executar compacto (2.5s)
+  ok 22 [edge] › qa003k\behavior.spec.ts:5:2 › xp Iniciar: cascata por intenção, teclado e Executar compacto (2.6s)
+  ok 24 [edge] › qa003k\behavior.spec.ts:6:2 › xp Explorer: seleção simples, abertura dupla, pastas e modo de exibição (1.7s)
+  ok 23 [chrome] › qa003k\behavior.spec.ts:6:2 › xp Explorer: seleção simples, abertura dupla, pastas e modo de exibição (1.8s)
+  ok 26 [chrome] › qa003k\behavior.spec.ts:7:2 › xp janelas: menu de sistema, mover/dimensionar por teclado e cancelar (1.6s)
+  ok 25 [edge] › qa003k\behavior.spec.ts:7:2 › xp janelas: menu de sistema, mover/dimensionar por teclado e cancelar (1.7s)
+  ok 27 [chrome] › qa003k\behavior.spec.ts:8:2 › xp Abrir/Salvar: validação, confirmação e persistência de documento (2.5s)
+  ok 28 [edge] › qa003k\behavior.spec.ts:8:2 › xp Abrir/Salvar: validação, confirmação e persistência de documento (2.5s)
+  ok 30 [edge] › qa003k\behavior.spec.ts:9:2 › xp Painel de Controle, cancelar prévia e museu sem API (3.2s)
+  ok 29 [chrome] › qa003k\behavior.spec.ts:9:2 › xp Painel de Controle, cancelar prévia e museu sem API (3.3s)
+
+  30 passed (36.2s)

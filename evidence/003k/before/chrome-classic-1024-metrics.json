@@ -1,0 +1,79 @@
+{
+  "taskbar": {
+    "x": 0,
+    "y": 740,
+    "width": 1024,
+    "height": 28,
+    "font": "11px Tahoma, \"MS Sans Serif\", Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "title": {
+    "x": 208.796875,
+    "y": 59,
+    "width": 712,
+    "height": 18,
+    "font": "700 11px Tahoma, \"MS Sans Serif\", Arial, sans-serif",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgb(0, 0, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(255, 255, 255)",
+    "borderRadius": "0px"
+  },
+  "desktop": {
+    "x": 0,
+    "y": 0,
+    "width": 1024,
+    "height": 768,
+    "font": "11px Tahoma, \"MS Sans Serif\", Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(0, 128, 128) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(0, 0, 0)",
+    "borderRadius": "0px"
+  },
+  "icon": {
+    "x": 0,
+    "y": 4,
+    "width": 75,
+    "height": 70,
+    "font": "11px / 13px Tahoma, \"MS Sans Serif\", Arial, sans-serif",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "1px dotted rgb(255, 255, 255)",
+    "borderRadius": "0px"
+  },
+  "toolbar": {
+    "x": 208.796875,
+    "y": 98,
+    "width": 712,
+    "height": 44,
+    "font": "11px Tahoma, \"MS Sans Serif\", Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "address": {
+    "x": 208.796875,
+    "y": 142,
+    "width": 712,
+    "height": 34,
+    "font": "11px Tahoma, \"MS Sans Serif\", Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(192, 192, 192) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "sidebar": {
+    "x": 208.796875,
+    "y": 207,
+    "width": 145,
+    "height": 374,
+    "font": "11px / 19.8px Tahoma, \"MS Sans Serif\", Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "2px inset rgb(221, 221, 221)",
+    "borderRadius": "0px"
+  }
+}

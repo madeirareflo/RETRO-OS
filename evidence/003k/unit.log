@@ -1,0 +1,17 @@
+
+ RUN  v3.2.7 C:/Users/Davi LRD/.codex/.chatgpt-projects/g-p-6a3eef711d7881918fb955604f45fe02/RETRO-OS-003K-VISUAL
+
+ ✓ src/tests/catalog003e.test.ts (3 tests) 13ms
+ ✓ src/tests/playlist003e.test.ts (3 tests) 16ms
+ ✓ src/tests/preferences003k.test.ts (4 tests) 3ms
+ ✓ src/tests/geometry003k.test.ts (3 tests) 5ms
+ ✓ src/tests/vfs.test.ts (10 tests) 19ms
+ ✓ src/tests/backup.test.ts (4 tests) 25ms
+ ✓ src/tests/museum003f.test.ts (4 tests) 8ms
+ ✓ src/tests/core.test.ts (16 tests) 37ms
+
+ Test Files  8 passed (8)
+      Tests  47 passed (47)
+   Start at  14:35:47
+   Duration  856ms (transform 448ms, setup 0ms, collect 1.03s, tests 127ms, environment 2ms, prepare 1.73s)
+

@@ -60,3 +60,10 @@ preservado e ignorado pelo Git; não distribuir dados ou sessões.
 [compatibilidade](GAMES-COMPATIBILITY-003F.md), [internet](HISTORICAL-WEB-003F.md),
 [auditoria visual](VISUAL-FIDELITY-003F.md) e [privacidade](SECURITY-003F.md).
 Não foram incorporados jogos comerciais, assets Microsoft, ROMs ou músicas comerciais.
+
+## Checkpoint privado 003K WORK
+
+Desenvolvimento visual isolado sobre 003F, sem integração do Launcher Anti.
+Leia RETRO-OS-003K-WORK-REPORT.md, EXECUTAR-003K-WINDOWS.md,
+TEST-REPORT-003K-WORK.md e INTEGRATION-PLAN-003K.md.
+Portas deste worktree: dev4276 / preview4277. Nenhum push/deploy autorizado.

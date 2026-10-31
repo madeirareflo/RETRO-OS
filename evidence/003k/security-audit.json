@@ -1,0 +1,22 @@
+{
+  "baseline": "7c26450fb8f08229ec5fef870271dc8af3353fda",
+  "branch": "development/retro-os-003k-visual",
+  "mainCommit": "23096cd902c9aef9c4d358bf0c8b9165c6b89ba3",
+  "reservedChanges": [],
+  "reservedNewFiles": [],
+  "forbiddenBuildFiles": [],
+  "unexpectedCom": [],
+  "trackedDatabases": [],
+  "currentTextFiles": 95,
+  "historyTextBlobs": 337,
+  "credentialPatternFindings": [],
+  "originalGame": {
+    "sha256": "f0c50f1717cd8a12ddbdd52addb675e79e9fb1b393ceb35a8af3f44bd3084726",
+    "bytes": 1955
+  },
+  "archivesInBuild": [
+    "dist/vendor/js-dos-6.22.60/SOURCE.zip"
+  ],
+  "buildBytes": 4523247,
+  "limitations": "Pattern scan of text, not proof that no secret/PII exists in every format. Images and archive contents were not OCR/scanned; no pentest. No Anti engine/game package integrated."
+}

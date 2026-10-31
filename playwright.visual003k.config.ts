@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./qa003k',workers:2,timeout:40000,reporter:[['list']],outputDir:'test-results-003k',use:{baseURL:'http://127.0.0.1:4276',headless:true,screenshot:'only-on-failure'},projects:[{name:'edge',use:{browserName:'chromium',channel:'msedge'}},{name:'chrome',use:{browserName:'chromium',channel:'chrome'}}],webServer:{command:'node node_modules/vite/bin/vite.js --host 127.0.0.1 --port 4276 --strictPort',url:'http://127.0.0.1:4276',reuseExistingServer:false}});

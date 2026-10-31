@@ -1,0 +1,79 @@
+{
+  "taskbar": {
+    "x": 0,
+    "y": 572,
+    "width": 800,
+    "height": 28,
+    "font": "11px Tahoma, Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "title": {
+    "x": 84,
+    "y": 26,
+    "width": 712,
+    "height": 18,
+    "font": "700 11px Tahoma, Arial, sans-serif",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(10, 36, 106), rgb(166, 202, 240)) repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(255, 255, 255)",
+    "borderRadius": "0px"
+  },
+  "desktop": {
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 600,
+    "font": "11px Tahoma, Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(58, 110, 165) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(0, 0, 0)",
+    "borderRadius": "0px"
+  },
+  "icon": {
+    "x": 0,
+    "y": 4,
+    "width": 75,
+    "height": 70,
+    "font": "11px / 13px Tahoma, Arial, sans-serif",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "1px dotted rgb(255, 255, 255)",
+    "borderRadius": "0px"
+  },
+  "toolbar": {
+    "x": 84,
+    "y": 65,
+    "width": 712,
+    "height": 44,
+    "font": "11px Tahoma, Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "address": {
+    "x": 84,
+    "y": 109,
+    "width": 712,
+    "height": 34,
+    "font": "11px Tahoma, Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(212, 208, 200) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "",
+    "borderRadius": "0px"
+  },
+  "sidebar": {
+    "x": 84,
+    "y": 172,
+    "width": 145,
+    "height": 376,
+    "font": "11px / 19.8px Tahoma, Arial, sans-serif",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "2px inset rgb(221, 221, 221)",
+    "borderRadius": "0px"
+  }
+}

@@ -1,0 +1,24 @@
+[WebServer] (node:36000) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:12104) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [firefox] › e2e\local003f.spec.ts:3:1 › Batalha Naval local: posicionamento, troca, vitória e persistência (2ms)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [firefox] › e2e\local003f.spec.ts:3:1 › Batalha Naval local: posicionamento, troca, vitória e persistência 
+
+    Error: browserType.launch: spawn UNKNOWN
+    Call log:
+      - <launching> C:\Users\Davi LRD\AppData\Local\ms-playwright\firefox-1555\firefox\firefox.exe -no-remote -headless -profile C:\Users\DAVILR~1\AppData\Local\Temp\playwright_firefoxdev_profile-TD8BRS -juggler-pipe -silent
+
+
+    Error Context: test-results\local003f-Batalha-Naval-lo-bcb3d-roca-vitória-e-persistência-firefox\error-context.md
+
+  1 failed
+    [firefox] › e2e\local003f.spec.ts:3:1 › Batalha Naval local: posicionamento, troca, vitória e persistência 
+  1 did not run
+  1 error was not a part of any test, see above for details
