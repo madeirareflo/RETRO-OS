@@ -1,12 +1,12 @@
 
  RUN  v3.2.7 C:/Users/Davi LRD/.codex/.chatgpt-projects/g-p-6a3eef711d7881918fb955604f45fe02/RETRO-OS-003N-FIX-B
 
- ✓ src/tests/prepared003n.test.ts (6 tests) 13ms
- ✓ src/tests/gameControls.test.ts (4 tests) 8ms
- ✓ src/tests/core.test.ts (16 tests) 51ms
+ ✓ src/tests/prepared003n.test.ts (6 tests) 15ms
+ ✓ src/tests/gameControls.test.ts (4 tests) 6ms
+ ✓ src/tests/core.test.ts (16 tests) 60ms
 
  Test Files  3 passed (3)
       Tests  26 passed (26)
-   Start at  20:11:20
-   Duration  1.36s (transform 286ms, setup 0ms, collect 499ms, tests 72ms, environment 1ms, prepare 1.06s)
+   Start at  20:12:57
+   Duration  1.99s (transform 251ms, setup 0ms, collect 494ms, tests 80ms, environment 1ms, prepare 1.69s)
 

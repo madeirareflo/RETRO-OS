@@ -1,4 +1,4 @@
-import {gameControlsManual} from './gameControls';
+import {gameControlsManual,type ControlsManual} from './gameControls';
 import {GameControlsHelp} from './GameControlsHelp';
 import {installLocalPrivateGames} from './privateInstall';
 import {ManualTestPanel} from './ManualTestPanel';
@@ -41,7 +41,7 @@ const PREDEFINED_COLLECTIONS = [
 ];
 
 export function RetroGameLauncher({open}: RetroGameLauncherProps) {
-  const [controlsOpen,setControlsOpen]=useState(false);
+  const [controlsManual,setControlsManual]=useState<ControlsManual|null>(null);
   const [manualOpen,setManualOpen]=useState(false);
   const [catalog, setCatalog] = useState<GameEntry[]>(() => loadBaseCatalog());
   const [query, setQuery] = useState('');
@@ -397,7 +397,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
                 <span className="platform-pill">{selectedGame.platformDisplay}</span>
               </div>
 
-              <div className="details-actions">{gameControlsManual(selectedGame.preparedProfileId,selectedGame.title)&&<button onClick={()=>setControlsOpen(true)}>Controles / Ajuda</button>}
+              <div className="details-actions">{gameControlsManual(selectedGame.preparedProfileId,selectedGame.title)&&<button onClick={()=>setControlsManual(gameControlsManual(selectedGame.preparedProfileId,selectedGame.title))}>Controles / Ajuda</button>}
                 {selectedGame.isPlayable ? (
                   <button className="play-button" onClick={() => handlePlay(selectedGame)}>
                     ▶ Iniciar Jogo
@@ -504,7 +504,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
         <span>Total no Catálogo: {catalog.length}</span>
       </footer>
 
-      {controlsOpen&&selectedGame&&gameControlsManual(selectedGame.preparedProfileId,selectedGame.title)&&<GameControlsHelp manual={gameControlsManual(selectedGame.preparedProfileId,selectedGame.title)!} onClose={()=>setControlsOpen(false)}/>}
+      {controlsManual&&<GameControlsHelp manual={controlsManual} onClose={()=>setControlsManual(null)}/>}
       {/* 10-step Add Game Wizard */}
       <AddGameWizard
         isOpen={isWizardOpen}

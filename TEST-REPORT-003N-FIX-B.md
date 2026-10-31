@@ -19,3 +19,6 @@ Sem partidas extensas de DOOM/Duke ou dos cinco títulos aprovados pelo propriet
 
 ## Segurança e integridade
 Auditoria por padrões em texto e nomes de arquivos atuais/histórico da branch entregue; não é pentest nem garantia absoluta sobre dados em arquivos binários. Não há migração nem remoção de pacotes ou saves. Auditoria JSON e verificações do bundle acompanham a entrega. O backup não inclui o cache privado dos três jogos nem node_modules. main e Anti preservados.
+
+## Rechecagem final do manual
+Uma captura adicional revelou corrida com a instalação privada assíncrona: a seleção mudava para Duke durante a consulta do manual. O diálogo agora guarda a ficha escolhida ao abrir, sem trocar seu conteúdo quando o catálogo atualiza. O teste aguarda a instalação terminar antes de selecionar os títulos. Logs manual-final.log preservam a falha anterior; manual-stable.log registra a rechecagem Chrome/Edge após esse ajuste, sem gameplay adicional.
