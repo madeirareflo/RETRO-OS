@@ -1,0 +1,21 @@
+{
+  "beforeX": 36.83471074380165,
+  "afterX": 88.22966507177034,
+  "keyboardPreset": true,
+  "diagnostics": {
+    "ready": true,
+    "saves": 1,
+    "audioPeak": 1,
+    "wasm": true,
+    "heapBytes": 67108864,
+    "state": [],
+    "files": {},
+    "pressedKeys": [],
+    "keyDownCount": 5,
+    "keyUpCount": 5,
+    "keyReleaseCount": 5,
+    "princeKeyboardPreset": true
+  },
+  "keysReleased": true,
+  "ownerApproved": false
+}

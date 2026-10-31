@@ -1,0 +1,79 @@
+
+Running 6 tests using 1 worker
+
+(node:43612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chrome] › qa003n-controls\controls.spec.ts:6:1 › Prince: clique captura setas, movimento curto e liberação de teclas (22.3s)
+  ok 2 [chrome] › qa003n-controls\controls.spec.ts:7:1 › manuais dos três jogos abrem no Launcher sem executar os FPS (4.7s)
+  x  3 [chrome] › qa003n-controls\controls.spec.ts:8:1 › ajuda no jogo, aviso único e foco restaurado (21.1s)
+(node:35784) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 [edge] › qa003n-controls\controls.spec.ts:6:1 › Prince: clique captura setas, movimento curto e liberação de teclas (22.5s)
+  ok 5 [edge] › qa003n-controls\controls.spec.ts:7:1 › manuais dos três jogos abrem no Launcher sem executar os FPS (4.5s)
+  x  6 [edge] › qa003n-controls\controls.spec.ts:8:1 › ajuda no jogo, aviso único e foco restaurado (21.6s)
+
+
+  1) [chrome] › qa003n-controls\controls.spec.ts:8:1 › ajuda no jogo, aviso único e foco restaurado 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('button', { name: 'Entendi', exact: true })
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" getByRole('button', { name: 'Entendi', exact: true }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Entendi', exact: true })
+        13 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+       6 | test('Prince: clique captura setas, movimento curto e liberação de teclas',async({page},info)=>{const frame=await prince(page);await expect.poll(()=>frame.evaluate(()=>window.retroDiagnostics.princeKeyboardPreset)).toBe(true);await frame.locator('#screen').click();await expect.poll(()=>frame.evaluate(()=>document.activeElement?.id)).toBe('engine');await page.keyboard.press('Enter');await page.waitForTimeout(2000);await page.getByRole('button',{name:'Ativar teclado (Ctrl+K)',exact:true}).click();await page.waitForTimeout(2000);await page.keyboard.down('ArrowRight');await page.waitForTimeout(900);await page.keyboard.up('ArrowRight');await page.waitForTimeout(500);await page.screenshot({path:'evidence/003n-controls/'+info.project.name+'-fixed-before.png'});const before=await bodyX(frame);await page.keyboard.down('ArrowRight');await page.waitForTimeout(650);await page.keyboard.up('ArrowRight');await page.waitForTimeout(400);const after=await bodyX(frame);await page.screenshot({path:'evidence/003n-controls/'+info.project.name+'-fixed-after.png'});expect(before).not.toBeNull();expect(after).not.toBeNull();expect(after!).toBeGreaterThan(before!+4);const diag=await frame.evaluate(()=>window.retroDiagnostics);expect(diag.pressedKeys).toEqual([]);expect(diag.keyDownCount).toBeGreaterThan(0);expect(diag.keyUpCount).toBeGreaterThan(0);await page.keyboard.down('Shift');await page.keyboard.down('ArrowLeft');await page.keyboard.press('Shift+Escape');await expect(page.getByRole('button',{name:'Focar no jogo',exact:true})).toBeFocused();await expect.poll(()=>frame.evaluate(()=>window.retroDiagnostics.pressedKeys)).toEqual([]);await page.keyboard.up('ArrowLeft');await page.keyboard.up('Shift');fs.writeFileSync('evidence/003n-controls/'+info.project.name+'-movement.json',JSON.stringify({beforeX:before,afterX:after,keyboardPreset:true,diagnostics:diag,keysReleased:true,ownerApproved:false},null,2));await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await expect(page.locator('.dos-game')).toHaveCount(0)});
+       7 | test('manuais dos três jogos abrem no Launcher sem executar os FPS',async({page},info)=>{await boot(page);for(const title of ['Prince of Persia — demo DOS 1.0','DOOM — shareware DOS v1.9','Duke Nukem 3D — shareware DOS v1.3d']){await page.getByLabel('Buscar:',{exact:true}).fill(title);await page.getByRole('button',{name:title,exact:true}).click();await page.getByRole('button',{name:'Controles / Ajuda',exact:true}).click();const dialog=page.getByRole('alertdialog',{name:'Controles / Ajuda — '+title,exact:true});await expect(dialog).toContainText('Capturar e liberar entrada');await expect(dialog).toContainText('Salvamento');await page.getByRole('button',{name:'Fechar',exact:true}).click()}await page.screenshot({path:'evidence/003n-controls/'+info.project.name+'-launcher-help.png'})});
+    >  8 | test('ajuda no jogo, aviso único e foco restaurado',async({page})=>{const frame=await prince(page);await page.getByRole('button',{name:'Entendi',exact:true}).click();await page.locator('.dos-game').getByRole('button',{name:'Controles / Ajuda',exact:true}).click();await expect(page.getByRole('alertdialog',{name:new RegExp('Controles / Ajuda')})).toContainText('Ctrl+K');await page.keyboard.press('Escape');await expect(page.getByRole('button',{name:'Focar no jogo',exact:true})).toBeFocused();await page.getByRole('button',{name:'Focar no jogo',exact:true}).click();await expect.poll(()=>frame.evaluate(()=>document.activeElement?.id)).toBe('engine');await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await page.getByRole('button',{name:'▶ Iniciar Jogo',exact:true}).click();await page.getByRole('button',{name:'Iniciar jogo DOS',exact:true}).click();await expect(page.locator('.dos-game')).toHaveAttribute('data-ready','true');await expect(page.getByRole('button',{name:'Entendi',exact:true})).toHaveCount(0);await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click()});
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^
+       9 |
+      10 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003N-FIX-B\qa003n-controls\controls.spec.ts:8:1026
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results-controls\controls-ajuda-no-jogo-aviso-único-e-foco-restaurado-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-controls\controls-ajuda-no-jogo-aviso-único-e-foco-restaurado-chrome\error-context.md
+
+  2) [edge] › qa003n-controls\controls.spec.ts:8:1 › ajuda no jogo, aviso único e foco restaurado ──
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('button', { name: 'Entendi', exact: true })
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" getByRole('button', { name: 'Entendi', exact: true }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Entendi', exact: true })
+        13 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+       6 | test('Prince: clique captura setas, movimento curto e liberação de teclas',async({page},info)=>{const frame=await prince(page);await expect.poll(()=>frame.evaluate(()=>window.retroDiagnostics.princeKeyboardPreset)).toBe(true);await frame.locator('#screen').click();await expect.poll(()=>frame.evaluate(()=>document.activeElement?.id)).toBe('engine');await page.keyboard.press('Enter');await page.waitForTimeout(2000);await page.getByRole('button',{name:'Ativar teclado (Ctrl+K)',exact:true}).click();await page.waitForTimeout(2000);await page.keyboard.down('ArrowRight');await page.waitForTimeout(900);await page.keyboard.up('ArrowRight');await page.waitForTimeout(500);await page.screenshot({path:'evidence/003n-controls/'+info.project.name+'-fixed-before.png'});const before=await bodyX(frame);await page.keyboard.down('ArrowRight');await page.waitForTimeout(650);await page.keyboard.up('ArrowRight');await page.waitForTimeout(400);const after=await bodyX(frame);await page.screenshot({path:'evidence/003n-controls/'+info.project.name+'-fixed-after.png'});expect(before).not.toBeNull();expect(after).not.toBeNull();expect(after!).toBeGreaterThan(before!+4);const diag=await frame.evaluate(()=>window.retroDiagnostics);expect(diag.pressedKeys).toEqual([]);expect(diag.keyDownCount).toBeGreaterThan(0);expect(diag.keyUpCount).toBeGreaterThan(0);await page.keyboard.down('Shift');await page.keyboard.down('ArrowLeft');await page.keyboard.press('Shift+Escape');await expect(page.getByRole('button',{name:'Focar no jogo',exact:true})).toBeFocused();await expect.poll(()=>frame.evaluate(()=>window.retroDiagnostics.pressedKeys)).toEqual([]);await page.keyboard.up('ArrowLeft');await page.keyboard.up('Shift');fs.writeFileSync('evidence/003n-controls/'+info.project.name+'-movement.json',JSON.stringify({beforeX:before,afterX:after,keyboardPreset:true,diagnostics:diag,keysReleased:true,ownerApproved:false},null,2));await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await expect(page.locator('.dos-game')).toHaveCount(0)});
+       7 | test('manuais dos três jogos abrem no Launcher sem executar os FPS',async({page},info)=>{await boot(page);for(const title of ['Prince of Persia — demo DOS 1.0','DOOM — shareware DOS v1.9','Duke Nukem 3D — shareware DOS v1.3d']){await page.getByLabel('Buscar:',{exact:true}).fill(title);await page.getByRole('button',{name:title,exact:true}).click();await page.getByRole('button',{name:'Controles / Ajuda',exact:true}).click();const dialog=page.getByRole('alertdialog',{name:'Controles / Ajuda — '+title,exact:true});await expect(dialog).toContainText('Capturar e liberar entrada');await expect(dialog).toContainText('Salvamento');await page.getByRole('button',{name:'Fechar',exact:true}).click()}await page.screenshot({path:'evidence/003n-controls/'+info.project.name+'-launcher-help.png'})});
+    >  8 | test('ajuda no jogo, aviso único e foco restaurado',async({page})=>{const frame=await prince(page);await page.getByRole('button',{name:'Entendi',exact:true}).click();await expect(page.getByRole('button',{name:'Entendi',exact:true})).toHaveCount(0);expect(await page.evaluate(()=>localStorage.getItem('retro.gameInputTip.imported-private-prince'))).toBe('true');await page.locator('.dos-game').getByRole('button',{name:'Controles / Ajuda',exact:true}).click();await expect(page.getByRole('alertdialog',{name:new RegExp('Controles / Ajuda')})).toContainText('Ctrl+K');await page.keyboard.press('Escape');await expect(page.getByRole('button',{name:'Focar no jogo',exact:true})).toBeFocused();await page.getByRole('button',{name:'Focar no jogo',exact:true}).click();await expect.poll(()=>frame.evaluate(()=>document.activeElement?.id)).toBe('engine');await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await page.getByRole('button',{name:'▶ Iniciar Jogo',exact:true}).click();await page.getByRole('button',{name:'Iniciar jogo DOS',exact:true}).click();await expect(page.locator('.dos-game')).toHaveAttribute('data-ready','true');await expect(page.getByRole('button',{name:'Entendi',exact:true})).toHaveCount(0);await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click()});
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^
+       9 |
+      10 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-003N-FIX-B\qa003n-controls\controls.spec.ts:8:1026
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results-controls\controls-ajuda-no-jogo-aviso-único-e-foco-restaurado-edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-controls\controls-ajuda-no-jogo-aviso-único-e-foco-restaurado-edge\error-context.md
+
+  2 failed
+    [chrome] › qa003n-controls\controls.spec.ts:8:1 › ajuda no jogo, aviso único e foco restaurado ─
+    [edge] › qa003n-controls\controls.spec.ts:8:1 › ajuda no jogo, aviso único e foco restaurado ───
+  4 passed (1.7m)

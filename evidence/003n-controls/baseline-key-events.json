@@ -1,0 +1,95 @@
+{
+  "focusAfterVisibleCanvasClick": "screen",
+  "events": [
+    {
+      "type": "keydown",
+      "key": "Enter",
+      "code": "Enter",
+      "keyCode": 13,
+      "target": "engine",
+      "focused": "engine",
+      "defaultPrevented": false
+    },
+    {
+      "type": "keyup",
+      "key": "Enter",
+      "code": "Enter",
+      "keyCode": 13,
+      "target": "engine",
+      "focused": "engine",
+      "defaultPrevented": false
+    },
+    {
+      "type": "keydown",
+      "key": "ArrowRight",
+      "code": "ArrowRight",
+      "keyCode": 39,
+      "target": "engine",
+      "focused": "engine",
+      "defaultPrevented": false
+    },
+    {
+      "type": "keyup",
+      "key": "ArrowRight",
+      "code": "ArrowRight",
+      "keyCode": 39,
+      "target": "engine",
+      "focused": "engine",
+      "defaultPrevented": false
+    },
+    {
+      "type": "keydown",
+      "key": "Control",
+      "code": "ControlLeft",
+      "keyCode": 17,
+      "target": "engine",
+      "focused": "engine",
+      "defaultPrevented": false
+    },
+    {
+      "type": "keydown",
+      "key": "k",
+      "code": "KeyK",
+      "keyCode": 75,
+      "target": "engine",
+      "focused": "engine",
+      "defaultPrevented": false
+    },
+    {
+      "type": "keyup",
+      "key": "k",
+      "code": "KeyK",
+      "keyCode": 75,
+      "target": "engine",
+      "focused": "engine",
+      "defaultPrevented": false
+    },
+    {
+      "type": "keyup",
+      "key": "Control",
+      "code": "ControlLeft",
+      "keyCode": 17,
+      "target": "engine",
+      "focused": "engine",
+      "defaultPrevented": false
+    },
+    {
+      "type": "keydown",
+      "key": "ArrowRight",
+      "code": "ArrowRight",
+      "keyCode": 39,
+      "target": "engine",
+      "focused": "engine",
+      "defaultPrevented": false
+    },
+    {
+      "type": "keyup",
+      "key": "ArrowRight",
+      "code": "ArrowRight",
+      "keyCode": 39,
+      "target": "engine",
+      "focused": "engine",
+      "defaultPrevented": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "imported-private-prince",
+    "bytes": 254145,
+    "sha256": "d6762fd72bf74ef21f8ea34c5db87506b29a9c8ac89456ae56aaf675e66c4f1c",
+    "unchanged": true
+  },
+  {
+    "id": "imported-private-doom-shareware",
+    "bytes": 2493854,
+    "sha256": "0010d4a4851aa88344a87a8079d5c1ec15c688a20cb4e6ad2919a13d1f828a70",
+    "unchanged": true
+  },
+  {
+    "id": "imported-private-duke-shareware",
+    "bytes": 5963697,
+    "sha256": "8ce1cc14233a4b7dfdc82bd944506c1d09545c83754b9741642e5519f4b5f30e",
+    "unchanged": true
+  }
+]

@@ -1,0 +1,15 @@
+
+Running 6 tests using 1 worker
+
+(node:41040) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chrome] › qa003n-controls\controls.spec.ts:6:1 › Prince: clique captura setas, movimento curto e liberação de teclas (21.4s)
+  ok 2 [chrome] › qa003n-controls\controls.spec.ts:7:1 › manuais dos três jogos abrem no Launcher sem executar os FPS (4.3s)
+  ok 3 [chrome] › qa003n-controls\controls.spec.ts:8:1 › ajuda no jogo, aviso único e foco restaurado (16.6s)
+(node:36144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 [edge] › qa003n-controls\controls.spec.ts:6:1 › Prince: clique captura setas, movimento curto e liberação de teclas (22.7s)
+  ok 5 [edge] › qa003n-controls\controls.spec.ts:7:1 › manuais dos três jogos abrem no Launcher sem executar os FPS (5.0s)
+  ok 6 [edge] › qa003n-controls\controls.spec.ts:8:1 › ajuda no jogo, aviso único e foco restaurado (15.7s)
+
+  6 passed (1.5m)
