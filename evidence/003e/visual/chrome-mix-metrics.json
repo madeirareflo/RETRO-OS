@@ -20,7 +20,7 @@
     "height": 768,
     "font": "12px Tahoma, Arial, sans-serif",
     "color": "rgb(23, 35, 49)",
-    "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196) 0%, rgb(155, 212, 231) 65%, rgb(222, 237, 223) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+    "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(60, 139, 196), rgb(155, 212, 231) 65%, rgb(222, 237, 223)) repeat scroll 0% 0% / auto padding-box border-box",
     "borderRadius": "0px"
   },
   "icon": {
@@ -33,7 +33,7 @@
   },
   "sidebar": {
     "width": 155,
-    "height": 372,
+    "height": 333,
     "font": "12px / 21.6px Tahoma, Arial, sans-serif",
     "color": "rgb(24, 59, 112)",
     "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(118, 153, 222), rgb(217, 229, 247)) repeat scroll 0% 0% / auto padding-box border-box",
