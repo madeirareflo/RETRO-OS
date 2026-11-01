@@ -13,6 +13,7 @@ import {StorageModal} from './StorageModal';
 import {ExoConverterModal} from './ExoConverterModal';
 import {removeGameCompletely} from './storageManager';
 import {Icon} from '../components/Icon';
+import {GameGenreBadge} from './GameGenreBadge';
 import {read, write} from '../storage/local';
 import {registry, type AppId} from '../core/registry';
 import {addDesktopGameLink} from './shortcuts';
@@ -325,7 +326,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
                   <div className="card-cover">
                     <div className="placeholder-box-art">
                       <span className="era-badge">{game.year}</span>
-                      <Icon name={game.platform === 'dos' ? 'floppy' : 'games'} size={32} />
+                      <GameGenreBadge genre={game.genre} size={32} />
                       <span className="platform-tag">{game.platform.toUpperCase()}</span>
                     </div>
                   </div>
@@ -391,7 +392,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
             <div className="details-scroll">
               <div className="details-header-art">
                 <div className="box-preview-frame">
-                  <Icon name={selectedGame.platform === 'dos' ? 'floppy' : 'games'} size={48} />
+                  <GameGenreBadge genre={selectedGame.genre} size={48} />
                   <b>{selectedGame.year}</b>
                 </div>
               </div>
@@ -408,7 +409,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
                     ▶ Iniciar Jogo
                   </button>
                 ) : (
-                  <button className="play-button disabled" disabled>
+                  <button className="play-button disabled" disabled title="Este título está preservado como ficha histórica/museu ou requer que o usuário importe os arquivos originais da sua cópia licenciada via '+ Adicionar Jogo'.">
                     (Sem Execução Web)
                   </button>
                 )}

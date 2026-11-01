@@ -713,6 +713,15 @@
 .theme-xp .retro-game-launcher .grid-card.selected{background:#316ac5}
 .retro-game-launcher .rgl-main-content,.retro-game-launcher .rgl-main-layout{min-height:0}
 @media(max-width:850px){.retro-game-launcher .rgl-sidebar{width:110px;min-width:90px}.retro-game-launcher .rgl-details-panel{width:205px;min-width:170px}.retro-game-launcher .rgl-branding span{display:none}.retro-game-launcher .details-header-art{display:none}.retro-game-launcher .details-scroll{padding:6px}}
+@media(max-width:550px){
+  .retro-game-launcher .rgl-workspace{flex-direction:column;overflow-y:auto}
+  .retro-game-launcher .rgl-sidebar{width:100%;min-width:100%;border-right:none;border-bottom:1px solid #808080;max-height:100px;overflow-y:auto}
+  .retro-game-launcher .collection-list{display:flex;flex-wrap:wrap;gap:2px}
+  .retro-game-launcher .collection-list li{flex:1 1 auto}
+  .retro-game-launcher .rgl-details-panel{width:100%;min-width:100%;border-left:none;border-top:1px solid #808080;max-height:220px;overflow-y:auto}
+  .retro-game-launcher .rgl-grid{grid-template-columns:repeat(auto-fill,minmax(85px,1fr));gap:4px;padding:4px}
+  .retro-game-launcher .card-cover{height:52px}
+}
 
 .retro-game-launcher .rgl-branding{color:inherit}.retro-game-launcher .rgl-workspace{min-height:0}.retro-game-launcher .rgl-main-view{min-width:0}.retro-game-launcher .rgl-sidebar,.retro-game-launcher .rgl-details-panel{flex-shrink:0}
 .retro-game-launcher .rgl-top-bar .rgl-branding h1,.retro-game-launcher .rgl-top-bar .rgl-branding>span{color:#000}
