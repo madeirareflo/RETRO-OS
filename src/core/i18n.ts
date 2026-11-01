@@ -123,6 +123,43 @@ export interface TranslationDictionary {
   dosStatusPaused: string;
   dosStatusDone: string;
   dosErrorMissingEntry: string;
+
+  // Explorer & File System (003W Fidelity)
+  explorerFile: string;
+  explorerEdit: string;
+  explorerView: string;
+  explorerFavorites: string;
+  explorerTools: string;
+  explorerHelp: string;
+  explorerBack: string;
+  explorerForward: string;
+  explorerUp: string;
+  explorerCut: string;
+  explorerCopy: string;
+  explorerPaste: string;
+  explorerDelete: string;
+  explorerProperties: string;
+  explorerFolders: string;
+  explorerSearch: string;
+  explorerRefresh: string;
+  explorerAddress: string;
+  explorerNewFolder: string;
+  explorerRename: string;
+  explorerOpenInApp: string;
+  explorerViewFile: string;
+  explorerLargeIcons: string;
+  explorerDetails: string;
+  explorerHardDrives: string;
+  explorerRemovableStorage: string;
+  explorerStoredFiles: string;
+  explorerDiskC: string;
+  explorerFloppyA: string;
+  explorerCdD: string;
+  explorerInsertCd: string;
+  explorerReadingFloppy: string;
+  explorerItems: string;
+  explorerSelected: string;
+  explorerReady: string;
 }
 
 export const translations: Record<Language, TranslationDictionary> = {
@@ -244,6 +281,42 @@ export const translations: Record<Language, TranslationDictionary> = {
     dosStatusPaused: 'Jogo pausado.',
     dosStatusDone: 'Concluído!',
     dosErrorMissingEntry: 'Entrada importada não encontrada.',
+
+    explorerFile: 'Arquivo',
+    explorerEdit: 'Editar',
+    explorerView: 'Exibir',
+    explorerFavorites: 'Favoritos',
+    explorerTools: 'Ferramentas',
+    explorerHelp: 'Ajuda',
+    explorerBack: 'Voltar',
+    explorerForward: 'Avançar',
+    explorerUp: 'Acima',
+    explorerCut: 'Recortar',
+    explorerCopy: 'Copiar',
+    explorerPaste: 'Colar',
+    explorerDelete: 'Excluir',
+    explorerProperties: 'Propriedades',
+    explorerFolders: 'Pastas',
+    explorerSearch: 'Pesquisar',
+    explorerRefresh: 'Atualizar',
+    explorerAddress: 'Endereço',
+    explorerNewFolder: 'Nova pasta',
+    explorerRename: 'Renomear',
+    explorerOpenInApp: 'Abrir no aplicativo',
+    explorerViewFile: 'Visualizar arquivo',
+    explorerLargeIcons: 'Ícones grandes',
+    explorerDetails: 'Detalhes',
+    explorerHardDrives: 'Unidades de disco rígido',
+    explorerRemovableStorage: 'Dispositivos com armazenamento removível',
+    explorerStoredFiles: 'Arquivos armazenados neste computador',
+    explorerDiskC: 'Disco local (C:)',
+    explorerFloppyA: 'Disquete 3½ (A:)',
+    explorerCdD: 'Unidade de CD-ROM (D:)',
+    explorerInsertCd: 'Insira um disco na unidade D:',
+    explorerReadingFloppy: 'Lendo o disquete A:…',
+    explorerItems: 'objeto(s)',
+    explorerSelected: 'selecionado(s)',
+    explorerReady: 'Pronto',
   },
   'en': {
     start: 'Start',
@@ -363,6 +436,42 @@ export const translations: Record<Language, TranslationDictionary> = {
     dosStatusPaused: 'Game paused.',
     dosStatusDone: 'Completed!',
     dosErrorMissingEntry: 'Imported entry not found.',
+
+    explorerFile: 'File',
+    explorerEdit: 'Edit',
+    explorerView: 'View',
+    explorerFavorites: 'Favorites',
+    explorerTools: 'Tools',
+    explorerHelp: 'Help',
+    explorerBack: 'Back',
+    explorerForward: 'Forward',
+    explorerUp: 'Up',
+    explorerCut: 'Cut',
+    explorerCopy: 'Copy',
+    explorerPaste: 'Paste',
+    explorerDelete: 'Delete',
+    explorerProperties: 'Properties',
+    explorerFolders: 'Folders',
+    explorerSearch: 'Search',
+    explorerRefresh: 'Refresh',
+    explorerAddress: 'Address',
+    explorerNewFolder: 'New Folder',
+    explorerRename: 'Rename',
+    explorerOpenInApp: 'Open in Application',
+    explorerViewFile: 'View File',
+    explorerLargeIcons: 'Large Icons',
+    explorerDetails: 'Details',
+    explorerHardDrives: 'Hard Disk Drives',
+    explorerRemovableStorage: 'Devices with Removable Storage',
+    explorerStoredFiles: 'Files Stored on This Computer',
+    explorerDiskC: 'Local Disk (C:)',
+    explorerFloppyA: '3½ Floppy (A:)',
+    explorerCdD: 'CD-ROM Drive (D:)',
+    explorerInsertCd: 'Please insert a disc into drive D:',
+    explorerReadingFloppy: 'Reading floppy drive A:…',
+    explorerItems: 'item(s)',
+    explorerSelected: 'selected',
+    explorerReady: 'Ready',
   },
   'es': {
     start: 'Inicio',
@@ -388,7 +497,7 @@ export const translations: Record<Language, TranslationDictionary> = {
     search: 'Buscar',
     help: 'Ayuda',
     run: 'Ejecutar…',
-    allPrograms: 'Todos los programas',
+    allPrograms: 'Todos os programas',
     accessories: 'Accesorios',
     games: 'Juegos',
     restart: 'Reiniciar…',
@@ -439,7 +548,7 @@ export const translations: Record<Language, TranslationDictionary> = {
     appDosImported: 'Juego DOS importado',
 
     launcherTitle: 'Retro Game Launcher',
-    launcherSubtitle: 'Biblioteca nostálgica de clásicos DOS y Windows con emulación auténtica',
+    launcherSubtitle: 'Biblioteca nostálgica de clásicos DOS e Windows con emulação autêntica',
     searchPlaceholder: 'Filtrar biblioteca (título, año, género)…',
     tabAll: 'Todos los juegos',
     tabInstalled: 'Instalados / Listos',
@@ -482,6 +591,42 @@ export const translations: Record<Language, TranslationDictionary> = {
     dosStatusPaused: 'Juego pausado.',
     dosStatusDone: '¡Completado!',
     dosErrorMissingEntry: 'Entrada importada no encontrada.',
+
+    explorerFile: 'Archivo',
+    explorerEdit: 'Edición',
+    explorerView: 'Ver',
+    explorerFavorites: 'Favoritos',
+    explorerTools: 'Herramientas',
+    explorerHelp: 'Ayuda',
+    explorerBack: 'Atrás',
+    explorerForward: 'Adelante',
+    explorerUp: 'Arriba',
+    explorerCut: 'Cortar',
+    explorerCopy: 'Copiar',
+    explorerPaste: 'Pegar',
+    explorerDelete: 'Eliminar',
+    explorerProperties: 'Propiedades',
+    explorerFolders: 'Carpetas',
+    explorerSearch: 'Buscar',
+    explorerRefresh: 'Actualizar',
+    explorerAddress: 'Dirección',
+    explorerNewFolder: 'Nueva carpeta',
+    explorerRename: 'Cambiar nombre',
+    explorerOpenInApp: 'Abrir en la aplicación',
+    explorerViewFile: 'Ver archivo',
+    explorerLargeIcons: 'Iconos grandes',
+    explorerDetails: 'Detalles',
+    explorerHardDrives: 'Unidades de disco duro',
+    explorerRemovableStorage: 'Dispositivos con almacenamiento extraíble',
+    explorerStoredFiles: 'Archivos guardados en este equipo',
+    explorerDiskC: 'Disco local (C:)',
+    explorerFloppyA: 'Disco de 3½ (A:)',
+    explorerCdD: 'Unidad de CD-ROM (D:)',
+    explorerInsertCd: 'Por favor, inserte un disco en la unidad D:',
+    explorerReadingFloppy: 'Leyendo disquete A:…',
+    explorerItems: 'objeto(s)',
+    explorerSelected: 'seleccionado(s)',
+    explorerReady: 'Listo',
   }
 };
 
