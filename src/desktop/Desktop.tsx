@@ -22,6 +22,7 @@ import {getTranslation, type Language} from '../core/i18n';
 
 const defaults:Preferences={theme:'mix',wallpaper:'hills',muted:true,volume:0.35,boot:true,xpColor:'blue',language:'pt-BR'};
 type Position={x:number;y:number};
+type Rect={x:number;y:number;w:number;h:number};
 
 export function Desktop(){
   const [prefs,setPreferences]=useState(()=>({...defaults,...read<Partial<Preferences>>('prefs',{})}));
@@ -34,6 +35,9 @@ export function Desktop(){
   const [start,setStart]=useState(false);
   const [quick,setQuick]=useState(false);
   const [selected,setSelected]=useState('');
+  const [selectedIds,setSelectedIds]=useState<string[]>([]);
+  const [marquee,setMarquee]=useState<Rect|null>(null);
+  const marqueeOrigin=useRef<Position|null>(null);
   const [menu,setMenu]=useState<(Position&{app?:AppId})|null>(null);
   const [properties,setProperties]=useState<AppId|null>(null);
   const [positions,setPositions]=useState<Record<string,Position>>(()=>read('positions',{}));
@@ -78,25 +82,32 @@ export function Desktop(){
 
   useEffect(()=>{
     const handler=(e:Event)=>{
-      const id=(e as CustomEvent<AppId>).detail;
-      if(registry.some(a=>a.id===id))focus(id);
+      const custom=(e as CustomEvent<{app:AppId}>).detail;
+      if(custom?.app)open(custom.app);
     };
-    window.addEventListener('retro:focus-app',handler);
-    return ()=>window.removeEventListener('retro:focus-app',handler);
+    window.addEventListener('retro:navigate-app',handler);
+    return ()=>window.removeEventListener('retro:navigate-app',handler);
   },[]);
 
   function close(id:AppId){
-    const proceed=()=>{sound('close');setWindows(ws=>ws.filter(w=>w.id!==id))};
-    const event=new CustomEvent('retro:before-close',{cancelable:true,detail:{id,proceed}});
-    if(window.dispatchEvent(event))proceed();else focus(id);
+    const confirmed=()=>{
+      setWindows(ws=>ws.filter(w=>w.id!==id));
+      if(id==='notepad'||id==='paint')setRequests(r=>{const next={...r};delete next[id];return next});
+    };
+    const beforeClose=new CustomEvent('retro:before-close',{detail:{id,proceed:confirmed},cancelable:true});
+    const prevented=!window.dispatchEvent(beforeClose);
+    if(!prevented)confirmed();
   }
 
-  function guardedPower(proceed:()=>void){
-    const ids=windows.map(w=>w.id);
-    function next(index:number){
-      if(index>=ids.length){proceed();return}
-      const event=new CustomEvent('retro:before-close',{cancelable:true,detail:{id:ids[index],proceed:()=>next(index+1)}});
-      if(window.dispatchEvent(event))next(index+1);else focus(ids[index]);
+  function guardedPower(action:()=>void){
+    const dirtyApps=['notepad','paint'].filter(id=>windows.some(w=>w.id===id));
+    if(!dirtyApps.length){action();return}
+    function next(i:number){
+      if(i>=dirtyApps.length){action();return}
+      const id=dirtyApps[i];
+      const ev=new CustomEvent('retro:before-close',{detail:{id,proceed:()=>next(i+1)},cancelable:true});
+      const prevented=!window.dispatchEvent(ev);
+      if(!prevented)next(i+1);
     }
     next(0);
   }
@@ -146,7 +157,10 @@ export function Desktop(){
       if((e.key==='ContextMenu'||e.shiftKey&&e.key==='F10')&&!(e.target as HTMLElement).closest('.os-window,.taskbar,.start-menu')){
         e.preventDefault();
         const icon=(e.target as HTMLElement).closest<HTMLElement>('[data-app-id]'),r=icon?.getBoundingClientRect();
-        if(icon?.dataset.appId)setSelected(icon.dataset.appId);
+        if(icon?.dataset.appId){
+          setSelected(icon.dataset.appId);
+          setSelectedIds([icon.dataset.appId]);
+        }
         setMenu({x:Math.min(r?.left||20,innerWidth-220),y:Math.min(r?.bottom||20,innerHeight-220),app:icon?.dataset.appId as AppId|undefined});
       }
       if(e.key==='Escape'){
@@ -154,19 +168,14 @@ export function Desktop(){
         setStart(false);
         setQuick(false);
         setMenu(null);
+        setMarquee(null);
+        marqueeOrigin.current=null;
       }
       if(e.altKey&&e.key==='F4'&&top){
         e.preventDefault();
         close(top.id);
       }
-      if(e.altKey&&e.key==='Tab'){
-        e.preventDefault();
-        if(windows.length){
-          const sorted=windows.slice().sort((a,b)=>a.z-b.z);
-          focus(sorted[0].id);
-        }
-      }
-      if(e.ctrlKey&&e.key==='Escape'){
+      if(e.key==='Meta'||(e.ctrlKey&&e.key==='Escape')){
         e.preventDefault();
         setStart(s=>!s);
       }
@@ -187,15 +196,72 @@ export function Desktop(){
 
   function iconDown(e:PointerEvent<HTMLButtonElement>,id:string,i:number){
     if(e.button!==0)return;
+    e.stopPropagation();
     drag.current={id,x:e.clientX,y:e.clientY,pos:position(id,i)};
     e.currentTarget.setPointerCapture(e.pointerId);
     setSelected(id);
+    if(e.ctrlKey){
+      setSelectedIds(prev=>prev.includes(id)?prev.filter(x=>x!==id):[...prev,id]);
+    } else {
+      setSelectedIds([id]);
+    }
   }
 
   function iconMove(e:PointerEvent<HTMLButtonElement>){
     const d=drag.current;
     if(!d||Math.abs(e.clientX-d.x)+Math.abs(e.clientY-d.y)<5)return;
     setPositions(p=>({...p,[d.id]:{x:Math.max(0,Math.min(d.pos.x+e.clientX-d.x,bounds.w-90)),y:Math.max(0,Math.min(d.pos.y+e.clientY-d.y,bounds.h-88))}}));
+  }
+
+  // Marquee selection handlers on desktop free space
+  function desktopPointerDown(e:PointerEvent<HTMLElement>){
+    if((e.target as HTMLElement).closest('.os-window,.taskbar,.start-menu,.quick-panel,.context-menu,.desktop-icon'))return;
+    if(e.button!==0)return;
+    try {
+      e.currentTarget.setPointerCapture(e.pointerId);
+    } catch {
+      // ignore
+    }
+    marqueeOrigin.current={x:e.clientX,y:e.clientY};
+    setMarquee({x:e.clientX,y:e.clientY,w:0,h:0});
+    setSelected('');
+    setSelectedIds([]);
+  }
+
+  function desktopPointerMove(e:PointerEvent<HTMLElement>){
+    const origin=marqueeOrigin.current;
+    if(!origin)return;
+    const x=Math.min(origin.x,e.clientX);
+    const y=Math.min(origin.y,e.clientY);
+    const w=Math.abs(e.clientX-origin.x);
+    const h=Math.abs(e.clientY-origin.y);
+    const currentRect:Rect={x,y,w,h};
+    setMarquee(currentRect);
+
+    // Calculate intersected icons
+    const icons=document.querySelectorAll<HTMLElement>('.desktop-icon');
+    const matched:string[]=[];
+    icons.forEach(el=>{
+      const r=el.getBoundingClientRect();
+      const intersects=!(r.right<currentRect.x||r.left>currentRect.x+currentRect.w||r.bottom<currentRect.y||r.top>currentRect.y+currentRect.h);
+      const id=el.dataset.appId;
+      if(intersects&&id)matched.push(id);
+    });
+    setSelectedIds(matched);
+    if(matched.length===1)setSelected(matched[0]);
+    else if(matched.length===0)setSelected('');
+  }
+
+  function desktopPointerUp(e:PointerEvent<HTMLElement>){
+    try {
+      if(e.currentTarget.hasPointerCapture(e.pointerId)){
+        e.currentTarget.releasePointerCapture(e.pointerId);
+      }
+    } catch {
+      // ignore
+    }
+    marqueeOrigin.current=null;
+    setMarquee(null);
   }
 
   useEffect(()=>{
@@ -260,20 +326,98 @@ export function Desktop(){
 
   return (
     <SystemThemeContext value={prefs.theme}>
-      <main className={'desktop theme-'+prefs.theme+(prefs.theme==='win2000'?' theme-classic':'')+' wallpaper-'+prefs.wallpaper+' xp-'+prefs.xpColor+' era-'+(prefs.era||2001)} onContextMenu={e=>{if((e.target as HTMLElement).closest('.os-window,.taskbar,.start-menu'))return;e.preventDefault();const app=(e.target as HTMLElement).closest<HTMLElement>('[data-app-id]')?.dataset.appId as AppId|undefined;if(app)setSelected(app);setMenu({x:Math.max(0,Math.min(e.clientX,innerWidth-220)),y:Math.max(0,Math.min(e.clientY,innerHeight-260)),app})}} onPointerDown={e=>{if(!(e.target as HTMLElement).closest('.start-menu,.start-button'))setStart(false);if(!(e.target as HTMLElement).closest('.quick-panel,.tray'))setQuick(false);if(!(e.target as HTMLElement).closest('.context-menu'))setMenu(null)}}>
+      <main
+        className={'desktop theme-'+prefs.theme+(prefs.theme==='win2000'?' theme-classic':'')+' wallpaper-'+prefs.wallpaper+' xp-'+prefs.xpColor+' era-'+(prefs.era||2001)}
+        onContextMenu={e=>{
+          if((e.target as HTMLElement).closest('.os-window,.taskbar,.start-menu'))return;
+          e.preventDefault();
+          const app=(e.target as HTMLElement).closest<HTMLElement>('[data-app-id]')?.dataset.appId as AppId|undefined;
+          if(app){
+            setSelected(app);
+            setSelectedIds([app]);
+          }
+          setMenu({x:Math.max(0,Math.min(e.clientX,innerWidth-220)),y:Math.max(0,Math.min(e.clientY,innerHeight-260)),app});
+        }}
+        onPointerDown={e=>{
+          if(!(e.target as HTMLElement).closest('.start-menu,.start-button'))setStart(false);
+          if(!(e.target as HTMLElement).closest('.quick-panel,.tray'))setQuick(false);
+          if(!(e.target as HTMLElement).closest('.context-menu'))setMenu(null);
+          desktopPointerDown(e);
+        }}
+        onPointerMove={desktopPointerMove}
+        onPointerUp={desktopPointerUp}
+      >
         <div className="wallpaper-art" aria-hidden="true"><div className="sun"/><div className="cloud c1"/><div className="cloud c2"/><div className="hill far"/><div className="hill near"/></div>
         <div className="desktop-signature"><b>RETRO<span>OS</span></b><small>EST. 2001 / REBOOTED TODAY</small></div>
+        
+        {marquee&&marquee.w>3&&marquee.h>3&&(
+          <div
+            className="desktop-marquee"
+            style={{
+              left: marquee.x,
+              top: marquee.y,
+              width: marquee.w,
+              height: marquee.h
+            }}
+          />
+        )}
+
         <div className="desktop-icons" aria-label={t.showDesktop}>
           {[...registry.slice(0,12),...registry.filter(a=>['dialup','timemachine','gamecenter','retrolauncher'].includes(a.id))].map((a,i)=>{
             const p=position(a.id,i);
             const app = appInfo(a.id, lang);
-            return <button key={a.id} data-app-id={a.id} className={'desktop-icon '+(selected===a.id?'selected':'')} style={{left:p.x,top:p.y}} onPointerDown={e=>iconDown(e,a.id,i)} onPointerMove={iconMove} onPointerUp={()=>{drag.current=null;write('positions',positions)}} onDoubleClick={()=>open(a.id)} onKeyDown={e=>{if(e.key==='Enter')open(a.id);if(e.altKey&&e.key.startsWith('Arrow')){e.preventDefault();const dx=e.key==='ArrowLeft'?-10:e.key==='ArrowRight'?10:0,dy=e.key==='ArrowUp'?-10:e.key==='ArrowDown'?10:0;const next={...positions,[a.id]:{x:Math.max(0,Math.min(bounds.w-90,p.x+dx)),y:Math.max(0,Math.min(bounds.h-88,p.y+dy))}};setPositions(next);write('positions',next)}}}><Icon name={a.icon} size={(prefs.theme==='classic'||prefs.theme==='win2000')?32:prefs.theme==='xp'?32:38}/><span>{app.name}</span></button>;
+            const isSelected = selectedIds.includes(a.id) || selected===a.id;
+            return (
+              <button
+                key={a.id}
+                data-app-id={a.id}
+                className={'desktop-icon '+(isSelected?'selected':'')}
+                style={{left:p.x,top:p.y}}
+                onPointerDown={e=>iconDown(e,a.id,i)}
+                onPointerMove={iconMove}
+                onPointerUp={()=>{drag.current=null;write('positions',positions)}}
+                onDoubleClick={()=>open(a.id)}
+                onKeyDown={e=>{
+                  if(e.key==='Enter')open(a.id);
+                  if(e.altKey&&e.key.startsWith('Arrow')){
+                    e.preventDefault();
+                    const dx=e.key==='ArrowLeft'?-10:e.key==='ArrowRight'?10:0,dy=e.key==='ArrowUp'?-10:e.key==='ArrowDown'?10:0;
+                    const next={...positions,[a.id]:{x:Math.max(0,Math.min(bounds.w-90,p.x+dx)),y:Math.max(0,Math.min(bounds.h-88,p.y+dy))}};
+                    setPositions(next);
+                    write('positions',next);
+                  }
+                }}
+              >
+                <Icon name={a.icon} size={(prefs.theme==='classic'||prefs.theme==='win2000')?32:prefs.theme==='xp'?32:38}/>
+                <span>{app.name}</span>
+              </button>
+            );
           })}
           {gameShortcuts.map((id,i)=>{
             const g=catalog.find(g=>g.id===id)||loadBaseCatalog().filter(g=>g.metadataOrigin==='user-imported'||g.metadataOrigin==='licensed-builtin').map(g=>({id:g.id,name:g.title})).find(g=>g.id===id);
             if(!g)return null;
             const p=position('shortcut-'+id,15+i);
-            return <button key={id} className="desktop-icon" style={{left:p.x,top:p.y}} onDoubleClick={()=>{if(id.startsWith('imported-')){write('activeCustomGameId',id);window.dispatchEvent(new Event('retro:custom-game'));open('dos-imported');return}write('catalogSelected',id);open('gamecenter');window.dispatchEvent(new Event('retro:catalog-select'))}}><Icon name="disc" size={38}/><span>↗ {g.name}</span></button>;
+            return (
+              <button
+                key={id}
+                className="desktop-icon"
+                style={{left:p.x,top:p.y}}
+                onDoubleClick={()=>{
+                  if(id.startsWith('imported-')){
+                    write('activeCustomGameId',id);
+                    window.dispatchEvent(new Event('retro:custom-game'));
+                    open('dos-imported');
+                    return;
+                  }
+                  write('catalogSelected',id);
+                  open('gamecenter');
+                  window.dispatchEvent(new Event('retro:catalog-select'));
+                }}
+              >
+                <Icon name="disc" size={38}/>
+                <span>↗ {g.name}</span>
+              </button>
+            );
           })}
         </div>
         {windows.map(win=>{

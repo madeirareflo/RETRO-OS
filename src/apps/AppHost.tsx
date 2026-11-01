@@ -63,7 +63,7 @@ export function AppHost({id,open,close,prefs,setPrefs,active,request,activateSav
     case 'naval':return <LocalNaval/>;
     case 'tasks':return <TaskManager/>;
     case 'lan':return <OfflineLan open={open}/>;
-    case 'community':return <Suspense fallback={<p>Carregando rede fictícia…</p>}><MuseumSocial/></Suspense>;
+    case 'community':return <Suspense fallback={<p>Carregando rede fictícia…</p>}><MuseumSocial open={open}/></Suspense>;
     case 'messenger':return <OfflineMessenger/>;
     case 'computer':return <Explorer language={lang}/>;
     case 'documents':return <Explorer initial="C:/Meus Documentos" language={lang}/>;
