@@ -1,5 +1,4 @@
 import {getProfileById} from './runtime37/catalog37Games';
-import {BUILTIN_DOS} from './builtinGames';
 
 export interface ControlsManual {
   id: string;

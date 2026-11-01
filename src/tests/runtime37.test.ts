@@ -1,9 +1,8 @@
 import {describe, it, expect} from 'vitest';
 import {CATALOG_37_GAMES, getProfileById, getDosProfiles, getMuseumProfiles} from '../launcher/runtime37/catalog37Games';
 import {validateGamePackage, identifyPackageCandidate} from '../launcher/runtime37/packageInstaller';
-import {prepareDosFilesystem, buildDosRuntimeConfig} from '../launcher/runtime37/dosRuntimeManager';
+import {prepareDosFilesystem} from '../launcher/runtime37/dosRuntimeManager';
 import {resolveGameAction} from '../launcher/runtime37/actionResolver';
-import {createBatchImportSession} from '../launcher/runtime37/batchImporter';
 
 describe('RETRO OS 003P-ANTI — Suíte de Testes dos 37 Jogos', () => {
 
