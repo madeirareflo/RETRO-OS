@@ -1,3 +1,6 @@
+import type {Language} from './i18n';
+import {getTranslation} from './i18n';
+
 export const registry=[
 {id:'computer',name:'Meu Computador',icon:'computer',group:'Acessórios'},
 {id:'documents',name:'Meus Documentos',icon:'folder',group:'Documentos'},
@@ -35,5 +38,54 @@ export const registry=[
 {id:'tasks',name:'Gerenciador de Tarefas',icon:'computer',group:'Acessórios'},
 {id:'media',name:'Central de Discos',icon:'disc',group:'Programas'}
 ] as const;
+
 export type AppId=typeof registry[number]['id'];
-export const appInfo=(id:AppId)=>registry.find(a=>a.id===id)!;
+
+const appTranslationKeys: Record<AppId, keyof ReturnType<typeof getTranslation>> = {
+  computer: 'appComputer',
+  documents: 'appDocuments',
+  floppy: 'appFloppy',
+  internet: 'appInternet',
+  games: 'appGames',
+  paint: 'appPaint',
+  notepad: 'appNotepad',
+  player: 'appPlayer',
+  chat: 'appChat',
+  trash: 'appTrash',
+  settings: 'appSettings',
+  about: 'appAbout',
+  calculator: 'appCalculator',
+  terminal: 'appTerminal',
+  mines: 'appMines',
+  snake: 'appSnake',
+  solitaire: 'appSolitaire',
+  run: 'appRun',
+  dialup: 'appDialup',
+  timemachine: 'appTimeMachine',
+  saver: 'appSaver',
+  backup: 'appBackup',
+  lan: 'appLan',
+  community: 'appCommunity',
+  messenger: 'appMessenger',
+  dosgame: 'appDosGame',
+  'dos-freedoom': 'appFreedoom',
+  'dos-klab': 'appKlab',
+  'dos-skyroads': 'appSkyroads',
+  retrolauncher: 'appLauncher',
+  'dos-imported': 'appDosImported',
+  gamecenter: 'appGameCenter',
+  naval: 'appNaval',
+  tasks: 'appTasks',
+  media: 'appMedia'
+};
+
+export const appInfo = (id: AppId, lang: Language = 'pt-BR') => {
+  const item = registry.find(a => a.id === id)!;
+  const t = getTranslation(lang);
+  const key = appTranslationKeys[id];
+  const translatedName = key && typeof t[key] === 'string' ? (t[key] as string) : item.name;
+  return {
+    ...item,
+    name: translatedName
+  };
+};

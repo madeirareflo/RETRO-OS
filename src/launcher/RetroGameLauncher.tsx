@@ -168,8 +168,9 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
     );
 
     // Se for jogo customizado/importado, salva contexto para o AppHost instanciar
-    if (game.metadataOrigin === 'user-imported') {
-      write('activeCustomGameId', game.id);window.dispatchEvent(new Event('retro:custom-game')); 
+    if (game.appId === 'dos-imported' || game.id.startsWith('imported-') || game.metadataOrigin === 'user-imported' || game.engineId === 'dosbox-wasm') {
+      write('activeCustomGameId', game.id);
+      window.dispatchEvent(new Event('retro:custom-game'));
     }
 
     open(game.appId as AppId);

@@ -2,10 +2,11 @@ import {useKeyboardGeometry} from './useKeyboardGeometry';
 import {useRef,useEffect,useState,type ReactNode,type PointerEvent} from 'react';
 import {Icon} from '../components/Icon';
 import {appInfo,type AppId} from '../core/registry';
+import type {Language} from '../core/i18n';
 import {clampRect,type Rect} from './model';
 export type WindowState={id:AppId;rect:Rect;z:number;min:boolean;max:boolean};
-export function Window({win,active,children,update,focus,close}:{win:WindowState;active:boolean;children:ReactNode;update:(p:Partial<WindowState>)=>void;focus:()=>void;close:()=>void}){
-const geometry=useKeyboardGeometry(active,win.rect,win.max,update);const [systemMenu,setSystemMenu]=useState(false);const gesture=useRef<{x:number;y:number;r:Rect;edge:string}|null>(null),info=appInfo(win.id);
+export function Window({win,active,children,update,focus,close,language='pt-BR'}:{win:WindowState;active:boolean;children:ReactNode;update:(p:Partial<WindowState>)=>void;focus:()=>void;close:()=>void;language?:Language}){
+const geometry=useKeyboardGeometry(active,win.rect,win.max,update);const [systemMenu,setSystemMenu]=useState(false);const gesture=useRef<{x:number;y:number;r:Rect;edge:string}|null>(null),info=appInfo(win.id,language);
 const root=useRef<HTMLElement>(null),lastFocus=useRef<HTMLElement|null>(null);
 useEffect(()=>{if(active&&!win.min&&!root.current?.contains(document.activeElement)){const target=lastFocus.current?.isConnected?lastFocus.current:root.current;target?.focus({preventScroll:true})}},[active,win.min]);
 useEffect(()=>{if(!active)setSystemMenu(false);const key=(e:KeyboardEvent)=>{if(active&&e.altKey&&e.code==='Space'&&!root.current?.querySelector('.system-dialog')){e.preventDefault();setSystemMenu(v=>!v);requestAnimationFrame(()=>root.current?.querySelector<HTMLButtonElement>('.window-system-menu button:not(:disabled)')?.focus())}if(e.key==='Escape')setSystemMenu(false)};window.addEventListener('keydown',key);return ()=>window.removeEventListener('keydown',key)},[active]);
