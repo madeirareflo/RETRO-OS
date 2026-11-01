@@ -1,4 +1,4 @@
-/* 003M: component corrections measured against period screenshots, own artwork. */
+/* 003M & 004A-S: period component styling with genuine differences across Win98, 2000, and XP */
 .theme-classic .start-button,.theme-win2000 .start-button{height:22px;min-width:55px;padding:1px 3px;gap:2px;font:bold 11px 'Microsoft Sans Serif',Tahoma,Arial}
 .theme-win2000 .start-button{font-family:Tahoma,Arial}
 .theme-classic .tray,.theme-win2000 .tray{padding:1px 4px;min-width:82px;gap:3px}
@@ -10,7 +10,7 @@
 .settings-app:has(.period-control-panel) .settings-body{padding:0;border:0;flex:1;min-height:0;overflow:hidden}
 .period-control-panel{height:100%;display:flex;flex-direction:column;background:var(--face);font:11px Tahoma,Arial;color:#000}
 .period-control-panel .menubar{padding:3px 5px;display:flex;gap:12px;border-bottom:1px solid #808080}
-.period-control-panel .cp-toolbar{padding:4px;min-height:31px;gap:7px;border-bottom:1px solid #808080;flex-wrap:wrap}
+.period-control-panel .cp-toolbar{padding:4px;min-height:31px;gap:7px;border-bottom:1px solid #808080;flex-wrap:wrap;align-items:center}
 .cp-toolbar label{display:flex;align-items:center;gap:5px}.cp-toolbar input{width:115px;min-width:0;font:inherit}
 .cp-address{padding:3px 4px;border-bottom:1px solid #808080}.cp-address label{display:flex;align-items:center;gap:4px}.cp-address input{flex:1;min-width:0;font:inherit;height:21px}
 .cp-content{display:flex;flex:1;min-height:0;background:white;overflow:auto}
@@ -20,8 +20,32 @@
 .cp-items{flex:1;display:grid;grid-template-columns:repeat(auto-fill,minmax(86px,1fr));align-content:start;gap:8px;padding:9px;min-width:0;background:white}
 .cp-items>button{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:4px;min-height:77px;padding:3px 2px;background:white!important;border:1px solid transparent!important;box-shadow:none!important;border-radius:0;font:11px/13px Tahoma,Arial;color:black;text-align:center}
 .cp-items>button:focus{outline:1px dotted #000;outline-offset:-2px}.cp-items>button span{padding:1px 2px}.cp-items>button.cp-selected span{background:#000080;color:white}
-.panel-win2000 .cp-content aside{flex-basis:180px;background:linear-gradient(#edf4f8,#fff 90px)}.panel-win2000 .cp-content aside h2{font:bold 16px/18px Tahoma,Arial,sans-serif;letter-spacing:0;border-bottom:2px solid #729acf;padding-bottom:5px}
-.panel-xp .cp-content aside{flex-basis:160px;background:linear-gradient(#7da3e6,#6378d5);color:white}.panel-xp .cp-content aside h2{font:bold 15px/18px Tahoma,Arial,sans-serif;letter-spacing:0}.panel-xp .cp-items{grid-template-columns:1fr 1fr;background:#fff}.panel-xp .cp-items>button{flex-direction:row;justify-content:flex-start;gap:10px;min-height:72px;font-weight:bold;color:#2155a0}.panel-xp .cp-content aside button{color:#fff}
+
+/* Windows 2000 Professional Panel */
+.panel-win2000 .cp-content aside{flex-basis:180px;background:linear-gradient(#edf4f8,#fff 90px);border-right:1px solid #d4d0c8}
+.panel-win2000 .cp-content aside h2{font:bold 16px/18px Tahoma,Arial,sans-serif;letter-spacing:0;border-bottom:2px solid #729acf;padding-bottom:5px;color:#0a246a}
+.panel-win2000 .cp-items>button.cp-selected span{background:#0a246a;color:white}
+.panel-win2000 .cp-toolbar{background:#d4d0c8}
+.panel-win2000 .cp-address{background:#d4d0c8}
+
+/* Windows XP Luna Control Panel */
+.panel-xp .cp-toolbar{background:#eeece4;border-bottom:1px solid #aca899}
+.panel-xp .cp-address{background:#eeece4;border-bottom:1px solid #aca899}
+.panel-xp .cp-content aside{flex-basis:180px;background:linear-gradient(#7da3e6,#6378d5);color:white;padding:14px}
+.panel-xp .cp-content aside h2{font:bold 16px/18px 'Trebuchet MS',Tahoma,Arial,sans-serif;letter-spacing:0;color:white}
+.panel-xp .cp-content aside hr{border-color:rgba(255,255,255,0.4)}
+.panel-xp .cp-content aside button{color:#fff;text-decoration:none;font-weight:bold;margin:4px 0}
+.panel-xp .cp-content aside button:hover{text-decoration:underline}
+.xp-view-toggle-btn{padding:2px 8px;font:11px Tahoma;border-radius:3px;border:1px solid #245edb;background:linear-gradient(#fff,#dbe4f8);cursor:pointer}
+
+/* 004A-S XP Category Mode Layout */
+.xp-categories-grid{flex:1;padding:16px;overflow:auto;background:#fff}
+.xp-cat-header h1{font:bold 18px 'Trebuchet MS',Tahoma,Arial;color:#003399;margin-bottom:14px;border-bottom:2px solid #e2eaf5;padding-bottom:6px}
+.xp-category-card{display:flex;align-items:flex-start;gap:12px;padding:10px 12px;margin-bottom:10px;border-radius:4px;border:1px solid transparent;cursor:pointer}
+.xp-category-card:hover{background:#edf2fc;border-color:#b4c9ed}
+.xp-category-card b{font:bold 13px Tahoma,Arial;color:#003399;display:block;margin-bottom:3px}
+.xp-category-card p{font:11px/14px Tahoma,Arial;color:#444;margin:0}
+
 .retro-game-launcher .rgl-branding h1{font-family:Tahoma,Arial,sans-serif!important;letter-spacing:0}
 @media(max-width:600px){.cp-content aside{display:none}.cp-toolbar label{display:none}}
 .cp-menus{position:relative}.cp-menus>button{padding:0 2px;background:transparent!important;border:0!important;box-shadow:none!important;font:inherit}.cp-menu-popup{position:absolute;left:0;top:100%;min-width:150px;max-width:280px;padding:3px;z-index:4;background:var(--face);border:2px outset white;box-shadow:1px 1px #000}.cp-menu-popup button{display:block;width:100%;text-align:left;background:transparent;border:0;box-shadow:none;font:inherit;padding:4px 9px}.cp-menu-popup button:hover{background:#000080;color:white}.cp-menu-popup p{margin:5px;line-height:15px}.cp-items.cp-details{display:flex;flex-direction:column;gap:0}.cp-items.cp-details>button{min-height:27px;flex-direction:row;justify-content:flex-start;gap:8px}.cp-items.cp-details svg{width:16px;height:16px}

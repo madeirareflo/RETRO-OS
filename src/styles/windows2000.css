@@ -1,4 +1,57 @@
-.theme-win2000{--face:#d4d0c8;--title:#0a246a;--title-end:#a6caf0;font-family:Tahoma,Arial,sans-serif}.theme-win2000.wallpaper-teal .wallpaper-art{background:#3a6ea5}.theme-win2000 .active .titlebar{background:linear-gradient(90deg,#0a246a,#a6caf0)}.theme-win2000 .taskbar,.theme-win2000 .os-window,.theme-win2000 .start-menu,.theme-win2000 .start-categories,.theme-win2000 .start-programs{background:#d4d0c8}.theme-win2000 .start-vertical{background:linear-gradient(#0a246a,#6c9bc1)}.theme-win2000 .start-vertical span{font-size:0}.theme-win2000 .start-vertical span::after{content:'2000 Professional';font-size:13px}.theme-win2000 .theme-mini{background:#3a6ea5}.theme-win2000 .taskbar{border-top:2px outset #eee}.theme-choices{flex-wrap:wrap}.theme-choices button{min-width:120px}
+.theme-win2000{--face:#d4d0c8;--title:#0a246a;--title-end:#a6caf0;font-family:Tahoma,Arial,sans-serif}
+.theme-win2000.wallpaper-teal .wallpaper-art{background:#3a6ea5}
+.theme-win2000 .active .titlebar{background:linear-gradient(90deg,#0a246a,#a6caf0);color:#fff}
+.theme-win2000 .titlebar{background:linear-gradient(90deg,#808080,#b5b5b5);color:#d4d0c8}
+.theme-win2000 .taskbar,.theme-win2000 .os-window,.theme-win2000 .start-menu,.theme-win2000 .start-categories,.theme-win2000 .start-programs{background:#d4d0c8}
+.theme-win2000 .theme-mini{background:#3a6ea5}
+.theme-win2000 .taskbar{border-top:2px outset #eee}
+.theme-choices{flex-wrap:wrap}.theme-choices button{min-width:120px}
+
+/* Win2000 Vertical Banner & Start Menu */
+.nt-start{width:196px;padding:2px;display:flex;min-height:0;border:2px outset #eee;background:#d4d0c8;box-shadow:1px 1px #000;overflow:visible}
+.nt-start .start-vertical{width:25px;padding:8px 2px;flex-shrink:0;align-self:stretch;background:linear-gradient(#8c8c8c 0%,#3f4752 100%);color:#fff;letter-spacing:0;white-space:nowrap;display:flex;align-items:flex-end;justify-content:center}
+.nt-vertical-banner{writing-mode:vertical-rl;transform:rotate(180deg);font:bold 15px Tahoma,Arial;color:#fff;display:flex;align-items:center;gap:4px}
+.nt-vertical-banner .nt-bold{font-weight:900;color:#fff}
+.nt-vertical-banner .nt-light{font-weight:400;color:#e8ecf2}
+.nt-vertical-banner .nt-edition{font-size:10px;font-weight:300;color:#d0d9e8;letter-spacing:1px;margin-top:4px}
+
+/* Win98 Vertical Banner */
+.win98-start .start-vertical{width:23px;padding:8px 2px;flex-shrink:0;align-self:stretch;background:linear-gradient(#000080 0%,#1084d0 100%);color:#fff;white-space:nowrap;display:flex;align-items:flex-end;justify-content:center}
+.win98-vertical-banner{writing-mode:vertical-rl;transform:rotate(180deg);font:bold 16px Tahoma,Arial;color:#fff;display:flex;align-items:center;gap:2px}
+.win98-vertical-banner .win98-bold{font-weight:900;color:#fff}
+.win98-vertical-banner .win98-version{font-weight:bold;color:#ff0}
+
+/* Submenu Arrow & Dividers in Classic Start */
+.submenu-arrow{margin-left:auto;font-size:12px;opacity:0.85}
+.classic-start-divider{border:0;border-top:1px solid #808080;border-bottom:1px solid #fff;margin:3px 2px}
+.classic-quick-logoff{width:100%;height:31px;min-height:31px;padding:3px 5px;gap:7px;font:11px Tahoma;text-align:left;box-shadow:none;border:0;background:transparent;color:#000;display:flex;align-items:center}
+.classic-quick-logoff:hover{background:var(--select);color:white}
+
+/* Luna Start Menu Layout Enhancements */
+.luna-start{width:380px;border-radius:5px 5px 0 0;box-shadow:0 5px 15px rgba(0,0,0,0.5);border:1px solid #00138c;background:#fff;display:flex;flex-direction:column}
+.luna-user-header{display:flex;align-items:center;gap:10px;padding:8px 12px;background:linear-gradient(#206be6,#1249b3);border-radius:4px 4px 0 0;color:white}
+.luna-user-header .user-avatar{border:2px solid #fff;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.4);overflow:hidden;background:#377ce3}
+.luna-user-header .user-name{font:bold 14px Tahoma,Arial;color:#fff;text-shadow:1px 1px 2px #0a2562}
+.luna-user-header .user-name small{display:block;font-weight:normal;font-size:10px;opacity:0.85}
+.luna-columns{display:grid;grid-template-columns:1fr 1fr;min-height:330px;background:#fff}
+.luna-pinned{padding:6px;background:#fff;border-right:1px solid #d3d3d3;display:flex;flex-direction:column}
+.luna-app-button{display:flex;align-items:center;gap:8px;padding:6px;width:100%;text-align:left;background:transparent;border:1px solid transparent;border-radius:3px;box-shadow:none}
+.luna-app-button:hover{background:#316ac5;color:white;border-color:#1c51a3}
+.luna-app-text b{display:block;font:bold 11px Tahoma,Arial}
+.luna-app-text small{font-size:10px;color:#666}
+.luna-app-button:hover .luna-app-text small{color:#e6edfc}
+.luna-separator{height:1px;background:#e5e5e5;margin:8px 4px}
+.luna-pinned .all-programs{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:6px;padding:8px;font:bold 11px Tahoma;border:1px solid #dcdcdc;border-radius:3px;background:linear-gradient(#f7f7f7,#ebebeb)}
+.luna-pinned .all-programs:hover{background:#316ac5;color:white;border-color:#1c51a3}
+.luna-arrow-green{color:#388e3c;font-size:12px}
+.luna-links{padding:8px 6px;background:#d3e5fa;border-left:1px solid #fff;display:flex;flex-direction:column;gap:3px}
+.luna-right-link{display:flex;align-items:center;gap:7px;padding:5px 8px;width:100%;text-align:left;background:transparent;border:1px solid transparent;box-shadow:none;color:#00138c;font:bold 11px Tahoma,Arial}
+.luna-right-link:hover{background:#316ac5;color:white;border-color:#1c51a3;border-radius:3px}
+.luna-footer{display:flex;justify-content:flex-end;gap:12px;padding:8px 12px;background:linear-gradient(#3a86eb,#1c59cf);border-top:1px solid #5a9cf5}
+.luna-footer button{display:flex;align-items:center;gap:6px;padding:4px 10px;border-radius:3px;font:bold 11px Tahoma;color:white;background:transparent;border:1px solid transparent;box-shadow:none}
+.luna-footer button:hover{background:rgba(255,255,255,0.2);border-color:rgba(255,255,255,0.4)}
+.luna-btn-icon{font-size:14px}
+
 /* Dense, original classic Explorer presentation; no proprietary assets. */
 .folder-tree{max-height:180px;overflow:auto}.folder-tree button{display:block;width:100%;text-align:left;font-size:11px;white-space:nowrap}.address{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.address input[aria-label="Endereço virtual"]{flex:1;min-width:100px}.address input[aria-label="Pesquisar arquivos"]{width:130px}.theme-classic .explorer-sidebar{background:white;color:#000;border:2px inset #ddd;padding:4px;min-width:145px;width:145px}.theme-classic .explorer-sidebar h3{font:bold 11px Tahoma;margin:5px 0}.theme-classic .folder-tree button{border:0;box-shadow:none;background:white;color:black;min-height:19px}.theme-classic .folder-tree button:hover{background:#000080;color:white}.theme-win2000 .folder-tree button:hover{background:#0a246a}.theme-win2000 .explorer-app .toolbar{min-height:36px;background:#d4d0c8;border-bottom:1px solid #808080}.theme-win2000 .explorer-app .menubar{background:#d4d0c8}.theme-win2000 .explorer-sidebar h3{color:#0a246a}.theme-win2000 .explorer-app .file-actions{border-bottom:1px solid white;padding:3px}.theme-classic .notepad-path input{height:21px}.theme-classic .file-picker{border:2px inset #ddd;background:var(--face)}
 /* 003E audit: folder navigation must remain visible in classic and MIX. */
