@@ -17,12 +17,25 @@ function menuKeys(e:KeyboardEvent<HTMLElement>){
 
 export function StartMenu({open,classic,restart,shutdown,language='pt-BR'}:{open:(id:AppId)=>void;classic:boolean;restart:()=>void;shutdown:()=>void;language?:Language}){
   const theme=useContext(SystemThemeContext),[group,setGroup]=useState(''),[nested,setNested]=useState('');
+  const [cascadeTop,setCascadeTop]=useState<number|undefined>(undefined);
+  const itemRefs=useRef<Record<string,HTMLButtonElement|null>>({});
   const hover=useRef<ReturnType<typeof setTimeout>|undefined>(undefined),root=useRef<HTMLElement>(null);
   const t = getTranslation(language);
 
   useEffect(()=>()=>clearTimeout(hover.current),[]);
-  function chooseGroup(name:string){clearTimeout(hover.current);setGroup(name);setNested('')}
-  function schedule(name:string){clearTimeout(hover.current);hover.current=setTimeout(()=>{setGroup(name);setNested('')},160)}
+  function updateCascadePosition(name:string){
+    if(!name || ['help','run'].includes(name)){ setCascadeTop(undefined); return; }
+    const btn = itemRefs.current[name];
+    if(btn && root.current){
+      const rootRect = root.current.getBoundingClientRect();
+      const btnRect = btn.getBoundingClientRect();
+      setCascadeTop(Math.round(btnRect.top - rootRect.top));
+    } else {
+      setCascadeTop(undefined);
+    }
+  }
+  function chooseGroup(name:string){clearTimeout(hover.current);setGroup(name);setNested('');updateCascadePosition(name);}
+  function schedule(name:string){clearTimeout(hover.current);hover.current=setTimeout(()=>{setGroup(name);setNested('');updateCascadePosition(name);},160)}
   const appButton=(id:AppId,size=20)=>{
     const app=appInfo(id,language);
     return <button key={id} onClick={()=>open(id)}><Icon name={app.icon} size={size}/><span>{app.name}</span></button>;
@@ -193,6 +206,7 @@ export function StartMenu({open,classic,restart,shutdown,language='pt-BR'}:{open
           {groupKeys.map((item,i)=>(
             <button
               key={item.key}
+              ref={el=>{itemRefs.current[item.key]=el;}}
               className={group===item.key?'highlight':''}
               aria-label={item.key==='run'?(t.run+' ▸'):item.label+' ▸'}
               aria-expanded={['help','run'].includes(item.key)?undefined:group===item.key}
@@ -224,6 +238,7 @@ export function StartMenu({open,classic,restart,shutdown,language='pt-BR'}:{open
         {group&&!['help','run'].includes(group)&&(
           <div
             className="start-programs cascade"
+            style={cascadeTop !== undefined ? { top: `${cascadeTop}px`, bottom: 'auto' } : undefined}
             onKeyDown={e=>{
               menuKeys(e);
               e.stopPropagation();
