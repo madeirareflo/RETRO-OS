@@ -5,6 +5,7 @@ const stamp='2001-01-01T12:00:00Z';
 export const initialFiles:VFile[]=[
 {path:'C:/Meus Documentos',kind:'folder',content:'',modified:stamp},
 {path:'C:/Meus Documentos/LEIA-ME.txt',kind:'text',content:'Bem-vindo ao RETRO OS!\nTudo acontece neste navegador.\nSalve suas memórias no Bloco de Notas.\n\nDica: tente TYPE SEGREDO.TXT no terminal.',modified:stamp},
+{path:'C:/Meus Documentos/Retro Game Launcher.lnk',kind:'text',content:'retro-app:retrolauncher',modified:stamp},
 {path:'A:/Trabalho da escola.txt',kind:'text',content:'ESCOLA MUNICIPAL — INFORMÁTICA\nAluno: você :)\nTema: Como será o computador no futuro?\n\nAcho que um dia vai caber uma lan house inteira dentro de uma página.',modified:stamp},
 {path:'A:/SEGREDO.TXT',kind:'text',content:'EASTER EGG: O disquete sobreviveu à mochila!\nVocê desbloqueou uma memória: salvar como trabalho_FINAL_agora_vai.txt',modified:stamp},
 {path:'A:/Cartão da turma.svg',kind:'image',content:'school-postcard',modified:stamp},
