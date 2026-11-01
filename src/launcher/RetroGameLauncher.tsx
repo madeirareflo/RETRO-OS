@@ -399,7 +399,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
                 <span className="platform-pill">{selectedGame.platformDisplay}</span>
               </div>
 
-              <div className="details-actions">{runtimeProfileId(selectedGame)&&<button onClick={()=>{setRuntimeInitial(runtimeProfileId(selectedGame));setRuntimeOpen(true)}}>{runtimeAction(selectedGame)?.canPlay?'Gerenciar instalação':runtimeAction(selectedGame)?.buttonLabel||'37 clássicos'}</button>}{gameControlsManual(selectedGame.preparedProfileId,selectedGame.title)&&<button onClick={()=>setControlsManual(gameControlsManual(selectedGame.preparedProfileId,selectedGame.title))}>Controles / Ajuda</button>}
+              <div className="details-actions">{runtimeProfileId(selectedGame)&&<button onClick={()=>{setRuntimeInitial(runtimeProfileId(selectedGame));setRuntimeOpen(true)}}>{runtimeAction(selectedGame)?.canPlay?'Gerenciar instalação':runtimeAction(selectedGame)?.buttonLabel||'37 clássicos'}</button>}{gameControlsManual(selectedGame.preparedProfileId||runtimeProfileId(selectedGame)||selectedGame.id,selectedGame.title)&&<button onClick={()=>setControlsManual(gameControlsManual(selectedGame.preparedProfileId||runtimeProfileId(selectedGame)||selectedGame.id,selectedGame.title))}>Controles / Ajuda</button>}
                 {selectedGame.isPlayable ? (
                   <button className="play-button" onClick={() => handlePlay(selectedGame)}>
                     ▶ Iniciar Jogo
@@ -430,6 +430,30 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
                   Criar Atalho no Desktop
                 </button>
               </div>
+
+              {(() => {
+                const manual = gameControlsManual(selectedGame.preparedProfileId || runtimeProfileId(selectedGame) || selectedGame.id, selectedGame.title);
+                const hint = manual?.summary || selectedGame.mechanics;
+                if (!hint && (!manual?.rows || manual.rows.length === 0)) return null;
+                return (
+                  <div className="details-controls-box">
+                    <h4>🎮 Controles & Comandos</h4>
+                    {hint && <p className="controls-summary-text">{hint}</p>}
+                    {manual?.rows && manual.rows.length > 0 && (
+                      <table className="controls-quick-table">
+                        <tbody>
+                          {manual.rows.slice(0, 6).map((r, idx) => (
+                            <tr key={idx}>
+                              <td className="key-cell"><kbd>{r.keys}</kbd></td>
+                              <td className="action-cell">{r.action}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    )}
+                  </div>
+                );
+              })()}
 
               <div className="details-metadata-table">
                 <dl>
