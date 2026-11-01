@@ -163,6 +163,27 @@ export function Desktop(){
         }
         setMenu({x:Math.min(r?.left||20,innerWidth-220),y:Math.min(r?.bottom||20,innerHeight-220),app:icon?.dataset.appId as AppId|undefined});
       }
+      if(e.altKey && e.key === 'Tab') {
+        e.preventDefault();
+        setWindows(ws => {
+          const vis = ws.filter(w => !w.min);
+          if (vis.length <= 1) return ws;
+          // Ordena por z decrescente
+          const sorted = [...vis].sort((a,b) => b.z - a.z);
+          // O segundo na ordem ganha o topo
+          const nextActive = sorted[1];
+          if (!nextActive) return ws;
+          z.current++;
+          return ws.map(w => w.id === nextActive.id ? { ...w, z: z.current, min: false } : w);
+        });
+        return;
+      }
+      if(e.ctrlKey && e.key.toLowerCase() === 'a' && !(e.target as HTMLElement).closest('input,textarea,select,.os-window,.explorer-app')) {
+        e.preventDefault();
+        const allDesktopIds = [...registry.slice(0,12),...registry.filter(a=>['dialup','timemachine','gamecenter','retrolauncher'].includes(a.id))].map(a=>a.id);
+        setSelectedIds(allDesktopIds);
+        return;
+      }
       if(e.key==='Escape'){
         if(menu?.app)document.querySelector<HTMLButtonElement>('[data-app-id="'+menu.app+'"]')?.focus();
         setStart(false);
@@ -461,7 +482,13 @@ export function Desktop(){
           <div className="task-list">
             {windows.map(win=>{
               const info = appInfo(win.id, lang);
-              return <button key={win.id} className={top?.id===win.id?'pressed':''} onClick={()=>top?.id===win.id?setWindows(ws=>ws.map(w=>w.id===win.id?{...w,min:true}:w)):focus(win.id)} title={info.name}><Icon name={info.icon} size={18}/><span>{info.name}</span></button>;
+              return <button key={win.id} className={top?.id===win.id?'pressed':''} onClick={()=>{
+                if(top?.id===win.id && !win.min){
+                  setWindows(ws=>ws.map(w=>w.id===win.id?{...w,min:true}:w));
+                } else {
+                  focus(win.id);
+                }
+              }} title={info.name}><Icon name={info.icon} size={18}/><span>{info.name}</span></button>;
             })}
           </div>
           <button className="tray" aria-label={t.quickSettings} aria-expanded={quick} onClick={()=>setQuick(!quick)}>
