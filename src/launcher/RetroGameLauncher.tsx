@@ -83,7 +83,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
       if (query) return true;
 
       // Predefined Collections
-      if (activeCollection === 'Prince / DOOM / Duke') return !!game.preparedProfileId;
+      if (activeCollection === 'Prince / DOOM / Duke') return !!game.preparedProfileId || ['dos-quake-1996', 'dos-heretic-1994'].includes(game.id) || ['dos-quake-1996', 'dos-heretic-1994'].includes(game.runtimeProfileId || '');
       if (activeCollection === 'Favoritos') return game.isFavorite;
       if (activeCollection === 'Instalados') return game.isInstalled;
       if (activeCollection === 'Jogáveis') return game.isPlayable;

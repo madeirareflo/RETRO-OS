@@ -1,5 +1,6 @@
 import {BUILTIN_DOS} from '../launcher/builtinGames';
-const officialIds=BUILTIN_DOS.map(g=>g.gameId);
+import {SHAREWARE_GAMES} from '../launcher/sharewareGames';
+const officialIds=[...BUILTIN_DOS.map(g=>g.gameId), ...SHAREWARE_GAMES.map(s=>s.gameId)];
 import {useEffect,useState} from 'react';
 import {catalog as historicalCatalog} from '../museum/gameCatalog';
 import {loadBaseCatalog} from '../launcher/catalogStore';
