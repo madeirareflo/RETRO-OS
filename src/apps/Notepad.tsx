@@ -4,9 +4,189 @@ import {useState,useEffect,useRef} from 'react';
 import {saveFile,download,read,write,type VFile} from '../storage/local';
 import {useFiles,commitFiles,validPath} from '../storage/vfs';
 import {sound} from '../services/audio';
+
 export type FileRequest={file:VFile;version:number};
-export function Notepad({request}:{request?:FileRequest}){const [text,setText]=useState(read('draft','')),[name,setName]=useState('Sem título.txt'),[path,setPath]=useState(''),[status,setStatus]=useState('Pronto'),[opening,setOpening]=useState(false);const [find,setFind]=useState(''),[replacement,setReplacement]=useState(''),[searching,setSearching]=useState(false),[wrap,setWrap]=useState(true),[saved,setSaved]=useState(text);const [saveAs,setSaveAs]=useState(false),[discard,setDiscard]=useState<{proceed:()=>void}|null>(null);const editor=useRef<HTMLTextAreaElement>(null);const all=useFiles();function load(f:VFile){setText(f.content);setSaved(f.content);setName(f.path.split('/').pop()!);setPath(f.path);setStatus('Aberto: '+f.path)}useEffect(()=>{if(request?.file.kind==='text'){if(text!==saved)setDiscard({proceed:()=>load(request.file)});else load(request.file)}},[request]);
-useEffect(()=>{const listener=(event:Event)=>{const e=event as CustomEvent<{id:string;proceed:()=>void}>;if(e.detail.id==='notepad'&&text!==saved){e.preventDefault();setDiscard({proceed:e.detail.proceed})}};window.addEventListener('retro:before-close',listener);return ()=>window.removeEventListener('retro:before-close',listener)},[text,saved]);
-function save(explicit?:string){try{const target=explicit||(path&&path.endsWith('/'+name)?path:'C:/Meus Documentos/'+name);const finalName=target.split('/').pop()!;const existing=all.find(f=>f.path===target);if(existing&&existing.kind!=='text')throw Error('Nome pertence a outro tipo de item.');if(!explicit&&existing&&target!==path){setSaveAs(true);return}if(!validPath(target)||!finalName.toLowerCase().endsWith('.txt'))throw Error('Use um nome válido terminado em .txt.');if(text.length>500000)throw Error('Limite de 500 KB.');if(target.slice(0,target.lastIndexOf('/'))==='C:/Meus Documentos')saveFile(target,text);else commitFiles([...all.filter(f=>f.path!==target),{path:target,kind:'text',content:text,modified:new Date().toISOString()}]);setPath(target);setName(finalName);setSaved(text);setStatus('Salvo em '+target);setSaveAs(false)}catch(e){setStatus(String(e));sound('error')}}
-function locate(){const el=editor.current;if(!el||!find)return;const start=text.indexOf(find,el.selectionEnd);const index=start<0?text.indexOf(find):start;if(index<0){setStatus('Texto não encontrado');return}el.focus();el.setSelectionRange(index,index+find.length);setStatus('Texto localizado')}
-return <div className="app-fill"><nav className="menubar"><button onClick={()=>{const proceed=()=>{setText('');setSaved('');write('draft','');setName('Sem título.txt');setPath('')};if(text!==saved)setDiscard({proceed});else proceed()}}>Novo</button><button onClick={()=>setOpening(!opening)}>Abrir</button><button onClick={()=>save()}>Salvar</button><button onClick={()=>setSaveAs(true)}>Salvar como</button><button onClick={()=>setSearching(!searching)}>Localizar / Substituir</button><label><input type="checkbox" checked={wrap} onChange={e=>setWrap(e.target.checked)}/>Quebra de linha</label><button onClick={()=>download(name,new Blob([text],{type:'text/plain;charset=utf-8'}))}>Exportar TXT</button></nav><div className="notepad-path"><label>Nome: <input aria-label="Nome do documento" value={name} onChange={e=>setName(e.target.value)}/></label><span> {path||'Documento não salvo'}</span></div>{opening&&<FileDialog mode="open" name={name} onCancel={()=>setOpening(false)} onChoose={target=>{const f=all.find(f=>f.path===target);if(!f)return;setOpening(false);const proceed=()=>load(f);if(text!==saved)setDiscard({proceed});else proceed()}}/>}{searching&&<div className="file-picker"><input aria-label="Localizar texto" value={find} onChange={e=>setFind(e.target.value)}/><button onClick={locate}>Localizar próximo</button><input aria-label="Substituir por" value={replacement} onChange={e=>setReplacement(e.target.value)}/><button disabled={!find} onClick={()=>{const next=text.split(find).join(replacement);setText(next);write('draft',next);setStatus('Substituição concluída')}}>Substituir tudo</button></div>}<textarea ref={editor} wrap={wrap?'soft':'off'} className="notepad" aria-label="Texto do documento" spellCheck={false} value={text} onChange={e=>{setText(e.target.value);write('draft',e.target.value);setStatus('Alterações no rascunho')}} onKeyDown={e=>{if(e.ctrlKey&&e.key==='s'){e.preventDefault();save()}}}/>{saveAs&&<FileDialog mode="save" name={name} onCancel={()=>setSaveAs(false)} onChoose={target=>save(target)}/>} {discard&&<Dialog title="Alterações não salvas" confirm="Descartar alterações" onCancel={()=>setDiscard(null)} onConfirm={()=>{discard.proceed();setDiscard(null)}}><p>O documento possui alterações não salvas. Cancele para salvar antes de continuar.</p></Dialog>}<footer className="statusbar" role="status">{text!==saved?'* Alterações não salvas · ':''}{status} · {text.length} caracteres</footer></div>}
+
+export function Notepad({request}:{request?:FileRequest}){
+  const [text,setText]=useState(read('draft',''));
+  const [name,setName]=useState('Sem título.txt');
+  const [path,setPath]=useState('');
+  const [status,setStatus]=useState('Pronto');
+  const [opening,setOpening]=useState(false);
+  const [find,setFind]=useState('');
+  const [replacement,setReplacement]=useState('');
+  const [searching,setSearching]=useState(false);
+  const [wrap,setWrap]=useState(true);
+  const [saved,setSaved]=useState(text);
+  const [saveAs,setSaveAs]=useState(false);
+  const [discard,setDiscard]=useState<{proceed:()=>void}|null>(null);
+  const [cursorPos,setCursorPos]=useState({line:1,col:1});
+
+  const editor=useRef<HTMLTextAreaElement>(null);
+  const all=useFiles();
+
+  function updateCursor(){
+    const el=editor.current;
+    if(!el)return;
+    const pos=el.selectionStart||0;
+    const upToPos=text.slice(0,pos);
+    const lines=upToPos.split('\n');
+    const line=lines.length;
+    const col=lines[lines.length-1].length+1;
+    setCursorPos({line,col});
+  }
+
+  function load(f:VFile){
+    setText(f.content);
+    setSaved(f.content);
+    setName(f.path.split('/').pop()!);
+    setPath(f.path);
+    setStatus('Aberto: '+f.path);
+    requestAnimationFrame(updateCursor);
+  }
+
+  useEffect(()=>{
+    if(request?.file.kind==='text'){
+      if(text!==saved)setDiscard({proceed:()=>load(request.file)});
+      else load(request.file);
+    }
+  },[request]);
+
+  useEffect(()=>{
+    const listener=(event:Event)=>{
+      const e=event as CustomEvent<{id:string;proceed:()=>void}>;
+      if(e.detail.id==='notepad'&&text!==saved){
+        e.preventDefault();
+        setDiscard({proceed:e.detail.proceed});
+      }
+    };
+    window.addEventListener('retro:before-close',listener);
+    return ()=>window.removeEventListener('retro:before-close',listener);
+  },[text,saved]);
+
+  function save(explicit?:string){
+    try{
+      const target=explicit||(path&&path.endsWith('/'+name)?path:'C:/Meus Documentos/'+name);
+      const finalName=target.split('/').pop()!;
+      const existing=all.find(f=>f.path===target);
+      if(existing&&existing.kind!=='text')throw Error('Nome pertence a outro tipo de item.');
+      if(!explicit&&existing&&target!==path){setSaveAs(true);return}
+      if(!validPath(target)||!finalName.toLowerCase().endsWith('.txt'))throw Error('Use um nome válido terminado em .txt.');
+      if(text.length>500000)throw Error('Limite de 500 KB.');
+      if(target.slice(0,target.lastIndexOf('/'))==='C:/Meus Documentos')saveFile(target,text);
+      else commitFiles([...all.filter(f=>f.path!==target),{path:target,kind:'text',content:text,modified:new Date().toISOString()}]);
+      setPath(target);
+      setName(finalName);
+      setSaved(text);
+      setStatus('Salvo em '+target);
+      setSaveAs(false);
+    }catch(e){
+      setStatus(String(e));
+      sound('error');
+    }
+  }
+
+  function locate(){
+    const el=editor.current;
+    if(!el||!find)return;
+    const start=text.indexOf(find,el.selectionEnd);
+    const index=start<0?text.indexOf(find):start;
+    if(index<0){
+      setStatus('Texto não encontrado');
+      return;
+    }
+    el.focus();
+    el.setSelectionRange(index,index+find.length);
+    setStatus('Texto localizado');
+    updateCursor();
+  }
+
+  return (
+    <div className="app-fill">
+      <nav className="menubar">
+        <button onClick={()=>{
+          const proceed=()=>{
+            setText('');
+            setSaved('');
+            write('draft','');
+            setName('Sem título.txt');
+            setPath('');
+            setCursorPos({line:1,col:1});
+          };
+          if(text!==saved)setDiscard({proceed});
+          else proceed();
+        }}>Novo</button>
+        <button onClick={()=>setOpening(!opening)}>Abrir</button>
+        <button onClick={()=>save()}>Salvar</button>
+        <button onClick={()=>setSaveAs(true)}>Salvar como</button>
+        <button onClick={()=>setSearching(!searching)}>Localizar / Substituir</button>
+        <label>
+          <input type="checkbox" checked={wrap} onChange={e=>setWrap(e.target.checked)}/>
+          Quebra de linha
+        </label>
+        <button onClick={()=>download(name,new Blob([text],{type:'text/plain;charset=utf-8'}))}>Exportar TXT</button>
+      </nav>
+      <div className="notepad-path">
+        <label>Nome: <input aria-label="Nome do documento" value={name} onChange={e=>setName(e.target.value)}/></label>
+        <span> {path||'Documento não salvo'}</span>
+      </div>
+      {opening&&<FileDialog mode="open" name={name} onCancel={()=>setOpening(false)} onChoose={target=>{
+        const f=all.find(f=>f.path===target);
+        if(!f)return;
+        setOpening(false);
+        const proceed=()=>load(f);
+        if(text!==saved)setDiscard({proceed});
+        else proceed();
+      }}/>}
+      {searching&&<div className="file-picker">
+        <input aria-label="Localizar texto" value={find} onChange={e=>setFind(e.target.value)}/>
+        <button onClick={locate}>Localizar próximo</button>
+        <input aria-label="Substituir por" value={replacement} onChange={e=>setReplacement(e.target.value)}/>
+        <button disabled={!find} onClick={()=>{
+          const next=text.split(find).join(replacement);
+          setText(next);
+          write('draft',next);
+          setStatus('Substituição concluída');
+          updateCursor();
+        }}>Substituir tudo</button>
+      </div>}
+      <textarea
+        ref={editor}
+        wrap={wrap?'soft':'off'}
+        className="notepad"
+        aria-label="Texto do documento"
+        spellCheck={false}
+        value={text}
+        onKeyUp={updateCursor}
+        onClick={updateCursor}
+        onChange={e=>{
+          setText(e.target.value);
+          write('draft',e.target.value);
+          setStatus('Alterações no rascunho');
+          updateCursor();
+        }}
+        onKeyDown={e=>{
+          if(e.ctrlKey&&e.key==='s'){
+            e.preventDefault();
+            save();
+          }
+          if(e.ctrlKey&&e.key==='n'){
+            e.preventDefault();
+            const proceed=()=>{setText('');setSaved('');write('draft','');setName('Sem título.txt');setPath('');setCursorPos({line:1,col:1})};
+            if(text!==saved)setDiscard({proceed});
+            else proceed();
+          }
+          if(e.ctrlKey&&e.key==='o'){
+            e.preventDefault();
+            setOpening(true);
+          }
+        }}
+      />
+      {saveAs&&<FileDialog mode="save" name={name} onCancel={()=>setSaveAs(false)} onChoose={target=>save(target)}/>}
+      {discard&&<Dialog title="Alterações não salvas" confirm="Descartar alterações" onCancel={()=>setDiscard(null)} onConfirm={()=>{discard.proceed();setDiscard(null)}}><p>O documento possui alterações não salvas. Cancele para salvar antes de continuar.</p></Dialog>}
+      <footer className="statusbar" role="status">
+        {text!==saved?'* Alterações não salvas · ':''}{status} · {text.length} caracteres · Lin {cursorPos.line}, Col {cursorPos.col}
+      </footer>
+    </div>
+  );
+}
