@@ -1,7 +1,7 @@
 import {museumSites,siteYears} from '../museum/sites';
 import musicCulture from '../data/music-culture.json';
 import {useState,useEffect,useRef,lazy,Suspense} from 'react';
-import {read,write,download} from '../storage/local';
+import {read,write,download,saveFile} from '../storage/local';
 import {useConnection} from '../services/connection';
 import type {AppId} from '../core/registry';
 import {eras} from './TimeMachine';
@@ -37,6 +37,7 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
   const [paused,setPaused]=useState(false);
   const [simulateError,setSimulateError]=useState(false);
   const [downloadError,setDownloadError]=useState(false);
+  const [vfsSaved,setVfsSaved]=useState(false);
   const [favorites,setFavorites]=useState<string[]>(()=>read('webFavorites',[]));
   const [loading,setLoading]=useState(false);
 
@@ -67,7 +68,16 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
   },[progress,paused,slow,simulateError]);
 
   useEffect(()=>{
-    if(progress===100)download('boas-memorias.txt',new Blob(['Vale uma tarde inteira sem preocupações.\nRETRO OS — download original. EASTER EGG: o download de 1 KB finalmente terminou.'],{type:'text/plain'}));
+    if(progress===100){
+      const content = 'Vale uma tarde inteira sem preocupações.\nRETRO OS — download original.\nEASTER EGG: o download de 1 KB terminou e foi salvo em C:\\Meus Documentos\\Boas Memorias.txt';
+      download('boas-memorias.txt',new Blob([content],{type:'text/plain'}));
+      try {
+        saveFile('C:/Meus Documentos/Boas Memorias.txt', content);
+        setVfsSaved(true);
+      } catch {
+        // ignora se ja existir
+      }
+    }
   },[progress]);
 
   useEffect(()=>{
@@ -153,6 +163,9 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
                 <button onClick={()=>go('pessoal')}>Conheça a homepage do Davi →</button>
                 <p><a href="#escola" onClick={e=>{e.preventDefault();go('escola')}}>Trabalho da escola? Clique aqui!</a></p>
                 <p><a href="#jogos" onClick={e=>{e.preventDefault();go('jogos')}}>Partidas e LAN House? Veja a seção de jogos!</a></p>
+                <p><a href="#forum" onClick={e=>{e.preventDefault();go('forum')}}>Fórum de informática e dúvidas técnicas</a></p>
+                <p><a href="#blog" onClick={e=>{e.preventDefault();go('blog')}}>Diário do monitor de informática</a></p>
+                <p><a href="#recreio" onClick={e=>{e.preventDefault();go('recreio')}}>Rede social dos alunos — Rede Recreio</a></p>
               </article>
             </div>
           </>
@@ -165,7 +178,11 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
             <p>Gosto de computadores, jogos e de salvar tudo antes de desligar.</p>
             <p className="blink">SITE MELHOR VISUALIZADO COM SAUDADE</p>
             <div className="visitor-counter">VOCÊ É O VISITANTE {String(visits).padStart(6,'0')}</div>
-            <button onClick={()=>go('visitas')}>Assine meu livro de visitas!</button>
+            <p>
+              <button onClick={()=>go('visitas')}>Assine meu livro de visitas!</button> · 
+              <button onClick={()=>go('blog')}>Ler o Diário do Monitor →</button> · 
+              <button onClick={()=>go('fotolog')}>Ver o Fotolog da Turma →</button>
+            </p>
             <p>EASTER EGG: a homepage foi atualizada ontem… em 2001.</p>
           </div>
         ):page==='construcao'?(
@@ -207,6 +224,12 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
                 <p>{downloadError?'Erro de conexão simulado. Seus dados permanecem intactos.':paused?'Download pausado.':'Estimativa fictícia: '+Math.ceil((100-progress)/(slow?2:10)*(slow?.5:.18))+' s'}</p>
                 {progress<100&&<button onClick={()=>{setPaused(!paused);if(paused){setDownloadError(false);setSimulateError(false)}}}>{paused?'Retomar download':'Pausar download'}</button>}
                 {progress<100&&<button onClick={()=>setProgress(-1)}>Cancelar download</button>}
+                {progress===100&&vfsSaved&&(
+                  <p style={{background:'#e8f4fd',border:'1px solid #1a59c3',padding:'6px',marginTop:'6px'}}>
+                    <b>✓ Arquivo salvo no sistema:</b> C:\Meus Documentos\Boas Memorias.txt<br/>
+                    <button style={{marginTop:'4px'}} onClick={()=>open('documents')}>Abrir em Meus Documentos →</button>
+                  </p>
+                )}
               </>
             )}
             <p>O atraso é só nesta animação, sem limitar sua internet.</p>
