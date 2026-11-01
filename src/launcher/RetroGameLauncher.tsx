@@ -79,6 +79,9 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
         if (!matchesQuery) return false;
       }
 
+      // Se houver busca textual ativa, ela prevalece sobre a colecao selecionada
+      if (query) return true;
+
       // Predefined Collections
       if (activeCollection === 'Prince / DOOM / Duke') return !!game.preparedProfileId;
       if (activeCollection === 'Favoritos') return game.isFavorite;
