@@ -123,3 +123,25 @@
 .theme-classic .modal-shade,.theme-xp .modal-shade{background:transparent}
 .theme-classic .os-window:has(.system-dialog)>.titlebar{background:linear-gradient(90deg,#808080,#b5b5b5);pointer-events:none}.theme-win2000 .os-window:has(.system-dialog)>.titlebar{background:linear-gradient(90deg,#808080,#c0c0c0)}
 .theme-xp .os-window:has(.system-dialog)>.titlebar{background:linear-gradient(#97b7f3,#7295de 45%,#8aa9e5);color:#dce6fb;pointer-events:none}.theme-xp .os-window:has(.system-dialog)>.titlebar .window-controls{opacity:.65}
+
+/* 004A Desktop Marquee Drag Selection */
+.desktop-marquee {
+  position: absolute;
+  pointer-events: none;
+  z-index: 50;
+  border: 1px dotted #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+}
+.theme-classic .desktop-marquee {
+  border: 1px dotted #ffffff;
+  background: transparent;
+}
+.theme-win2000 .desktop-marquee {
+  border: 1px dotted #d4d0c8;
+  background: rgba(10, 36, 106, 0.12);
+}
+.theme-xp .desktop-marquee {
+  border: 1px solid #316ac5;
+  background: rgba(49, 106, 197, 0.25);
+}
+
