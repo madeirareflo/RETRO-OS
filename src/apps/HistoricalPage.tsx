@@ -311,7 +311,7 @@ export function HistoricalPage({ page, era, go, open }: { page: string; era: num
     return (
       <article className="blog-museum">
         <header style={{ borderBottom: '2px solid #854d0e', paddingBottom: '6px', marginBottom: '12px' }}>
-          <h1 style={{ margin: 0, color: '#854d0e' }}>Rede de Blogs da Turma de Informática</h1>
+          <h1 style={{ margin: 0, color: '#854d0e' }}>Diário do monitor e Blogs da Turma</h1>
           <p style={{ margin: '4px 0 0 0', color: '#713f12' }}>Diários pessoais, anotações de laboratório e histórias da vida conectada nos anos 2000</p>
         </header>
 
@@ -350,7 +350,7 @@ export function HistoricalPage({ page, era, go, open }: { page: string; era: num
               "Quem não guarda o passado com etiquetas coloridas, perde o futuro na próxima formatação."
             </blockquote>
             <p style={{ fontSize: '13px' }}>
-              {link('forum/offtopic', 'Comentar no Fórum Off-Topic →')} · {link('recreio/bia', 'Ver perfil da Bia na Recreio →')}
+              {link('recreio/leo', 'Ver perfil do Léo na Recreio')} · {link('forum/offtopic', 'Comentar no Fórum Off-Topic →')} · {link('recreio/bia', 'Ver perfil da Bia na Recreio →')}
             </p>
           </div>
         )}

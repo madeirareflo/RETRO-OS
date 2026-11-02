@@ -219,7 +219,7 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
                 <div style={{marginTop:'12px',display:'flex',gap:'8px',flexWrap:'wrap'}}>
                   <button onClick={()=>go('pessoal')}>Minha Homepage →</button>
                   <button onClick={()=>go('lanhouse')}>Conhecer a LAN House →</button>
-                  <button onClick={()=>go('forum')}>Abrir Fórum →</button>
+                  <button onClick={()=>go('forum')}>Acessar Fórum →</button>
                 </div>
               </article>
             </div>
@@ -300,7 +300,7 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
             </div>
 
             <button onClick={()=>{setProgress(0);setPaused(false);setDownloadError(false)}} disabled={progress>=0&&progress<100}>
-              Iniciar Download no VFS
+              Baixar TXT original
             </button>
             {progress>=0&&(
               <>
