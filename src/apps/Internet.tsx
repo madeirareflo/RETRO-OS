@@ -6,6 +6,7 @@ import {read,write,download,saveFile} from '../storage/local';
 import {useConnection} from '../services/connection';
 import type {AppId} from '../core/registry';
 import {eras} from './TimeMachine';
+import {HistoricalArchive} from './HistoricalArchive';
 
 const HistoricalPage=lazy(()=>import('./HistoricalPage').then(m=>({default:m.HistoricalPage})));
 
@@ -31,7 +32,8 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
   const [address,setAddress]=useState('retro://'+(eras[era]?.site||'portal'));
   const [visits]=useState(()=>read<number>('visits',0)+1);
   const [query,setQuery]=useState('');
-  const [searched,setSearched]=useState(false);
+  const [searchCategory, setSearchCategory] = useState<string>('all');
+  const [filterEra, setFilterEra] = useState<boolean>(false);
   const [quiz,setQuiz]=useState('');
   const [progress,setProgress]=useState(-1);
   const [slow,setSlow]=useState(false);
@@ -171,7 +173,7 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
                 onKeyDown={e=>{if(e.key==='Enter'){e.preventDefault();go('busca')}}}
                 style={{flex:1,padding:'4px 8px',border:'1px solid #7eaadb'}}
               />
-              <button onClick={()=>{setSearched(true);go('busca')}}>Buscar</button>
+              <button onClick={()=>go('busca')}>Buscar</button>
             </div>
 
             {/* BANNER 468x60 NOSTÁLGICO */}
@@ -354,40 +356,61 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
           <article className="search-engine-page">
             <h1 style={{textAlign:'center',fontSize:38,color:'#214e87',marginBottom:'4px'}}>Cadê a página?</h1>
             <p style={{textAlign:'center',color:'#555',margin:'0 0 16px 0'}}>O grande índice da web brasileira dos anos 2000</p>
-            <form className="web-search" onSubmit={e=>{e.preventDefault();setSearched(true)}}>
-              <input aria-label="Buscar na internet retrô" placeholder="Ex: jogos, lan house, windows, blog, recreio..." value={query} onChange={e=>{setQuery(e.target.value);setSearched(true)}}/>
-              <button type="submit">Buscar na Web</button>
+            <form className="web-search" onSubmit={e=>{e.preventDefault();}}>
+              <input aria-label="Buscar na internet retrô" placeholder="Ex: jogos, lan house, windows, blog, recreio, lab1999..." value={query} onChange={e=>{setQuery(e.target.value);}}/>
+              <button type="button" onClick={()=>{}}>Buscar na Web</button>
             </form>
-            {searched&&(
-              <div className="search-results-container" style={{marginTop:'16px'}}>
-                <div style={{fontSize:'12px',color:'#666',marginBottom:'10px',borderBottom:'1px solid #ccc',paddingBottom:'4px'}}>
-                  {searchWebRegistry(query).length} resultado(s) encontrado(s) para "<b>{query}</b>":
-                </div>
-                {searchWebRegistry(query).length===0?(
-                  <div style={{padding:'20px',textAlign:'center',background:'#f9f9f9',border:'1px dashed #ccc'}}>
-                    <p><b>Nenhuma página encontrada com esses termos.</b></p>
-                    <p>Sugestões: tente termos como <i>jogos, lan house, windows, blog, computador, recreio, musica</i>.</p>
-                  </div>
-                ):(
-                  searchWebRegistry(query).map(item=>(
-                    <div key={item.id} className="search-result-item" style={{marginBottom:'14px',paddingBottom:'10px',borderBottom:'1px dotted #e0e0e0'}}>
-                      <div style={{fontSize:'16px',fontWeight:'bold'}}>
-                        <a href={'#'+item.id} onClick={e=>{e.preventDefault();go(item.id)}} style={{color:'#0000cc',textDecoration:'underline'}}>
-                          {item.title}
-                        </a>
-                        <span style={{fontSize:'11px',marginLeft:'8px',padding:'1px 5px',background:'#e6f2ff',borderRadius:'3px',color:'#004080'}}>
-                          {item.year} · {item.category}
-                        </span>
-                      </div>
-                      <div style={{color:'#008000',fontSize:'12px',marginTop:'2px'}}>{item.url}</div>
-                      <div style={{color:'#333',fontSize:'13px',marginTop:'4px',lineHeight:'1.4'}}>{item.description}</div>
-                    </div>
-                  ))
-                )}
+
+            <div style={{display:'flex',gap:'10px',justifyContent:'center',alignItems:'center',margin:'12px 0',flexWrap:'wrap',fontSize:'13px'}}>
+              <label style={{display:'flex',alignItems:'center',gap:'4px'}}>
+                <span>Categoria:</span>
+                <select value={searchCategory} onChange={e=>setSearchCategory(e.target.value)} style={{padding:'3px 6px'}}>
+                  <option value="all">Todas as Categorias</option>
+                  <option value="portal">Portais</option>
+                  <option value="forum">Fóruns</option>
+                  <option value="blog">Blogs</option>
+                  <option value="fotolog">Fotolog</option>
+                  <option value="games">Jogos & LAN</option>
+                  <option value="social">Rede Social</option>
+                  <option value="tools">Ferramentas & Utilitários</option>
+                  <option value="secret">Arquivos Secretos</option>
+                </select>
+              </label>
+
+              <label style={{display:'flex',alignItems:'center',gap:'4px',cursor:'pointer'}}>
+                <input type="checkbox" checked={filterEra} onChange={e=>setFilterEra(e.target.checked)}/>
+                <span>Restringir à época atual ({era})</span>
+              </label>
+            </div>
+
+            <div className="search-results-container" style={{marginTop:'16px'}}>
+              <div style={{fontSize:'12px',color:'#666',marginBottom:'10px',borderBottom:'1px solid #ccc',paddingBottom:'4px'}}>
+                {searchWebRegistry(query, filterEra ? era : undefined, searchCategory).length} resultado(s) encontrado(s){query ? ` para "${query}"` : ''}:
               </div>
-            )}
+              {searchWebRegistry(query, filterEra ? era : undefined, searchCategory).length===0?(
+                <div style={{padding:'20px',textAlign:'center',background:'#f9f9f9',border:'1px dashed #ccc'}}>
+                  <p><b>Nenhuma página encontrada com esses termos ou filtros.</b></p>
+                  <p>Sugestões: tente termos como <i>jogos, lan house, windows, blog, recreio, musica, lab1999</i> ou desmarque o filtro de época.</p>
+                </div>
+              ):(
+                searchWebRegistry(query, filterEra ? era : undefined, searchCategory).map(item=>(
+                  <div key={item.id} className="search-result-item" style={{marginBottom:'14px',paddingBottom:'10px',borderBottom:'1px dotted #e0e0e0'}}>
+                    <div style={{fontSize:'16px',fontWeight:'bold'}}>
+                      <a href={'#'+item.id} onClick={e=>{e.preventDefault();go(item.id)}} style={{color:'#0000cc',textDecoration:'underline'}}>
+                        {item.title}
+                      </a>
+                      <span style={{fontSize:'11px',marginLeft:'8px',padding:'1px 5px',background:'#e6f2ff',borderRadius:'3px',color:'#004080'}}>
+                        Ano {item.year} · {item.category}
+                      </span>
+                    </div>
+                    <div style={{color:'#008000',fontSize:'12px',marginTop:'2px'}}>{item.url}</div>
+                    <div style={{color:'#333',fontSize:'13px',marginTop:'4px',lineHeight:'1.4'}}>{item.description}</div>
+                  </div>
+                ))
+              )}
+            </div>
             <small style={{display:'block',marginTop:'20px',textAlign:'center',color:'#888'}}>
-              Busca com indexação local profunda e relevância pontuada em tempo real no RETRO OS.
+              Busca com indexação local profunda, filtros temporais e relevância calculada em tempo real no RETRO OS.
             </small>
           </article>
         ):page==='escola'?(
@@ -419,13 +442,7 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
             <button onClick={()=>open('player')}>Abrir RETROAMP</button>
           </article>
         ):page==='arquivo'?(
-          <article>
-            <h1>Arquivo histórico</h1>
-            <div className="wayback-info">
-              <p>Integração opcional: consulte uma captura pública em uma aba externa. O arquivo pode estar indisponível, conter links quebrados ou não permitir incorporação. Nenhum script histórico é executado dentro do RETRO OS.</p>
-              <a href={'https://web.archive.org/web/'+era+'0101/https://example.com/'} target="_blank" rel="noopener noreferrer">Consultar example.com em {era} na Wayback Machine ↗</a>
-            </div>
-          </article>
+          <HistoricalArchive currentEra={era} onNavigate={go} />
         ):museumSites.some(s=>s[0]===page.split('/')[0])?(
           <Suspense fallback={<p>Carregando página do acervo…</p>}>
             <HistoricalPage page={page} era={era} go={go} open={open}/>
