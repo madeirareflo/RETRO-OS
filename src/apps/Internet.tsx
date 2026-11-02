@@ -1,4 +1,5 @@
 import {museumSites,siteYears} from '../museum/sites';
+import {searchWebRegistry} from '../museum/webRegistry';
 import musicCulture from '../data/music-culture.json';
 import {useState,useEffect,useRef,lazy,Suspense} from 'react';
 import {read,write,download,saveFile} from '../storage/local';
@@ -138,37 +139,77 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
       <div className={'web-page historical-web era-web-'+era}>
         {links}
         {page==='portal'?(
-          <>
+          <div className="living-portal">
             <header className="portal-banner">
-              <span>WWW. / {era}</span>
+              <span>PORTAL CONEXÃO 2000 · EDIÇÃO {era}</span>
               <h1>conexão<span>2000</span></h1>
-              <p>O futuro chegou. E ocupa só um disquete.</p>
+              <p>O grande portal da internet discada brasileira. O futuro cabe em um disquete.</p>
             </header>
+
+            {/* BARRA DE BUSCA EM DESTAQUE NO PORTAL */}
+            <div style={{background:'#ebf3fd',border:'1px solid #7eaadb',padding:'10px',margin:'10px 0',borderRadius:'4px',display:'flex',gap:'8px',alignItems:'center'}}>
+              <span style={{fontWeight:'bold',color:'#1c4273',fontSize:'13px'}}>🔍 Buscar na Web:</span>
+              <input 
+                aria-label="Buscar na web a partir do portal" 
+                placeholder="Ex: lan house, jogos, windows, blog, recreio..." 
+                value={query} 
+                onChange={e=>setQuery(e.target.value)}
+                onKeyDown={e=>{if(e.key==='Enter'){e.preventDefault();go('busca')}}}
+                style={{flex:1,padding:'4px 8px',border:'1px solid #7eaadb'}}
+              />
+              <button onClick={()=>{setSearched(true);go('busca')}}>Buscar</button>
+            </div>
+
+            {/* BANNER 468x60 NOSTÁLGICO */}
+            <div style={{maxWidth:468,height:60,background:'linear-gradient(90deg, #103364, #1e5cb3)',color:'#fff',display:'flex',alignItems:'center',justifyContent:'space-around',padding:'4px 10px',margin:'10px auto',border:'2px outset #5892e8',fontFamily:'sans-serif'}}>
+              <div>
+                <b style={{color:'#ffeb3b',fontSize:'13px'}}>⚡ CORUJÃO NA LAN HOUSE!</b><br/>
+                <span style={{fontSize:'11px'}}>Sábado às 23h · 16 Máquinas com 3D · Reserve sua vaga</span>
+              </div>
+              <button onClick={()=>go('lanhouse')} style={{background:'#ffeb3b',color:'#000',border:'1px solid #b89f00',fontWeight:'bold',fontSize:'11px',padding:'4px 8px',cursor:'pointer'}}>
+                Ver Tabela ↗
+              </button>
+            </div>
+
             <div className="portal-columns">
               <aside>
-                <b>☞ NO AR</b>
-                <p>Brasil conectado</p>
-                <p>Vida na lan house</p>
-                <p>Manual do internauta</p>
+                <b>☞ CANAIS EM DESTAQUE</b>
+                <p><a href="#lanhouse" onClick={e=>{e.preventDefault();go('lanhouse')}}>🎮 CyberSpace LAN House</a></p>
+                <p><a href="#forum" onClick={e=>{e.preventDefault();go('forum')}}>💬 Fórum Gabinete Bege</a></p>
+                <p><a href="#blog" onClick={e=>{e.preventDefault();go('blog')}}>📝 Blogs da Turma</a></p>
+                <p><a href="#fotolog" onClick={e=>{e.preventDefault();go('fotolog')}}>📸 Fotolog da Galera</a></p>
+                <p><a href="#recreio" onClick={e=>{e.preventDefault();go('recreio')}}>🤝 Rede Recreio</a></p>
+                <p><a href="#downloads" onClick={e=>{e.preventDefault();go('downloads')}}>💾 Downloads &amp; VFS</a></p>
+                <p><a href="#escola" onClick={e=>{e.preventDefault();go('escola')}}>🎒 Escola &amp; Informática</a></p>
+                <p><a href="#musica" onClick={e=>{e.preventDefault();go('musica')}}>🎧 MP3 &amp; Coletâneas</a></p>
                 <hr/>
-                <small>{connection==='connected'?'Conexão 56 Kbps':'Cópia offline'}<br/>{era} · saudade no ar</small>
+                <small>{connection==='connected'?'Conexão 56 Kbps discada':'Cópia offline em cache'}<br/>Época {era} · pulso único após 0h</small>
               </aside>
               <article>
-                <small>EDIÇÃO ESPECIAL · ARQUIVO FICTÍCIO</small>
+                <small>EDIÇÃO ESPECIAL · ARQUIVO NARRATIVO FICTÍCIO</small>
                 <h2>Um computador inteiro dentro da internet?</h2>
-                <p>Fontes da nossa redação dizem que, no futuro, as pessoas vão abrir janelas dentro de outras janelas. Parece exagero.</p>
+                <p>Fontes da redação dizem que, no futuro, as pessoas vão abrir janelas do sistema operacional dentro de navegadores. Parece pura ficção científica!</p>
                 <hr/>
                 <h3>{eras[era]?.title}</h3>
                 <p>{eras[era]?.text}</p>
-                <button onClick={()=>go('pessoal')}>Conheça a homepage do Davi →</button>
-                <p><a href="#escola" onClick={e=>{e.preventDefault();go('escola')}}>Trabalho da escola? Clique aqui!</a></p>
-                <p><a href="#jogos" onClick={e=>{e.preventDefault();go('jogos')}}>Partidas e LAN House? Veja a seção de jogos!</a></p>
-                <p><a href="#forum" onClick={e=>{e.preventDefault();go('forum')}}>Fórum de informática e dúvidas técnicas</a></p>
-                <p><a href="#blog" onClick={e=>{e.preventDefault();go('blog')}}>Diário do monitor de informática</a></p>
-                <p><a href="#recreio" onClick={e=>{e.preventDefault();go('recreio')}}>Rede social dos alunos — Rede Recreio</a></p>
+                <div style={{background:'#fcf8e3',border:'1px solid #faebcc',padding:'8px',margin:'10px 0'}}>
+                  <b style={{color:'#8a6d3b'}}>📰 Manchete da Turma:</b>
+                  <p style={{margin:'4px 0 0 0',fontSize:'13px'}}>
+                    Léo da máquina 07 anunciou que vai trazer seu novo mouse óptico para a LAN House neste fim de semana. Nina já publicou a foto oficial no Fotolog!
+                  </p>
+                  <div style={{marginTop:'6px',fontSize:'12px'}}>
+                    <a href="#fotolog" onClick={e=>{e.preventDefault();go('fotolog')}}>Ver no Fotolog →</a> · 
+                    <a href="#blog/leo" onClick={e=>{e.preventDefault();go('blog/leo')}} style={{marginLeft:'6px'}}>Ler no Blog do Léo →</a>
+                  </div>
+                </div>
+                <div style={{marginTop:'12px',display:'flex',gap:'8px',flexWrap:'wrap'}}>
+                  <button onClick={()=>go('pessoal')}>Minha Homepage →</button>
+                  <button onClick={()=>go('lanhouse')}>Conhecer a LAN House →</button>
+                  <button onClick={()=>go('forum')}>Abrir Fórum →</button>
+                </div>
               </article>
             </div>
-          </>
+          </div>
         ):page==='pessoal'?(
           <div className="personal-page">
             <h1>★ Bem-vindo ao meu cantinho ★</h1>
@@ -263,19 +304,44 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
             <p>EASTER EGG: ficha de uma hora trocada por diversão infinita.</p>
           </article>
         ):page==='busca'?(
-          <article>
-            <h1 style={{textAlign:'center',fontSize:38,color:'#214e87'}}>Cadê a página?</h1>
+          <article className="search-engine-page">
+            <h1 style={{textAlign:'center',fontSize:38,color:'#214e87',marginBottom:'4px'}}>Cadê a página?</h1>
+            <p style={{textAlign:'center',color:'#555',margin:'0 0 16px 0'}}>O grande índice da web brasileira dos anos 2000</p>
             <form className="web-search" onSubmit={e=>{e.preventDefault();setSearched(true)}}>
-              <input aria-label="Buscar na internet retrô" value={query} onChange={e=>setQuery(e.target.value)}/>
-              <button>Buscar</button>
+              <input aria-label="Buscar na internet retrô" placeholder="Ex: jogos, lan house, windows, blog, recreio..." value={query} onChange={e=>{setQuery(e.target.value);setSearched(true)}}/>
+              <button type="submit">Buscar na Web</button>
             </form>
-            {searched&&sites.filter(s=>s.join(' ').toLowerCase().includes(query.toLowerCase())).map(([id,name,desc])=>(
-              <p key={id}>
-                <a href={'#'+id} onClick={e=>{e.preventDefault();go(id)}}>{name}</a><br/>
-                {desc}
-              </p>
-            ))}
-            <small>Busca somente nos sites internos do RETRO OS.</small>
+            {searched&&(
+              <div className="search-results-container" style={{marginTop:'16px'}}>
+                <div style={{fontSize:'12px',color:'#666',marginBottom:'10px',borderBottom:'1px solid #ccc',paddingBottom:'4px'}}>
+                  {searchWebRegistry(query).length} resultado(s) encontrado(s) para "<b>{query}</b>":
+                </div>
+                {searchWebRegistry(query).length===0?(
+                  <div style={{padding:'20px',textAlign:'center',background:'#f9f9f9',border:'1px dashed #ccc'}}>
+                    <p><b>Nenhuma página encontrada com esses termos.</b></p>
+                    <p>Sugestões: tente termos como <i>jogos, lan house, windows, blog, computador, recreio, musica</i>.</p>
+                  </div>
+                ):(
+                  searchWebRegistry(query).map(item=>(
+                    <div key={item.id} className="search-result-item" style={{marginBottom:'14px',paddingBottom:'10px',borderBottom:'1px dotted #e0e0e0'}}>
+                      <div style={{fontSize:'16px',fontWeight:'bold'}}>
+                        <a href={'#'+item.id} onClick={e=>{e.preventDefault();go(item.id)}} style={{color:'#0000cc',textDecoration:'underline'}}>
+                          {item.title}
+                        </a>
+                        <span style={{fontSize:'11px',marginLeft:'8px',padding:'1px 5px',background:'#e6f2ff',borderRadius:'3px',color:'#004080'}}>
+                          {item.year} · {item.category}
+                        </span>
+                      </div>
+                      <div style={{color:'#008000',fontSize:'12px',marginTop:'2px'}}>{item.url}</div>
+                      <div style={{color:'#333',fontSize:'13px',marginTop:'4px',lineHeight:'1.4'}}>{item.description}</div>
+                    </div>
+                  ))
+                )}
+              </div>
+            )}
+            <small style={{display:'block',marginTop:'20px',textAlign:'center',color:'#888'}}>
+              Busca com indexação local profunda e relevância pontuada em tempo real no RETRO OS.
+            </small>
           </article>
         ):page==='escola'?(
           <article>
