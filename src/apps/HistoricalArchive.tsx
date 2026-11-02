@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { LIVING_WEB_REGISTRY, searchWebRegistry, type WebPageMeta } from '../museum/webRegistry';
+import { LIVING_WEB_REGISTRY, searchWebRegistry } from '../museum/webRegistry';
 
 interface HistoricalArchiveProps {
   currentEra: number;

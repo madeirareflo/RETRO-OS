@@ -1,6 +1,6 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, type Page } from '@playwright/test';
 
-async function boot(p: any) {
+async function boot(p: Page) {
   await p.goto('http://127.0.0.1:4676/');
   const skipBtn = p.getByRole('button', { name: 'Pular inicialização' });
   if (await skipBtn.isVisible({ timeout: 2000 }).catch(() => false)) await skipBtn.click();
