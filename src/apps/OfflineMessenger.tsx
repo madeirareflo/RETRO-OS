@@ -14,28 +14,32 @@ const scripts: Record<string, { intro: string; replies: { text: string; linkText
     intro: 'Oi! Esta é uma conversa roteirizada do museu. O trabalho está no disquete azul.',
     replies: [
       { text: 'Salvei duas cópias no disquete azul! Não esquece a etiqueta!', linkText: 'Ver no meu caderno digital →', webUrl: 'retro://blog/bia' },
-      { text: 'A Nina postou a foto da nossa turma depois da aula.', linkText: 'Ver foto no Fotolog →', webUrl: 'retro://fotolog' }
+      { text: 'A Nina postou a foto da nossa turma depois da aula.', linkText: 'Ver foto no Fotolog →', webUrl: 'retro://fotolog' },
+      { text: 'Você viu que no Fórum falaram do manifesto antigo do laboratório de 1999?', linkText: 'Investigar no Arquivo de 1999 →', webUrl: 'retro://secreto/lab1999' }
     ]
   },
   leo: {
     intro: 'E aí! A máquina 07 na CyberSpace LAN House já está reservada.',
     replies: [
       { text: 'O corujão começa às 23h! A tabela de preços e regras está no site da LAN.', linkText: 'Ver site da CyberSpace LAN House →', webUrl: 'retro://lanhouse' },
-      { text: 'Postei uma dica de overclock e atalhos lá no Fórum de Jogos.', linkText: 'Ler no Fórum de Jogos →', webUrl: 'retro://forum/jogos' }
+      { text: 'Postei uma dica de overclock e atalhos lá no Fórum de Jogos.', linkText: 'Ler no Fórum de Jogos →', webUrl: 'retro://forum/jogos' },
+      { text: 'O Rafa me disse que o arquivo histórico tem snapshots antigos da LAN!', linkText: 'Ver no Arquivo Histórico →', webUrl: 'retro://arquivo' }
     ]
   },
   nina: {
     intro: 'Bem-vindo ao cantinho dos pixels! O site está sempre em construção.',
     replies: [
       { text: 'Atualizei o Fotolog com a foto da fila da LAN House!', linkText: 'Conferir o Fotolog da Turma →', webUrl: 'retro://fotolog' },
-      { text: 'Meu perfil na Rede Recreio tem um recado novo da Bia.', linkText: 'Ver perfil na Recreio →', webUrl: 'retro://recreio/nina' }
+      { text: 'Meu perfil na Rede Recreio tem um recado novo da Bia.', linkText: 'Ver perfil na Recreio →', webUrl: 'retro://recreio/nina' },
+      { text: 'No meu blog postei as pistas sobre os arquivos do servidor de 1999!', linkText: 'Ler Console da Nina →', webUrl: 'retro://blog/nina' }
     ]
   },
   rafa: {
     intro: 'Minha pasta de MP3 está nos trinques com as coletâneas gravadas.',
     replies: [
       { text: 'Escrevi um guia de gravação de CD-R sem erro de buffer no blog.', linkText: 'Ler o Blog do Rafa →', webUrl: 'retro://blog/rafa' },
-      { text: 'A prateleira de MP3 tem novidades sobre o RETROAMP!', linkText: 'Abrir Prateleira de MP3 →', webUrl: 'retro://musica' }
+      { text: 'A prateleira de MP3 tem novidades sobre o RETROAMP!', linkText: 'Abrir Prateleira de MP3 →', webUrl: 'retro://musica' },
+      { text: 'Subi dicas de áudio e arquivos no centro de downloads!', linkText: 'Acessar Central de Downloads →', webUrl: 'retro://downloads' }
     ]
   }
 };
