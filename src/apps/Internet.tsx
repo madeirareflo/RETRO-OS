@@ -39,6 +39,7 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
   const [simulateError,setSimulateError]=useState(false);
   const [downloadError,setDownloadError]=useState(false);
   const [vfsSaved,setVfsSaved]=useState(false);
+  const [downloadTarget, setDownloadTarget] = useState<'memoria' | 'guia' | 'atalhos'>('memoria');
   const [favorites,setFavorites]=useState<string[]>(()=>read('webFavorites',[]));
   const [loading,setLoading]=useState(false);
 
@@ -70,16 +71,29 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
 
   useEffect(()=>{
     if(progress===100){
-      const content = 'Vale uma tarde inteira sem preocupações.\nRETRO OS — download original.\nEASTER EGG: o download de 1 KB terminou e foi salvo em C:\\Meus Documentos\\Boas Memorias.txt';
-      download('boas-memorias.txt',new Blob([content],{type:'text/plain'}));
+      let fileName = 'boas-memorias.txt';
+      let filePath = 'C:/Meus Documentos/Boas Memorias.txt';
+      let content = 'Vale uma tarde inteira sem preocupações.\nRETRO OS — download original.\nEASTER EGG: o download de 1 KB terminou e foi salvo em C:\\Meus Documentos\\Boas Memorias.txt';
+
+      if (downloadTarget === 'guia') {
+        fileName = 'guia-da-lanhouse.txt';
+        filePath = 'C:/Meus Documentos/Guia da LAN House.txt';
+        content = '⚡ CYBERSPACE LAN HOUSE — GUIA OFICIAL DE SOBREVIVÊNCIA ⚡\n1. O corujão começa às 23h. Não esqueça seu refrigerante.\n2. Para alternar janelas rapidamente, pressione Alt+Tab.\n3. Salve sempre seus documentos antes de terminar a ficha de 1 hora.';
+      } else if (downloadTarget === 'atalhos') {
+        fileName = 'manual-de-atalhos.txt';
+        filePath = 'C:/Meus Documentos/Manual de Atalhos.txt';
+        content = '🪟 RETRO OS — MANUAL DE ATALHOS ESSENCIAIS DE TECLADO 🪟\n• Alt+Tab: Alterna ciclicamente entre janelas ativas.\n• Ctrl+A: Seleciona todos os ícones da área de trabalho ou arquivos no Explorer.\n• Duplo clique na barra de título: Maximiza ou restaura a janela.\n• Clique no item da barra de tarefas: Minimiza se ativa ou restaura se em segundo plano.';
+      }
+
+      download(fileName, new Blob([content], { type: 'text/plain' }));
       try {
-        saveFile('C:/Meus Documentos/Boas Memorias.txt', content);
+        saveFile(filePath, content);
         setVfsSaved(true);
       } catch {
         // ignora se ja existir
       }
     }
-  },[progress]);
+  },[progress, downloadTarget]);
 
   useEffect(()=>{
     setAddress('retro://'+(history[idx]||'portal'));
@@ -254,10 +268,40 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
         ):page==='downloads'?(
           <article>
             <h1>Downloads que cabem no seu disquete</h1>
-            <p>Pacote de boas memórias · 1 KB · grátis</p>
-            <label><input type="checkbox" checked={slow} onChange={e=>setSlow(e.target.checked)}/>Modo lento 56K (opcional)</label>
-            <label><input type="checkbox" checked={simulateError} onChange={e=>setSimulateError(e.target.checked)}/>Simular interrupção em 50%</label>
-            <button onClick={()=>{setProgress(0);setPaused(false);setDownloadError(false)}} disabled={progress>=0&&progress<100}>Baixar TXT original</button>
+            <p>Selecione um pacote utilitário original para transferir pela conexão simulada e salvar no VFS:</p>
+            
+            <div style={{display:'flex',gap:'8px',marginBottom:'12px'}}>
+              <button 
+                className={downloadTarget==='memoria'?'pressed':''} 
+                onClick={()=>setDownloadTarget('memoria')}
+                style={{fontWeight:downloadTarget==='memoria'?'bold':'normal'}}
+              >
+                📄 Boas Memórias (1 KB)
+              </button>
+              <button 
+                className={downloadTarget==='guia'?'pressed':''} 
+                onClick={()=>setDownloadTarget('guia')}
+                style={{fontWeight:downloadTarget==='guia'?'bold':'normal'}}
+              >
+                🎮 Guia da LAN House (2 KB)
+              </button>
+              <button 
+                className={downloadTarget==='atalhos'?'pressed':''} 
+                onClick={()=>setDownloadTarget('atalhos')}
+                style={{fontWeight:downloadTarget==='atalhos'?'bold':'normal'}}
+              >
+                🪟 Manual de Atalhos PC (2 KB)
+              </button>
+            </div>
+
+            <div style={{background:'#f9f9f9',border:'1px solid #ddd',padding:'8px',marginBottom:'12px'}}>
+              <label style={{display:'block',marginBottom:'4px'}}><input type="checkbox" checked={slow} onChange={e=>setSlow(e.target.checked)}/> Modo lento 56K autêntico (simulação)</label>
+              <label style={{display:'block'}}><input type="checkbox" checked={simulateError} onChange={e=>setSimulateError(e.target.checked)}/> Simular interrupção de linha telefônica em 50%</label>
+            </div>
+
+            <button onClick={()=>{setProgress(0);setPaused(false);setDownloadError(false)}} disabled={progress>=0&&progress<100}>
+              Iniciar Download no VFS
+            </button>
             {progress>=0&&(
               <>
                 <p role="status">{progress}% · {progress===100?'Concluído!':'Transferindo pela conexão fictícia…'}</p>
@@ -266,14 +310,17 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
                 {progress<100&&<button onClick={()=>{setPaused(!paused);if(paused){setDownloadError(false);setSimulateError(false)}}}>{paused?'Retomar download':'Pausar download'}</button>}
                 {progress<100&&<button onClick={()=>setProgress(-1)}>Cancelar download</button>}
                 {progress===100&&vfsSaved&&(
-                  <p style={{background:'#e8f4fd',border:'1px solid #1a59c3',padding:'6px',marginTop:'6px'}}>
-                    <b>✓ Arquivo salvo no sistema:</b> C:\Meus Documentos\Boas Memorias.txt<br/>
-                    <button style={{marginTop:'4px'}} onClick={()=>open('documents')}>Abrir em Meus Documentos →</button>
+                  <p style={{background:'#e8f4fd',border:'1px solid #1a59c3',padding:'8px',marginTop:'8px',borderRadius:'4px'}}>
+                    <b>✓ Arquivo salvo no sistema com sucesso:</b><br/>
+                    C:\Meus Documentos\{downloadTarget==='guia'?'Guia da LAN House.txt':downloadTarget==='atalhos'?'Manual de Atalhos.txt':'Boas Memorias.txt'}<br/>
+                    <button style={{marginTop:'6px'}} onClick={()=>open('documents')}>Abrir em Meus Documentos →</button>
                   </p>
                 )}
               </>
             )}
-            <p>O atraso é só nesta animação, sem limitar sua internet.</p>
+            <p style={{fontSize:'12px',color:'#666',marginTop:'14px'}}>
+              Os downloads geram arquivos de texto autênticos salvos no seu sistema virtual local (VFS), sem qualquer consumo da sua conexão real.
+            </p>
           </article>
         ):page==='gifs'?(
           <article>
