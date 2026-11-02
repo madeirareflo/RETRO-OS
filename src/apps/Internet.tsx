@@ -41,7 +41,7 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
   const [simulateError,setSimulateError]=useState(false);
   const [downloadError,setDownloadError]=useState(false);
   const [vfsSaved,setVfsSaved]=useState(false);
-  const [downloadTarget, setDownloadTarget] = useState<'memoria' | 'guia' | 'atalhos'>('memoria');
+  const [downloadTarget, setDownloadTarget] = useState<'memoria' | 'guia' | 'atalhos' | 'manifesto' | 'tatica'>('memoria');
   const [favorites,setFavorites]=useState<string[]>(()=>read('webFavorites',[]));
   const [loading,setLoading]=useState(false);
 
@@ -85,6 +85,14 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
         fileName = 'manual-de-atalhos.txt';
         filePath = 'C:/Meus Documentos/Manual de Atalhos.txt';
         content = '🪟 RETRO OS — MANUAL DE ATALHOS ESSENCIAIS DE TECLADO 🪟\n• Alt+Tab: Alterna ciclicamente entre janelas ativas.\n• Ctrl+A: Seleciona todos os ícones da área de trabalho ou arquivos no Explorer.\n• Duplo clique na barra de título: Maximiza ou restaura a janela.\n• Clique no item da barra de tarefas: Minimiza se ativa ou restaura se em segundo plano.';
+      } else if (downloadTarget === 'manifesto') {
+        fileName = 'manifesto-lab1999.txt';
+        filePath = 'C:/Meus Documentos/Manifesto Laboratorio 1999.txt';
+        content = '★ MANIFESTO DO LABORATÓRIO DE 1999 ★\nA internet livre foi criada por estudantes, entusiastas e madrugadores que esperavam a meia-noite.\n1. A curiosidade é o nosso único protocolo.\n2. O conhecimento cabe em um disquete de 1.44 MB.\n3. Nunca desligue o micro sem fechar seus programas com segurança.';
+      } else if (downloadTarget === 'tatica') {
+        fileName = 'taticas-lanhouse-cs.txt';
+        filePath = 'C:/Meus Documentos/Taticas LAN House CS.txt';
+        content = '🎯 TÁTICAS DE CLÃ — CYBERSPACE LAN HOUSE 2003 🎯\n• Máquina 07 na mira rápida.\n• Comunicação silenciosa no Corujão.\n• Mantenha o mouse limpo e treine no Campo Minado antes de entrar no servidor.';
       }
 
       download(fileName, new Blob([content], { type: 'text/plain' }));
@@ -272,7 +280,7 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
             <h1>Downloads que cabem no seu disquete</h1>
             <p>Selecione um pacote utilitário original para transferir pela conexão simulada e salvar no VFS:</p>
             
-            <div style={{display:'flex',gap:'8px',marginBottom:'12px'}}>
+            <div style={{display:'flex',gap:'8px',marginBottom:'12px',flexWrap:'wrap'}}>
               <button 
                 className={downloadTarget==='memoria'?'pressed':''} 
                 onClick={()=>setDownloadTarget('memoria')}
@@ -294,6 +302,20 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
               >
                 🪟 Manual de Atalhos PC (2 KB)
               </button>
+              <button 
+                className={downloadTarget==='manifesto'?'pressed':''} 
+                onClick={()=>setDownloadTarget('manifesto')}
+                style={{fontWeight:downloadTarget==='manifesto'?'bold':'normal'}}
+              >
+                📜 Manifesto 1999 (2 KB)
+              </button>
+              <button 
+                className={downloadTarget==='tatica'?'pressed':''} 
+                onClick={()=>setDownloadTarget('tatica')}
+                style={{fontWeight:downloadTarget==='tatica'?'bold':'normal'}}
+              >
+                🎯 Táticas da LAN (1 KB)
+              </button>
             </div>
 
             <div style={{background:'#f9f9f9',border:'1px solid #ddd',padding:'8px',marginBottom:'12px'}}>
@@ -314,7 +336,7 @@ export function Internet({era=2001,open}:{era?:number;open:(id:AppId)=>void}){
                 {progress===100&&vfsSaved&&(
                   <p style={{background:'#e8f4fd',border:'1px solid #1a59c3',padding:'8px',marginTop:'8px',borderRadius:'4px'}}>
                     <b>✓ Arquivo salvo no sistema com sucesso:</b><br/>
-                    C:\Meus Documentos\{downloadTarget==='guia'?'Guia da LAN House.txt':downloadTarget==='atalhos'?'Manual de Atalhos.txt':'Boas Memorias.txt'}<br/>
+                    C:\Meus Documentos\{downloadTarget==='guia'?'Guia da LAN House.txt':downloadTarget==='atalhos'?'Manual de Atalhos.txt':downloadTarget==='manifesto'?'Manifesto Laboratorio 1999.txt':downloadTarget==='tatica'?'Taticas LAN House CS.txt':'Boas Memorias.txt'}<br/>
                     <button style={{marginTop:'6px'}} onClick={()=>open('documents')}>Abrir em Meus Documentos →</button>
                   </p>
                 )}
