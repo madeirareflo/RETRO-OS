@@ -267,12 +267,12 @@ export const LIVING_WEB_REGISTRY: Record<string, WebPageMeta> = {
   'forum/offtopic': {
     id: 'forum/offtopic',
     url: 'retro://forum/offtopic',
-    title: 'Fórum: Cantinho Off-Topic & Mistérios',
+    title: 'Fórum: Conversas Aleatórias & Mistérios',
     category: 'forum',
     year: 1998,
     availableEras: [1998, 2000, 2002, 2004, 2006, 2008],
     description: 'Histórias do laboratório abandonado, refrigerantes do corujão e pistas sobre o Laboratório de 1999.',
-    keywords: ['offtopic', 'misterios', 'historias', 'laboratorio 1999', 'segredos'],
+    keywords: ['secreto', 'offtopic', 'misterios', 'historias', 'laboratorio 1999', 'segredos'],
     internalLinks: ['forum', 'secreto/lab1999', 'blog/monitor']
   },
 

@@ -21,8 +21,10 @@ export function HistoricalPage({ page, era, go, open }: { page: string; era: num
   );
 
   // Verificação de Integridade Temporal na Máquina do Tempo (1998-2008)
+  // O padrão do navegador é 2001; quando o usuário escolhe uma era retrô específica (ex: 1998),
+  // páginas lançadas posteriormente (ex: 2004) exibem a tela autêntica de domínio reservado.
   const meta = LIVING_WEB_REGISTRY[page] || LIVING_WEB_REGISTRY[base];
-  if (meta && meta.year > era) {
+  if (meta && era <= 1999 && meta.year > 2000) {
     return (
       <article className="era-under-construction" style={{ padding: '24px', textAlign: 'center', background: '#fdf6e2', border: '2px solid #b58900', borderRadius: '6px', margin: '20px auto', maxWidth: '640px' }}>
         <div style={{ fontSize: '42px', marginBottom: '8px' }}>🚧 ⏳ 🚧</div>
