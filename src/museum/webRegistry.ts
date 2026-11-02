@@ -9,7 +9,7 @@ export interface WebPageMeta {
   id: string;              // ex: 'portal', 'lanhouse', 'blog/leo', 'secreto/lab1999'
   url: string;             // ex: 'retro://lanhouse'
   title: string;           // ex: 'CyberSpace LAN House & Games'
-  category: 'portal' | 'blog' | 'fotolog' | 'forum' | 'social' | 'games' | 'search' | 'secret' | 'personal' | 'tools' | 'archive';
+  category: 'portal' | 'blog' | 'fotolog' | 'forum' | 'social' | 'games' | 'search' | 'secret' | 'personal' | 'tools';
   year: number;            // Ano de criação/lançamento oficial
   availableEras: number[]; // Anos em que está ativo na Máquina do Tempo: 1998, 2000, 2002, 2004, 2006, 2008
   description: string;     // Resumo exibido na busca e diretório
@@ -81,7 +81,7 @@ export const LIVING_WEB_REGISTRY: Record<string, WebPageMeta> = {
     id: 'arquivo',
     url: 'retro://arquivo',
     title: 'Arquivo Histórico da Web Retrô',
-    category: 'archive',
+    category: 'tools',
     year: 1998,
     availableEras: [1998, 2000, 2002, 2004, 2006, 2008],
     description: 'A máquina de preservação digital da internet brasileira: acesse snapshots históricos arquivados de 1998 a 2008.',
@@ -117,7 +117,7 @@ export const LIVING_WEB_REGISTRY: Record<string, WebPageMeta> = {
     url: 'retro://lanhouse',
     title: 'CyberSpace LAN House & Games',
     category: 'games',
-    year: 2000,
+    year: 2003,
     availableEras: [2000, 2002, 2004, 2006, 2008],
     description: 'A lendária LAN House do bairro: 16 computadores em rede, corujão de sexta e sábado, torneios e salgadinho.',
     keywords: ['lanhouse', 'cyberspace', 'jogos', 'rede', 'corujao', 'campeonato', 'balcao', 'maquina 07', 'táticas'],
@@ -203,7 +203,7 @@ export const LIVING_WEB_REGISTRY: Record<string, WebPageMeta> = {
     url: 'retro://forum',
     title: 'Fórum do Gabinete Bege',
     category: 'forum',
-    year: 1998,
+    year: 2001,
     availableEras: [1998, 2000, 2002, 2004, 2006, 2008],
     description: 'O maior fórum de informática retrô brasileira: 6 categorias ativas, dúvidas de hardware, internet discada e segredos.',
     keywords: ['forum', 'comunidade', 'duvidas', 'computador', 'topicos', 'discussao', 'pistas'],
@@ -225,8 +225,8 @@ export const LIVING_WEB_REGISTRY: Record<string, WebPageMeta> = {
     url: 'retro://forum/hardware',
     title: 'Fórum: Hardware, Peças & Overclock',
     category: 'forum',
-    year: 1998,
-    availableEras: [1998, 2000, 2002, 2004, 2006, 2008],
+    year: 2001,
+    availableEras: [2000, 2002, 2004, 2006, 2008],
     description: 'Dúvidas de instalação de placas, ventoinhas de cobre, memórias DIMM e fontes de alimentação.',
     keywords: ['hardware', 'pecas', 'placas', 'memoria', 'cooler', 'overclock'],
     internalLinks: ['forum', 'portal-ponto', 'blog/leo']
@@ -236,8 +236,8 @@ export const LIVING_WEB_REGISTRY: Record<string, WebPageMeta> = {
     url: 'retro://forum/windows',
     title: 'Fórum: Dicas de Windows & Produtividade',
     category: 'forum',
-    year: 1998,
-    availableEras: [1998, 2000, 2002, 2004, 2006, 2008],
+    year: 2001,
+    availableEras: [2000, 2002, 2004, 2006, 2008],
     description: 'Atalhos essenciais: Alt+Tab, Ctrl+A, duplo clique na barra de título e personalização de temas.',
     keywords: ['windows', 'dicas', 'atalhos', 'alt+tab', 'ctrl+a', 'sistema', 'temas'],
     internalLinks: ['forum', 'programas']
@@ -247,8 +247,8 @@ export const LIVING_WEB_REGISTRY: Record<string, WebPageMeta> = {
     url: 'retro://forum/internet',
     title: 'Fórum: Internet Discada & Provedores',
     category: 'forum',
-    year: 1998,
-    availableEras: [1998, 2000, 2002, 2004, 2006, 2008],
+    year: 2001,
+    availableEras: [2000, 2002, 2004, 2006, 2008],
     description: 'Truques de negociação de modems 56K, regras de pulso telefônico único e aceleração de downloads.',
     keywords: ['internet', 'discada', 'provedores', 'modem', 'pulso', '56k'],
     internalLinks: ['forum', 'discador', 'downloads']
@@ -258,7 +258,7 @@ export const LIVING_WEB_REGISTRY: Record<string, WebPageMeta> = {
     url: 'retro://forum/jogos',
     title: 'Fórum: Jogos, Estratégias & LAN Houses',
     category: 'forum',
-    year: 1998,
+    year: 2002,
     availableEras: [1998, 2000, 2002, 2004, 2006, 2008],
     description: 'Estratégias de clãs, mapas secretos, torneios de sábado e dicas para os 8 jogos clássicos.',
     keywords: ['jogos', 'games', 'estrategias', 'lanhouse', 'clans', 'segredos'],
@@ -304,8 +304,8 @@ export const LIVING_WEB_REGISTRY: Record<string, WebPageMeta> = {
     url: 'retro://blog/leo',
     title: 'Bancada do Léo: LAN & Overclock',
     category: 'blog',
-    year: 2001,
-    availableEras: [2002, 2004, 2006, 2008],
+    year: 2004,
+    availableEras: [2004, 2006, 2008],
     description: 'Diário de um viciado em LAN houses: manutenção da máquina 07, táticas de tiro e noites sem dormir.',
     keywords: ['leo', 'bancada', 'lanhouse', 'overclock', 'jogos'],
     internalLinks: ['blog', 'lanhouse', 'forum/jogos']
@@ -315,8 +315,8 @@ export const LIVING_WEB_REGISTRY: Record<string, WebPageMeta> = {
     url: 'retro://blog/bia',
     title: 'Caderno da Bia: Disquetes e Poemas',
     category: 'blog',
-    year: 2001,
-    availableEras: [2002, 2004, 2006, 2008],
+    year: 2004,
+    availableEras: [2004, 2006, 2008],
     description: 'Crônicas adolescentes da era discada: etiquetas azuis, fotos no fotolog e desabafos de colégio.',
     keywords: ['bia', 'caderno', 'poemas', 'disquetes', 'escola', 'sentimentos'],
     internalLinks: ['blog', 'fotolog', 'recreio/bia']
@@ -488,6 +488,9 @@ function normalizeText(text: string): string {
 
 export function searchWebRegistry(query: string, eraFilter?: number, categoryFilter?: string): WebPageMeta[] {
   const q = normalizeText(query.trim());
+  if (!q && !eraFilter && (!categoryFilter || categoryFilter === 'all')) {
+    return [];
+  }
   const terms = q ? q.split(/\s+/).filter(Boolean) : [];
 
   const scored = Object.values(LIVING_WEB_REGISTRY).map(page => {
