@@ -2,12 +2,15 @@ import { useState } from 'react';
 import type { AppId } from '../core/registry';
 import { MuseumSocial } from './MuseumSocial';
 import { MuseumPhoto } from '../museum/Artwork';
+import { LIVING_WEB_REGISTRY } from '../museum/webRegistry';
+import { saveFile } from '../storage/local';
 
 export function HistoricalPage({ page, era, go, open }: { page: string; era: number; go: (page: string) => void; open: (id: AppId) => void }) {
   const [photo, setPhoto] = useState(0);
   const [thread, setThread] = useState('');
   const [activeForumTab, setActiveForumTab] = useState<'geral' | 'hardware' | 'windows' | 'internet' | 'jogos' | 'offtopic'>('geral');
-  const [blogAuthor, setBlogAuthor] = useState<'monitor' | 'leo' | 'bia' | 'rafa'>('monitor');
+  const [blogAuthor, setBlogAuthor] = useState<'monitor' | 'leo' | 'bia' | 'rafa' | 'nina'>('monitor');
+  const [downloadSuccess, setDownloadSuccess] = useState<string>('');
 
   const parts = page.split('/');
   const base = parts[0];
@@ -16,6 +19,35 @@ export function HistoricalPage({ page, era, go, open }: { page: string; era: num
   const link = (id: string, text: string) => (
     <a href={'#' + id} onClick={e => { e.preventDefault(); go(id); }}>{text}</a>
   );
+
+  // Verificação de Integridade Temporal na Máquina do Tempo (1998-2008)
+  const meta = LIVING_WEB_REGISTRY[page] || LIVING_WEB_REGISTRY[base];
+  if (meta && meta.year > era) {
+    return (
+      <article className="era-under-construction" style={{ padding: '24px', textAlign: 'center', background: '#fdf6e2', border: '2px solid #b58900', borderRadius: '6px', margin: '20px auto', maxWidth: '640px' }}>
+        <div style={{ fontSize: '42px', marginBottom: '8px' }}>🚧 ⏳ 🚧</div>
+        <h2 style={{ color: '#b58900', margin: '0 0 10px 0' }}>Domínio Reservado / Em Construção ({era})</h2>
+        <p style={{ fontSize: '15px', color: '#586e75', lineHeight: '1.5' }}>
+          O site <b>{meta.title}</b> ainda não existia em <b>{era}</b>! Ele foi lançado oficialmente apenas em <b>{meta.year}</b>.
+        </p>
+        <div style={{ background: '#fff', border: '1px dashed #b58900', padding: '12px', margin: '14px 0', textAlign: 'left', fontSize: '13px' }}>
+          <b>Como navegar nesta página?</b>
+          <ul style={{ margin: '6px 0 0 16px', padding: 0 }}>
+            <li>Avance para <b>{meta.year}</b> ou posterior na <b>Máquina do Tempo</b> do RETRO OS.</li>
+            <li>Ou consulte versões e snapshots históricos no {link('arquivo', 'Arquivo Histórico da Web')}.</li>
+          </ul>
+        </div>
+        <p style={{ marginTop: '16px' }}>
+          <button onClick={() => go('portal')} style={{ padding: '6px 14px', background: '#268bd2', color: '#fff', border: 'none', cursor: 'pointer', borderRadius: '3px' }}>
+            ← Retornar ao Portal Central
+          </button>
+          <button onClick={() => go('arquivo')} style={{ padding: '6px 14px', background: '#2aa198', color: '#fff', border: 'none', cursor: 'pointer', borderRadius: '3px', marginLeft: '8px' }}>
+            Consultar no Arquivo Web →
+          </button>
+        </p>
+      </article>
+    );
+  }
 
   // 1. REDE RECREIO
   if (base === 'recreio') {
@@ -304,9 +336,9 @@ export function HistoricalPage({ page, era, go, open }: { page: string; era: num
     );
   }
 
-  // 5. REDE DE BLOGS (MONITOR, LÉO, BIA, RAFA)
+  // 5. REDE DE BLOGS (MONITOR, LÉO, BIA, RAFA, NINA)
   if (base === 'blog') {
-    const authorParam = (sub || blogAuthor) as 'monitor' | 'leo' | 'bia' | 'rafa';
+    const authorParam = (sub || blogAuthor) as 'monitor' | 'leo' | 'bia' | 'rafa' | 'nina';
 
     return (
       <article className="blog-museum">
@@ -316,17 +348,18 @@ export function HistoricalPage({ page, era, go, open }: { page: string; era: num
         </header>
 
         {/* SELETOR DE AUTOR DE BLOG */}
-        <div style={{ display: 'flex', gap: '8px', marginBottom: '14px' }}>
+        <div style={{ display: 'flex', gap: '8px', marginBottom: '14px', flexWrap: 'wrap' }}>
           {[
             ['monitor', '📝 Diário do Monitor'],
             ['leo', '⚡ Bancada do Léo (LAN & Hardware)'],
             ['bia', '🌸 Caderno da Bia (Estudos & Amigos)'],
-            ['rafa', '💿 CD-R Express (Rafa & MP3)']
+            ['rafa', '💿 CD-R Express (Rafa & MP3)'],
+            ['nina', '💻 Console da Nina (Scripts & Redes)']
           ].map(([author, title]) => (
             <button
               key={author}
               className={authorParam === author ? 'pressed' : ''}
-              onClick={() => { setBlogAuthor(author as 'monitor' | 'leo' | 'bia' | 'rafa'); go('blog/' + author); }}
+              onClick={() => { setBlogAuthor(author as 'monitor' | 'leo' | 'bia' | 'rafa' | 'nina'); go('blog/' + author); }}
               style={{ fontSize: '12px', padding: '5px 8px', fontWeight: authorParam === author ? 'bold' : 'normal' }}
             >
               {title}
@@ -406,6 +439,26 @@ export function HistoricalPage({ page, era, go, open }: { page: string; era: num
           </div>
         )}
 
+        {authorParam === 'nina' && (
+          <div className="blog-entry">
+            <h2>Console da Nina: Preservando os Arquivos de 1999</h2>
+            <small>Postado em 02 de Novembro de 2003 por Nina dos pixels</small>
+            <p>
+              Hoje consegui decodificar um log de acesso do antigo servidor da garagem. Para quem gosta de arqueologia digital, 
+              o espelho oficial está preservado no protocolo secreto do acervo.
+            </p>
+            <p>
+              O manifesto completo pode ser consultado no endereço: {link('secreto/lab1999', 'retro://secreto/lab1999')}.
+            </p>
+            <blockquote style={{ background: '#f0fdf4', borderLeft: '4px solid #16a34a', padding: '6px 12px', margin: '10px 0' }}>
+              "A rede livre foi feita por quem não tinha dinheiro para servidores dedicados, apenas curiosidade e um cabo serial."
+            </blockquote>
+            <p style={{ fontSize: '13px' }}>
+              {link('secreto/lab1999', 'Ver Arquivo do Laboratório 1999')} · {link('arquivo', 'Consultar Arquivo Histórico Web')} · {link('recreio/nina', 'Meu Perfil na Recreio')}
+            </p>
+          </div>
+        )}
+
         <div style={{ marginTop: '20px', borderTop: '1px solid #ddd', paddingTop: '8px', fontSize: '13px' }}>
           {link('portal', 'Portal 2000')} · {link('forum', 'Fórum do Gabinete')} · {link('recreio', 'Rede Recreio')} · {link('fotolog', 'Fotolog')}
         </div>
@@ -415,12 +468,38 @@ export function HistoricalPage({ page, era, go, open }: { page: string; era: num
 
   // 6. SITE SECRETO: ARQUIVO DO LABORATÓRIO 1999
   if (base === 'secreto') {
+    const handleDownloadManifesto = () => {
+      const content = `=====================================================
+★ MANIFESTO DO LABORATÓRIO DE 1999 — ACERVO HISTÓRICO ★
+=====================================================
+
+1. A internet pertence aos curiosos, aos sonhadores e a quem
+   espera a meia-noite para conectar com um pulso telefônico.
+2. Cada disquete de 1.44 MB guarda um universo de conhecimento.
+3. Não formate uma unidade sem antes verificar se existe
+   um arquivo 'final_agora_vai.txt' com memórias preciosas.
+4. O Corujão da LAN House é o templo da camaradagem digital.
+5. Pressione Alt+Tab e Ctrl+A para dominar sua estação de trabalho.
+
+Assinado:
+- O Monitor do Laboratório
+- Nina dos Pixels (Engenharia e Scripts)
+- Léo da Máquina 07 (LAN House e Redes)
+- Bia do Laboratório (Design e Conteúdo)
+- Rafa do CD-R (Áudio e Preservação)
+
+[REGISTRO RETRO OS 004F — THE LOST INTERNET]
+`;
+      saveFile('C:/Meus Documentos/Manifesto Laboratorio 1999.txt', content);
+      setDownloadSuccess('C:/Meus Documentos/Manifesto Laboratorio 1999.txt');
+    };
+
     return (
       <article className="secret-page" style={{ background: '#000', color: '#00ff00', fontFamily: 'Courier New, monospace', padding: '16px', border: '3px double #00ff00' }}>
         <h1 style={{ textAlign: 'center', color: '#ffff00', fontSize: '24px' }}>★ ARQUIVO OCULTO · LABORATÓRIO 1999 ★</h1>
         <p style={{ textAlign: 'center', color: '#00ffcc' }}>[ VOCÊ ENCONTROU A HOMEPAGE SECRETA DOS FUNDADORES ]</p>
         <hr style={{ borderColor: '#00ff00' }} />
-        <p>Parabéns, visitante! Você seguiu as pistas do Fórum e do Diário do Monitor até o arquivo esquecido de 1999.</p>
+        <p>Parabéns, visitante! Você seguiu as pistas do Fórum, dos Blogs e da LAN House até o arquivo esquecido de 1999.</p>
         <p>Esta página foi o ponto de partida de todo o universo do RETRO OS. Aqui ficam registradas as regras de ouro do clube:</p>
         <ol style={{ lineHeight: '1.6' }}>
           <li>Nunca puxe um disquete enquanto a luz da unidade A: estiver acesa.</li>
@@ -428,11 +507,39 @@ export function HistoricalPage({ page, era, go, open }: { page: string; era: num
           <li>O corujão da CyberSpace começa às 23h: chegue cedo para garantir a máquina 07.</li>
           <li>A versão final de um documento nunca é a última; sempre haverá um 'final_agora_vai.doc'.</li>
         </ol>
+
+        <div style={{ background: '#002200', border: '1px dashed #00ff00', padding: '12px', margin: '14px 0' }}>
+          <b style={{ color: '#ffff00' }}>💾 ARQUIVO CONFIDENCIAL DISPONÍVEL PARA DOWNLOAD:</b>
+          <p style={{ margin: '6px 0', fontSize: '13px' }}>
+            Baixe a cópia íntegra do Manifesto dos Fundadores diretamente para a pasta <b>C:\Meus Documentos\</b>:
+          </p>
+          <button
+            onClick={handleDownloadManifesto}
+            style={{
+              background: '#ffff00',
+              color: '#000',
+              fontWeight: 'bold',
+              padding: '6px 12px',
+              border: 'none',
+              cursor: 'pointer',
+              fontFamily: 'monospace'
+            }}
+          >
+            📥 Salvar 'Manifesto Laboratorio 1999.txt' no VFS
+          </button>
+
+          {downloadSuccess && (
+            <p style={{ color: '#00ffcc', margin: '8px 0 0 0', fontSize: '13px' }}>
+              ✓ Arquivo salvo com sucesso em: <b>{downloadSuccess}</b>!
+            </p>
+          )}
+        </div>
+
         <div style={{ background: '#003300', padding: '10px', border: '1px dashed #00ff00', marginTop: '12px' }}>
           <b style={{ color: '#ffff00' }}>EASTER EGG HOMOLOGADO:</b>
           <p style={{ margin: '4px 0 0 0' }}>
             O segredo da internet retrô é que cada link leva a uma nova história. 
-            Você completou a <b>Jornada F (Investigação)</b> com sucesso!
+            Você completou a <b>Jornada F (Investigação)</b> e a <b>Trama do Laboratório de 1999</b> com sucesso!
           </p>
         </div>
         <p style={{ marginTop: '16px' }}>
@@ -441,6 +548,9 @@ export function HistoricalPage({ page, era, go, open }: { page: string; era: num
           </button> · 
           <button onClick={() => go('lanhouse')} style={{ background: '#00ffcc', color: '#000', fontWeight: 'bold', marginLeft: '8px', cursor: 'pointer' }}>
             Ir para a LAN House →
+          </button> ·
+          <button onClick={() => go('arquivo')} style={{ background: '#ffff00', color: '#000', fontWeight: 'bold', marginLeft: '8px', cursor: 'pointer' }}>
+            Consultar no Arquivo Web →
           </button>
         </p>
       </article>
