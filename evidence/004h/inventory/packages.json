@@ -1,0 +1,892 @@
+[
+  {
+    "id": "imported-private-prince",
+    "title": "Prince of Persia - demo DOS 1.0",
+    "file": "prince-demo-private.zip",
+    "sha256": "d6762fd72bf74ef21f8ea34c5db87506b29a9c8ac89456ae56aaf675e66c4f1c",
+    "matches": true,
+    "bytes": 254145,
+    "executable": "PRINCE.EXE",
+    "files": [
+      {
+        "name": "CDUNGEON.DAT",
+        "bytes": 7662,
+        "sha256": "338cb30a09ba74b83b9e1cebbc8495b54e893e44231b258e2d8c7171c6697446"
+      },
+      {
+        "name": "DIGISND1.DAT",
+        "bytes": 33199,
+        "sha256": "fea7a1c8e220a16166aa9825b4c9d2599ba7428a066028cf6bf47111bda522a0"
+      },
+      {
+        "name": "DIGISND2.DAT",
+        "bytes": 7971,
+        "sha256": "7b2173194489b8f7a74e700f579e3a69543cdee990153c2690e056ad5fd6a907"
+      },
+      {
+        "name": "DIGISND3.DAT",
+        "bytes": 20974,
+        "sha256": "203571512dbcf865141cf24e2dbb3c3034437bc72c3268331c5acfdf9182bc0d"
+      },
+      {
+        "name": "EDUNGEON.DAT",
+        "bytes": 8408,
+        "sha256": "8a6d810ab2aeedb7dce72d666faf3378923a2c0350904f14e27c9efad6681956"
+      },
+      {
+        "name": "GUARD.DAT",
+        "bytes": 6950,
+        "sha256": "dcedc140dcab0945dea02d24c248642cbff25f1b1288808ffd71a70fc529c5cc"
+      },
+      {
+        "name": "GUARD2.DAT",
+        "bytes": 117,
+        "sha256": "d8cef76e51a32b5d12e48c140e046b89b9dab4c7de457b1a909a2e1a2b20ae26"
+      },
+      {
+        "name": "IBM_SND1.DAT",
+        "bytes": 4219,
+        "sha256": "6930b6a3520e4f596a9afc2e1a1e56a2075304d8cb58418f72cabd8b8c0843ae"
+      },
+      {
+        "name": "IBM_SND2.DAT",
+        "bytes": 1928,
+        "sha256": "fe4d56936310a01d741ac3403e007df51aa8f4fbc6cffb653c8dc6b6193a56cf"
+      },
+      {
+        "name": "KID.DAT",
+        "bytes": 37149,
+        "sha256": "4b0d007162f683954d7a7d35c77d83174505d499b6c1f8e8b69caa3971f942a0"
+      },
+      {
+        "name": "LEVELS.DAT",
+        "bytes": 6950,
+        "sha256": "33de8741b7f8e706f9c2a3bec16a60a99cb8722ff3b3dba54d269b2ad8ccafaa"
+      },
+      {
+        "name": "MIDISND1.DAT",
+        "bytes": 5097,
+        "sha256": "b01db882ca1b250b4e876af08938318b6960abf27ad356a0eb971c8282f11308"
+      },
+      {
+        "name": "MIDISND2.DAT",
+        "bytes": 5626,
+        "sha256": "ee88717517fb3103329af0b658c7842d9e6b46dd3cc304dbfaa8588dcf5f928c"
+      },
+      {
+        "name": "PRINCE.DAT",
+        "bytes": 3278,
+        "sha256": "28d8b3a8c48ed6b7b280b16bcb3c2e1ac446f2a210a508d85937fbeb2196bf48"
+      },
+      {
+        "name": "PRINCE.EXE",
+        "bytes": 123335,
+        "sha256": "40039bf551be9541c76bdc5db18f4ca7837276f50bccf6155d5fc6582b2e1aa6"
+      },
+      {
+        "name": "PV.DAT",
+        "bytes": 25829,
+        "sha256": "418be33393e8ae25b724670d74f9b1fd6f1fd2eef38639e2f679701ddb8a4df2"
+      },
+      {
+        "name": "TITLE.DAT",
+        "bytes": 34904,
+        "sha256": "7fac03e153d9734262db8b53a6c84ac16b7aa077a8b90d43ca2947ab458e90f9"
+      },
+      {
+        "name": "VDUNGEON.DAT",
+        "bytes": 11845,
+        "sha256": "4221665993c10b420b8bb09321d1733c3b5a911026389f6717474a02f5ba823d"
+      },
+      {
+        "name": "DEMOINFO.TXT",
+        "bytes": 362,
+        "sha256": "eba1253804bab948adfa04d13e2d590499404e1459b5fe560fe9616c653fa165"
+      }
+    ],
+    "legalDocuments": [
+      "DEMOINFO.TXT"
+    ],
+    "source": "https://github.com/jmechner/Prince-of-Persia-Apple-II"
+  },
+  {
+    "id": "imported-private-doom-shareware",
+    "title": "DOOM - shareware DOS v1.9",
+    "file": "doom-shareware-private.zip",
+    "sha256": "0010d4a4851aa88344a87a8079d5c1ec15c688a20cb4e6ad2919a13d1f828a70",
+    "matches": true,
+    "bytes": 2493854,
+    "executable": "DOOM.EXE",
+    "files": [
+      {
+        "name": "DM.DOC",
+        "bytes": 6397,
+        "sha256": "aade82ddad8b05b9e57121b80158893d2b3f2f8a2eed9147e720947dd9821b4e"
+      },
+      {
+        "name": "DM.EXE",
+        "bytes": 33640,
+        "sha256": "2725df25c7536aa98a4e6282e61e17186777f54074e6fa56d9a38825dd1c7e09"
+      },
+      {
+        "name": "DMFAQ66A.TXT",
+        "bytes": 120201,
+        "sha256": "794a4c94f78b724dcffa6a4ee44337e0e2bb41be612967d2cae5a9380f67638b"
+      },
+      {
+        "name": "DMFAQ66B.TXT",
+        "bytes": 140594,
+        "sha256": "ba677bc04a55e5c829befb3cc3ba950c5056247269f7620327714dde93023900"
+      },
+      {
+        "name": "DMFAQ66C.TXT",
+        "bytes": 76898,
+        "sha256": "43163af971e20064e3431fdde14977c66928b064e8fab1e48c343d44ac26be19"
+      },
+      {
+        "name": "DMFAQ66D.TXT",
+        "bytes": 34572,
+        "sha256": "9776b1976fb00c14cbe3c89d882c52bea0e3fe6a4522a4305763d58b31068471"
+      },
+      {
+        "name": "DOOM.EXE",
+        "bytes": 709905,
+        "sha256": "b8020523561a5ad9706e009a52d61c578f37faafd85ac471962308406292ce27"
+      },
+      {
+        "name": "DOOM1.WAD",
+        "bytes": 4196020,
+        "sha256": "1d7d43be501e67d927e415e0b8f3e29c3bf33075e859721816f652a526cac771"
+      },
+      {
+        "name": "DWANGO.DOC",
+        "bytes": 10623,
+        "sha256": "2300bcb497b18389de4fa8ed7c2822710967b4a26d6d162bccae9cd8cebd0cee"
+      },
+      {
+        "name": "DWANGO.EXE",
+        "bytes": 65021,
+        "sha256": "724486508cb23da93986c34336299972fbfaa2509a9ed18b0ec2832e07d600ca"
+      },
+      {
+        "name": "DWANGO.STR",
+        "bytes": 2536,
+        "sha256": "b4f93bc9d74e22f3b489e574b71189a931f963e76f4ea8da4d34e22c8be0971c"
+      },
+      {
+        "name": "HELPME.TXT",
+        "bytes": 4690,
+        "sha256": "b8ee1678923e1130700ec6a73cf50ed320091c9f79a933124e8c99e347aae5f5"
+      },
+      {
+        "name": "IPXSETUP.EXE",
+        "bytes": 18051,
+        "sha256": "1e5eeb2e3b6f526d603f19ed08c00668e04bd2b7e6439c109b84b1c61d283d51"
+      },
+      {
+        "name": "MODEM.CFG",
+        "bytes": 67,
+        "sha256": "0eb17ba5df3f319a02325401c9fbe212a3aa9065d63d4b7bd49d75bd2bb0268b"
+      },
+      {
+        "name": "MODEM.NUM",
+        "bytes": 67,
+        "sha256": "604a8033fa26c634a758006e318573206d123419fefc9df8cf76f2b1e67ba105"
+      },
+      {
+        "name": "MODEM.STR",
+        "bytes": 3405,
+        "sha256": "84a5af6596ce180bdb03a0bee414421538c27df5b0722041213cec953099d1d2"
+      },
+      {
+        "name": "ORDER.FRM",
+        "bytes": 4617,
+        "sha256": "a7fa68a0021b3d04abd781e74175511a1a96d923c544fce19805ea5a9696df86"
+      },
+      {
+        "name": "README.TXT",
+        "bytes": 21631,
+        "sha256": "17878ebe5ca179de7ec2cc90bbabbc922ab69924118be168a25f8d317f65a2ff"
+      },
+      {
+        "name": "SERSETUP.EXE",
+        "bytes": 20257,
+        "sha256": "94cf23eac5fc43da942f9529e9ff4dd6dc5aab82fe348bd72eb7de971d9170f5"
+      },
+      {
+        "name": "SETUP.EXE",
+        "bytes": 45884,
+        "sha256": "c9d328bff268854414feae5459870aac6f779e55a9cbf4568a83fef9b7be6e15"
+      }
+    ],
+    "legalDocuments": [
+      "DM.DOC",
+      "DMFAQ66A.TXT",
+      "DMFAQ66B.TXT",
+      "DMFAQ66C.TXT",
+      "DMFAQ66D.TXT",
+      "DWANGO.DOC",
+      "HELPME.TXT",
+      "README.TXT"
+    ],
+    "source": "https://github.com/id-Software/DOOM"
+  },
+  {
+    "id": "imported-private-duke-shareware",
+    "title": "Duke Nukem 3D - shareware DOS v1.3d",
+    "file": "duke-shareware-private.zip",
+    "sha256": "8ce1cc14233a4b7dfdc82bd944506c1d09545c83754b9741642e5519f4b5f30e",
+    "matches": true,
+    "bytes": 5963697,
+    "executable": "DUKE3D.EXE",
+    "files": [
+      {
+        "name": "CATALOG.EXE",
+        "bytes": 27032,
+        "sha256": "3001d5d034945f48f7de169b03a1648c37fe1b0ab2ca7d23ed439d439ff8b60a"
+      },
+      {
+        "name": "COMMIT.EXE",
+        "bytes": 25942,
+        "sha256": "63c12997aaed8048cff56944603d17b7202d096812b05ab2b53cc4d407c6d8c4"
+      },
+      {
+        "name": "DEFS.CON",
+        "bytes": 28893,
+        "sha256": "20d415b974191ac53ca1d453ced487408462a6c627f8dff409b20e05d5a6d839"
+      },
+      {
+        "name": "DEMO1.DMO",
+        "bytes": 6226,
+        "sha256": "28e05772cdf1e6b4d8c11649f96fbd3a76bf73e335ba7fe255dc8f6ab4a938a3"
+      },
+      {
+        "name": "DEMO2.DMO",
+        "bytes": 9701,
+        "sha256": "5c6021b85a8a23ba235819c6498a8c4b0a4015d64bff24d1a8d48d2ed4dbb780"
+      },
+      {
+        "name": "DEMO3.DMO",
+        "bytes": 3759,
+        "sha256": "c86efbdef20dbdefbb1aa2480bc02e096225e9ef7f9f01fb5d970c382196ba6d"
+      },
+      {
+        "name": "DN3DHELP.EXE",
+        "bytes": 73594,
+        "sha256": "5dccdf4da37aff04cca4a64af129587ebeead7c39a3986acf4afba5f4f26d177"
+      },
+      {
+        "name": "DUKE.RTS",
+        "bytes": 188954,
+        "sha256": "3fbc1d9b221f2a6952825a511ed63756f8eac4f98001eb094a81f17cb0fd05e5"
+      },
+      {
+        "name": "DUKE3D.CFG",
+        "bytes": 5076,
+        "sha256": "193f9061d695cea91b956fbde1cc1de2b2fcc68947de3318168ea727326f5d88"
+      },
+      {
+        "name": "DUKE3D.EXE",
+        "bytes": 1178963,
+        "sha256": "6e6f5159f21e795302221622df8be89325ede968c099126d5421dbec589ab3be"
+      },
+      {
+        "name": "DUKE3D.GRP",
+        "bytes": 11035779,
+        "sha256": "f943d0c2e2a0803a644a2107c81ea897dec87596d9dd1a6a432131ad6f5818d6"
+      },
+      {
+        "name": "GAME.CON",
+        "bytes": 99639,
+        "sha256": "b3095352dc2303b5616d6180bffbe24ddd1a853d2105b384dab0e8535814e0e4"
+      },
+      {
+        "name": "LICENSE.DOC",
+        "bytes": 9402,
+        "sha256": "3569cefe7316a5c682f75cd8dd7f3f432940f8a657df82da5abea7a08f8d87a5"
+      },
+      {
+        "name": "MODEM.PCK",
+        "bytes": 4125,
+        "sha256": "8a4a11b45eb361f7f5bc8dd0369ec4604f90bbcd2d301b46d2e600bd414e42fa"
+      },
+      {
+        "name": "ORDER.FRM",
+        "bytes": 3866,
+        "sha256": "d5096c1ddc1f7cd5eaef8094bfa069789dfb92b8f2f9fd114eef24f773f894cf"
+      },
+      {
+        "name": "README.DOC",
+        "bytes": 2760,
+        "sha256": "bba1b4050f8f6d9d80d125dd911fa229c6883a1d6314a8d31a488a6c7b5f719e"
+      },
+      {
+        "name": "SETMAIN.EXE",
+        "bytes": 95177,
+        "sha256": "09012d6a5ea099e1fcfaa92f28dbb4ff34526c8e50943732d5ab69e07cf2c735"
+      },
+      {
+        "name": "SETUP.EXE",
+        "bytes": 27153,
+        "sha256": "79154ab8d112fcf534c4f61392896e15bf40575bba9a0f97a429cf61be84ba92"
+      },
+      {
+        "name": "SWCBBS.EXE",
+        "bytes": 4960,
+        "sha256": "12622c52fa30e57a7bbd8c42c936ce0c278c0fa50bf8027604657cc49eb5119c"
+      },
+      {
+        "name": "ULTRAMID.INI",
+        "bytes": 6871,
+        "sha256": "2df529ccb0188fa861e40326a03b88bdda5b858c6dd0b26c095a4adbdb4e6cfe"
+      },
+      {
+        "name": "USER.CON",
+        "bytes": 36960,
+        "sha256": "1e872508f1abaa9f5e0504292e275de73a86bc57b29bce35f210c61d29b7255f"
+      }
+    ],
+    "legalDocuments": [
+      "LICENSE.DOC",
+      "README.DOC"
+    ],
+    "source": "https://legacy.3drealms.com/duke3d/"
+  },
+  {
+    "id": "imported-private-heretic",
+    "title": "Heretic - shareware DOS v1.2",
+    "file": "heretic-shareware-private.zip",
+    "sha256": "50170e162b653619d266ecaf719f9a0fe9df04b88e3c30a37e436b42df5640f2",
+    "matches": true,
+    "bytes": 2890661,
+    "executable": "HERETIC.EXE",
+    "files": [
+      {
+        "name": "DM.EXE",
+        "bytes": 21017,
+        "sha256": "4453b24ad94cbb11282b6aa8c3afcd475c0e40682fda07ac9f6a1b6f789fbbad"
+      },
+      {
+        "name": "DM.TXT",
+        "bytes": 6397,
+        "sha256": "aade82ddad8b05b9e57121b80158893d2b3f2f8a2eed9147e720947dd9821b4e"
+      },
+      {
+        "name": "DWANGO.EXE",
+        "bytes": 73621,
+        "sha256": "70605aa8d9db493088719dd578685c850b929c61e5e79dcab11c69fbccd2de59"
+      },
+      {
+        "name": "DWANGO.SRV",
+        "bytes": 546,
+        "sha256": "693340eb528c7974fd0ede180c6c7bb36afd922f454a2e6870df8978831ef22d"
+      },
+      {
+        "name": "DWANGO.STR",
+        "bytes": 2536,
+        "sha256": "b4f93bc9d74e22f3b489e574b71189a931f963e76f4ea8da4d34e22c8be0971c"
+      },
+      {
+        "name": "DWANGO.TMP",
+        "bytes": 73,
+        "sha256": "094a6924ddca2ce54fd856212e893a7744874292b87d2ea4bf60bdc2f13cbca0"
+      },
+      {
+        "name": "DWANGO.TXT",
+        "bytes": 11197,
+        "sha256": "c3339e4263011732146e2c8ae2cf8ae71a50521cde80adf8246b2ce4873edf33"
+      },
+      {
+        "name": "FILE_ID.DIZ",
+        "bytes": 462,
+        "sha256": "eadc22d5a622beb2c5025b6b925a6d3ca3d46b0c5e49f999c4e6547fb9b11477"
+      },
+      {
+        "name": "HELPME.TXT",
+        "bytes": 4662,
+        "sha256": "d2523c32d9a214532254b2920397f76546f5d6e2578a7eb22ebfea97098842e5"
+      },
+      {
+        "name": "HERETIC.EXE",
+        "bytes": 728031,
+        "sha256": "9e8a99cf4bfcb7319a1b7360d938946700e76c3f7df3c6b1faf78614cf565fde"
+      },
+      {
+        "name": "HERETIC1.WAD",
+        "bytes": 5120920,
+        "sha256": "3ab2f21828877e49e5eb3220785aaf8798050b7c4132003b5db7b8f3678bede4"
+      },
+      {
+        "name": "IPXSETUP.EXE",
+        "bytes": 17971,
+        "sha256": "04f4ba0740343b4ad571605ccd1a0c665ff00edae1c50e7ed8e1d054cc7cfdb0"
+      },
+      {
+        "name": "LICENSE.DOC",
+        "bytes": 7685,
+        "sha256": "d91e4c0571f67cde0ffdf0fe8e5958bd57debda2d31e823c84ca4463c0761279"
+      },
+      {
+        "name": "MODEM.CFG",
+        "bytes": 50,
+        "sha256": "28419fb0f870bed6ac1ca579b4c2dc0a9e5720111644aa9904a072dd6437478a"
+      },
+      {
+        "name": "MODEM.NUM",
+        "bytes": 33,
+        "sha256": "6d372d7b533da0c9eb7a556846f00299e823dc5735d2e996abb528ee4dc91112"
+      },
+      {
+        "name": "MODEM.STR",
+        "bytes": 3289,
+        "sha256": "8e42494ae77b11a8d9466849ce0094bfd07587986e617a83ac17b9a190520f2c"
+      },
+      {
+        "name": "ORDER.FRM",
+        "bytes": 4476,
+        "sha256": "25b4542a54e727b16916749752f0cdc8bf6c8317fdb0a906995c73d102934067"
+      },
+      {
+        "name": "README.TXT",
+        "bytes": 20353,
+        "sha256": "435dd012258b93615a685688629209f389a0c9721dd4e30173095231a9601c20"
+      },
+      {
+        "name": "SERSETUP.EXE",
+        "bytes": 20257,
+        "sha256": "5362a48fb346fdfe8af4bc726f2e2189293e2207c3eb74b91436e5de96d2b0d3"
+      },
+      {
+        "name": "SETUP.EXE",
+        "bytes": 47096,
+        "sha256": "3663b62a4f926387d4c43640197b39fdc5ea16e6ca46364e1cbb7c903e93ec92"
+      },
+      {
+        "name": "VENDOR.DOC",
+        "bytes": 556,
+        "sha256": "c8efc8346f7176828e939a6986bcb83eac490f2b93ca4c98d78069bb10606c4a"
+      },
+      {
+        "name": "VIOHT.EXE",
+        "bytes": 19203,
+        "sha256": "0ddf31bc4c66b65e61d18441700d7b8fa4f04e93821cb2583c86e804a74bdd7d"
+      }
+    ],
+    "legalDocuments": [
+      "DM.TXT",
+      "DWANGO.TXT",
+      "HELPME.TXT",
+      "LICENSE.DOC",
+      "README.TXT",
+      "VENDOR.DOC"
+    ],
+    "source": "https://www.doomworld.com/idgames/idstuff/heretic/"
+  },
+  {
+    "id": "imported-private-quake",
+    "title": "Quake - shareware DOS v1.06",
+    "file": "quake-shareware-private.zip",
+    "sha256": "f2958ff5ec2e8155f4d0b9a7af0eb1a6bea4446b4e34379f29129137f3ff3f89",
+    "matches": true,
+    "bytes": 8834732,
+    "executable": "QUAKE.EXE",
+    "files": [
+      {
+        "name": "ID1/PAK0.PAK",
+        "bytes": 18689235,
+        "sha256": "35a9c55e5e5a284a159ad2a62e0e8def23d829561fe2f54eb402dbc0a9a946af"
+      },
+      {
+        "name": "CWSDPMI.EXE",
+        "bytes": 25920,
+        "sha256": "0a890815df6cbdc052915a856c16944cedec825267e7b6e453c351a0cdc695f2"
+      },
+      {
+        "name": "HELP.TXT",
+        "bytes": 5404,
+        "sha256": "fb762348875647992b53732d50e41cf966cfecaca7c6ea2f7f682742d84a9f54"
+      },
+      {
+        "name": "LICINFO.TXT",
+        "bytes": 9311,
+        "sha256": "8d654834d085c088d603fb6879a874799e8b4cc6ae9317bbf826afd83bc72e31"
+      },
+      {
+        "name": "ORDER.TXT",
+        "bytes": 3869,
+        "sha256": "1e04e5899b36c3e47dac6c771cb1fdaee0e1528db0d720b8db06e83ea5c631da"
+      },
+      {
+        "name": "PDIPX.COM",
+        "bytes": 26511,
+        "sha256": "868c16e2a561ebc955ab873013a8b2a5e6d2cdd95d185915da51a9294dea15e9"
+      },
+      {
+        "name": "QUAKE.EXE",
+        "bytes": 404480,
+        "sha256": "7cdb244122cc607cc6f162524bfcac60f6d11d8ca2ff07473d6cd962311161fb"
+      },
+      {
+        "name": "README.TXT",
+        "bytes": 19087,
+        "sha256": "9ade267c7e22a1c4c4aa8fa3dd58ad3354c173ae2cfc39344093cea534316d61"
+      },
+      {
+        "name": "READV106.TXT",
+        "bytes": 8774,
+        "sha256": "0a496875fce806ebc175bc6bebedc9d739381dceacc5636cf83ef60cf056ab0d"
+      },
+      {
+        "name": "SLICNSE.TXT",
+        "bytes": 10036,
+        "sha256": "070cdf6a6410adef8fb5f83a4e5ccdb9e2301d2e48d460bb3a67a0f5ba9d70a8"
+      },
+      {
+        "name": "TECHINFO.TXT",
+        "bytes": 76067,
+        "sha256": "b7c080df7487e69b0c3f9c6b3a8eff5ce29741f5c596d3d6a08534649691d314"
+      }
+    ],
+    "legalDocuments": [
+      "HELP.TXT",
+      "LICINFO.TXT",
+      "ORDER.TXT",
+      "README.TXT",
+      "READV106.TXT",
+      "SLICNSE.TXT",
+      "TECHINFO.TXT"
+    ],
+    "source": "https://www.quakewiki.net/archives/manual/index.html"
+  },
+  {
+    "id": "dos-freedoom",
+    "title": "Freedoom Phase 1 — FastDoom",
+    "file": "freedoom-phase1.zip",
+    "sha256": "d5339ddcb11816ae44c7b14cf5ac19f083481d0b75b1fd11203efe147d63ed44",
+    "matches": true,
+    "bytes": 10909138,
+    "executable": "FDOOM13H.EXE",
+    "files": [
+      {
+        "name": "FDOOM.CFG",
+        "bytes": 77,
+        "sha256": "0fd4b3bf580566895dd8361722e8daa7a8c15ba5138f11df29e5e4c5ec008a1f"
+      },
+      {
+        "name": "FDOOM13H.EXE",
+        "bytes": 840496,
+        "sha256": "ed51e5cdaa55e3375b87505d6df7c36b2dc2605c63b2c67090560c5a933d52b8"
+      },
+      {
+        "name": "FREEDM1.WAD",
+        "bytes": 28795076,
+        "sha256": "7323bcc168c5a45ff10749b339960e98314740a734c30d4b9f3337001f9e703d"
+      },
+      {
+        "name": "FREEDOOM-COPYING.txt",
+        "bytes": 1644,
+        "sha256": "7c62f2c520769c798774f416637eec4921e5f0aafdac1245ae7c8a8cf65fe102"
+      },
+      {
+        "name": "FREEDOOM-CREDITS.txt",
+        "bytes": 15872,
+        "sha256": "72364333d295c598d75ef9553d3b3661ad0b60e27271c87b7637c74b2f46918a"
+      },
+      {
+        "name": "FREEDOOM-MUSIC-CREDITS.txt",
+        "bytes": 9388,
+        "sha256": "2bb77677bbc4e587bba44ccb6514ee0f5397c7bb8ae9580b9188d3d6a57c0a31"
+      },
+      {
+        "name": "FASTDOOM-LICENSE.txt",
+        "bytes": 18046,
+        "sha256": "db296f2f7f35bca3a174efb0eb392b3b17bd94b341851429a3dff411b1c2fc73"
+      },
+      {
+        "name": "FASTDOOM-README.txt",
+        "bytes": 15871,
+        "sha256": "4ea4c52667a7e7687cea322aa2c216f733636efd935adcbbc165e56e70ff7169"
+      }
+    ],
+    "legalDocuments": [
+      "FREEDOOM-COPYING.txt",
+      "FREEDOOM-CREDITS.txt",
+      "FREEDOOM-MUSIC-CREDITS.txt",
+      "FASTDOOM-LICENSE.txt",
+      "FASTDOOM-README.txt"
+    ],
+    "source": "https://github.com/freedoom/freedoom/releases/tag/v0.13.0"
+  },
+  {
+    "id": "dos-klab",
+    "title": "Ken's Labyrinth 2.1",
+    "file": "ken-labfull.zip",
+    "sha256": "643aa0ca8d1a7d2c88afecd952da00f3b912be8b83c4c1d2f4ab9b50491fadfd",
+    "matches": true,
+    "bytes": 940242,
+    "executable": "KEN.EXE",
+    "files": [
+      {
+        "name": "BOARDS.KZP",
+        "bytes": 55110,
+        "sha256": "4cf55fc511b52ac063e1f717440ff98fedb85ccf5912e96051bf449b4a6c9be2"
+      },
+      {
+        "name": "HELPME.DOC",
+        "bytes": 11060,
+        "sha256": "8e8b5f5deee7a85750eda7e91a3917da74075d75850d567a673e0f16d4a1141a"
+      },
+      {
+        "name": "HINTS.TXT",
+        "bytes": 45270,
+        "sha256": "7451c1bb0aa8a35b3abb3c4152c088e8a39f893e722327cb61a66310f02736d1"
+      },
+      {
+        "name": "HISCORE.DAT",
+        "bytes": 3840,
+        "sha256": "44183a493a7c198644c1f206c63c49cdb3ae928fb5d67505fb90492c37b77005"
+      },
+      {
+        "name": "INSTS.DAT",
+        "bytes": 8448,
+        "sha256": "5aa606bbaede7b245c1f8856d19ac32c8e91d168a2c121963b8249011ca4552d"
+      },
+      {
+        "name": "KEN.EXE",
+        "bytes": 110775,
+        "sha256": "6d33f1502c80cdf2307b86ae77662f478f3c537367631043489442d373bb75c1"
+      },
+      {
+        "name": "KENSBFIX.EXE",
+        "bytes": 110775,
+        "sha256": "22a0c4ca5bd86dc85292aaaa90e392bd4f960d10177a5945c42aeb88a253d8a8"
+      },
+      {
+        "name": "LAB3D.KZP",
+        "bytes": 106940,
+        "sha256": "c42bdfc754eea7ae24115780904f618f8473ab85c99df7d6d62f40482c89d498"
+      },
+      {
+        "name": "README.TXT",
+        "bytes": 2295,
+        "sha256": "b4a4fbf1f9ef0601bde0169fd95b649bf4d41415e5db41b6a24f5a28dda69b39"
+      },
+      {
+        "name": "SAVGAME4.DAT",
+        "bytes": 9016,
+        "sha256": "279409cbb8b4a444e45a05d657b177228b62a4ab5dd87c6b63f910cdd7edb381"
+      },
+      {
+        "name": "SAVGAME5.DAT",
+        "bytes": 9142,
+        "sha256": "667cc46206963f8801d5b176d2d57fda920206e7bb49a4878c69cebc8996b06e"
+      },
+      {
+        "name": "SAVGAME6.DAT",
+        "bytes": 9455,
+        "sha256": "80a28f9c053b8678614be6bc8424e7b1be97963f67c5528818451eee3d37302c"
+      },
+      {
+        "name": "SAVGAME7.DAT",
+        "bytes": 11133,
+        "sha256": "741f5ae211309aa75e25417cd96a59aac99924677c4a1d9691d1f0cbd7036913"
+      },
+      {
+        "name": "SETUP.EXE",
+        "bytes": 15553,
+        "sha256": "c41dd777ea81ac9b64520a4e9435441126928e7391334318859c5b5a9816212b"
+      },
+      {
+        "name": "SONGS.KZP",
+        "bytes": 104176,
+        "sha256": "92e7c69baee46899960e18036d1985488443e88f351d8916cbf872529d36a273"
+      },
+      {
+        "name": "SOUNDS.KZP",
+        "bytes": 294352,
+        "sha256": "f371359c8a325ec9e6800a3693f258e63928ef45fa5c86f90fbc5a97e045d217"
+      },
+      {
+        "name": "STORY.KZP",
+        "bytes": 21118,
+        "sha256": "3d437db09c2dfd6db830baddbfc432e7f55c2a193c242e2ab2ae579c982f470b"
+      },
+      {
+        "name": "TABLES.DAT",
+        "bytes": 13044,
+        "sha256": "0627fdf1cfce4173c08a905a63cc8ba7a65831a5ce64042d9d9427e2b505e5bc"
+      },
+      {
+        "name": "WALLS.KZP",
+        "bytes": 374133,
+        "sha256": "7643f5f26ed9906f1ede6b6e54c18265debeffb4e8c9140fbf8c51fb0af4d42d"
+      }
+    ],
+    "legalDocuments": [
+      "HELPME.DOC",
+      "HINTS.TXT",
+      "README.TXT"
+    ],
+    "source": "https://advsys.net/ken/klab.htm"
+  },
+  {
+    "id": "dos-skyroads",
+    "title": "SkyRoads (1993)",
+    "file": "skyroads.zip",
+    "sha256": "24762fe14196a642224288fe2063c9d0c0033be9c5b4b2f97fded09390803ee4",
+    "matches": true,
+    "bytes": 593740,
+    "executable": "SKYROADS.EXE",
+    "files": [
+      {
+        "name": "ANIM.LZS",
+        "bytes": 44808,
+        "sha256": "6630fcf84f568dd505303ab0dd5f8c79e576ee2c93c585f973c62956ef667afc"
+      },
+      {
+        "name": "CARS.LZS",
+        "bytes": 8167,
+        "sha256": "86b7832783bde0b67443104eba66196ed8ba31148339192db00c67eaddf9929e"
+      },
+      {
+        "name": "DASHBRD.LZS",
+        "bytes": 10860,
+        "sha256": "c1ad75492f9d93fa9e40c17b39fbd4c21ee6d9188547fea09fbc41c9e719ea8c"
+      },
+      {
+        "name": "DEMO.REC",
+        "bytes": 6398,
+        "sha256": "2bb53c6cd62f2cd2a8657cd05bf9e33054570c1e3e98dd89e18587156867016e"
+      },
+      {
+        "name": "FUL_DISP.DAT",
+        "bytes": 407,
+        "sha256": "a6f50b73abd0d2ebf97508cf12e2b9f7b29aeff29b794a2ab595ede9c93a12b5"
+      },
+      {
+        "name": "GOMENU.LZS",
+        "bytes": 26695,
+        "sha256": "8852c378ecdb9165183924ca81b3b0ace9ed73b1cca5ac364fbfe18f6abc885f"
+      },
+      {
+        "name": "HELPMENU.LZS",
+        "bytes": 60606,
+        "sha256": "f016e6eb479e163dca426b3111b796067eea62dbf9011ba99b65d0f0da1660a8"
+      },
+      {
+        "name": "INTRO.LZS",
+        "bytes": 20874,
+        "sha256": "f37fa5819914e4f968a7b884fa8c827dcdf4be9e6a567e9b9da4fdd62bd276e5"
+      },
+      {
+        "name": "INTRO.SND",
+        "bytes": 32100,
+        "sha256": "f2eff08cf5ed7986c89232d21468b53c7cce5826f519585d44d97eec58bb510c"
+      },
+      {
+        "name": "MAINMENU.LZS",
+        "bytes": 1140,
+        "sha256": "45b0dbb2866f8b84b0253ca002fab01fba0c53b1f8593b1fb18119e570ae3a07"
+      },
+      {
+        "name": "MUZAX.LZS",
+        "bytes": 16821,
+        "sha256": "be741b53f33a1d7a488b1a66d7df4a20ca44c4d7a252a2984e2325f7a8b0d8a4"
+      },
+      {
+        "name": "OXY_DISP.DAT",
+        "bytes": 395,
+        "sha256": "a5d00c24e3b0d6cb14792926055445fa970e2109e8da2ff4ff2b72fe81ec3d6f"
+      },
+      {
+        "name": "readme.txt",
+        "bytes": 683,
+        "sha256": "1b8c1c55db0fcdd21d81fa013facb05890bef1827359c11bfb34cc1775a9d46d"
+      },
+      {
+        "name": "ROADS.LZS",
+        "bytes": 17102,
+        "sha256": "eae3754bcbf9db20f076e330038d29401b2b5eb400bb148d772edb4ba23442ce"
+      },
+      {
+        "name": "SETMENU.LZS",
+        "bytes": 24666,
+        "sha256": "86fd9ad57ea787beda20f00b4dce1ed4d1ae0e4b2645cb529b65ae734f6df636"
+      },
+      {
+        "name": "SFX.SND",
+        "bytes": 25807,
+        "sha256": "7c17c601f5e58ef9c286cf9e6c19aa8fd287cfa6836be3920dbb78d904c3ea4e"
+      },
+      {
+        "name": "SKYROADS.EXE",
+        "bytes": 30472,
+        "sha256": "c3a55223e359749555535e138ef4219bc94458639e44f70edf3cfcb2f28c26ac"
+      },
+      {
+        "name": "SPEED.DAT",
+        "bytes": 3903,
+        "sha256": "97bff2d41fdde4953d986cb2d9011718f302ff46bb8d21abbb267343b086b7fc"
+      },
+      {
+        "name": "TREKDAT.LZS",
+        "bytes": 98148,
+        "sha256": "513b572fc159f6e8219fd3b53f5f8e51df71ef0df7e4e6c72219b08755f3819b"
+      },
+      {
+        "name": "WORLD0.LZS",
+        "bytes": 26645,
+        "sha256": "e120ca2f8a9fb44c5f921b0f76bfa178ad79b19ba94c9e0627bebf0672b21358"
+      },
+      {
+        "name": "WORLD1.LZS",
+        "bytes": 15696,
+        "sha256": "c1c41f5730010aa2b4051697ce02d381fdb4f6b4d4ab9cd4d3c80c19353aee91"
+      },
+      {
+        "name": "WORLD2.LZS",
+        "bytes": 27755,
+        "sha256": "bd40edbe99818554749616dd248fa15aef76f4f2da932d5193d91f5fe254426b"
+      },
+      {
+        "name": "WORLD3.LZS",
+        "bytes": 24082,
+        "sha256": "cebeafebd64fab9e68c91aa4a8c1f68e07fe0cec0fa7070ae5c35b65f655b0bc"
+      },
+      {
+        "name": "WORLD4.LZS",
+        "bytes": 31341,
+        "sha256": "fc125d221b6a713cbce24b9a4fe39bfff2cef564980080e8a981a7c93bb217c1"
+      },
+      {
+        "name": "WORLD5.LZS",
+        "bytes": 20047,
+        "sha256": "d64735b3565ece174976ff36f94b2d71cea2abf91be2bde35112f6e61d72f83a"
+      },
+      {
+        "name": "WORLD6.LZS",
+        "bytes": 18642,
+        "sha256": "f96b0ea6f2ddbedc2d4deeeb3b3cd24d457d55ad42a5b5a876d6d384a8410d59"
+      },
+      {
+        "name": "WORLD7.LZS",
+        "bytes": 29960,
+        "sha256": "1e66a77e5594ab114e285ce4414ed27228c7fa38a398d60cf46527a3baf75b63"
+      },
+      {
+        "name": "WORLD8.LZS",
+        "bytes": 14989,
+        "sha256": "696087230a90766d445c1d946bcc97980961595c837b792870e018c5ced234e2"
+      },
+      {
+        "name": "WORLD9.LZS",
+        "bytes": 21312,
+        "sha256": "3ea0c840e723fe097d92f84e3747007f662a21eb3ef6e0f532624fc1f9c63178"
+      }
+    ],
+    "legalDocuments": [
+      "readme.txt"
+    ],
+    "source": "http://www.bluemoon.ee/history/skyroads/"
+  }
+]

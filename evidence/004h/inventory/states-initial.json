@@ -1,0 +1,224 @@
+[
+  {
+    "id": "dos-doom-1993",
+    "title": "DOOM",
+    "state": "C",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-doom2-1994",
+    "title": "DOOM II: Hell on Earth",
+    "state": "D",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-quake-1996",
+    "title": "Quake",
+    "state": "C",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-quake2-1997",
+    "title": "Quake II",
+    "state": "E",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-quake3-1999",
+    "title": "Quake III Arena",
+    "state": "E",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-darkforces-1995",
+    "title": "Star Wars: Dark Forces",
+    "state": "D",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-descent-1995",
+    "title": "Descent",
+    "state": "D",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-heretic-1994",
+    "title": "Heretic",
+    "state": "C",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-duke3d-1996",
+    "title": "Duke Nukem 3D",
+    "state": "C",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-mohaa-2002",
+    "title": "Medal of Honor: Allied Assault",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-mohpac-2004",
+    "title": "Medal of Honor: Pacific Assault",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-mdk-1997",
+    "title": "MDK",
+    "state": "D",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-mdk2-2000",
+    "title": "MDK 2",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-commandos-1998",
+    "title": "Commandos: Behind Enemy Lines",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-commandos2-2001",
+    "title": "Commandos 2: Men of Courage",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-claw-1997",
+    "title": "Captain Claw",
+    "state": "E",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-prince-1990",
+    "title": "Prince of Persia",
+    "state": "C",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-fullthrottle-1995",
+    "title": "Full Throttle",
+    "state": "E",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-thedig-1995",
+    "title": "The Dig",
+    "state": "E",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-eob-1991",
+    "title": "Eye of the Beholder",
+    "state": "D",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-eob2-1991",
+    "title": "Eye of the Beholder II: The Legend of Darkmoon",
+    "state": "D",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-diablo-1996",
+    "title": "Diablo",
+    "state": "E",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-diablo2-2000",
+    "title": "Diablo II",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-ds1-2002",
+    "title": "Dungeon Siege",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-ds2-2005",
+    "title": "Dungeon Siege II",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-ds3-2011",
+    "title": "Dungeon Siege III",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-aoe-1997",
+    "title": "Age of Empires",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-aoe2-1999",
+    "title": "Age of Empires II: The Age of Kings",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-starcraft-1998",
+    "title": "StarCraft",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-warcraft-1994",
+    "title": "Warcraft: Orcs & Humans",
+    "state": "D",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-warcraft2-1995",
+    "title": "Warcraft II: Tides of Darkness",
+    "state": "D",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-gp2-1996",
+    "title": "Grand Prix 2",
+    "state": "D",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "dos-gta-1997",
+    "title": "Grand Theft Auto",
+    "state": "D",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-gta2-1999",
+    "title": "Grand Theft Auto 2",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-gta3-2001",
+    "title": "Grand Theft Auto III",
+    "state": "E",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-maxpayne-2001",
+    "title": "Max Payne",
+    "state": "F",
+    "tests": "NOT TESTED"
+  },
+  {
+    "id": "win-maxpayne2-2003",
+    "title": "Max Payne 2: The Fall of Max Payne",
+    "state": "F",
+    "tests": "NOT TESTED"
+  }
+]
