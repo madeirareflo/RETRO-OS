@@ -53,7 +53,7 @@ function Run({open}:{open:(id:AppId)=>void}){
 export function AppHost({id,open,close,prefs,setPrefs,active,request,activateSaver}:{id:AppId;open:(id:AppId)=>void;close:()=>void;prefs:Preferences;setPrefs:(p:Partial<Preferences>)=>void;active:boolean;request?:FileRequest;activateSaver:()=>void}){
   const lang = prefs.language || 'pt-BR';
   switch(id){
-    case 'dos-freedoom':return <DosGame builtin="freedoom" active={active} close={close}/>;
+    case 'dos-freedoom':return <DosGame language={lang} builtin="freedoom" active={active} close={close}/>;
     case 'dos-klab':return <DosGame builtin="klab" active={active} close={close}/>;
     case 'dos-skyroads':return <DosGame builtin="skyroads" active={active} close={close}/>;
     case 'retrolauncher':return <RetroGameLauncher open={open}/>;

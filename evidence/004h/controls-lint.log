@@ -1,0 +1,15 @@
+
+C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\src\tests\inputBridge004h.test.mjs
+   4:38    error  'EventTarget' is not defined  no-undef
+   4:63    error  'EventTarget' is not defined  no-undef
+   4:155   error  'Event' is not defined        no-undef
+  12:36    error  'EventTarget' is not defined  no-undef
+  12:179   error  'Event' is not defined        no-undef
+  12:349   error  'Event' is not defined        no-undef
+  12:412   error  'EventTarget' is not defined  no-undef
+  12:592   error  'Event' is not defined        no-undef
+  12:1154  error  'Event' is not defined        no-undef
+  13:1315  error  'Event' is not defined        no-undef
+
+✖ 10 problems (10 errors, 0 warnings)
+

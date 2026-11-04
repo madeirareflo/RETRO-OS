@@ -1,0 +1,10 @@
+
+ RUN  v3.2.7 C:/Users/Davi LRD/.codex/.chatgpt-projects/g-p-6a3eef711d7881918fb955604f45fe02/RETRO-OS-004H-ANTI
+
+ ✓ src/tests/inputBridge004h.test.ts (5 tests) 11ms
+
+ Test Files  1 passed (1)
+      Tests  5 passed (5)
+   Start at  23:29:44
+   Duration  786ms (transform 102ms, setup 0ms, collect 60ms, tests 11ms, environment 0ms, prepare 361ms)
+
