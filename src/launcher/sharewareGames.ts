@@ -38,7 +38,7 @@ export const SHAREWARE_GAMES: SharewareGameConfig[] = [
     bytes: 254145,
     executable: 'PRINCE.EXE',
     cycles: 6000,
-    license: 'Demo jogável DOS oficial de 1990 distribuída publicamente.',
+    license: 'Demo DOS existente; redistribuição por terceiros ainda não comprovada.',
     source: 'https://github.com/jmechner/Prince-of-Persia-Apple-II',
     controls: 'Setas: mover/saltar/abaixar · Shift: ação/caminhar · Ctrl+K: modo teclado · Esc: menu/pausa'
   },
@@ -58,7 +58,7 @@ export const SHAREWARE_GAMES: SharewareGameConfig[] = [
     bytes: 2493854,
     executable: 'DOOM.EXE',
     cycles: 20000,
-    license: 'Shareware Episode 1 (DOOM1.WAD) oficial de redistribuição livre.',
+    license: 'Shareware Episode 1; direitos desta composição aguardam revisão documental.',
     source: 'https://github.com/id-Software/DOOM',
     controls: 'Setas: mover · Ctrl: disparar · Espaço: usar/abrir · F2: salvar · F3: carregar · Esc: menu'
   },
@@ -78,7 +78,7 @@ export const SHAREWARE_GAMES: SharewareGameConfig[] = [
     bytes: 5963697,
     executable: 'DUKE3D.EXE',
     cycles: 20000,
-    license: 'Shareware Episode 1 oficial de redistribuição autorizada pelos autores originais.',
+    license: 'Shareware 1.3d; licença impõe restrições a serviços online. Publicação não homologada.',
     source: 'https://legacy.3drealms.com/duke3d/',
     controls: 'Setas: mover · Ctrl: disparar · Espaço: usar · A: pular · Z: agachar · Esc: menu'
   },

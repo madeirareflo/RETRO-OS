@@ -33,7 +33,7 @@ export const CATALOG_37_GAMES: GameCatalogProfile003P[] = [
     },
     controlsHint: 'Setas: mover · Ctrl: disparar · Espaço: usar/abrir · F2: salvar · F3: carregar · Esc: menu · Shift+Esc: desktop',
     savesHint: 'DOOMSAV0.DSG a DOOMSAV5.DSG salvos nativamente no IndexedDB.',
-    licenseNotes: 'Shareware Episode 1 (DOOM1.WAD) é legalmente redistribuível. Jogo completo requer WAD registrado do usuário.',
+    licenseNotes: "Shareware presente no checkpoint privado; permissão de redistribuição desta composição ainda não comprovada. Versão completa requer dados legítimos do usuário.",
     legalSourceUrl: 'https://www.gog.com/game/doom_1993'
   },
   // 02
@@ -65,7 +65,7 @@ export const CATALOG_37_GAMES: GameCatalogProfile003P[] = [
     },
     controlsHint: 'Setas: mover · Ctrl: disparar · Espaço: usar/abrir · F2: salvar · F3: carregar · Esc: menu',
     savesHint: 'DOOMSAV?.DSG gravados localmente.',
-    licenseNotes: 'Comercial proprietário. Requer arquivos legítimos do usuário (GOG/Steam/eXoDOS).',
+    licenseNotes: 'Comercial proprietário. Requer arquivos legítimos do usuário (loja autorizada ou mídia original).',
     legalSourceUrl: 'https://www.gog.com/game/doom_ii'
   },
   // 03
@@ -97,7 +97,7 @@ export const CATALOG_37_GAMES: GameCatalogProfile003P[] = [
     },
     controlsHint: 'Mouse look / Teclado WASD ou setas · Esc: menu · Shift+Esc: liberar mouse',
     savesHint: 'Saves em ID1/S0.SAV a S9.SAV.',
-    licenseNotes: 'Shareware PAK0.PAK distribuível livremente. PAK1.PAK exige cópia comercial.',
+    licenseNotes: "Licença shareware exige condições e integridade da distribuição. Completude do pacote preparado requer revisão; dados comerciais não são livres.",
     legalSourceUrl: 'https://store.steampowered.com/app/2310/Quake/'
   },
   // 04
@@ -129,7 +129,7 @@ export const CATALOG_37_GAMES: GameCatalogProfile003P[] = [
     },
     controlsHint: 'Mouse + WASD · Esc: menu',
     savesHint: 'Subpastas de savegame em BASEQ2/SAVE.',
-    licenseNotes: 'Demo PAK0 distribuível; jogo completo requer arquivos comerciais.',
+    licenseNotes: "Dados comerciais exigem cópia legítima. Nenhuma redistribuição de demo foi homologada nesta missão.",
     legalSourceUrl: 'https://www.gog.com/game/quake_ii'
   },
   // 05
@@ -152,7 +152,7 @@ export const CATALOG_37_GAMES: GameCatalogProfile003P[] = [
     savePattern: 'BASEQ3/*.CFG',
     controlsHint: 'Mouse look 3D + Teclado',
     savesHint: 'Configurações de jogador em PK3/CFG local.',
-    licenseNotes: 'Motor ioquake3 GPL. Dados comerciais id Software (demo PK0 autorizada).',
+    licenseNotes: "Licença de motor não libera os dados comerciais. Nenhum pacote de demonstração foi homologado nesta missão.",
     legalSourceUrl: 'https://www.gog.com/game/quake_iii_arena'
   },
   // 06
@@ -247,8 +247,8 @@ export const CATALOG_37_GAMES: GameCatalogProfile003P[] = [
       oplMode: 'opl3'
     },
     controlsHint: 'Setas: mover · Ctrl: magia · Enter: usar item · [ ]: trocar item do inventário',
-    savesHint: 'HTICSAV0.DSG a HTICSAV5.DSG.',
-    licenseNotes: 'Shareware HERETIC1.WAD redistribuível livremente.',
+    savesHint: 'HTICSAV0.HSG a HTICSAV5.HSG.',
+    licenseNotes: "Licença incluída permite distribuição eletrônica comprimida sob condições e proíbe exploração comercial. Rever integridade antes de publicar.",
     legalSourceUrl: 'https://store.steampowered.com/app/2390/Heretic_Shadow_of_the_Serpent_Riders/'
   },
   // 09
@@ -280,7 +280,7 @@ export const CATALOG_37_GAMES: GameCatalogProfile003P[] = [
     },
     controlsHint: 'Setas/A/Z: olhar · Ctrl: atirar · Espaço: abrir · Esc: menu · F2/F3: salvar/carregar',
     savesHint: 'GAME0.SAV a GAME9.SAV.',
-    licenseNotes: 'Shareware v1.3d (DUKE3D.GRP) redistribuível legalmente.',
+    licenseNotes: "Licença incluída limita redistribuição por serviços online; autorização desta modalidade não comprovada. Publicação bloqueada até revisão.",
     legalSourceUrl: 'https://3drealms.com'
   },
   // 10
@@ -477,7 +477,7 @@ export const CATALOG_37_GAMES: GameCatalogProfile003P[] = [
     },
     controlsHint: 'Setas: andar/pular/abaixar · Shift: segurar bordas / andar cauteloso · Esc: menu/pausa',
     savesHint: 'PRINCE.SAV gerado nativamente pelo jogo.',
-    licenseNotes: 'Comercial Brøderbund / Mechner. Requer cópia legítima do usuário.',
+    licenseNotes: "Demo DOS existente em checkpoint privado. DEMOINFO não comprova permissão de redistribuição por terceiros; publicação bloqueada até documentação.",
     legalSourceUrl: 'https://www.gog.com'
   },
   // 18
