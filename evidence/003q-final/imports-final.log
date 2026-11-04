@@ -1,0 +1,15 @@
+
+Running 2 tests using 1 worker
+
+(node:34400) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34400) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chrome] › qa003q-final\games.spec.ts:7:1 › importação gráfica individual e lote com dados reais, erro e persistência (8.6s)
+(node:34496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [edge] › qa003q-final\games.spec.ts:7:1 › importação gráfica individual e lote com dados reais, erro e persistência (9.0s)
+
+  2 passed (20.8s)

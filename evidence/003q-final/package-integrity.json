@@ -1,0 +1,58 @@
+[
+  {
+    "id": "imported-private-prince",
+    "file": "prince-demo-private.zip",
+    "sha256": "d6762fd72bf74ef21f8ea34c5db87506b29a9c8ac89456ae56aaf675e66c4f1c",
+    "matches": true,
+    "bytes": 254145
+  },
+  {
+    "id": "imported-private-doom-shareware",
+    "file": "doom-shareware-private.zip",
+    "sha256": "0010d4a4851aa88344a87a8079d5c1ec15c688a20cb4e6ad2919a13d1f828a70",
+    "matches": true,
+    "bytes": 2493854
+  },
+  {
+    "id": "imported-private-duke-shareware",
+    "file": "duke-shareware-private.zip",
+    "sha256": "8ce1cc14233a4b7dfdc82bd944506c1d09545c83754b9741642e5519f4b5f30e",
+    "matches": true,
+    "bytes": 5963697
+  },
+  {
+    "id": "imported-private-heretic",
+    "file": "heretic-shareware-private.zip",
+    "sha256": "50170e162b653619d266ecaf719f9a0fe9df04b88e3c30a37e436b42df5640f2",
+    "matches": true,
+    "bytes": 2890661
+  },
+  {
+    "id": "imported-private-quake",
+    "file": "quake-shareware-private.zip",
+    "sha256": "f2958ff5ec2e8155f4d0b9a7af0eb1a6bea4446b4e34379f29129137f3ff3f89",
+    "matches": true,
+    "bytes": 8834732
+  },
+  {
+    "id": "dos-freedoom",
+    "file": "freedoom-phase1.zip",
+    "sha256": "d5339ddcb11816ae44c7b14cf5ac19f083481d0b75b1fd11203efe147d63ed44",
+    "matches": true,
+    "bytes": 10909138
+  },
+  {
+    "id": "dos-klab",
+    "file": "ken-labfull.zip",
+    "sha256": "643aa0ca8d1a7d2c88afecd952da00f3b912be8b83c4c1d2f4ab9b50491fadfd",
+    "matches": true,
+    "bytes": 940242
+  },
+  {
+    "id": "dos-skyroads",
+    "file": "skyroads.zip",
+    "sha256": "24762fe14196a642224288fe2063c9d0c0033be9c5b4b2f97fded09390803ee4",
+    "matches": true,
+    "bytes": 593740
+  }
+]

@@ -220,10 +220,10 @@ export function gameControlsManual(profileId?: string, title?: string): Controls
       summary: p.controlsHint || 'Clique na tela para focar · Shift+Esc: liberar mouse/teclado',
       start: 'Aguarde a inicialização. Pressione Enter ou Esc para acessar o menu da partida.',
       rows: hintRows,
-      pause: 'Pressione Pause ou Esc no jogo para pausar a emulação.',
-      menu: 'Esc alterna entre o jogo e o menu nativo.',
+      pause: 'Use a pausa indicada no manual da sua edição. Esta ajuda não pausa a emulação.',
+      menu: 'Os comandos de menu dependem da edição instalada; consulte os documentos do pacote.',
       exit: 'Sair para o desktop encerra a janela de emulação.',
-      audio: 'Áudio emulado Sound Blaster 16 / OPL3. Use o botão Ativar Áudio na barra se necessário.',
+      audio: 'Ative o áudio na janela. A configuração de som depende da edição e do SETUP; não foi homologada automaticamente.',
       saves: p.savesHint || 'Saves persistidos localmente no navegador.',
       sources: [{title: 'Referência legal do perfil', url: p.legalSourceUrl}]
     };

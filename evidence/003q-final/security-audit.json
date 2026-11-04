@@ -1,0 +1,66 @@
+{
+  "branch": "development/retro-os-003q-final-on-004f",
+  "head": "dfaa95db1f256a2865c3431707a20b17f5dcdf6e",
+  "workBase": "dfaa95db1f256a2865c3431707a20b17f5dcdf6e",
+  "antiSource": "df29402832e8ff143d5c11ab20dcb6636fa6a081",
+  "publicMain": "9e3ead900f70a16f6b2b2922704756aab1f47051",
+  "protectedChanges": [],
+  "forbiddenBuildFiles": [],
+  "payloads": [
+    "dist/emulation/DISQUETE.COM",
+    "dist/games/doom-shareware-private.zip",
+    "dist/games/duke-shareware-private.zip",
+    "dist/games/freedoom-phase1.zip",
+    "dist/games/heretic-shareware-private.zip",
+    "dist/games/ken-labfull.zip",
+    "dist/games/prince-demo-private.zip",
+    "dist/games/quake-shareware-private.zip",
+    "dist/games/skyroads.zip",
+    "dist/licenses/003m/FastDoom-source-1.0.0.zip",
+    "dist/vendor/js-dos-6.22.60/SOURCE.zip"
+  ],
+  "unexpectedPayloads": [],
+  "mediaInDeliveredHistory": [
+    {
+      "sha": "9a3ec6ade7a2fe0b4ba46b1f846543f0fbfc300a",
+      "path": "public/games/doom-shareware-private.zip"
+    },
+    {
+      "sha": "3001d786c3f0aacafa5688373f1522964a8d4764",
+      "path": "public/games/duke-shareware-private.zip"
+    },
+    {
+      "sha": "2306173e287fb2d7121f934d350711abcbc42a94",
+      "path": "public/games/freedoom-phase1.zip"
+    },
+    {
+      "sha": "4e3d447067c2c08e09aec5d9b49794eccd2d39a7",
+      "path": "public/games/heretic-shareware-private.zip"
+    },
+    {
+      "sha": "1321844ce77b10ee4fa46d0e146f3114f15c84f0",
+      "path": "public/games/ken-labfull.zip"
+    },
+    {
+      "sha": "cefe559f0ddf3b6f2e4352b5cccf3526a1678752",
+      "path": "public/games/prince-demo-private.zip"
+    },
+    {
+      "sha": "263d10c87d92790027567d352f50c43f72653a36",
+      "path": "public/games/quake-shareware-private.zip"
+    },
+    {
+      "sha": "ec61542958d9fa708e8ea58618d3552df41a3615",
+      "path": "public/games/skyroads.zip"
+    }
+  ],
+  "databasesInHistory": [],
+  "originalCom": {
+    "sha256": "f0c50f1717cd8a12ddbdd52addb675e79e9fb1b393ceb35a8af3f44bd3084726",
+    "bytes": 1955
+  },
+  "currentTextFiles": 319,
+  "historyTextBlobs": 780,
+  "credentialPatternFindings": [],
+  "limitations": "Escaneamento de padrões/nome, não pentest nem prova absoluta de ausência de PII em imagens/arquivos compactados. Histórico examinado é HEAD, o mesmo que será incluído no bundle de branch única."
+}

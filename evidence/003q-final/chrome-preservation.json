@@ -1,0 +1,40 @@
+{
+  "games": [
+    {
+      "id": "dos-freedoom",
+      "title": "Freedoom Phase 1 — FastDoom"
+    },
+    {
+      "id": "dos-klab",
+      "title": "Ken's Labyrinth 2.1"
+    },
+    {
+      "id": "dos-skyroads",
+      "title": "SkyRoads (1993)"
+    },
+    {
+      "id": "imported-private-prince",
+      "title": "Prince of Persia - demo DOS 1.0"
+    },
+    {
+      "id": "imported-private-doom-shareware",
+      "title": "DOOM - shareware DOS v1.9"
+    },
+    {
+      "id": "imported-private-duke-shareware",
+      "title": "Duke Nukem 3D - shareware DOS v1.3d"
+    },
+    {
+      "id": "imported-private-heretic",
+      "title": "Heretic - shareware DOS v1.2"
+    },
+    {
+      "id": "imported-private-quake",
+      "title": "Quake - shareware DOS v1.06"
+    }
+  ],
+  "packageRequests": 0,
+  "noReinstall": true,
+  "testBytesOnly": true,
+  "nativeSaveHomologated": false
+}

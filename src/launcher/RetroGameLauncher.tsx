@@ -11,7 +11,7 @@ import {BatchImportModal} from './BatchImportModal';
 import {SaveManagerModal} from './SaveManagerModal';
 import {StorageModal} from './StorageModal';
 import {ExoConverterModal} from './ExoConverterModal';
-import {removeGameCompletely} from './storageManager';
+import {removeGameCompletely,getGamePackage} from './storageManager';
 import {Icon} from '../components/Icon';
 import {GameGenreBadge} from './GameGenreBadge';
 import {read, write} from '../storage/local';
@@ -43,6 +43,7 @@ const PREDEFINED_COLLECTIONS = [
 ];
 
 export function RetroGameLauncher({open}: RetroGameLauncherProps) {
+  const [verifiedSelected,setVerifiedSelected]=useState<string|null>(null);
   const [runtimeOpen,setRuntimeOpen]=useState(false);const [runtimeInitial,setRuntimeInitial]=useState<string|undefined>();
   const [controlsManual,setControlsManual]=useState<ControlsManual|null>(null);
   const [manualOpen,setManualOpen]=useState(false);
@@ -66,6 +67,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
     return catalog.find(g => g.id === selectedId) || catalog[0];
   }, [catalog, selectedId]);
 
+  useEffect(()=>{let live=true;setVerifiedSelected(null);if(selectedGame?.metadataOrigin==='user-imported')void getGamePackage(selectedGame.id).then(data=>{if(live&&data)setVerifiedSelected(selectedGame.id)}).catch(()=>{});return ()=>{live=false}},[selectedGame]);
   // Filtering
   const filteredGames = useMemo(() => {
     return catalog.filter(game => {
@@ -153,11 +155,12 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
     setStatusMessage(`Jogo "${game.title}" removido com sucesso.`);
   }
 
-  function handlePlay(game: GameEntry) {
+  async function handlePlay(game: GameEntry) {
     if (!game.isPlayable || !game.appId || !registry.some(a=>a.id===game.appId)) {
       setStatusMessage('Jogo em modo de acervo/museu. Apenas títulos compatíveis possuem execução web.');
       return;
     }
+    if(game.metadataOrigin==='user-imported'){try{if(!await getGamePackage(game.id))throw Error('Pacote ausente no armazenamento.');}catch(error){setStatusMessage('Não foi possível iniciar: '+String(error));return}}
     // Record history
     const history = read<{id: string; at: string}[]>('gameHistory', []);
     write('gameHistory', [{id: game.id, at: new Date().toISOString()}, ...history.slice(0, 49)]);
@@ -405,7 +408,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
               </div>
 
               <div className="details-actions">{runtimeProfileId(selectedGame)&&<button onClick={()=>{setRuntimeInitial(runtimeProfileId(selectedGame));setRuntimeOpen(true)}}>{runtimeAction(selectedGame)?.canPlay?'Gerenciar instalação':runtimeAction(selectedGame)?.buttonLabel||'37 clássicos'}</button>}{gameControlsManual(selectedGame.preparedProfileId||runtimeProfileId(selectedGame)||selectedGame.id,selectedGame.title)&&<button onClick={()=>setControlsManual(gameControlsManual(selectedGame.preparedProfileId||runtimeProfileId(selectedGame)||selectedGame.id,selectedGame.title))}>Controles / Ajuda</button>}
-                {selectedGame.isPlayable ? (
+                {selectedGame.isPlayable&&(selectedGame.metadataOrigin!=='user-imported'||verifiedSelected===selectedGame.id) ? (
                   <button className="play-button" onClick={() => handlePlay(selectedGame)}>
                     ▶ Iniciar Jogo
                   </button>

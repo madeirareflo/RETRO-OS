@@ -216,3 +216,7 @@ A aplicação usa dependências de código aberto; o inventário abaixo registra
 Nomes de artistas, programas e jogos são referências editoriais às respectivas marcas. Links de loja não autorizam incorporação de arquivos. Requisitos e disponibilidade de cada título precisam da conferência indicada no catálogo. A demo sonora não imita faixa comercial identificável.
 
 Textos integrais MIT dos pacotes de runtime React, React DOM e Scheduler estão em docs/licenses/*-LICENSE.txt. Os demais metadados incluem ferramentas de desenvolvimento, que não são copiadas como executáveis nesta entrega.
+
+## Conclusão privada 003Q sobre a 004F
+
+Nenhuma dependência, engine externa ou arte de jogo nova foi acrescentada. Os oito pacotes herdados foram preservados byte a byte: Freedoom/FastDoom, Ken's Labyrinth, SkyRoads e as edições demo/shareware Prince DOS 1.0, DOOM DOS 1.9, Duke DOS 1.3d, Heretic DOS 1.2 e Quake DOS 1.06. Ver LICENSE-AUDIT-003Q.md e evidence/003q-final/package-integrity.json. As notas de licença herdadas não autorizam incorporar versões comerciais ou publicar esta entrega; nenhuma publicação foi executada.
