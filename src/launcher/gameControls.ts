@@ -117,7 +117,7 @@ const manuals: Record<string, ControlsManual> = {
     menu: 'Esc alterna o menu. Setas navegam e Enter seleciona a opção.',
     exit: 'Opção Quit Game no menu ou fechar a janela para retornar ao desktop.',
     audio: 'Música MIDI/OPL3 e efeitos Sound Blaster 16 nativos.',
-    saves: 'Slots HTICSAV0.DSG a HTICSAV5.DSG salvos nativamente no armazenamento do navegador.',
+    saves: 'Slots HTICSAV0.HSG a HTICSAV5.HSG salvos nativamente no armazenamento do navegador.',
     sources: [{title: 'Heretic Wiki e Referência Raven Software', url: 'https://heretic.fandom.com/wiki/Controls'}]
   },
   'dos-freedoom': {

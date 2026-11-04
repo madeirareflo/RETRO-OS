@@ -164,7 +164,7 @@ export function Desktop(){
         setMenu({x:Math.min(r?.left||20,innerWidth-220),y:Math.min(r?.bottom||20,innerHeight-220),app:icon?.dataset.appId as AppId|undefined});
       }
       if(e.altKey && e.key === 'Tab') {
-        e.preventDefault();
+        // Keep native OS/browser switching available; DOM fallback only.
         setWindows(ws => {
           const vis = ws.filter(w => !w.min);
           if (vis.length <= 1) return ws;

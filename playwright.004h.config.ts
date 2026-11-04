@@ -1,0 +1,1 @@
+import {defineConfig} from '@playwright/test';export default defineConfig({testDir:'qa004h',testMatch:'**/*.spec.ts',timeout:120000,workers:1,reporter:'list',outputDir:'test-results-004h',use:{baseURL:'http://127.0.0.1:5076',viewport:{width:1366,height:768},screenshot:'only-on-failure'},projects:[{name:'chrome',use:{channel:'chrome'}},{name:'edge',use:{channel:'msedge'}}]});

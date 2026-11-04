@@ -1,3 +1,4 @@
+const {Event,EventTarget}=globalThis;
 import { describe, it, expect } from 'vitest';
 import vm from 'node:vm';
 import fs from 'node:fs';
