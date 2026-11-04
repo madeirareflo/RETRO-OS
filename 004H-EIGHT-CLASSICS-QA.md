@@ -1,18 +1,37 @@
-# 004H-02 — auditoria individual dos oito clássicos
+# Oito clássicos — auditoria final 004H
 
-Checkpoint de auditoria inicial, não conclusão de homologação. Os oito pacotes tiveram tamanho, SHA256, lista de arquivos e documentos associados conferidos. Nenhum binário foi modificado.
+Oito pacotes íntegros e oito inicializações observadas em sessões Chrome. Gameplay representativo capturado nos oito, com ação de combate do Ken ainda não confirmada. Nenhum A. Quatro produziram sinal PCM (Quake, Freedoom, Prince e SkyRoads), quatro permaneceram silenciosos. Não houve escuta física de nenhum. Três títulos tiveram alguma recuperação nativa comprovada (DOOM, Heretic e Quake); DOOM/Heretic em ambos os navegadores, Quake limitado ao Chrome.
 
-| Pacote | Integridade | Execução observada no checkpoint | Pendências |
-|---|---|---|---|
-| DOOM shareware 1.9 | PASS | Partida, movimento, disparo, pausa e save/load nativo no Chrome | Áudio e Edge pendentes |
-| Heretic shareware 1.2 | PASS | Partida, movimento, disparo e save nativo no Chrome | Reabertura/áudio/Edge em revalidação |
-| Quake shareware 1.06 | PASS | Partida real e sinal PCM positivo no Chrome | Prompts de CD/joystick, mouse e save/load em verificação |
-| Duke Nukem 3D shareware 1.3d | PASS | NOT TESTED | CFG inicial com FXDevice/MusicDevice desativados; testar gameplay e setup |
-| Prince demo DOS 1.0 | PASS | NOT TESTED nesta missão | Revalidar Ctrl+K e foco após troca de janela |
-| Freedoom/FastDoom | PASS | NOT TESTED | Executar sequência individual |
-| Ken's Labyrinth 2.1 | PASS | NOT TESTED | Executar sequência individual |
-| SkyRoads 1993 | PASS | NOT TESTED | Executar sequência individual |
+## Prince of Persia - demo DOS 1.0 — C
 
-Os resultados finais substituirão este estado de checkpoint na matriz 004H. Traces iniciais tiveram erro de exportação no harness e não são usados para comprovar reabertura; o harness foi ajustado para não impedir context.close. O teste anterior apenas de menu não é contado como gameplay.
+Demo DOS 1.0; Ctrl+K e movimento comprovados; não homologar edição completa. Controles: PASS; áudio: PASS; save: NOT APPLICABLE; licença: BLOCKED. Hash completo em inventário. Capturas em `playability/chrome/prince-*`.
 
-Licenças: Prince traz descrição de demo, sem permissão inequívoca de redistribuição. Duke tem condições específicas para tipos de distribuição. Quake e Heretic trazem termos com restrições de uso/completude; os pacotes preparados não são automaticamente homologados para redistribuir. Parecer de publicação permanece bloqueado até auditoria final e autorização.
+## DOOM - shareware DOS v1.9 — B
+
+Shareware 1.9, episódio 1; áudio silencioso no teste atual; save/load Chrome e Edge. Controles: PASS; áudio: PARTIAL; save: PASS; licença: BLOCKED. Hash completo em inventário. Capturas em `playability/chrome/doom-*`.
+
+## Duke Nukem 3D - shareware DOS v1.3d — B
+
+Shareware 1.3d; gameplay observado; áudio desativado no CFG; load nativo não comprovado. Controles: PASS; áudio: PARTIAL; save: PARTIAL; licença: BLOCKED. Hash completo em inventário. Capturas em `playability/chrome/duke-*`.
+
+## Heretic - shareware DOS v1.2 — B
+
+Shareware 1.2; áudio silencioso; save/load Chrome e Edge. Controles: PASS; áudio: PARTIAL; save: PASS; licença: PARTIAL. Hash completo em inventário. Capturas em `playability/chrome/heretic-*`.
+
+## Quake - shareware DOS v1.06 — B
+
+Shareware 1.06; sem música de CD; save Chrome limitado; mouse relativo e Edge save pendentes. Controles: PASS; áudio: PASS; save: PASS; licença: PARTIAL. Hash completo em inventário. Capturas em `playability/chrome/quake-*`.
+
+## Freedoom Phase 1 — FastDoom — B
+
+FastDoom/Freedoom; snapshot FD1SV0.DSG sem roundtrip nativo completo. Controles: PASS; áudio: PASS; save: PARTIAL; licença: PARTIAL. Hash completo em inventário. Capturas em `playability/chrome/freedoom-*`.
+
+## Ken's Labyrinth 2.1 — B
+
+Ken 2.1; deslocamento até a porta observado, ação de combate e áudio pendentes. Controles: PARTIAL; áudio: PARTIAL; save: NOT TESTED; licença: PARTIAL. Hash completo em inventário. Capturas em `playability/chrome/ken-*`.
+
+## SkyRoads (1993) — C
+
+Corrida e salto observados; recordes e persistência pendentes. Controles: PASS; áudio: PASS; save: NOT TESTED; licença: PARTIAL. Hash completo em inventário. Capturas em `playability/chrome/skyroads-*`.
+
+Não são oito jogos completos licenciados para redistribuição. As cinco edições demo/shareware não homologam a versão comercial. Ver relatórios de licenças, saves e limitações por navegador.

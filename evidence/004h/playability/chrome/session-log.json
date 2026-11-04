@@ -1,0 +1,5212 @@
+[
+  {
+    "command": {
+      "trace": true
+    },
+    "at": "2026-11-04T02:02:53.947Z",
+    "elapsedMs": 49,
+    "diagnostics": {}
+  },
+  {
+    "command": {
+      "open": {
+        "id": "doom",
+        "title": "DOOM - shareware DOS v1.9"
+      },
+      "wait": 5000,
+      "shot": "boot"
+    },
+    "at": "2026-11-04T02:03:03.626Z",
+    "elapsedMs": 9675,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/doom-boot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "Enter",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 600,
+      "wait": 2000,
+      "shot": "new-game"
+    },
+    "at": "2026-11-04T02:03:10.109Z",
+    "elapsedMs": 6482,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 4,
+      "keyUpCount": 4,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/doom-new-game.png"
+  },
+  {
+    "command": {
+      "hold": "ArrowUp",
+      "ms": 900,
+      "audio": true,
+      "wait": 500,
+      "shot": "move"
+    },
+    "at": "2026-11-04T02:03:52.632Z",
+    "elapsedMs": 3524,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/doom-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space",
+        "Pause"
+      ],
+      "interval": 400,
+      "wait": 500,
+      "shot": "action-pause"
+    },
+    "at": "2026-11-04T02:03:56.159Z",
+    "elapsedMs": 3526,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 8,
+      "keyUpCount": 8,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/doom-action-pause.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Pause",
+        "F2"
+      ],
+      "interval": 500,
+      "shot": "save-menu"
+    },
+    "at": "2026-11-04T02:03:58.823Z",
+    "elapsedMs": 2660,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 10,
+      "keyUpCount": 10,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": false,
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/doom-save-menu.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "text": "H004DOOM",
+      "shot": "save-name"
+    },
+    "at": "2026-11-04T02:05:12.198Z",
+    "elapsedMs": 2461,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 19,
+      "keyUpCount": 19,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": false,
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/doom-save-name.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1800,
+      "shot": "saved"
+    },
+    "at": "2026-11-04T02:05:15.639Z",
+    "elapsedMs": 3438,
+    "diagnostics": {
+      "ready": true,
+      "saves": 2,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DOOMSAV0.DSG",
+          "bytes": 25350,
+          "sha256": "7168093654b06913853c7c545c3d9313d79a8165813c67e73adad82604891ee4"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 20,
+      "keyUpCount": 20,
+      "keyReleaseCount": 14,
+      "princeKeyboardPreset": false,
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/doom-saved.png"
+  },
+  {
+    "command": {
+      "hold": "ArrowRight",
+      "ms": 700,
+      "wait": 300,
+      "shot": "different-view"
+    },
+    "at": "2026-11-04T02:05:17.715Z",
+    "elapsedMs": 2075,
+    "diagnostics": {
+      "ready": true,
+      "saves": 2,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DOOMSAV0.DSG",
+          "bytes": 25350,
+          "sha256": "7168093654b06913853c7c545c3d9313d79a8165813c67e73adad82604891ee4"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 21,
+      "keyUpCount": 21,
+      "keyReleaseCount": 16,
+      "princeKeyboardPreset": false,
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/doom-different-view.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "shot": "desktop-after-doom"
+    },
+    "at": "2026-11-04T02:05:18.512Z",
+    "elapsedMs": 795,
+    "diagnostics": {},
+    "file": "evidence/004h/playability/chrome/doom-desktop-after-doom.png"
+  },
+  {
+    "command": {
+      "restart": true,
+      "shot": "browser-reopened"
+    },
+    "at": "2026-11-04T02:05:35.279Z",
+    "elapsedMs": 16764,
+    "diagnostics": {},
+    "file": "evidence/004h/playability/chrome/doom-browser-reopened.png"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "doom",
+        "title": "DOOM - shareware DOS v1.9"
+      },
+      "wait": 4000
+    },
+    "at": "2026-11-04T02:05:42.344Z",
+    "elapsedMs": 7060,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DOOMSAV0.DSG",
+          "bytes": 25350,
+          "sha256": "7168093654b06913853c7c545c3d9313d79a8165813c67e73adad82604891ee4"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    }
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "F3"
+      ],
+      "interval": 500,
+      "shot": "load-menu"
+    },
+    "at": "2026-11-04T02:05:44.225Z",
+    "elapsedMs": 1880,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DOOMSAV0.DSG",
+          "bytes": 25350,
+          "sha256": "7168093654b06913853c7c545c3d9313d79a8165813c67e73adad82604891ee4"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 2,
+      "keyUpCount": 2,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/doom-load-menu.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "F3"
+      ],
+      "interval": 450,
+      "shot": "load-slot"
+    },
+    "at": "2026-11-04T02:06:22.096Z",
+    "elapsedMs": 1692,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DOOMSAV0.DSG",
+          "bytes": 25350,
+          "sha256": "7168093654b06913853c7c545c3d9313d79a8165813c67e73adad82604891ee4"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 4,
+      "keyUpCount": 4,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/doom-load-slot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1800,
+      "shot": "loaded-progress"
+    },
+    "at": "2026-11-04T02:06:24.963Z",
+    "elapsedMs": 2864,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DOOMSAV0.DSG",
+          "bytes": 25350,
+          "sha256": "7168093654b06913853c7c545c3d9313d79a8165813c67e73adad82604891ee4"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/doom-loaded-progress.png"
+  },
+  {
+    "command": {
+      "close": true
+    },
+    "at": "2026-11-04T02:06:25.253Z",
+    "elapsedMs": 286,
+    "diagnostics": {}
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "command": {
+      "trace": true
+    },
+    "at": "2026-11-04T02:08:05.314Z",
+    "elapsedMs": 33,
+    "diagnostics": {}
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "heretic",
+        "title": "Heretic - shareware DOS v1.2"
+      },
+      "wait": 5000,
+      "shot": "boot"
+    },
+    "at": "2026-11-04T02:08:13.815Z",
+    "elapsedMs": 8497,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.512
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/heretic-boot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "Enter",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 650,
+      "wait": 2000,
+      "shot": "new-game"
+    },
+    "at": "2026-11-04T02:08:19.951Z",
+    "elapsedMs": 6133,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 4,
+      "keyUpCount": 4,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.512
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/heretic-new-game.png"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowUp",
+      "ms": 800,
+      "wait": 500,
+      "shot": "move"
+    },
+    "at": "2026-11-04T02:08:22.875Z",
+    "elapsedMs": 2922,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 2.7013333333333334
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/heretic-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "interval": 500,
+      "shot": "action"
+    },
+    "at": "2026-11-04T02:08:24.947Z",
+    "elapsedMs": 2071,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 7,
+      "keyUpCount": 7,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 4.770666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/heretic-action.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "F2",
+        "Enter"
+      ],
+      "interval": 400,
+      "text": "H004HERETIC",
+      "shot": "save-name"
+    },
+    "at": "2026-11-04T02:08:28.096Z",
+    "elapsedMs": 3146,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 20,
+      "keyUpCount": 20,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": false,
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 7.92
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/heretic-save-name.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1300,
+      "shot": "saved"
+    },
+    "at": "2026-11-04T02:08:30.802Z",
+    "elapsedMs": 2704,
+    "diagnostics": {
+      "ready": true,
+      "saves": 2,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "5c4a23c71ac59c0e3ba3dcc16ca7c91554e0493fc6aba80f0c91057ad54f8b9c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 21,
+      "keyUpCount": 21,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": false,
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 10.621333333333334
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/heretic-saved.png"
+  },
+  {
+    "command": {
+      "restart": true,
+      "shot": "heretic-browser-reopened"
+    },
+    "error": "Error: tracing.stop: file data stream has unexpected number of bytes"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "heretic",
+        "title": "Heretic - shareware DOS v1.2"
+      },
+      "wait": 4000
+    },
+    "at": "2026-11-04T02:09:58.215Z",
+    "elapsedMs": 6662,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "5c4a23c71ac59c0e3ba3dcc16ca7c91554e0493fc6aba80f0c91057ad54f8b9c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    }
+  },
+  {
+    "command": {
+      "keys": [
+        "F3"
+      ],
+      "wait": 500,
+      "shot": "load-slot"
+    },
+    "at": "2026-11-04T02:09:59.858Z",
+    "elapsedMs": 1641,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "5c4a23c71ac59c0e3ba3dcc16ca7c91554e0493fc6aba80f0c91057ad54f8b9c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 1,
+      "keyUpCount": 1,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/heretic-load-slot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1500,
+      "shot": "loaded-progress"
+    },
+    "at": "2026-11-04T02:10:02.418Z",
+    "elapsedMs": 2559,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "5c4a23c71ac59c0e3ba3dcc16ca7c91554e0493fc6aba80f0c91057ad54f8b9c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 2,
+      "keyUpCount": 2,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/heretic-loaded-progress.png"
+  },
+  {
+    "command": {
+      "close": true
+    },
+    "at": "2026-11-04T02:10:02.739Z",
+    "elapsedMs": 318,
+    "diagnostics": {}
+  },
+  {
+    "command": {
+      "exit": true
+    },
+    "error": "Error: tracing.stop: Must start tracing before stopping"
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "heretic",
+        "title": "Heretic - shareware DOS v1.2"
+      },
+      "wait": 4000
+    },
+    "at": "2026-11-04T02:12:28.392Z",
+    "elapsedMs": 6912,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "5c4a23c71ac59c0e3ba3dcc16ca7c91554e0493fc6aba80f0c91057ad54f8b9c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 26,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5413333333333333
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    }
+  },
+  {
+    "command": {
+      "keys": [
+        "F3",
+        "Enter"
+      ],
+      "interval": 600,
+      "audio": true,
+      "wait": 1000,
+      "shot": "real-browser-restored"
+    },
+    "at": "2026-11-04T02:12:31.944Z",
+    "elapsedMs": 3546,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "5c4a23c71ac59c0e3ba3dcc16ca7c91554e0493fc6aba80f0c91057ad54f8b9c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 2,
+      "keyUpCount": 2,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 155,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 3.541333333333333
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/heretic-real-browser-restored.png"
+  },
+  {
+    "command": {
+      "hold": "ArrowLeft",
+      "ms": 650,
+      "shot": "audio-probe"
+    },
+    "at": "2026-11-04T02:12:33.120Z",
+    "elapsedMs": 1174,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "5c4a23c71ac59c0e3ba3dcc16ca7c91554e0493fc6aba80f0c91057ad54f8b9c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 3,
+      "keyUpCount": 3,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 206,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 4.72
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/heretic-audio-probe.png"
+  },
+  {
+    "command": {
+      "close": true
+    },
+    "at": "2026-11-04T02:12:33.384Z",
+    "elapsedMs": 260,
+    "diagnostics": {}
+  },
+  {
+    "command": {
+      "trace": true
+    },
+    "at": "2026-11-04T02:12:33.393Z",
+    "elapsedMs": 6,
+    "diagnostics": {}
+  },
+  {
+    "command": {
+      "open": {
+        "id": "quake",
+        "title": "Quake - shareware DOS v1.06"
+      },
+      "wait": 22000,
+      "shot": "cd-warning"
+    },
+    "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Sair para o desktop', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button>Sair para o desktop</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter",
+        "Escape",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 800,
+      "wait": 2500,
+      "shot": "new-game"
+    },
+    "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Focar no jogo', exact: true })\u001b[22m\n"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "quake",
+        "title": "Quake - shareware DOS v1.06"
+      },
+      "wait": 22000,
+      "shot": "cd-warning"
+    },
+    "at": "2026-11-04T02:15:30.079Z",
+    "elapsedMs": 25352,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5013333333333333
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-cd-warning.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter",
+        "Escape",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 800,
+      "wait": 3000,
+      "shot": "new-game"
+    },
+    "at": "2026-11-04T02:15:37.220Z",
+    "elapsedMs": 7138,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 4,
+      "keyUpCount": 4,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5013333333333333
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-new-game.png"
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowUp",
+      "ms": 1200,
+      "wait": 600,
+      "shot": "move"
+    },
+    "at": "2026-11-04T02:15:40.117Z",
+    "elapsedMs": 2894,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.7791483998298645,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 126,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 2.88
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "interval": 500,
+      "wait": 500,
+      "shot": "action"
+    },
+    "at": "2026-11-04T02:15:42.306Z",
+    "elapsedMs": 2185,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 1,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 7,
+      "keyUpCount": 7,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 220,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 5.072
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-action.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "ArrowUp",
+        "ArrowUp",
+        "Enter"
+      ],
+      "interval": 600,
+      "wait": 6000,
+      "shot": "level-start"
+    },
+    "at": "2026-11-04T02:16:38.562Z",
+    "elapsedMs": 8652,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 1,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 10,
+      "keyUpCount": 10,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 2643,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 61.32
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-level-start.png"
+  },
+  {
+    "command": {
+      "hold": "ArrowUp",
+      "ms": 900,
+      "shot": "level-move"
+    },
+    "at": "2026-11-04T02:16:40.050Z",
+    "elapsedMs": 1486,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 1,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 11,
+      "keyUpCount": 11,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 2707,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 62.81066666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-level-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "interval": 500,
+      "shot": "level-action"
+    },
+    "at": "2026-11-04T02:16:41.800Z",
+    "elapsedMs": 1745,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 1,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 13,
+      "keyUpCount": 13,
+      "keyReleaseCount": 14,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 2780,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 64.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-level-action.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Backquote"
+      ],
+      "text": "save h004q",
+      "shot": "save-console"
+    },
+    "at": "2026-11-04T02:18:46.049Z",
+    "elapsedMs": 2162,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 1,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 24,
+      "keyUpCount": 24,
+      "keyReleaseCount": 16,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 8132,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 188.81066666666666
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-save-console.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter",
+        "Backquote"
+      ],
+      "interval": 600,
+      "wait": 1500,
+      "shot": "saved"
+    },
+    "at": "2026-11-04T02:18:49.493Z",
+    "elapsedMs": 3443,
+    "diagnostics": {
+      "ready": true,
+      "saves": 3,
+      "audioPeak": 1,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 26,
+      "keyUpCount": 26,
+      "keyReleaseCount": 18,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 8280,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 192.25066666666666
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-saved.png"
+  },
+  {
+    "command": {
+      "hold": "ArrowRight",
+      "ms": 800,
+      "shot": "different-view"
+    },
+    "at": "2026-11-04T02:18:50.910Z",
+    "elapsedMs": 1411,
+    "diagnostics": {
+      "ready": true,
+      "saves": 3,
+      "audioPeak": 1,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 27,
+      "keyUpCount": 27,
+      "keyReleaseCount": 20,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 8341,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 193.672
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-different-view.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 600
+    },
+    "at": "2026-11-04T02:18:51.803Z",
+    "elapsedMs": 889,
+    "diagnostics": {}
+  },
+  {
+    "type": "trace",
+    "path": "evidence/004h/playability/chrome/quake-1793758731805-trace.zip",
+    "passed": true
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "command": {
+      "restart": true,
+      "shot": "browser-reopened"
+    },
+    "at": "2026-11-04T02:19:09.630Z",
+    "elapsedMs": 17825,
+    "diagnostics": {},
+    "file": "evidence/004h/playability/chrome/quake-browser-reopened.png"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "quake",
+        "title": "Quake - shareware DOS v1.06"
+      },
+      "wait": 20000
+    },
+    "at": "2026-11-04T02:19:32.667Z",
+    "elapsedMs": 23035,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 26,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    }
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter",
+        "Backquote"
+      ],
+      "interval": 650,
+      "text": "load h004q",
+      "shot": "load-console"
+    },
+    "at": "2026-11-04T02:19:35.916Z",
+    "elapsedMs": 3246,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 12,
+      "keyUpCount": 12,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 26,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-load-console.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 6000,
+      "shot": "loaded-progress"
+    },
+    "at": "2026-11-04T02:19:42.979Z",
+    "elapsedMs": 7061,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 13,
+      "keyUpCount": 13,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 26,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-loaded-progress.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape"
+      ],
+      "wait": 3000,
+      "shot": "skip-phantom-joystick"
+    },
+    "at": "2026-11-04T02:21:47.166Z",
+    "elapsedMs": 4093,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 14,
+      "keyUpCount": 14,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 26,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-skip-phantom-joystick.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Backquote"
+      ],
+      "text": "load h004q",
+      "shot": "load-native-command"
+    },
+    "at": "2026-11-04T02:21:49.404Z",
+    "elapsedMs": 2235,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 25,
+      "keyUpCount": 25,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 26,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-load-native-command.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 5000,
+      "shot": "real-restored-progress"
+    },
+    "at": "2026-11-04T02:21:55.514Z",
+    "elapsedMs": 6106,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 26,
+      "keyUpCount": 26,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 26,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-real-restored-progress.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Backquote"
+      ],
+      "text": "save h004qr"
+    },
+    "at": "2026-11-04T02:21:57.658Z",
+    "elapsedMs": 2141,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 38,
+      "keyUpCount": 38,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 26,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    }
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter",
+        "Backquote"
+      ],
+      "interval": 500,
+      "wait": 1200,
+      "shot": "restored-resaved"
+    },
+    "at": "2026-11-04T02:22:00.667Z",
+    "elapsedMs": 3004,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 40,
+      "keyUpCount": 40,
+      "keyReleaseCount": 14,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 26,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-restored-resaved.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 700
+    },
+    "at": "2026-11-04T02:22:01.632Z",
+    "elapsedMs": 961,
+    "diagnostics": {}
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "quake",
+        "title": "Quake - shareware DOS v1.06"
+      },
+      "wait": 18000,
+      "shot": "corrected-startup"
+    },
+    "at": "2026-11-04T02:27:16.818Z",
+    "elapsedMs": 22339,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.512
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-corrected-startup.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 700,
+      "wait": 4000,
+      "shot": "corrected-new-game"
+    },
+    "at": "2026-11-04T02:27:23.935Z",
+    "elapsedMs": 7112,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 3,
+      "keyUpCount": 3,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.512
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-corrected-new-game.png"
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowUp",
+      "ms": 750,
+      "shot": "corrected-move"
+    },
+    "at": "2026-11-04T02:27:25.846Z",
+    "elapsedMs": 1907,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.20132064819335938,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 4,
+      "keyUpCount": 4,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 82,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 1.8613333333333333
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-corrected-move.png"
+  },
+  {
+    "command": {
+      "mouse": {
+        "capture": true,
+        "dx": 100,
+        "fire": true
+      },
+      "shot": "mouse-response"
+    },
+    "at": "2026-11-04T02:27:28.201Z",
+    "elapsedMs": 2350,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.20132064819335938,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 4,
+      "keyUpCount": 4,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "mouseDownCount": 2,
+      "mouseMoveCount": 9,
+      "qaPcm": {
+        "buffers": 184,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 4.221333333333333
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-mouse-response.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Shift+Escape"
+      ],
+      "wait": 300,
+      "shot": "mouse-released"
+    },
+    "at": "2026-11-04T02:27:29.648Z",
+    "elapsedMs": 1443,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.20132064819335938,
+      "wasm": true,
+      "heapBytes": 134217728,
+      "state": [],
+      "files": [
+        {
+          "name": "ID1/H004Q.SAV",
+          "bytes": 36341,
+          "sha256": "7105a74f0c89f3115d4f400799af29ad8a27ab06412391ee964fdb5261b68076"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 13,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "mouseDownCount": 2,
+      "mouseMoveCount": 9,
+      "qaPcm": {
+        "buffers": 246,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 5.672
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/quake-mouse-released.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 700
+    },
+    "at": "2026-11-04T02:29:42.270Z",
+    "elapsedMs": 1134,
+    "diagnostics": {}
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "command": {
+      "open": {
+        "id": "duke",
+        "title": "Duke Nukem 3D - shareware DOS v1.3d",
+        "keys": [
+          "Escape",
+          "Enter",
+          "Enter",
+          "Enter"
+        ],
+        "save": "H004DUKE"
+      },
+      "wait": 5000,
+      "shot": "boot"
+    },
+    "at": "2026-11-04T02:31:15.735Z",
+    "elapsedMs": 8002,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.49066666666666664
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 640,
+        "height": 400
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-boot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "Enter",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 650,
+      "wait": 2000,
+      "shot": "new-game"
+    },
+    "at": "2026-11-04T02:31:21.334Z",
+    "elapsedMs": 5597,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 4,
+      "keyUpCount": 4,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.49066666666666664
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 640,
+        "height": 400
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-new-game.png"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowUp",
+      "ms": 700,
+      "wait": 300,
+      "shot": "move"
+    },
+    "at": "2026-11-04T02:31:23.475Z",
+    "elapsedMs": 2139,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 89,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 2
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 640,
+        "height": 400
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-move.png"
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "interval": 500,
+      "wait": 400,
+      "shot": "action"
+    },
+    "at": "2026-11-04T02:31:25.731Z",
+    "elapsedMs": 2254,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 7,
+      "keyUpCount": 7,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 186,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 4.250666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-action.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "F2",
+        "Enter"
+      ],
+      "interval": 400,
+      "text": "H004DUKE",
+      "shot": "save-name"
+    },
+    "at": "2026-11-04T02:31:28.211Z",
+    "elapsedMs": 2478,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 17,
+      "keyUpCount": 17,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 293,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 6.730666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-save-name.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1200,
+      "shot": "saved"
+    },
+    "at": "2026-11-04T02:31:30.466Z",
+    "elapsedMs": 2254,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 18,
+      "keyUpCount": 18,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 390,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 8.992
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-saved.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 600,
+      "shot": "desktop-after-exit"
+    },
+    "at": "2026-11-04T02:31:31.675Z",
+    "elapsedMs": 1208,
+    "diagnostics": {},
+    "file": "evidence/004h/playability/chrome/duke-desktop-after-exit.png"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "freedoom",
+        "title": "Freedoom Phase 1 — FastDoom",
+        "keys": [
+          "Escape",
+          "Enter",
+          "Enter",
+          "Enter"
+        ],
+        "save": "H004FREE"
+      },
+      "wait": 5000,
+      "shot": "boot"
+    },
+    "at": "2026-11-04T02:31:40.958Z",
+    "elapsedMs": 9279,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 0,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5706666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/freedoom-boot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "Enter",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 650,
+      "wait": 2000,
+      "shot": "new-game"
+    },
+    "at": "2026-11-04T02:31:46.537Z",
+    "elapsedMs": 5575,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 4,
+      "keyUpCount": 4,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5706666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/freedoom-new-game.png"
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowUp",
+      "ms": 700,
+      "wait": 300,
+      "shot": "move"
+    },
+    "at": "2026-11-04T02:31:48.686Z",
+    "elapsedMs": 2147,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.03657226637005806,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 92,
+        "peak": 0.999969482421875
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 2.1306666666666665
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/freedoom-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "interval": 500,
+      "wait": 400,
+      "shot": "action"
+    },
+    "at": "2026-11-04T02:31:50.856Z",
+    "elapsedMs": 2167,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.5176727175712585,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 7,
+      "keyUpCount": 7,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 185,
+        "peak": 0.999969482421875
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 4.301333333333333
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/freedoom-action.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "F2",
+        "Enter"
+      ],
+      "interval": 400,
+      "text": "H004FREE",
+      "shot": "save-name"
+    },
+    "at": "2026-11-04T02:31:53.332Z",
+    "elapsedMs": 2474,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.520794689655304,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 17,
+      "keyUpCount": 17,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 291,
+        "peak": 0.999969482421875
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 6.778666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/freedoom-save-name.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1200,
+      "shot": "saved"
+    },
+    "at": "2026-11-04T02:31:55.602Z",
+    "elapsedMs": 2268,
+    "diagnostics": {
+      "ready": true,
+      "saves": 2,
+      "audioPeak": 0.520794689655304,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "FD1SV0.DSG",
+          "bytes": 65538,
+          "sha256": "eedc17d12b6821955d7129e0642f71dae67fc0c9c56002ffc0186777ab38d529"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 18,
+      "keyUpCount": 18,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 389,
+        "peak": 0.999969482421875
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 9.04
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/freedoom-saved.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 600,
+      "shot": "desktop-after-exit"
+    },
+    "at": "2026-11-04T02:31:56.811Z",
+    "elapsedMs": 1206,
+    "diagnostics": {},
+    "file": "evidence/004h/playability/chrome/freedoom-desktop-after-exit.png"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "ken",
+        "title": "Ken's Labyrinth 2.1",
+        "keys": [
+          "Enter",
+          "Enter"
+        ]
+      },
+      "wait": 5000,
+      "shot": "boot"
+    },
+    "at": "2026-11-04T02:32:04.116Z",
+    "elapsedMs": 7303,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 0,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5306666666666666
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/ken-boot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter",
+        "Enter"
+      ],
+      "interval": 650,
+      "wait": 2000,
+      "shot": "new-game"
+    },
+    "at": "2026-11-04T02:32:08.162Z",
+    "elapsedMs": 4044,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 2,
+      "keyUpCount": 2,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5306666666666666
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/ken-new-game.png"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowUp",
+      "ms": 700,
+      "wait": 300,
+      "shot": "move"
+    },
+    "at": "2026-11-04T02:32:10.221Z",
+    "elapsedMs": 2057,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 3,
+      "keyUpCount": 3,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 87,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 2
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/ken-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "interval": 500,
+      "wait": 400,
+      "shot": "action"
+    },
+    "at": "2026-11-04T02:32:12.324Z",
+    "elapsedMs": 2099,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 178,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 4.112
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 360,
+        "height": 240
+      }
+    },
+    "file": "evidence/004h/playability/chrome/ken-action.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 600,
+      "shot": "desktop-after-exit"
+    },
+    "at": "2026-11-04T02:32:13.453Z",
+    "elapsedMs": 1127,
+    "diagnostics": {},
+    "file": "evidence/004h/playability/chrome/ken-desktop-after-exit.png"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "skyroads",
+        "title": "SkyRoads (1993)",
+        "keys": [
+          "Enter",
+          "Enter"
+        ]
+      },
+      "wait": 5000,
+      "shot": "boot"
+    },
+    "at": "2026-11-04T02:32:20.383Z",
+    "elapsedMs": 6926,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 0,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 25,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5706666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-boot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter",
+        "Enter"
+      ],
+      "interval": 650,
+      "wait": 2000,
+      "shot": "new-game"
+    },
+    "at": "2026-11-04T02:32:24.449Z",
+    "elapsedMs": 4064,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 2,
+      "keyUpCount": 2,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 25,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5706666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-new-game.png"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowUp",
+      "ms": 700,
+      "wait": 300,
+      "shot": "move"
+    },
+    "at": "2026-11-04T02:32:26.434Z",
+    "elapsedMs": 1983,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.4230194091796875,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 3,
+      "keyUpCount": 3,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 87,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 2.010666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "interval": 500,
+      "wait": 400,
+      "shot": "action"
+    },
+    "at": "2026-11-04T02:32:28.670Z",
+    "elapsedMs": 2235,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.4290584623813629,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 183,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 4.24
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-action.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 600,
+      "shot": "desktop-after-exit"
+    },
+    "at": "2026-11-04T02:32:29.766Z",
+    "elapsedMs": 1094,
+    "diagnostics": {},
+    "file": "evidence/004h/playability/chrome/skyroads-desktop-after-exit.png"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "prince",
+        "title": "Prince of Persia - demo DOS 1.0",
+        "keys": [
+          "Enter"
+        ]
+      },
+      "wait": 5000,
+      "shot": "boot"
+    },
+    "at": "2026-11-04T02:32:36.693Z",
+    "elapsedMs": 6924,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": true,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/prince-boot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "interval": 650,
+      "wait": 2000,
+      "shot": "new-game"
+    },
+    "at": "2026-11-04T02:32:39.945Z",
+    "elapsedMs": 3248,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 1,
+      "keyUpCount": 1,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": true,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/prince-new-game.png"
+  },
+  {
+    "command": {
+      "prince": true,
+      "wait": 1800,
+      "shot": "keyboard-mode"
+    },
+    "at": "2026-11-04T02:32:42.441Z",
+    "elapsedMs": 2493,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 3,
+      "keyUpCount": 3,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": true,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/prince-keyboard-mode.png"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowRight",
+      "ms": 700,
+      "wait": 300,
+      "shot": "move"
+    },
+    "at": "2026-11-04T02:32:44.535Z",
+    "elapsedMs": 2092,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.15305176377296448,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 4,
+      "keyUpCount": 4,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": true,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 89,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 2.0613333333333332
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/prince-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "ArrowUp"
+      ],
+      "interval": 500,
+      "wait": 400,
+      "shot": "action"
+    },
+    "at": "2026-11-04T02:32:46.072Z",
+    "elapsedMs": 1535,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.15305176377296448,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": true,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 155,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 3.6
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/prince-action.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 600,
+      "shot": "desktop-after-exit"
+    },
+    "at": "2026-11-04T02:32:47.171Z",
+    "elapsedMs": 1096,
+    "diagnostics": {},
+    "file": "evidence/004h/playability/chrome/prince-desktop-after-exit.png"
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "command": {
+      "open": {
+        "id": "duke",
+        "title": "Duke Nukem 3D - shareware DOS v1.3d",
+        "keys": [
+          "Escape",
+          "Enter",
+          "Enter",
+          "Enter",
+          "Enter"
+        ],
+        "save": "H004DUKE"
+      },
+      "wait": 14000,
+      "shot": "deep-boot"
+    },
+    "at": "2026-11-04T02:36:52.182Z",
+    "elapsedMs": 16975,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 26,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.52
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 640,
+        "height": 400
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-deep-boot.png"
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "Enter",
+        "Enter",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 1000,
+      "wait": 2500,
+      "shot": "deep-new-game"
+    },
+    "at": "2026-11-04T02:37:00.813Z",
+    "elapsedMs": 8628,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 26,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.52
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-deep-new-game.png"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowUp",
+      "ms": 700,
+      "wait": 300,
+      "shot": "deep-move"
+    },
+    "at": "2026-11-04T02:37:02.962Z",
+    "elapsedMs": 2147,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 6,
+      "keyUpCount": 6,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 92,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 2.050666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-deep-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "interval": 500,
+      "wait": 400,
+      "shot": "deep-action"
+    },
+    "at": "2026-11-04T02:37:05.266Z",
+    "elapsedMs": 2301,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 8,
+      "keyUpCount": 8,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 190,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 4.36
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-deep-action.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "F2",
+        "Enter"
+      ],
+      "interval": 400,
+      "text": "H004DUKE",
+      "shot": "save-name"
+    },
+    "at": "2026-11-04T02:37:07.824Z",
+    "elapsedMs": 2555,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 18,
+      "keyUpCount": 18,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 301,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 6.92
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-save-name.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1200,
+      "shot": "saved"
+    },
+    "at": "2026-11-04T02:37:10.272Z",
+    "elapsedMs": 2445,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 19,
+      "keyUpCount": 19,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 406,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 9.36
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-saved.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 600,
+      "shot": "desktop-after-exit"
+    },
+    "at": "2026-11-04T02:37:11.393Z",
+    "elapsedMs": 1119,
+    "diagnostics": {},
+    "file": "evidence/004h/playability/chrome/duke-desktop-after-exit.png"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "ken",
+        "title": "Ken's Labyrinth 2.1",
+        "keys": [
+          "Enter",
+          "Enter",
+          "Enter",
+          "Enter",
+          "Enter"
+        ]
+      },
+      "wait": 5000,
+      "shot": "deep-boot"
+    },
+    "at": "2026-11-04T02:37:18.353Z",
+    "elapsedMs": 6957,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 0,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.52
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/ken-deep-boot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter",
+        "Enter",
+        "Enter",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 1000,
+      "wait": 2500,
+      "shot": "deep-new-game"
+    },
+    "at": "2026-11-04T02:37:26.949Z",
+    "elapsedMs": 8593,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.52
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 360,
+        "height": 240
+      }
+    },
+    "file": "evidence/004h/playability/chrome/ken-deep-new-game.png"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowUp",
+      "ms": 700,
+      "wait": 300,
+      "shot": "deep-move"
+    },
+    "at": "2026-11-04T02:37:28.997Z",
+    "elapsedMs": 2046,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 6,
+      "keyUpCount": 6,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 86,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 1.9706666666666666
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 360,
+        "height": 240
+      }
+    },
+    "file": "evidence/004h/playability/chrome/ken-deep-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "interval": 500,
+      "wait": 400,
+      "shot": "deep-action"
+    },
+    "at": "2026-11-04T02:37:31.266Z",
+    "elapsedMs": 2267,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 8,
+      "keyUpCount": 8,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 184,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 4.24
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 360,
+        "height": 240
+      }
+    },
+    "file": "evidence/004h/playability/chrome/ken-deep-action.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 600,
+      "shot": "desktop-after-exit"
+    },
+    "at": "2026-11-04T02:37:32.393Z",
+    "elapsedMs": 1125,
+    "diagnostics": {},
+    "file": "evidence/004h/playability/chrome/ken-desktop-after-exit.png"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "skyroads",
+        "title": "SkyRoads (1993)",
+        "keys": [
+          "Enter",
+          "Enter",
+          "Enter",
+          "Enter",
+          "Enter"
+        ]
+      },
+      "wait": 5000,
+      "shot": "deep-boot"
+    },
+    "at": "2026-11-04T02:37:39.366Z",
+    "elapsedMs": 6969,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 0,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 25,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-deep-boot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter",
+        "Enter",
+        "Enter",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 1000,
+      "wait": 2500,
+      "shot": "deep-new-game"
+    },
+    "at": "2026-11-04T02:37:48.107Z",
+    "elapsedMs": 8740,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 25,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-deep-new-game.png"
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowUp",
+      "ms": 700,
+      "wait": 300,
+      "shot": "deep-move"
+    },
+    "at": "2026-11-04T02:37:50.122Z",
+    "elapsedMs": 2013,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.6399784088134766,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 6,
+      "keyUpCount": 6,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 89,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 2.050666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-deep-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "interval": 500,
+      "wait": 400,
+      "shot": "deep-action"
+    },
+    "at": "2026-11-04T02:37:52.282Z",
+    "elapsedMs": 2157,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.6399784088134766,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 8,
+      "keyUpCount": 8,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 182,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 4.210666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-deep-action.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 600,
+      "shot": "desktop-after-exit"
+    },
+    "at": "2026-11-04T02:37:53.384Z",
+    "elapsedMs": 1099,
+    "diagnostics": {},
+    "file": "evidence/004h/playability/chrome/skyroads-desktop-after-exit.png"
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "command": {
+      "open": {
+        "id": "duke",
+        "title": "Duke Nukem 3D - shareware DOS v1.3d"
+      },
+      "wait": 10000,
+      "shot": "focus-fixed-boot"
+    },
+    "at": "2026-11-04T02:41:08.272Z",
+    "elapsedMs": 13945,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 27,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 640,
+        "height": 400
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-focus-fixed-boot.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape"
+      ],
+      "wait": 800,
+      "shot": "main-menu"
+    },
+    "at": "2026-11-04T02:41:10.219Z",
+    "elapsedMs": 1944,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 1,
+      "keyUpCount": 1,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 27,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 640,
+        "height": 400
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-main-menu.png"
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape"
+      ],
+      "wait": 1000,
+      "shot": "menu-after-load"
+    },
+    "at": "2026-11-04T02:44:42.736Z",
+    "elapsedMs": 2210,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 2,
+      "keyUpCount": 2,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 27,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-menu-after-load.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 700,
+      "wait": 2000,
+      "shot": "actual-new-game"
+    },
+    "at": "2026-11-04T02:45:31.440Z",
+    "elapsedMs": 5317,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 27,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.56
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-actual-new-game.png"
+  },
+  {
+    "command": {
+      "audio": true,
+      "hold": "ArrowUp",
+      "ms": 650,
+      "shot": "actual-move"
+    },
+    "at": "2026-11-04T02:45:33.736Z",
+    "elapsedMs": 2294,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 6,
+      "keyUpCount": 6,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 89,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 2.04
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-actual-move.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "interval": 400,
+      "shot": "actual-action"
+    },
+    "at": "2026-11-04T02:45:35.511Z",
+    "elapsedMs": 1771,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 8,
+      "keyUpCount": 8,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 166,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 3.8106666666666666
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-actual-action.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "F2",
+        "Enter"
+      ],
+      "interval": 500,
+      "text": "H004DUKE"
+    },
+    "at": "2026-11-04T02:45:38.049Z",
+    "elapsedMs": 2535,
+    "diagnostics": {
+      "ready": true,
+      "saves": 2,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DUKE3D.TMP",
+          "bytes": 16000,
+          "sha256": "3f07bd1394c391f8eca9ae5fc6aeba3aa5d0db2aac7494187442f3a9ec6aeb72"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 18,
+      "keyUpCount": 18,
+      "keyReleaseCount": 14,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 275,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 6.352
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    }
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1200,
+      "shot": "actual-saved"
+    },
+    "at": "2026-11-04T02:45:40.603Z",
+    "elapsedMs": 2550,
+    "diagnostics": {
+      "ready": true,
+      "saves": 9,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DUKE3D.TMP",
+          "bytes": 16000,
+          "sha256": "3f07bd1394c391f8eca9ae5fc6aeba3aa5d0db2aac7494187442f3a9ec6aeb72"
+        },
+        {
+          "name": "GAME0.SAV",
+          "bytes": 112128,
+          "sha256": "a759400cd3b2c546935d38b8b5c1258f2312a720ff0615605a4c163e242e6ea9"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 19,
+      "keyUpCount": 19,
+      "keyReleaseCount": 16,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 385,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 8.890666666666666
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-actual-saved.png"
+  },
+  {
+    "command": {
+      "close": true,
+      "wait": 600
+    },
+    "at": "2026-11-04T02:50:15.283Z",
+    "elapsedMs": 1477,
+    "diagnostics": {}
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "command": {
+      "restart": true
+    },
+    "at": "2026-11-04T02:50:16.826Z",
+    "elapsedMs": 1535,
+    "diagnostics": {}
+  },
+  {
+    "command": {
+      "open": {
+        "id": "duke",
+        "title": "Duke Nukem 3D - shareware 1.3d"
+      },
+      "wait": 22000,
+      "shot": "restart-menu"
+    },
+    "error": "TimeoutError: locator.dblclick: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Duke Nukem 3D - shareware 1.3d', exact: true })\u001b[22m\n"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "F3"
+      ],
+      "interval": 700,
+      "shot": "load-menu"
+    },
+    "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Focar no jogo', exact: true })\u001b[22m\n"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1500,
+      "shot": "native-restored"
+    },
+    "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Focar no jogo', exact: true })\u001b[22m\n"
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "duke",
+        "title": "Duke Nukem 3D - shareware DOS v1.3d"
+      },
+      "wait": 23000,
+      "shot": "reopened-real-save"
+    },
+    "at": "2026-11-04T02:54:58.033Z",
+    "elapsedMs": 28175,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DUKE3D.TMP",
+          "bytes": 16000,
+          "sha256": "3f07bd1394c391f8eca9ae5fc6aeba3aa5d0db2aac7494187442f3a9ec6aeb72"
+        },
+        {
+          "name": "GAME0.SAV",
+          "bytes": 207549,
+          "sha256": "a52b4284b6931a997c1f67eeac3724c01ddf5ad56d73a747ccd9820e282f77fc"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 25,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5706666666666667
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-reopened-real-save.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "F3"
+      ],
+      "interval": 700,
+      "shot": "real-load-menu"
+    },
+    "at": "2026-11-04T02:55:00.770Z",
+    "elapsedMs": 2732,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DUKE3D.TMP",
+          "bytes": 16000,
+          "sha256": "3f07bd1394c391f8eca9ae5fc6aeba3aa5d0db2aac7494187442f3a9ec6aeb72"
+        },
+        {
+          "name": "GAME0.SAV",
+          "bytes": 207549,
+          "sha256": "a52b4284b6931a997c1f67eeac3724c01ddf5ad56d73a747ccd9820e282f77fc"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 2,
+      "keyUpCount": 2,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 25,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5706666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-real-load-menu.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1500,
+      "shot": "real-restored"
+    },
+    "at": "2026-11-04T02:55:03.747Z",
+    "elapsedMs": 2974,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DUKE3D.TMP",
+          "bytes": 16000,
+          "sha256": "3f07bd1394c391f8eca9ae5fc6aeba3aa5d0db2aac7494187442f3a9ec6aeb72"
+        },
+        {
+          "name": "GAME0.SAV",
+          "bytes": 207549,
+          "sha256": "a52b4284b6931a997c1f67eeac3724c01ddf5ad56d73a747ccd9820e282f77fc"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 3,
+      "keyUpCount": 3,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 25,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5706666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-real-restored.png"
+  },
+  {
+    "command": {
+      "wait": 8000,
+      "shot": "native-restored-scene"
+    },
+    "at": "2026-11-04T02:55:47.828Z",
+    "elapsedMs": 8533,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DUKE3D.TMP",
+          "bytes": 16000,
+          "sha256": "3f07bd1394c391f8eca9ae5fc6aeba3aa5d0db2aac7494187442f3a9ec6aeb72"
+        },
+        {
+          "name": "GAME0.SAV",
+          "bytes": 207549,
+          "sha256": "a52b4284b6931a997c1f67eeac3724c01ddf5ad56d73a747ccd9820e282f77fc"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 3,
+      "keyUpCount": 3,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 25,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.5706666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/duke-native-restored-scene.png"
+  },
+  {
+    "command": {
+      "close": true
+    },
+    "at": "2026-11-04T02:55:49.215Z",
+    "elapsedMs": 1384,
+    "diagnostics": {}
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "skyroads",
+        "title": "SkyRoads (1993)"
+      },
+      "wait": 3000,
+      "shot": "qa-start"
+    },
+    "at": "2026-11-04T02:55:54.428Z",
+    "elapsedMs": 5206,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 0,
+      "princeKeyboardPreset": false,
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.472
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-qa-start.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter",
+        "Enter"
+      ],
+      "interval": 500,
+      "wait": 100,
+      "shot": "road-select-or-game"
+    },
+    "at": "2026-11-04T02:55:56.431Z",
+    "elapsedMs": 1996,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 2,
+      "keyUpCount": 2,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.472
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-road-select-or-game.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "interval": 150,
+      "shot": "select-road"
+    },
+    "at": "2026-11-04T02:56:20.669Z",
+    "elapsedMs": 809,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 3,
+      "keyUpCount": 3,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.472
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-select-road.png"
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "interval": 80,
+      "hold": "ArrowUp",
+      "ms": 250,
+      "audio": true,
+      "shot": "race-start"
+    },
+    "at": "2026-11-04T02:56:22.282Z",
+    "elapsedMs": 1608,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.748822033405304,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 65,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 1.4106666666666667
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-race-start.png"
+  },
+  {
+    "command": {
+      "hold": "Space",
+      "ms": 150,
+      "shot": "jump-action"
+    },
+    "at": "2026-11-04T02:56:23.073Z",
+    "elapsedMs": 785,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.75140380859375,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 6,
+      "keyUpCount": 6,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 99,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 2.2
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-jump-action.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "interval": 100,
+      "wait": 200,
+      "shot": "actual-road-start"
+    },
+    "at": "2026-11-04T02:56:54.270Z",
+    "elapsedMs": 1142,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.7519721984863281,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 7,
+      "keyUpCount": 7,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 1442,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 33.4
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-actual-road-start.png"
+  },
+  {
+    "command": {
+      "hold": "ArrowUp",
+      "ms": 300,
+      "shot": "actual-road-move"
+    },
+    "at": "2026-11-04T02:56:55.188Z",
+    "elapsedMs": 915,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.7519721984863281,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 8,
+      "keyUpCount": 8,
+      "keyReleaseCount": 14,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 1482,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 34.32
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-actual-road-move.png"
+  },
+  {
+    "command": {
+      "hold": "Space",
+      "ms": 100,
+      "shot": "actual-road-jump"
+    },
+    "at": "2026-11-04T02:56:55.931Z",
+    "elapsedMs": 739,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0.7519721984863281,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 9,
+      "keyUpCount": 9,
+      "keyReleaseCount": 16,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 1514,
+        "peak": 1
+      },
+      "qaAudioContexts": [
+        {
+          "state": "running",
+          "sampleRate": 48000,
+          "currentTime": 35.06133333333333
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/chrome/skyroads-actual-road-jump.png"
+  },
+  {
+    "command": {
+      "close": true
+    },
+    "at": "2026-11-04T02:56:56.290Z",
+    "elapsedMs": 354,
+    "diagnostics": {}
+  }
+]

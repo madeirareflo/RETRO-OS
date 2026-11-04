@@ -1,0 +1,27 @@
+[
+  {
+    "id": "duke",
+    "commandsCompleted": true,
+    "gameplayRequiresVisualReview": true
+  },
+  {
+    "id": "freedoom",
+    "commandsCompleted": true,
+    "gameplayRequiresVisualReview": true
+  },
+  {
+    "id": "ken",
+    "commandsCompleted": true,
+    "gameplayRequiresVisualReview": true
+  },
+  {
+    "id": "skyroads",
+    "commandsCompleted": true,
+    "gameplayRequiresVisualReview": true
+  },
+  {
+    "id": "prince",
+    "commandsCompleted": true,
+    "gameplayRequiresVisualReview": true
+  }
+]

@@ -1,0 +1,1022 @@
+[
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "doom",
+        "title": "DOOM - shareware DOS v1.9",
+        "slot": "H004EDGE",
+        "save": "DOOMSAV0.DSG"
+      },
+      "wait": 6000,
+      "shot": "native-initial"
+    },
+    "at": "2026-11-04T03:03:01.506Z",
+    "elapsedMs": 8720,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.49066666666666664
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/doom-native-initial.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "Enter",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 650,
+      "wait": 800,
+      "shot": "native-new"
+    },
+    "at": "2026-11-04T03:03:06.077Z",
+    "elapsedMs": 4567,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 4,
+      "keyUpCount": 4,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.49066666666666664
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/doom-native-new.png"
+  },
+  {
+    "command": {
+      "hold": "ArrowUp",
+      "ms": 650,
+      "shot": "native-moved"
+    },
+    "at": "2026-11-04T03:03:07.738Z",
+    "elapsedMs": 1660,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.49066666666666664
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/doom-native-moved.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control"
+      ],
+      "wait": 300,
+      "shot": "native-fired"
+    },
+    "at": "2026-11-04T03:03:09.541Z",
+    "elapsedMs": 1801,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 6,
+      "keyUpCount": 6,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.49066666666666664
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/doom-native-fired.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "F2",
+        "Enter"
+      ],
+      "interval": 500,
+      "text": "H004EDGE"
+    },
+    "at": "2026-11-04T03:03:12.228Z",
+    "elapsedMs": 2684,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 16,
+      "keyUpCount": 16,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.49066666666666664
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    }
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 2000,
+      "shot": "native-saved"
+    },
+    "at": "2026-11-04T03:03:15.641Z",
+    "elapsedMs": 3412,
+    "diagnostics": {
+      "ready": true,
+      "saves": 2,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DOOMSAV0.DSG",
+          "bytes": 25350,
+          "sha256": "1f4b825c3af306057b83a8a14e45ffdcbc2b5eb216e8cbc893849e0f52ad340c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 17,
+      "keyUpCount": 17,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.49066666666666664
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/doom-native-saved.png"
+  },
+  {
+    "command": {
+      "hold": "ArrowRight",
+      "ms": 600,
+      "shot": "native-different-pose"
+    },
+    "at": "2026-11-04T03:03:17.124Z",
+    "elapsedMs": 1482,
+    "diagnostics": {
+      "ready": true,
+      "saves": 2,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DOOMSAV0.DSG",
+          "bytes": 25350,
+          "sha256": "1f4b825c3af306057b83a8a14e45ffdcbc2b5eb216e8cbc893849e0f52ad340c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 18,
+      "keyUpCount": 18,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.49066666666666664
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/doom-native-different-pose.png"
+  },
+  {
+    "command": {
+      "close": true
+    },
+    "at": "2026-11-04T03:03:18.012Z",
+    "elapsedMs": 885,
+    "diagnostics": {}
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "command": {
+      "restart": true
+    },
+    "at": "2026-11-04T03:03:19.333Z",
+    "elapsedMs": 1304,
+    "diagnostics": {}
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "doom",
+        "title": "DOOM - shareware DOS v1.9",
+        "slot": "H004EDGE",
+        "save": "DOOMSAV0.DSG"
+      },
+      "wait": 6000
+    },
+    "at": "2026-11-04T03:03:27.399Z",
+    "elapsedMs": 8065,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DOOMSAV0.DSG",
+          "bytes": 25350,
+          "sha256": "1f4b825c3af306057b83a8a14e45ffdcbc2b5eb216e8cbc893849e0f52ad340c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.48
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    }
+  },
+  {
+    "command": {
+      "keys": [
+        "F3"
+      ],
+      "wait": 500,
+      "shot": "native-load-menu"
+    },
+    "at": "2026-11-04T03:03:29.210Z",
+    "elapsedMs": 1809,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DOOMSAV0.DSG",
+          "bytes": 25350,
+          "sha256": "1f4b825c3af306057b83a8a14e45ffdcbc2b5eb216e8cbc893849e0f52ad340c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 1,
+      "keyUpCount": 1,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.48
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/doom-native-load-menu.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1800,
+      "shot": "native-restored"
+    },
+    "at": "2026-11-04T03:03:32.500Z",
+    "elapsedMs": 3289,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "DOOMSAV0.DSG",
+          "bytes": 25350,
+          "sha256": "1f4b825c3af306057b83a8a14e45ffdcbc2b5eb216e8cbc893849e0f52ad340c"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 2,
+      "keyUpCount": 2,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.48
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/doom-native-restored.png"
+  },
+  {
+    "command": {
+      "close": true
+    },
+    "at": "2026-11-04T03:03:33.294Z",
+    "elapsedMs": 792,
+    "diagnostics": {}
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "heretic",
+        "title": "Heretic - shareware DOS v1.2",
+        "slot": "H004EDGE",
+        "save": "HTICSAV0.HSG"
+      },
+      "wait": 6000,
+      "shot": "native-initial"
+    },
+    "at": "2026-11-04T03:03:42.312Z",
+    "elapsedMs": 9016,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 28,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.592
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/heretic-native-initial.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Escape",
+        "Enter",
+        "Enter",
+        "Enter"
+      ],
+      "interval": 650,
+      "wait": 800,
+      "shot": "native-new"
+    },
+    "at": "2026-11-04T03:03:46.836Z",
+    "elapsedMs": 4522,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 4,
+      "keyUpCount": 4,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 28,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.592
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/heretic-native-new.png"
+  },
+  {
+    "command": {
+      "hold": "ArrowUp",
+      "ms": 650,
+      "shot": "native-moved"
+    },
+    "at": "2026-11-04T03:03:48.068Z",
+    "elapsedMs": 1230,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 5,
+      "keyUpCount": 5,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 28,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.592
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/heretic-native-moved.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Control"
+      ],
+      "wait": 300,
+      "shot": "native-fired"
+    },
+    "at": "2026-11-04T03:03:49.722Z",
+    "elapsedMs": 1653,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 6,
+      "keyUpCount": 6,
+      "keyReleaseCount": 6,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 28,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.592
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/heretic-native-fired.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "F2",
+        "Enter"
+      ],
+      "interval": 500,
+      "text": "H004EDGE"
+    },
+    "at": "2026-11-04T03:03:52.330Z",
+    "elapsedMs": 2607,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [],
+      "pressedKeys": [],
+      "keyDownCount": 16,
+      "keyUpCount": 16,
+      "keyReleaseCount": 8,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 28,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.592
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    }
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 2000,
+      "shot": "native-saved"
+    },
+    "at": "2026-11-04T03:03:55.645Z",
+    "elapsedMs": 3314,
+    "diagnostics": {
+      "ready": true,
+      "saves": 2,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "2acd6e98723b3280d2b98f964fbbb787c32309ca6903574f9489122029e5a75f"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 17,
+      "keyUpCount": 17,
+      "keyReleaseCount": 10,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 28,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.592
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/heretic-native-saved.png"
+  },
+  {
+    "command": {
+      "hold": "ArrowRight",
+      "ms": 600,
+      "shot": "native-different-pose"
+    },
+    "at": "2026-11-04T03:03:56.962Z",
+    "elapsedMs": 1316,
+    "diagnostics": {
+      "ready": true,
+      "saves": 2,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "2acd6e98723b3280d2b98f964fbbb787c32309ca6903574f9489122029e5a75f"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 18,
+      "keyUpCount": 18,
+      "keyReleaseCount": 12,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 28,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.592
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/heretic-native-different-pose.png"
+  },
+  {
+    "command": {
+      "close": true
+    },
+    "at": "2026-11-04T03:03:57.583Z",
+    "elapsedMs": 620,
+    "diagnostics": {}
+  },
+  {
+    "type": "console",
+    "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "command": {
+      "restart": true
+    },
+    "at": "2026-11-04T03:03:59.189Z",
+    "elapsedMs": 1602,
+    "diagnostics": {}
+  },
+  {
+    "type": "console",
+    "message": "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing."
+  },
+  {
+    "type": "console",
+    "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+  },
+  {
+    "command": {
+      "open": {
+        "id": "heretic",
+        "title": "Heretic - shareware DOS v1.2",
+        "slot": "H004EDGE",
+        "save": "HTICSAV0.HSG"
+      },
+      "wait": 6000
+    },
+    "at": "2026-11-04T03:04:07.209Z",
+    "elapsedMs": 8018,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "2acd6e98723b3280d2b98f964fbbb787c32309ca6903574f9489122029e5a75f"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 0,
+      "keyUpCount": 0,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.48
+        }
+      ],
+      "focused": "",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    }
+  },
+  {
+    "command": {
+      "keys": [
+        "F3"
+      ],
+      "wait": 500,
+      "shot": "native-load-menu"
+    },
+    "at": "2026-11-04T03:04:08.945Z",
+    "elapsedMs": 1734,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "2acd6e98723b3280d2b98f964fbbb787c32309ca6903574f9489122029e5a75f"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 1,
+      "keyUpCount": 1,
+      "keyReleaseCount": 2,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.48
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/heretic-native-load-menu.png"
+  },
+  {
+    "command": {
+      "keys": [
+        "Enter"
+      ],
+      "wait": 1800,
+      "shot": "native-restored"
+    },
+    "at": "2026-11-04T03:04:11.993Z",
+    "elapsedMs": 3046,
+    "diagnostics": {
+      "ready": true,
+      "saves": 1,
+      "audioPeak": 0,
+      "wasm": true,
+      "heapBytes": 67108864,
+      "state": [],
+      "files": [
+        {
+          "name": "HTICSAV0.HSG",
+          "bytes": 47796,
+          "sha256": "2acd6e98723b3280d2b98f964fbbb787c32309ca6903574f9489122029e5a75f"
+        }
+      ],
+      "pressedKeys": [],
+      "keyDownCount": 2,
+      "keyUpCount": 2,
+      "keyReleaseCount": 4,
+      "princeKeyboardPreset": false,
+      "mouseButtons": [],
+      "qaPcm": {
+        "buffers": 24,
+        "peak": 0
+      },
+      "qaAudioContexts": [
+        {
+          "state": "suspended",
+          "sampleRate": 48000,
+          "currentTime": 0.48
+        }
+      ],
+      "focused": "engine",
+      "canvas": {
+        "width": 320,
+        "height": 200
+      }
+    },
+    "file": "evidence/004h/playability/edge/heretic-native-restored.png"
+  },
+  {
+    "command": {
+      "close": true
+    },
+    "at": "2026-11-04T03:04:12.692Z",
+    "elapsedMs": 698,
+    "diagnostics": {}
+  }
+]

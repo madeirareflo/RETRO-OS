@@ -1,0 +1,26 @@
+[
+  {
+    "game": "doom",
+    "channel": "edge",
+    "nativeFile": {
+      "name": "DOOMSAV0.DSG",
+      "bytes": 25350,
+      "sha256": "1f4b825c3af306057b83a8a14e45ffdcbc2b5eb216e8cbc893849e0f52ad340c"
+    },
+    "browserRestart": true,
+    "loadCommandsCompleted": true,
+    "visualReview": "REQUIRED before claiming restoration"
+  },
+  {
+    "game": "heretic",
+    "channel": "edge",
+    "nativeFile": {
+      "name": "HTICSAV0.HSG",
+      "bytes": 47796,
+      "sha256": "2acd6e98723b3280d2b98f964fbbb787c32309ca6903574f9489122029e5a75f"
+    },
+    "browserRestart": true,
+    "loadCommandsCompleted": true,
+    "visualReview": "REQUIRED before claiming restoration"
+  }
+]
