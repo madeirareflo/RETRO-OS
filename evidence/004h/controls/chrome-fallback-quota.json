@@ -1,0 +1,6 @@
+{
+  "nativeSaveBytes": 8,
+  "progress": 1,
+  "fallbackQuota": "SIMULATED",
+  "idbCommitAndNativeRestore": "PASS"
+}

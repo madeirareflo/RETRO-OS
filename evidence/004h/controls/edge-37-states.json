@@ -1,0 +1,187 @@
+[
+  {
+    "id": "dos-doom-1993",
+    "state": "B",
+    "pass": true
+  },
+  {
+    "id": "dos-doom2-1994",
+    "state": "D",
+    "pass": true
+  },
+  {
+    "id": "dos-quake-1996",
+    "state": "B",
+    "pass": true
+  },
+  {
+    "id": "dos-quake2-1997",
+    "state": "E",
+    "pass": true
+  },
+  {
+    "id": "win-quake3-1999",
+    "state": "E",
+    "pass": true
+  },
+  {
+    "id": "dos-darkforces-1995",
+    "state": "D",
+    "pass": true
+  },
+  {
+    "id": "dos-descent-1995",
+    "state": "D",
+    "pass": true
+  },
+  {
+    "id": "dos-heretic-1994",
+    "state": "B",
+    "pass": true
+  },
+  {
+    "id": "dos-duke3d-1996",
+    "state": "B",
+    "pass": true
+  },
+  {
+    "id": "win-mohaa-2002",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-mohpac-2004",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "dos-mdk-1997",
+    "state": "D",
+    "pass": true
+  },
+  {
+    "id": "win-mdk2-2000",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-commandos-1998",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-commandos2-2001",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-claw-1997",
+    "state": "E",
+    "pass": true
+  },
+  {
+    "id": "dos-prince-1990",
+    "state": "C",
+    "pass": true
+  },
+  {
+    "id": "dos-fullthrottle-1995",
+    "state": "E",
+    "pass": true
+  },
+  {
+    "id": "dos-thedig-1995",
+    "state": "E",
+    "pass": true
+  },
+  {
+    "id": "dos-eob-1991",
+    "state": "D",
+    "pass": true
+  },
+  {
+    "id": "dos-eob2-1991",
+    "state": "D",
+    "pass": true
+  },
+  {
+    "id": "win-diablo-1996",
+    "state": "E",
+    "pass": true
+  },
+  {
+    "id": "win-diablo2-2000",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-ds1-2002",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-ds2-2005",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-ds3-2011",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-aoe-1997",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-aoe2-1999",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-starcraft-1998",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "dos-warcraft-1994",
+    "state": "D",
+    "pass": true
+  },
+  {
+    "id": "dos-warcraft2-1995",
+    "state": "D",
+    "pass": true
+  },
+  {
+    "id": "dos-gp2-1996",
+    "state": "D",
+    "pass": true
+  },
+  {
+    "id": "dos-gta-1997",
+    "state": "D",
+    "pass": true
+  },
+  {
+    "id": "win-gta2-1999",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-gta3-2001",
+    "state": "E",
+    "pass": true
+  },
+  {
+    "id": "win-maxpayne-2001",
+    "state": "F",
+    "pass": true
+  },
+  {
+    "id": "win-maxpayne2-2003",
+    "state": "F",
+    "pass": true
+  }
+]

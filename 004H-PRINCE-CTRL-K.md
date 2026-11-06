@@ -9,3 +9,5 @@ As primeiras tentativas estão preservadas: falha de amostragem de pose em insta
 Quake: encaminhamento de mouse, disparo, liberação de teclas e botões, foco e Alt+Tab DOM não cancelado passaram. A troca nativa do Windows não foi testada fisicamente. Pointer lock nativo não foi homologado; o botão experimental não está exposto na interface. Mouse sem captura continua encaminhado. Não há promessa de captura relativa ilimitada.
 
 Evidências: evidence/004h/controls/{chrome,edge}-prince*.png e *-mouse.json; traces privados fora do Git em RETRO-OS-004H-TRACES. A extensão Heretic dos saves foi corrigida de .DSG para .HSG com base no arquivo produzido pelo próprio jogo.
+
+Teste adicional: salto nativo ArrowUp passou nos dois navegadores, com deslocamento vertical observado e screenshots before/airborne/after; ver prince-action.log.

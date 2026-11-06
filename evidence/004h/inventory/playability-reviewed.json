@@ -20,7 +20,7 @@
       "save": "PASS",
       "state": "B",
       "availableEdition": "DOOM - shareware DOS v1.9",
-      "reason": "Shareware 1.9, episódio 1; áudio silencioso no teste atual; save/load Chrome e Edge",
+      "reason": "Shareware 1.9, episÃ³dio 1; Ã¡udio silencioso no teste atual; save/load Chrome e Edge",
       "expectedFiles": [
         "DOOM.EXE",
         "DOOM1.WAD"
@@ -45,7 +45,7 @@
       "save": "NOT TESTED",
       "state": "D",
       "availableEdition": null,
-      "reason": "Motor DOS disponível, arquivos legítimos desta edição ausentes; compatibilidade não homologada.",
+      "reason": "Motor DOS disponÃ­vel, arquivos legÃ­timos desta ediÃ§Ã£o ausentes; compatibilidade nÃ£o homologada.",
       "expectedFiles": [
         "DOOM2.EXE",
         "DOOM2.WAD"
@@ -70,7 +70,7 @@
       "save": "PASS",
       "state": "B",
       "availableEdition": "Quake - shareware DOS v1.06",
-      "reason": "Shareware 1.06; sem música de CD; save Chrome limitado; mouse relativo e Edge save pendentes",
+      "reason": "Shareware 1.06; sem mÃºsica de CD; save Chrome limitado; mouse relativo e Edge save pendentes",
       "expectedFiles": [
         "QUAKE.EXE",
         "ID1/PAK0.PAK"
@@ -95,7 +95,7 @@
       "save": "NOT TESTED",
       "state": "E",
       "availableEdition": null,
-      "reason": "Motor/perfil não integrado ou não validado; importar dados não habilita execução.",
+      "reason": "Motor/perfil nÃ£o integrado ou nÃ£o validado; importar dados nÃ£o habilita execuÃ§Ã£o.",
       "expectedFiles": [
         "Q2DOS.EXE",
         "BASEQ2/PAK0.PAK"
@@ -120,7 +120,7 @@
       "save": "NOT TESTED",
       "state": "E",
       "availableEdition": null,
-      "reason": "Motor/perfil não integrado ou não validado; importar dados não habilita execução.",
+      "reason": "Motor/perfil nÃ£o integrado ou nÃ£o validado; importar dados nÃ£o habilita execuÃ§Ã£o.",
       "expectedFiles": [
         "BASEQ3/PAK0.PK3"
       ],
@@ -144,7 +144,7 @@
       "save": "NOT TESTED",
       "state": "D",
       "availableEdition": null,
-      "reason": "Motor DOS disponível, arquivos legítimos desta edição ausentes; compatibilidade não homologada.",
+      "reason": "Motor DOS disponÃ­vel, arquivos legÃ­timos desta ediÃ§Ã£o ausentes; compatibilidade nÃ£o homologada.",
       "expectedFiles": [
         "DARK.EXE",
         "DARK.GOB",
@@ -170,7 +170,7 @@
       "save": "NOT TESTED",
       "state": "D",
       "availableEdition": null,
-      "reason": "Motor DOS disponível, arquivos legítimos desta edição ausentes; compatibilidade não homologada.",
+      "reason": "Motor DOS disponÃ­vel, arquivos legÃ­timos desta ediÃ§Ã£o ausentes; compatibilidade nÃ£o homologada.",
       "expectedFiles": [
         "DESCENT.EXE",
         "DESCENT.HOG",
@@ -196,7 +196,7 @@
       "save": "PASS",
       "state": "B",
       "availableEdition": "Heretic - shareware DOS v1.2",
-      "reason": "Shareware 1.2; áudio silencioso; save/load Chrome e Edge",
+      "reason": "Shareware 1.2; Ã¡udio silencioso; save/load Chrome e Edge",
       "expectedFiles": [
         "HERETIC.EXE",
         "HERETIC1.WAD"
@@ -221,7 +221,7 @@
       "save": "PARTIAL",
       "state": "B",
       "availableEdition": "Duke Nukem 3D - shareware DOS v1.3d",
-      "reason": "Shareware 1.3d; gameplay observado; áudio desativado no CFG; load nativo não comprovado",
+      "reason": "Shareware 1.3d; gameplay observado; Ã¡udio desativado no CFG; load nativo nÃ£o comprovado",
       "expectedFiles": [
         "DUKE3D.EXE",
         "DUKE3D.GRP"
@@ -246,7 +246,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://www.gog.com/game/medal_of_honor_allied_assault_war_chest"
     },
@@ -268,7 +268,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://www.ea.com"
     },
@@ -277,7 +277,7 @@
       "id": "dos-mdk-1997",
       "title": "MDK",
       "year": 1997,
-      "genre": "Ação / Tiro 3D",
+      "genre": "AÃ§Ã£o / Tiro 3D",
       "originalPlatformAsCataloged": "MS-DOS (DOSBox WASM / js-dos)",
       "engine": "dosbox-wasm",
       "files": "BLOCKED",
@@ -290,7 +290,7 @@
       "save": "NOT TESTED",
       "state": "D",
       "availableEdition": null,
-      "reason": "Motor DOS disponível, arquivos legítimos desta edição ausentes; compatibilidade não homologada.",
+      "reason": "Motor DOS disponÃ­vel, arquivos legÃ­timos desta ediÃ§Ã£o ausentes; compatibilidade nÃ£o homologada.",
       "expectedFiles": [
         "MDK.EXE",
         "MDK.DAT"
@@ -302,7 +302,7 @@
       "id": "win-mdk2-2000",
       "title": "MDK 2",
       "year": 2000,
-      "genre": "Ação / Plataforma 3D",
+      "genre": "AÃ§Ã£o / Plataforma 3D",
       "originalPlatformAsCataloged": "Windows 98/XP / DirectX 7 (Modo Museu)",
       "engine": "none",
       "files": "BLOCKED",
@@ -315,7 +315,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://www.gog.com/game/mdk_2"
     },
@@ -324,7 +324,7 @@
       "id": "win-commandos-1998",
       "title": "Commandos: Behind Enemy Lines",
       "year": 1998,
-      "genre": "Estratégia Tática",
+      "genre": "EstratÃ©gia TÃ¡tica",
       "originalPlatformAsCataloged": "Windows 95/98 (DirectDraw / Modo Museu)",
       "engine": "none",
       "files": "BLOCKED",
@@ -337,7 +337,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://www.gog.com/game/commandos_ammo_pack"
     },
@@ -346,7 +346,7 @@
       "id": "win-commandos2-2001",
       "title": "Commandos 2: Men of Courage",
       "year": 2001,
-      "genre": "Estratégia Tática",
+      "genre": "EstratÃ©gia TÃ¡tica",
       "originalPlatformAsCataloged": "Windows 98/XP (DirectX 7 / Modo Museu)",
       "engine": "none",
       "files": "BLOCKED",
@@ -359,7 +359,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://www.gog.com/game/commandos_2_3"
     },
@@ -381,7 +381,7 @@
       "save": "NOT TESTED",
       "state": "E",
       "availableEdition": null,
-      "reason": "Motor/perfil não integrado ou não validado; importar dados não habilita execução.",
+      "reason": "Motor/perfil nÃ£o integrado ou nÃ£o validado; importar dados nÃ£o habilita execuÃ§Ã£o.",
       "expectedFiles": [
         "CLAW.REZ"
       ],
@@ -405,7 +405,7 @@
       "save": "NOT APPLICABLE",
       "state": "C",
       "availableEdition": "Prince of Persia - demo DOS 1.0",
-      "reason": "Demo DOS 1.0; Ctrl+K e movimento comprovados; não homologar edição completa",
+      "reason": "Demo DOS 1.0; Ctrl+K e movimento comprovados; nÃ£o homologar ediÃ§Ã£o completa",
       "expectedFiles": [
         "PRINCE.EXE",
         "LEVELS.DAT"
@@ -417,7 +417,7 @@
       "id": "dos-fullthrottle-1995",
       "title": "Full Throttle",
       "year": 1995,
-      "genre": "Aventura Gráfica",
+      "genre": "Aventura GrÃ¡fica",
       "originalPlatformAsCataloged": "MS-DOS (ScummVM Web / SCUMM v7)",
       "engine": "scummvm-web",
       "files": "BLOCKED",
@@ -430,7 +430,7 @@
       "save": "NOT TESTED",
       "state": "E",
       "availableEdition": null,
-      "reason": "Motor/perfil não integrado ou não validado; importar dados não habilita execução.",
+      "reason": "Motor/perfil nÃ£o integrado ou nÃ£o validado; importar dados nÃ£o habilita execuÃ§Ã£o.",
       "expectedFiles": [
         "FT.SOU",
         "FT.LA0",
@@ -443,7 +443,7 @@
       "id": "dos-thedig-1995",
       "title": "The Dig",
       "year": 1995,
-      "genre": "Aventura Gráfica",
+      "genre": "Aventura GrÃ¡fica",
       "originalPlatformAsCataloged": "MS-DOS (ScummVM Web / SCUMM v7)",
       "engine": "scummvm-web",
       "files": "BLOCKED",
@@ -456,7 +456,7 @@
       "save": "NOT TESTED",
       "state": "E",
       "availableEdition": null,
-      "reason": "Motor/perfil não integrado ou não validado; importar dados não habilita execução.",
+      "reason": "Motor/perfil nÃ£o integrado ou nÃ£o validado; importar dados nÃ£o habilita execuÃ§Ã£o.",
       "expectedFiles": [
         "DIG.SOU",
         "DIG.LA0",
@@ -482,7 +482,7 @@
       "save": "NOT TESTED",
       "state": "D",
       "availableEdition": null,
-      "reason": "Motor DOS disponível, arquivos legítimos desta edição ausentes; compatibilidade não homologada.",
+      "reason": "Motor DOS disponÃ­vel, arquivos legÃ­timos desta ediÃ§Ã£o ausentes; compatibilidade nÃ£o homologada.",
       "expectedFiles": [
         "START.EXE",
         "CHARDATA.SAV"
@@ -507,7 +507,7 @@
       "save": "NOT TESTED",
       "state": "D",
       "availableEdition": null,
-      "reason": "Motor DOS disponível, arquivos legítimos desta edição ausentes; compatibilidade não homologada.",
+      "reason": "Motor DOS disponÃ­vel, arquivos legÃ­timos desta ediÃ§Ã£o ausentes; compatibilidade nÃ£o homologada.",
       "expectedFiles": [
         "START.EXE",
         "DARKMOON.EXE"
@@ -532,7 +532,7 @@
       "save": "NOT TESTED",
       "state": "E",
       "availableEdition": null,
-      "reason": "Motor/perfil não integrado ou não validado; importar dados não habilita execução.",
+      "reason": "Motor/perfil nÃ£o integrado ou nÃ£o validado; importar dados nÃ£o habilita execuÃ§Ã£o.",
       "expectedFiles": [
         "DIABDAT.MPQ"
       ],
@@ -556,7 +556,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://battle.net"
     },
@@ -578,7 +578,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://store.steampowered.com/app/39190/Dungeon_Siege/"
     },
@@ -600,7 +600,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://store.steampowered.com/app/39200/Dungeon_Siege_II/"
     },
@@ -622,7 +622,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://store.steampowered.com/app/98200/Dungeon_Siege_III/"
     },
@@ -631,7 +631,7 @@
       "id": "win-aoe-1997",
       "title": "Age of Empires",
       "year": 1997,
-      "genre": "Estratégia em Tempo Real (RTS)",
+      "genre": "EstratÃ©gia em Tempo Real (RTS)",
       "originalPlatformAsCataloged": "Windows 95 (DirectDraw / Modo Museu)",
       "engine": "none",
       "files": "BLOCKED",
@@ -644,7 +644,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://store.steampowered.com"
     },
@@ -653,7 +653,7 @@
       "id": "win-aoe2-1999",
       "title": "Age of Empires II: The Age of Kings",
       "year": 1999,
-      "genre": "Estratégia em Tempo Real (RTS)",
+      "genre": "EstratÃ©gia em Tempo Real (RTS)",
       "originalPlatformAsCataloged": "Windows 98 (DirectDraw / Modo Museu)",
       "engine": "none",
       "files": "BLOCKED",
@@ -666,7 +666,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://store.steampowered.com"
     },
@@ -675,7 +675,7 @@
       "id": "win-starcraft-1998",
       "title": "StarCraft",
       "year": 1998,
-      "genre": "Estratégia em Tempo Real (RTS)",
+      "genre": "EstratÃ©gia em Tempo Real (RTS)",
       "originalPlatformAsCataloged": "Windows 95/98 (DirectDraw / Museu e LAN House)",
       "engine": "none",
       "files": "BLOCKED",
@@ -688,7 +688,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://battle.net"
     },
@@ -697,7 +697,7 @@
       "id": "dos-warcraft-1994",
       "title": "Warcraft: Orcs & Humans",
       "year": 1994,
-      "genre": "Estratégia em Tempo Real (RTS)",
+      "genre": "EstratÃ©gia em Tempo Real (RTS)",
       "originalPlatformAsCataloged": "MS-DOS (DOSBox WASM / js-dos)",
       "engine": "dosbox-wasm",
       "files": "BLOCKED",
@@ -710,7 +710,7 @@
       "save": "NOT TESTED",
       "state": "D",
       "availableEdition": null,
-      "reason": "Motor DOS disponível, arquivos legítimos desta edição ausentes; compatibilidade não homologada.",
+      "reason": "Motor DOS disponÃ­vel, arquivos legÃ­timos desta ediÃ§Ã£o ausentes; compatibilidade nÃ£o homologada.",
       "expectedFiles": [
         "WAR.EXE",
         "DATA/DATA.WAR"
@@ -722,7 +722,7 @@
       "id": "dos-warcraft2-1995",
       "title": "Warcraft II: Tides of Darkness",
       "year": 1995,
-      "genre": "Estratégia em Tempo Real (RTS)",
+      "genre": "EstratÃ©gia em Tempo Real (RTS)",
       "originalPlatformAsCataloged": "MS-DOS (DOSBox WASM / js-dos)",
       "engine": "dosbox-wasm",
       "files": "BLOCKED",
@@ -735,7 +735,7 @@
       "save": "NOT TESTED",
       "state": "D",
       "availableEdition": null,
-      "reason": "Motor DOS disponível, arquivos legítimos desta edição ausentes; compatibilidade não homologada.",
+      "reason": "Motor DOS disponÃ­vel, arquivos legÃ­timos desta ediÃ§Ã£o ausentes; compatibilidade nÃ£o homologada.",
       "expectedFiles": [
         "WAR2.EXE",
         "WAR2.DAT"
@@ -747,7 +747,7 @@
       "id": "dos-gp2-1996",
       "title": "Grand Prix 2",
       "year": 1996,
-      "genre": "Simulação de Corrida",
+      "genre": "SimulaÃ§Ã£o de Corrida",
       "originalPlatformAsCataloged": "MS-DOS (DOSBox WASM / js-dos)",
       "engine": "dosbox-wasm",
       "files": "BLOCKED",
@@ -760,7 +760,7 @@
       "save": "NOT TESTED",
       "state": "D",
       "availableEdition": null,
-      "reason": "Motor DOS disponível, arquivos legítimos desta edição ausentes; compatibilidade não homologada.",
+      "reason": "Motor DOS disponÃ­vel, arquivos legÃ­timos desta ediÃ§Ã£o ausentes; compatibilidade nÃ£o homologada.",
       "expectedFiles": [
         "GP2.EXE"
       ],
@@ -771,7 +771,7 @@
       "id": "dos-gta-1997",
       "title": "Grand Theft Auto",
       "year": 1997,
-      "genre": "Ação em Mundo Aberto",
+      "genre": "AÃ§Ã£o em Mundo Aberto",
       "originalPlatformAsCataloged": "MS-DOS (DOSBox WASM / js-dos)",
       "engine": "dosbox-wasm",
       "files": "BLOCKED",
@@ -784,7 +784,7 @@
       "save": "NOT TESTED",
       "state": "D",
       "availableEdition": null,
-      "reason": "Motor DOS disponível, arquivos legítimos desta edição ausentes; compatibilidade não homologada.",
+      "reason": "Motor DOS disponÃ­vel, arquivos legÃ­timos desta ediÃ§Ã£o ausentes; compatibilidade nÃ£o homologada.",
       "expectedFiles": [
         "GTA.EXE",
         "GTADATA/STYLE001.DAT"
@@ -796,7 +796,7 @@
       "id": "win-gta2-1999",
       "title": "Grand Theft Auto 2",
       "year": 1999,
-      "genre": "Ação em Mundo Aberto",
+      "genre": "AÃ§Ã£o em Mundo Aberto",
       "originalPlatformAsCataloged": "Windows 98 (Direct3D 6 / Modo Museu)",
       "engine": "none",
       "files": "BLOCKED",
@@ -809,7 +809,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://www.rockstargames.com"
     },
@@ -818,7 +818,7 @@
       "id": "win-gta3-2001",
       "title": "Grand Theft Auto III",
       "year": 2001,
-      "genre": "Ação em Mundo Aberto 3D",
+      "genre": "AÃ§Ã£o em Mundo Aberto 3D",
       "originalPlatformAsCataloged": "Windows 98/XP (re3 WebAssembly)",
       "engine": "re3-wasm",
       "files": "BLOCKED",
@@ -831,7 +831,7 @@
       "save": "NOT TESTED",
       "state": "E",
       "availableEdition": null,
-      "reason": "Motor/perfil não integrado ou não validado; importar dados não habilita execução.",
+      "reason": "Motor/perfil nÃ£o integrado ou nÃ£o validado; importar dados nÃ£o habilita execuÃ§Ã£o.",
       "expectedFiles": [
         "models/gta3.img",
         "data/default.ide"
@@ -843,7 +843,7 @@
       "id": "win-maxpayne-2001",
       "title": "Max Payne",
       "year": 2001,
-      "genre": "Ação Cinematográfica",
+      "genre": "AÃ§Ã£o CinematogrÃ¡fica",
       "originalPlatformAsCataloged": "Windows 98/XP / DirectX 8 (Modo Museu)",
       "engine": "none",
       "files": "BLOCKED",
@@ -856,7 +856,7 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://store.steampowered.com/app/12140/Max_Payne/"
     },
@@ -865,7 +865,7 @@
       "id": "win-maxpayne2-2003",
       "title": "Max Payne 2: The Fall of Max Payne",
       "year": 2003,
-      "genre": "Ação Cinematográfica",
+      "genre": "AÃ§Ã£o CinematogrÃ¡fica",
       "originalPlatformAsCataloged": "Windows XP / DirectX 9 (Modo Museu)",
       "engine": "none",
       "files": "BLOCKED",
@@ -878,14 +878,14 @@
       "save": "NOT TESTED",
       "state": "F",
       "availableEdition": null,
-      "reason": "Ficha histórica; Windows nativo sem execução prometida.",
+      "reason": "Ficha histÃ³rica; Windows nativo sem execuÃ§Ã£o prometida.",
       "expectedFiles": [],
       "source": "https://store.steampowered.com/app/12150/Max_Payne_2_The_Fall_of_Max_Payne/"
     }
   ],
   "extra3": [
     {
-      "title": "Freedoom Phase 1 — FastDoom",
+      "title": "Freedoom Phase 1 â€” FastDoom",
       "files": "PASS",
       "license": "PARTIAL",
       "engineStatus": "PASS",
@@ -903,12 +903,12 @@
       "license": "PARTIAL",
       "engineStatus": "PASS",
       "opens": "PASS",
-      "gameplay": "PASS",
+      "gameplay": "PARTIAL",
       "controls": "PARTIAL",
       "audio": "PARTIAL",
       "save": "NOT TESTED",
       "state": "B",
-      "reason": "Ken 2.1; deslocamento até a porta observado, ação de combate e áudio pendentes"
+      "reason": "Ken 2.1; deslocamento atÃ© a porta observado, aÃ§Ã£o de combate e Ã¡udio pendentes"
     },
     {
       "title": "SkyRoads (1993)",
@@ -921,7 +921,7 @@
       "audio": "PASS",
       "save": "NOT TESTED",
       "state": "C",
-      "reason": "Corrida e salto observados; recordes e persistência pendentes"
+      "reason": "Corrida e salto observados; recordes e persistÃªncia pendentes"
     }
   ]
 }

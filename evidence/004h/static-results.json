@@ -1,0 +1,20 @@
+[
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "base": "/RETRO-OS/",
+    "nativeMovement": "PASS",
+    "exitCommit": "PASS",
+    "pageErrors": [],
+    "externalRequests": []
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "base": "/RETRO-OS/",
+    "nativeMovement": "PASS",
+    "exitCommit": "PASS",
+    "pageErrors": [],
+    "externalRequests": []
+  }
+]

@@ -1,0 +1,1 @@
+src/launcher/qaState004h.ts(16,43): error TS2367: This comparison appears to be unintentional because the types '"dosbox-wasm" | "scummvm-web" | "native-js" | "js-dos-v7" | "retroarch-wasm"' and '"none"' have no overlap.

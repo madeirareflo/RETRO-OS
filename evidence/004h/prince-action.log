@@ -1,0 +1,15 @@
+
+Running 2 tests using 1 worker
+
+(node:34948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chrome] › qa004h\prince-action.spec.ts:2:1 › Prince demo responde ao salto nativo com deslocamento vertical observado (18.7s)
+(node:26608) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26608) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [edge] › qa004h\prince-action.spec.ts:2:1 › Prince demo responde ao salto nativo com deslocamento vertical observado (18.8s)
+
+  2 passed (40.5s)

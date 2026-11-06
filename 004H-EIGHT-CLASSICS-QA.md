@@ -1,6 +1,6 @@
 # Oito clássicos — auditoria final 004H
 
-Oito pacotes íntegros e oito inicializações observadas em sessões Chrome. Gameplay representativo capturado nos oito, com ação de combate do Ken ainda não confirmada. Nenhum A. Quatro produziram sinal PCM (Quake, Freedoom, Prince e SkyRoads), quatro permaneceram silenciosos. Não houve escuta física de nenhum. Três títulos tiveram alguma recuperação nativa comprovada (DOOM, Heretic e Quake); DOOM/Heretic em ambos os navegadores, Quake limitado ao Chrome.
+Oito pacotes íntegros e oito inicializações observadas em sessões Chrome. Sete tiveram gameplay representativo com movimento e ação; Ken tem gameplay PARTIAL (movimento, sem combate confirmado). Nenhum A. Quatro produziram sinal PCM (Quake, Freedoom, Prince e SkyRoads), quatro permaneceram silenciosos. Não houve escuta física de nenhum. Três títulos tiveram alguma recuperação nativa comprovada (DOOM, Heretic e Quake); DOOM/Heretic em ambos os navegadores, Quake limitado ao Chrome.
 
 ## Prince of Persia - demo DOS 1.0 — C
 

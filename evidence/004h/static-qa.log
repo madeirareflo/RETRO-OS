@@ -1,0 +1,62 @@
+node:internal/modules/run_main:122
+    triggerUncaughtException(
+    ^
+
+ExpectError: expect(locator).toHaveAttribute(expected) failed
+
+Locator:  locator('.dos-game')
+Expected: "true"
+Received: "false"
+Timeout:  30000ms
+
+Call log:
+  - Expect "toHaveAttribute" locator('.dos-game') with timeout 30000ms
+  - waiting for locator('.dos-game')
+    62 × locator resolved to <div data-score="0" class="dos-game" data-load-ms="0" data-ready="false" data-heap-bytes="0" data-game-id="dos-disquete" data-game-status="initializing">…</div>
+       - unexpected value "false"
+
+    at captureRawStack (C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\node_modules\.pnpm\playwright-core@1.64.1\node_modules\playwright-core\lib\coreBundle.js:9282:17)
+    at callMatcherAsStep (C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\node_modules\.pnpm\playwright@1.64.1\node_modules\playwright\lib\matchers\expect.js:13316:57)
+    at Object.toHaveAttribute (C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\node_modules\.pnpm\playwright@1.64.1\node_modules\playwright\lib\matchers\expect.js:13308:23)
+    at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\qa004h\static-preview.mjs:1:939 {
+  matcherResult: {
+    name: 'toHaveAttribute',
+    expected: 'true',
+    message: 'expect(locator).toHaveAttribute(expected) failed\n' +
+      '\n' +
+      "Locator:  locator('.dos-game')\n" +
+      'Expected: "true"\n' +
+      'Received: "false"\n' +
+      'Timeout:  30000ms\n' +
+      '\n' +
+      'Call log:\n' +
+      `  - Expect "toHaveAttribute" locator('.dos-game') with timeout 30000ms\n` +
+      "  - waiting for locator('.dos-game')\n" +
+      '    62 × locator resolved to <div data-score="0" class="dos-game" data-load-ms="0" data-ready="false" data-heap-bytes="0" data-game-id="dos-disquete" data-game-status="initializing">…</div>\n' +
+      '       - unexpected value "false"\n',
+    pass: false,
+    actual: 'false',
+    log: [
+      `  - Expect "toHaveAttribute" locator('.dos-game') with timeout 30000ms`,
+      "  - waiting for locator('.dos-game')",
+      '    62 × locator resolved to <div data-score="0" class="dos-game" data-load-ms="0" data-ready="false" data-heap-bytes="0" data-game-id="dos-disquete" data-game-status="initializing">…</div>',
+      '       - unexpected value "false"'
+    ],
+    timeout: 30000,
+    ariaSnapshot: '- button "Iniciar jogo DOS"\n' +
+      '- button "Focar no jogo" [disabled]\n' +
+      '- button "Pausar jogo" [disabled]\n' +
+      '- button "Reiniciar partida" [disabled]\n' +
+      '- button "Ativar áudio do jogo" [disabled]\n' +
+      '- button "Tela cheia"\n' +
+      '- button "Sair para o desktop"\n' +
+      '- text: DISQUETE PERDIDO · demonstração original DOS · execução real em DOSBox/WebAssembly\n' +
+      '- heading "O trabalho está em cinco disquetes." [level=2]\n' +
+      '- paragraph: "Setas ou WASD: mover. Progresso gravado pelo jogo e preservado localmente."\n' +
+      '- button "Ligar o laboratório DOS"\n' +
+      '- text: "Setas ou WASD: mover · P: pausa · R: nova partida · Esc: devolver foco. Áudio começa silenciado."\n' +
+      '- status: Pronto para iniciar.'
+  }
+}
+
+Node.js v22.14.0

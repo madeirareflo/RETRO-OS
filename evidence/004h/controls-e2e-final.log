@@ -1,0 +1,138 @@
+
+Running 4 tests using 1 worker
+
+(node:30716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chrome] › qa004h\controls.spec.ts:2:1 › Prince Ctrl+K, movimento, minimizar/restaurar e alternar aplicativo (24.5s)
+  x  2 [chrome] › qa004h\controls.spec.ts:3:1 › Quake mouse encaminhado e liberado; atalhos reservados não cancelados (2.0m)
+(node:7468) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7468) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  3 [edge] › qa004h\controls.spec.ts:2:1 › Prince Ctrl+K, movimento, minimizar/restaurar e alternar aplicativo (17.3s)
+(node:29252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:29252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  4 [edge] › qa004h\controls.spec.ts:3:1 › Quake mouse encaminhado e liberado; atalhos reservados não cancelados (2.0m)
+
+
+  1) [chrome] › qa004h\controls.spec.ts:3:1 › Quake mouse encaminhado e liberado; atalhos reservados não cancelados 
+
+    Test timeout of 120000ms exceeded.
+
+    Error: locator.click: Test timeout of 120000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Sair para o desktop', exact: true })
+        - locator resolved to <button>Sair para o desktop</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <input type="search" aria-label="Buscar:" id="rgl-search-input" value="Quake - shareware DOS v1.06" placeholder="Buscar por título, gênero, desenvolvedor..."/> from <section tabindex="-1" role="dialog" aria-modal="false" data-app="retrolauncher" class="os-window active " aria-label="Retro Game Launcher">…</section> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <input type="search" aria-label="Buscar:" id="rgl-search-input" value="Quake - shareware DOS v1.06" placeholder="Buscar por título, gênero, desenvolvedor..."/> from <section tabindex="-1" role="dialog" aria-modal="false" data-app="retrolauncher" class="os-window active " aria-label="Retro Game Launcher">…</section> subtree intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        136 × waiting for element to be visible, enabled and stable
+            - element is visible, enabled and stable
+            - scrolling into view if needed
+            - done scrolling
+            - <input type="search" aria-label="Buscar:" id="rgl-search-input" value="Quake - shareware DOS v1.06" placeholder="Buscar por título, gênero, desenvolvedor..."/> from <section tabindex="-1" role="dialog" aria-modal="false" data-app="retrolauncher" class="os-window active " aria-label="Retro Game Launcher">…</section> subtree intercepts pointer events
+          - retrying click action
+            - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      1 | import {test,expect} from '@playwright/test';import fs from 'node:fs';import {boot,openGame,keys,hold,bodyX,diagnostics,focus} from './helpers';
+      2 | test('Prince Ctrl+K, movimento, minimizar/restaurar e alternar aplicativo',async({page},info)=>{await page.context().tracing.start({screenshots:true,snapshots:false,sources:false});await boot(page);const f=await openGame(page,'Prince of Persia - demo DOS 1.0',6000);await keys(page,f,['Enter']);await page.waitForTimeout(1800);await page.getByRole('button',{name:'Ativar teclado (Ctrl+K)',exact:true}).click();await page.waitForTimeout(1800);await hold(page,f,'ArrowRight',400);await page.waitForTimeout(400);const before=await bodyX(f);await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-prince-before.png'});await hold(page,f,'ArrowRight',250);const after=await bodyX(f);expect(before).not.toBeNull();expect(after).not.toBeNull();expect(after!).toBeGreaterThan(before!+5);await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-prince-moved.png'});await page.keyboard.down('ArrowLeft');await page.getByRole('button',{name:'Minimizar Jogo DOS importado',exact:true}).click();await expect.poll(async()=>((await diagnostics(f)).pressedKeys as number[]).length).toBe(0);await page.keyboard.up('ArrowLeft');await page.locator('.taskbar').getByRole('button',{name:'Jogo DOS importado',exact:true}).click();await expect(page.locator('.dos-game')).toBeVisible();await page.locator('.desktop-icons').getByRole('button',{name:'Bloco de Notas',exact:true}).dblclick();const editor=page.locator('section[data-app="notepad"] textarea').first();await editor.fill('004H entrada isolada');const count=(await diagnostics(f)).keyDownCount;await editor.press('Control+a');await editor.press('Control+k');expect((await diagnostics(f)).keyDownCount).toBe(count);await page.locator('.taskbar').getByRole('button',{name:'Jogo DOS importado',exact:true}).click();await page.waitForTimeout(300);const restoredX=await bodyX(f);await hold(page,f,'ArrowRight',350);await page.waitForTimeout(300);expect((await bodyX(f))!).toBeGreaterThan(restoredX!+3);await focus(page,f);await page.keyboard.down('Shift');await page.keyboard.down('ArrowLeft');await page.keyboard.press('Shift+Escape');expect((await diagnostics(f)).pressedKeys).toEqual([]);await page.keyboard.up('ArrowLeft');await page.keyboard.up('Shift');await expect(page.getByRole('button',{name:'Focar no jogo',exact:true})).toBeFocused();await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-prince-restored.png'});fs.writeFileSync('evidence/004h/controls/'+info.project.name+'-prince.json',JSON.stringify({beforeX:before,afterX:after,minimizeRestored:true,notepadIsolated:true,ctrlKPreserved:true,diagnostics:await diagnostics(f)},null,2));await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await expect(page.locator('.dos-game')).toHaveCount(0);try{await page.context().tracing.stop({path:'../RETRO-OS-004H-TRACES/'+info.project.name+'-prince-focus.zip'})}catch(error){fs.writeFileSync('evidence/004h/controls/'+info.project.name+'-trace-error.txt',String(error))}});
+    > 3 | test('Quake mouse encaminhado e liberado; atalhos reservados não cancelados',async({page},info)=>{await boot(page);const f=await openGame(page,'Quake - shareware DOS v1.06',18000);await keys(page,f,['Escape','Enter','Enter'],700);await page.waitForTimeout(2500);await f.locator('#screen').click();await page.waitForTimeout(200);const box=(await f.locator('#screen').boundingBox())!;await page.mouse.move(box.x+box.width/2+90,box.y+box.height/2,{steps:8});await page.mouse.click(box.x+box.width/2,box.y+box.height/2);const captured=await diagnostics(f);expect(Number(captured.mouseDownCount)).toBeGreaterThan(0);expect(Number(captured.mouseMoveCount)).toBeGreaterThan(0);await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-quake-mouse.png'});await focus(page,f);await page.keyboard.down('Control');await page.keyboard.press('Shift+Escape');await page.keyboard.up('Control');const released=await diagnostics(f);expect(released.pressedKeys).toEqual([]);expect(released.mouseButtons).toEqual([]);await expect.poll(async()=>Boolean((await diagnostics(f)).mouseLocked)).toBe(false);const prevented=await page.evaluate(()=>{const e=new KeyboardEvent('keydown',{key:'Tab',altKey:true,cancelable:true,bubbles:true});window.dispatchEvent(e);return e.defaultPrevented});expect(prevented).toBe(false);fs.writeFileSync('evidence/004h/controls/'+info.project.name+'-mouse.json',JSON.stringify({forwardedMouse:true,pointerLock:'BLOCKED: native capture not homologated; UI omitted',captured,released,osAltTab:'NOT TESTED; DOM event not canceled'},null,2));await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await expect(page.locator('.dos-game')).toHaveCount(0)});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\qa004h\controls.spec.ts:3:1634
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results-004h\controls-Quake-mouse-encam-e02b7-s-reservados-não-cancelados-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-004h\controls-Quake-mouse-encam-e02b7-s-reservados-não-cancelados-chrome\error-context.md
+
+  2) [edge] › qa004h\controls.spec.ts:2:1 › Prince Ctrl+K, movimento, minimizar/restaurar e alternar aplicativo 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 41.83471074380165
+    Received:   41.60606060606061
+
+      1 | import {test,expect} from '@playwright/test';import fs from 'node:fs';import {boot,openGame,keys,hold,bodyX,diagnostics,focus} from './helpers';
+    > 2 | test('Prince Ctrl+K, movimento, minimizar/restaurar e alternar aplicativo',async({page},info)=>{await page.context().tracing.start({screenshots:true,snapshots:false,sources:false});await boot(page);const f=await openGame(page,'Prince of Persia - demo DOS 1.0',6000);await keys(page,f,['Enter']);await page.waitForTimeout(1800);await page.getByRole('button',{name:'Ativar teclado (Ctrl+K)',exact:true}).click();await page.waitForTimeout(1800);await hold(page,f,'ArrowRight',400);await page.waitForTimeout(400);const before=await bodyX(f);await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-prince-before.png'});await hold(page,f,'ArrowRight',250);const after=await bodyX(f);expect(before).not.toBeNull();expect(after).not.toBeNull();expect(after!).toBeGreaterThan(before!+5);await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-prince-moved.png'});await page.keyboard.down('ArrowLeft');await page.getByRole('button',{name:'Minimizar Jogo DOS importado',exact:true}).click();await expect.poll(async()=>((await diagnostics(f)).pressedKeys as number[]).length).toBe(0);await page.keyboard.up('ArrowLeft');await page.locator('.taskbar').getByRole('button',{name:'Jogo DOS importado',exact:true}).click();await expect(page.locator('.dos-game')).toBeVisible();await page.locator('.desktop-icons').getByRole('button',{name:'Bloco de Notas',exact:true}).dblclick();const editor=page.locator('section[data-app="notepad"] textarea').first();await editor.fill('004H entrada isolada');const count=(await diagnostics(f)).keyDownCount;await editor.press('Control+a');await editor.press('Control+k');expect((await diagnostics(f)).keyDownCount).toBe(count);await page.locator('.taskbar').getByRole('button',{name:'Jogo DOS importado',exact:true}).click();await page.waitForTimeout(300);const restoredX=await bodyX(f);await hold(page,f,'ArrowRight',350);await page.waitForTimeout(300);expect((await bodyX(f))!).toBeGreaterThan(restoredX!+3);await focus(page,f);await page.keyboard.down('Shift');await page.keyboard.down('ArrowLeft');await page.keyboard.press('Shift+Escape');expect((await diagnostics(f)).pressedKeys).toEqual([]);await page.keyboard.up('ArrowLeft');await page.keyboard.up('Shift');await expect(page.getByRole('button',{name:'Focar no jogo',exact:true})).toBeFocused();await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-prince-restored.png'});fs.writeFileSync('evidence/004h/controls/'+info.project.name+'-prince.json',JSON.stringify({beforeX:before,afterX:after,minimizeRestored:true,notepadIsolated:true,ctrlKPreserved:true,diagnostics:await diagnostics(f)},null,2));await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await expect(page.locator('.dos-game')).toHaveCount(0);try{await page.context().tracing.stop({path:'../RETRO-OS-004H-TRACES/'+info.project.name+'-prince-focus.zip'})}catch(error){fs.writeFileSync('evidence/004h/controls/'+info.project.name+'-trace-error.txt',String(error))}});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^
+      3 | test('Quake mouse encaminhado e liberado; atalhos reservados não cancelados',async({page},info)=>{await boot(page);const f=await openGame(page,'Quake - shareware DOS v1.06',18000);await keys(page,f,['Escape','Enter','Enter'],700);await page.waitForTimeout(2500);await f.locator('#screen').click();await page.waitForTimeout(200);const box=(await f.locator('#screen').boundingBox())!;await page.mouse.move(box.x+box.width/2+90,box.y+box.height/2,{steps:8});await page.mouse.click(box.x+box.width/2,box.y+box.height/2);const captured=await diagnostics(f);expect(Number(captured.mouseDownCount)).toBeGreaterThan(0);expect(Number(captured.mouseMoveCount)).toBeGreaterThan(0);await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-quake-mouse.png'});await focus(page,f);await page.keyboard.down('Control');await page.keyboard.press('Shift+Escape');await page.keyboard.up('Control');const released=await diagnostics(f);expect(released.pressedKeys).toEqual([]);expect(released.mouseButtons).toEqual([]);await expect.poll(async()=>Boolean((await diagnostics(f)).mouseLocked)).toBe(false);const prevented=await page.evaluate(()=>{const e=new KeyboardEvent('keydown',{key:'Tab',altKey:true,cancelable:true,bubbles:true});window.dispatchEvent(e);return e.defaultPrevented});expect(prevented).toBe(false);fs.writeFileSync('evidence/004h/controls/'+info.project.name+'-mouse.json',JSON.stringify({forwardedMouse:true,pointerLock:'BLOCKED: native capture not homologated; UI omitted',captured,released,osAltTab:'NOT TESTED; DOM event not canceled'},null,2));await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await expect(page.locator('.dos-game')).toHaveCount(0)});
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\qa004h\controls.spec.ts:2:770
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results-004h\controls-Prince-Ctrl-K-mov-db4ac-aurar-e-alternar-aplicativo-edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-004h\controls-Prince-Ctrl-K-mov-db4ac-aurar-e-alternar-aplicativo-edge\error-context.md
+
+  3) [edge] › qa004h\controls.spec.ts:3:1 › Quake mouse encaminhado e liberado; atalhos reservados não cancelados 
+
+    Test timeout of 120000ms exceeded.
+
+    Error: locator.click: Test timeout of 120000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Sair para o desktop', exact: true })
+        - locator resolved to <button>Sair para o desktop</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <input type="search" aria-label="Buscar:" id="rgl-search-input" value="Quake - shareware DOS v1.06" placeholder="Buscar por título, gênero, desenvolvedor..."/> from <section tabindex="-1" role="dialog" aria-modal="false" data-app="retrolauncher" class="os-window active " aria-label="Retro Game Launcher">…</section> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <input type="search" aria-label="Buscar:" id="rgl-search-input" value="Quake - shareware DOS v1.06" placeholder="Buscar por título, gênero, desenvolvedor..."/> from <section tabindex="-1" role="dialog" aria-modal="false" data-app="retrolauncher" class="os-window active " aria-label="Retro Game Launcher">…</section> subtree intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        134 × waiting for element to be visible, enabled and stable
+            - element is visible, enabled and stable
+            - scrolling into view if needed
+            - done scrolling
+            - <input type="search" aria-label="Buscar:" id="rgl-search-input" value="Quake - shareware DOS v1.06" placeholder="Buscar por título, gênero, desenvolvedor..."/> from <section tabindex="-1" role="dialog" aria-modal="false" data-app="retrolauncher" class="os-window active " aria-label="Retro Game Launcher">…</section> subtree intercepts pointer events
+          - retrying click action
+            - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      1 | import {test,expect} from '@playwright/test';import fs from 'node:fs';import {boot,openGame,keys,hold,bodyX,diagnostics,focus} from './helpers';
+      2 | test('Prince Ctrl+K, movimento, minimizar/restaurar e alternar aplicativo',async({page},info)=>{await page.context().tracing.start({screenshots:true,snapshots:false,sources:false});await boot(page);const f=await openGame(page,'Prince of Persia - demo DOS 1.0',6000);await keys(page,f,['Enter']);await page.waitForTimeout(1800);await page.getByRole('button',{name:'Ativar teclado (Ctrl+K)',exact:true}).click();await page.waitForTimeout(1800);await hold(page,f,'ArrowRight',400);await page.waitForTimeout(400);const before=await bodyX(f);await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-prince-before.png'});await hold(page,f,'ArrowRight',250);const after=await bodyX(f);expect(before).not.toBeNull();expect(after).not.toBeNull();expect(after!).toBeGreaterThan(before!+5);await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-prince-moved.png'});await page.keyboard.down('ArrowLeft');await page.getByRole('button',{name:'Minimizar Jogo DOS importado',exact:true}).click();await expect.poll(async()=>((await diagnostics(f)).pressedKeys as number[]).length).toBe(0);await page.keyboard.up('ArrowLeft');await page.locator('.taskbar').getByRole('button',{name:'Jogo DOS importado',exact:true}).click();await expect(page.locator('.dos-game')).toBeVisible();await page.locator('.desktop-icons').getByRole('button',{name:'Bloco de Notas',exact:true}).dblclick();const editor=page.locator('section[data-app="notepad"] textarea').first();await editor.fill('004H entrada isolada');const count=(await diagnostics(f)).keyDownCount;await editor.press('Control+a');await editor.press('Control+k');expect((await diagnostics(f)).keyDownCount).toBe(count);await page.locator('.taskbar').getByRole('button',{name:'Jogo DOS importado',exact:true}).click();await page.waitForTimeout(300);const restoredX=await bodyX(f);await hold(page,f,'ArrowRight',350);await page.waitForTimeout(300);expect((await bodyX(f))!).toBeGreaterThan(restoredX!+3);await focus(page,f);await page.keyboard.down('Shift');await page.keyboard.down('ArrowLeft');await page.keyboard.press('Shift+Escape');expect((await diagnostics(f)).pressedKeys).toEqual([]);await page.keyboard.up('ArrowLeft');await page.keyboard.up('Shift');await expect(page.getByRole('button',{name:'Focar no jogo',exact:true})).toBeFocused();await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-prince-restored.png'});fs.writeFileSync('evidence/004h/controls/'+info.project.name+'-prince.json',JSON.stringify({beforeX:before,afterX:after,minimizeRestored:true,notepadIsolated:true,ctrlKPreserved:true,diagnostics:await diagnostics(f)},null,2));await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await expect(page.locator('.dos-game')).toHaveCount(0);try{await page.context().tracing.stop({path:'../RETRO-OS-004H-TRACES/'+info.project.name+'-prince-focus.zip'})}catch(error){fs.writeFileSync('evidence/004h/controls/'+info.project.name+'-trace-error.txt',String(error))}});
+    > 3 | test('Quake mouse encaminhado e liberado; atalhos reservados não cancelados',async({page},info)=>{await boot(page);const f=await openGame(page,'Quake - shareware DOS v1.06',18000);await keys(page,f,['Escape','Enter','Enter'],700);await page.waitForTimeout(2500);await f.locator('#screen').click();await page.waitForTimeout(200);const box=(await f.locator('#screen').boundingBox())!;await page.mouse.move(box.x+box.width/2+90,box.y+box.height/2,{steps:8});await page.mouse.click(box.x+box.width/2,box.y+box.height/2);const captured=await diagnostics(f);expect(Number(captured.mouseDownCount)).toBeGreaterThan(0);expect(Number(captured.mouseMoveCount)).toBeGreaterThan(0);await page.screenshot({path:'evidence/004h/controls/'+info.project.name+'-quake-mouse.png'});await focus(page,f);await page.keyboard.down('Control');await page.keyboard.press('Shift+Escape');await page.keyboard.up('Control');const released=await diagnostics(f);expect(released.pressedKeys).toEqual([]);expect(released.mouseButtons).toEqual([]);await expect.poll(async()=>Boolean((await diagnostics(f)).mouseLocked)).toBe(false);const prevented=await page.evaluate(()=>{const e=new KeyboardEvent('keydown',{key:'Tab',altKey:true,cancelable:true,bubbles:true});window.dispatchEvent(e);return e.defaultPrevented});expect(prevented).toBe(false);fs.writeFileSync('evidence/004h/controls/'+info.project.name+'-mouse.json',JSON.stringify({forwardedMouse:true,pointerLock:'BLOCKED: native capture not homologated; UI omitted',captured,released,osAltTab:'NOT TESTED; DOM event not canceled'},null,2));await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await expect(page.locator('.dos-game')).toHaveCount(0)});
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^
+      4 |
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\qa004h\controls.spec.ts:3:1634
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results-004h\controls-Quake-mouse-encam-e02b7-s-reservados-não-cancelados-edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-004h\controls-Quake-mouse-encam-e02b7-s-reservados-não-cancelados-edge\error-context.md
+
+  3 failed
+    [chrome] › qa004h\controls.spec.ts:3:1 › Quake mouse encaminhado e liberado; atalhos reservados não cancelados 
+    [edge] › qa004h\controls.spec.ts:2:1 › Prince Ctrl+K, movimento, minimizar/restaurar e alternar aplicativo 
+    [edge] › qa004h\controls.spec.ts:3:1 › Quake mouse encaminhado e liberado; atalhos reservados não cancelados 
+  1 passed (4.8m)

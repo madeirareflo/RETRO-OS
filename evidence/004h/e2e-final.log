@@ -1,0 +1,125 @@
+
+Running 40 tests using 1 worker
+
+(node:33716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:33716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chrome] › qa004h\controls.spec.ts:2:1 › Prince Ctrl+K, movimento, minimizar/restaurar e alternar aplicativo (24.0s)
+  ok  2 [chrome] › qa004h\controls.spec.ts:3:1 › Quake mouse encaminhado e liberado; atalhos reservados não cancelados (29.7s)
+  ok  3 [chrome] › qa004h\imports.spec.ts:2:1 › Importação real de shareware, integridade, duplicado e preservação após inválido (2.3s)
+  ok  4 [chrome] › qa004h\regression-desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar (1.5s)
+  ok  5 [chrome] › qa004h\regression-desktop.spec.ts:5:1 › salvar, recarregar e reabrir texto pelo arquivo virtual (1.6s)
+  ok  6 [chrome] › qa004h\regression-desktop.spec.ts:6:1 › temas globais, persistência, menu e screenshots (2.2s)
+  ok  7 [chrome] › qa004h\regression-desktop.spec.ts:7:1 › Paint exporta PNG real com desenho (1.8s)
+  ok  8 [chrome] › qa004h\regression-desktop.spec.ts:8:1 › três jogos iniciam e aceitam jogadas (1.7s)
+  ok  9 [chrome] › qa004h\regression-desktop.spec.ts:9:1 › terminal, calculadora e páginas internas sem erros de console (1.5s)
+  ok 10 [chrome] › qa004h\regression-desktop.spec.ts:10:1 › mobile permanece utilizável (1.2s)
+  ok 11 [chrome] › qa004h\regression-living-web-journeys-fgh.spec.ts:14:3 › RETRO OS 004E — Jornadas Integradas da Living Web › Jornada F — Investigação: Buscador -> Fórum -> Postagem -> Diário -> Página Secreta (3.4s)
+  ok 12 [chrome] › qa004h\regression-living-web-journeys-fgh.spec.ts:58:3 › RETRO OS 004E — Jornadas Integradas da Living Web › Jornada G — Amigos: Fotolog -> Blog da Bia -> Rede Recreio (2.7s)
+  ok 13 [chrome] › qa004h\regression-living-web-journeys-fgh.spec.ts:95:3 › RETRO OS 004E — Jornadas Integradas da Living Web › Jornada H — LAN House: Portal -> CyberSpace LAN House -> Retro Game Launcher (2.8s)
+  ok 14 [chrome] › qa004h\regression-the-lost-internet-journeys.spec.ts:14:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 1 — O Manifesto do Laboratório de 1999 e Download no VFS (1.8s)
+  ok 15 [chrome] › qa004h\regression-the-lost-internet-journeys.spec.ts:38:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 2 — A Ascensão e Memorial da CyberSpace LAN House (3.2s)
+  ok 16 [chrome] › qa004h\regression-the-lost-internet-journeys.spec.ts:75:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 3 — Arquivo Histórico e Snapshots Temporais (1998-2008) (1.9s)
+  ok 17 [chrome] › qa004h\regression-the-lost-internet-journeys.spec.ts:99:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 4 — Buscador com Filtros Temporais e de Categoria (1.9s)
+  ok 18 [chrome] › qa004h\regression-the-lost-internet-journeys.spec.ts:120:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 5 — Integridade Temporal (Site Inexistente em 1998) (2.3s)
+  ok 19 [chrome] › qa004h\regression-the-lost-internet-journeys.spec.ts:153:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 6 — Central de Downloads com Táticas e Manifesto no VFS (4.7s)
+  x  20 [chrome] › qa004h\save-quota.spec.ts:2:1 › save nativo chega ao IndexedDB mesmo com fallback localStorage indisponível (31.1s)
+(node:26940) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26940) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 21 [edge] › qa004h\controls.spec.ts:2:1 › Prince Ctrl+K, movimento, minimizar/restaurar e alternar aplicativo (24.6s)
+  ok 22 [edge] › qa004h\controls.spec.ts:3:1 › Quake mouse encaminhado e liberado; atalhos reservados não cancelados (30.1s)
+  ok 23 [edge] › qa004h\imports.spec.ts:2:1 › Importação real de shareware, integridade, duplicado e preservação após inválido (2.2s)
+  ok 24 [edge] › qa004h\regression-desktop.spec.ts:4:1 › BIOS, janelas, multitarefa, arrastar, resize, minimizar, maximizar e fechar (1.2s)
+  ok 25 [edge] › qa004h\regression-desktop.spec.ts:5:1 › salvar, recarregar e reabrir texto pelo arquivo virtual (1.4s)
+  ok 26 [edge] › qa004h\regression-desktop.spec.ts:6:1 › temas globais, persistência, menu e screenshots (2.0s)
+  ok 27 [edge] › qa004h\regression-desktop.spec.ts:7:1 › Paint exporta PNG real com desenho (1.6s)
+  ok 28 [edge] › qa004h\regression-desktop.spec.ts:8:1 › três jogos iniciam e aceitam jogadas (1.6s)
+  ok 29 [edge] › qa004h\regression-desktop.spec.ts:9:1 › terminal, calculadora e páginas internas sem erros de console (1.2s)
+  ok 30 [edge] › qa004h\regression-desktop.spec.ts:10:1 › mobile permanece utilizável (985ms)
+  ok 31 [edge] › qa004h\regression-living-web-journeys-fgh.spec.ts:14:3 › RETRO OS 004E — Jornadas Integradas da Living Web › Jornada F — Investigação: Buscador -> Fórum -> Postagem -> Diário -> Página Secreta (3.2s)
+  ok 32 [edge] › qa004h\regression-living-web-journeys-fgh.spec.ts:58:3 › RETRO OS 004E — Jornadas Integradas da Living Web › Jornada G — Amigos: Fotolog -> Blog da Bia -> Rede Recreio (2.4s)
+  ok 33 [edge] › qa004h\regression-living-web-journeys-fgh.spec.ts:95:3 › RETRO OS 004E — Jornadas Integradas da Living Web › Jornada H — LAN House: Portal -> CyberSpace LAN House -> Retro Game Launcher (2.6s)
+  ok 34 [edge] › qa004h\regression-the-lost-internet-journeys.spec.ts:14:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 1 — O Manifesto do Laboratório de 1999 e Download no VFS (1.7s)
+  ok 35 [edge] › qa004h\regression-the-lost-internet-journeys.spec.ts:38:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 2 — A Ascensão e Memorial da CyberSpace LAN House (3.3s)
+  ok 36 [edge] › qa004h\regression-the-lost-internet-journeys.spec.ts:75:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 3 — Arquivo Histórico e Snapshots Temporais (1998-2008) (1.8s)
+  ok 37 [edge] › qa004h\regression-the-lost-internet-journeys.spec.ts:99:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 4 — Buscador com Filtros Temporais e de Categoria (1.7s)
+  ok 38 [edge] › qa004h\regression-the-lost-internet-journeys.spec.ts:120:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 5 — Integridade Temporal (Site Inexistente em 1998) (2.4s)
+  ok 39 [edge] › qa004h\regression-the-lost-internet-journeys.spec.ts:153:3 › RETRO OS 004F — The Lost Internet: Jornadas Arqueológicas 1 a 6 › Jornada 6 — Central de Downloads com Táticas e Manifesto no VFS (4.7s)
+  x  40 [edge] › qa004h\save-quota.spec.ts:2:1 › save nativo chega ao IndexedDB mesmo com fallback localStorage indisponível (31.1s)
+
+
+  1) [chrome] › qa004h\save-quota.spec.ts:2:1 › save nativo chega ao IndexedDB mesmo com fallback localStorage indisponível 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('.dos-game')
+    Expected: "true"
+    Received: "false"
+    Timeout:  30000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('.dos-game') with timeout 30000ms
+      - waiting for locator('.dos-game')
+        62 × locator resolved to <div data-score="0" class="dos-game" data-load-ms="0" data-ready="false" data-heap-bytes="0" data-game-id="dos-disquete" data-game-status="initializing">…</div>
+           - unexpected value "false"
+
+
+       at helpers.ts:3
+
+      1 | import {expect,type Page,type Frame} from '@playwright/test';
+      2 | export async function boot(page:Page){await page.goto('/');const skip=page.getByRole('button',{name:'Pular inicialização',exact:true});if(await skip.isVisible())await skip.click();await expect(page.getByRole('button',{name:'Iniciar',exact:true})).toBeVisible({timeout:15000});const about=page.getByRole('button',{name:'Fechar Sobre o RETRO OS',exact:true});if(await about.isVisible())await about.click()}
+    > 3 | export async function openGame(page:Page,title:string,wait=4000){if(await page.locator('.dos-game').count()){await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await expect(page.locator('.dos-game')).toHaveCount(0)}if(!await page.getByRole('region',{name:'Retro Game Launcher',exact:true}).count())await page.locator('.desktop-icons').getByRole('button',{name:'Retro Game Launcher',exact:true}).dblclick();await page.getByRole('button',{name:'Todas',exact:true}).click();await page.getByLabel('Buscar:',{exact:true}).fill(title);await page.getByRole('button',{name:title,exact:true}).dblclick();const start=page.getByRole('button',{name:'Iniciar jogo DOS',exact:true});if(await start.isVisible())await start.click();await expect(page.locator('.dos-game')).toHaveAttribute('data-ready','true',{timeout:30000});const frame=page.frames().find(f=>f.url().includes('/emulation/player.html'))!;await page.waitForTimeout(wait);return frame}
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      4 | export async function focus(page:Page,frame:Frame){await page.getByRole('button',{name:'Focar no jogo',exact:true}).click();await expect.poll(()=>frame.evaluate(()=>document.activeElement?.id)).toBe('engine')}
+      5 | export async function keys(page:Page,frame:Frame,list:string[],interval=400){await focus(page,frame);for(const key of list){await page.keyboard.press(key,{delay:90});await page.waitForTimeout(interval)}}
+      6 | export async function hold(page:Page,frame:Frame,key:string,ms:number){await focus(page,frame);await page.keyboard.down(key);await page.waitForTimeout(ms);await page.keyboard.up(key);await page.waitForTimeout(100)}
+        at openGame (C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\qa004h\helpers.ts:3:664)
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\qa004h\save-quota.spec.ts:2:130
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results-004h\save-quota-save-nativo-che-b7408-k-localStorage-indisponível-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-004h\save-quota-save-nativo-che-b7408-k-localStorage-indisponível-chrome\error-context.md
+
+  2) [edge] › qa004h\save-quota.spec.ts:2:1 › save nativo chega ao IndexedDB mesmo com fallback localStorage indisponível 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('.dos-game')
+    Expected: "true"
+    Received: "false"
+    Timeout:  30000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('.dos-game') with timeout 30000ms
+      - waiting for locator('.dos-game')
+        62 × locator resolved to <div data-score="0" class="dos-game" data-load-ms="0" data-ready="false" data-heap-bytes="0" data-game-id="dos-disquete" data-game-status="initializing">…</div>
+           - unexpected value "false"
+
+
+       at helpers.ts:3
+
+      1 | import {expect,type Page,type Frame} from '@playwright/test';
+      2 | export async function boot(page:Page){await page.goto('/');const skip=page.getByRole('button',{name:'Pular inicialização',exact:true});if(await skip.isVisible())await skip.click();await expect(page.getByRole('button',{name:'Iniciar',exact:true})).toBeVisible({timeout:15000});const about=page.getByRole('button',{name:'Fechar Sobre o RETRO OS',exact:true});if(await about.isVisible())await about.click()}
+    > 3 | export async function openGame(page:Page,title:string,wait=4000){if(await page.locator('.dos-game').count()){await page.getByRole('button',{name:'Sair para o desktop',exact:true}).click();await expect(page.locator('.dos-game')).toHaveCount(0)}if(!await page.getByRole('region',{name:'Retro Game Launcher',exact:true}).count())await page.locator('.desktop-icons').getByRole('button',{name:'Retro Game Launcher',exact:true}).dblclick();await page.getByRole('button',{name:'Todas',exact:true}).click();await page.getByLabel('Buscar:',{exact:true}).fill(title);await page.getByRole('button',{name:title,exact:true}).dblclick();const start=page.getByRole('button',{name:'Iniciar jogo DOS',exact:true});if(await start.isVisible())await start.click();await expect(page.locator('.dos-game')).toHaveAttribute('data-ready','true',{timeout:30000});const frame=page.frames().find(f=>f.url().includes('/emulation/player.html'))!;await page.waitForTimeout(wait);return frame}
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      4 | export async function focus(page:Page,frame:Frame){await page.getByRole('button',{name:'Focar no jogo',exact:true}).click();await expect.poll(()=>frame.evaluate(()=>document.activeElement?.id)).toBe('engine')}
+      5 | export async function keys(page:Page,frame:Frame,list:string[],interval=400){await focus(page,frame);for(const key of list){await page.keyboard.press(key,{delay:90});await page.waitForTimeout(interval)}}
+      6 | export async function hold(page:Page,frame:Frame,key:string,ms:number){await focus(page,frame);await page.keyboard.down(key);await page.waitForTimeout(ms);await page.keyboard.up(key);await page.waitForTimeout(100)}
+        at openGame (C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\qa004h\helpers.ts:3:664)
+        at C:\Users\Davi LRD\.codex\.chatgpt-projects\g-p-6a3eef711d7881918fb955604f45fe02\RETRO-OS-004H-ANTI\qa004h\save-quota.spec.ts:2:130
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results-004h\save-quota-save-nativo-che-b7408-k-localStorage-indisponível-edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-004h\save-quota-save-nativo-che-b7408-k-localStorage-indisponível-edge\error-context.md
+
+  2 failed
+    [chrome] › qa004h\save-quota.spec.ts:2:1 › save nativo chega ao IndexedDB mesmo com fallback localStorage indisponível 
+    [edge] › qa004h\save-quota.spec.ts:2:1 › save nativo chega ao IndexedDB mesmo com fallback localStorage indisponível 
+  38 passed (4.2m)

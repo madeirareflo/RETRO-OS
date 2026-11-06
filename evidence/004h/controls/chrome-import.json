@@ -1,0 +1,10 @@
+{
+  "actual": {
+    "bytes": 2890661,
+    "hash": "50170e162b653619d266ecaf719f9a0fe9df04b88e3c30a37e436b42df5640f2"
+  },
+  "duplicate": "PASS",
+  "corruptedRejected": "PASS",
+  "reload": "PASS",
+  "commercialFullVersions": "NOT TESTED"
+}

@@ -42,10 +42,10 @@ PASS indica somente a coluna e o teste representativo documentado; não signific
 | Max Payne | BLOCKED | NOT APPLICABLE | NOT APPLICABLE | NOT TESTED | NOT TESTED | NOT TESTED | NOT TESTED | NOT TESTED | F |
 | Max Payne 2: The Fall of Max Payne | BLOCKED | NOT APPLICABLE | NOT APPLICABLE | NOT TESTED | NOT TESTED | NOT TESTED | NOT TESTED | NOT TESTED | F |
 | Freedoom Phase 1 — FastDoom | PASS | PARTIAL | PASS | PASS | PASS | PASS | PASS | PARTIAL | B |
-| Ken's Labyrinth 2.1 | PASS | PARTIAL | PASS | PASS | PASS | PARTIAL | PARTIAL | NOT TESTED | B |
+| Ken's Labyrinth 2.1 | PASS | PARTIAL | PASS | PASS | PARTIAL | PARTIAL | PARTIAL | NOT TESTED | B |
 | SkyRoads (1993) | PASS | PARTIAL | PASS | PASS | PASS | PASS | PASS | NOT TESTED | C |
 
-Gameplay representativo observado nos oito no Chrome (movimento/cena e ações nas capturas; Ken tem ação relevante ainda parcial). Nenhum foi promovido a A. Os 32 perfis dos 37 sem pacote não foram iniciados. Execução DOS/comportamento de edições ausentes não inferidos a partir de nomes de arquivos.
+Sete jogos tiveram movimento e ação relevante comprovados; Ken teve cena e deslocamento comprovados, mas ação relevante permanece PARTIAL. Nenhum foi promovido a A. Os 32 perfis dos 37 sem pacote não foram iniciados. Execução DOS/comportamento de edições ausentes não inferidos a partir de nomes de arquivos.
 
 ## Evidências por pacote
 

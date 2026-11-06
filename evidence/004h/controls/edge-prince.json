@@ -1,0 +1,21 @@
+{
+  "beforeX": 36.83471074380165,
+  "afterX": 55.5,
+  "minimizeRestored": true,
+  "notepadIsolated": true,
+  "ctrlKPreserved": true,
+  "diagnostics": {
+    "ready": true,
+    "saves": 1,
+    "audioPeak": 0,
+    "wasm": true,
+    "heapBytes": 67108864,
+    "state": [],
+    "pressedKeys": [],
+    "keyDownCount": 10,
+    "keyUpCount": 10,
+    "keyReleaseCount": 17,
+    "princeKeyboardPreset": true,
+    "mouseButtons": []
+  }
+}

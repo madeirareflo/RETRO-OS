@@ -1,0 +1,37 @@
+{
+  "forwardedMouse": true,
+  "pointerLock": "BLOCKED: native capture not homologated; UI omitted",
+  "captured": {
+    "ready": true,
+    "saves": 1,
+    "audioPeak": 0.2546062469482422,
+    "wasm": true,
+    "heapBytes": 134217728,
+    "state": [],
+    "pressedKeys": [],
+    "keyDownCount": 3,
+    "keyUpCount": 3,
+    "keyReleaseCount": 2,
+    "princeKeyboardPreset": false,
+    "mouseButtons": [],
+    "mouseMoveCount": 10,
+    "mouseDownCount": 2
+  },
+  "released": {
+    "ready": true,
+    "saves": 1,
+    "audioPeak": 0.2546062469482422,
+    "wasm": true,
+    "heapBytes": 134217728,
+    "state": [],
+    "pressedKeys": [],
+    "keyDownCount": 5,
+    "keyUpCount": 7,
+    "keyReleaseCount": 7,
+    "princeKeyboardPreset": false,
+    "mouseButtons": [],
+    "mouseMoveCount": 10,
+    "mouseDownCount": 2
+  },
+  "osAltTab": "NOT TESTED; DOM event not canceled"
+}
