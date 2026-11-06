@@ -1,13 +1,11 @@
-# 004H-03 — controles e foco
+# Controles e foco — resultado 004H
 
-Foi isolada uma ponte de entrada no iframe (public/emulation/input-bridge.js). Teclas e botões pressionados são liberados em blur, Shift+Esc e descarte; os listeners são removidos. Ctrl+K só é tratado quando o canvas do emulador tem foco. Não foi acrescentado listener de Ctrl+K no desktop.
+A ponte original input-bridge.js fica no iframe confiável do emulador. Não há listener global de Ctrl+K no desktop. Ctrl+A/Ctrl+K/F-keys só têm defaults do navegador suprimidos com o engine focado; Alt+Tab não é cancelado. Shift+Esc e blur liberam teclas/botões. Dispose remove listeners e libera recursos de entrada.
 
-O canvas visível era um espelho; agora seus eventos de mouse são encaminhados ao canvas real com coordenadas proporcionais à imagem, sem usar a escala de 1 px do canvas oculto. Foi acrescentado pedido explícito de captura (clique do usuário), com allow-pointer-lock no iframe, instrução de liberação e fallback quando o navegador recusa. O disparo via mouse e eventos chegaram ao emulador no probe Chrome; captura persistente será validada separadamente e não é presumida pelo pedido da API.
+O canvas visível era espelho de um engine de 1 px. Seus eventos agora são encaminhados com coordenadas proporcionais à imagem. Testes unitários verificam mapeamento, liberação, isolamento, pedido explícito de lock e remoção de listeners. E2E Quake verifica contagem de eventos, disparo e liberação real no navegador. O engine pode receber mouse sem lock. Captura nativa contínua não foi homologada e seu botão experimental foi retirado da interface; não é prometida como concluída.
 
-Alt+Tab não é cancelado pelo novo bridge nem pelo handler virtual do desktop. A troca real do sistema operacional não pode ser certificada por eventos sintéticos/headless; não se tenta bloqueá-la. F2/F3 e Ctrl+K têm o comportamento padrão do navegador suprimido apenas enquanto o canvas está ativo.
+Focar usa foco síncrono same-origin antes do postMessage, evitando perder a primeira tecla rápida após clicar. A verificação de origem/source das mensagens permanece. Prince preserva a combinação Ctrl+K restrita ao preset; não remapeia teclas arbitrariamente. Seu menu/edição determina o comportamento da combinação, não um atalho global do RETRO OS.
 
-Quake teve dois prompts identificados: música de CD ausente e calibração de joystick sem uso. Os switches -nocdaudio e -nojoy estão documentados no README.TXT/TECHINFO.TXT da própria distribuição e foram aplicados somente ao perfil Quake/QUAKE.EXE. Os efeitos sonoros permanecem habilitados; não foram incluídas faixas musicais. Os binários e saves não foram alterados.
+Chrome/Edge: movimento do Prince observado antes e depois de alternar janela; teclas soltas ao minimizar; Notepad isolado; Shift+Esc retorna ao botão Focar. Quake: teclado/mouse, release e troca de janela DOM. Não foi bloqueado Alt+Tab do sistema. Comportamento físico de Alt+Tab, mouse relativo em sessão visível e todos os atalhos de todos os oito jogos: PARTIAL/NOT TESTED. Áudio exige ativação por gesto e não é validado pelo mero estado running do AudioContext.
 
-O status da janela diferencia emulador iniciado de partida confirmada. Instruções novas de entrada são fornecidas em pt-BR, inglês e espanhol; os três idiomas existentes foram preservados.
-
-Testes de fronteira executados: cinco unitários PASS (keyup em blur; Ctrl+K restrito; coordenadas do espelho; captura mediante ação; dispose e Alt+Tab não cancelado). Ver input-unit.log. Os testes gráficos de minimizar/restaurar, troca de aplicativos e Prince serão registrados no checkpoint seguinte.
+Falhas de QA preservadas: waits fixos de animação do Prince geraram falsos negativos de pose; roteiro final observa deslocamento antes de soltar a tecla. Clique em jogo coberto por Launcher após trocar janela gerou timeout de teste, corrigido restaurando o jogo pela taskbar. Nenhuma dessas tentativas foi registrada como PASS.

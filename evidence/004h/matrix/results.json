@@ -1,0 +1,366 @@
+[
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "classic",
+    "width": 1024,
+    "height": 768,
+    "domReadyMs": 781.5,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "classic",
+    "width": 1280,
+    "height": 720,
+    "domReadyMs": 328.09999999403954,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "classic",
+    "width": 1366,
+    "height": 768,
+    "domReadyMs": 333,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "classic",
+    "width": 1600,
+    "height": 900,
+    "domReadyMs": 486.30000001192093,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "classic",
+    "width": 1920,
+    "height": 1080,
+    "domReadyMs": 1147.4000000059605,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "win2000",
+    "width": 1024,
+    "height": 768,
+    "domReadyMs": 908.0999999940395,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "win2000",
+    "width": 1280,
+    "height": 720,
+    "domReadyMs": 884.1999999880791,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "win2000",
+    "width": 1366,
+    "height": 768,
+    "domReadyMs": 836.2999999821186,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "win2000",
+    "width": 1600,
+    "height": 900,
+    "domReadyMs": 988.5999999940395,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "win2000",
+    "width": 1920,
+    "height": 1080,
+    "domReadyMs": 1006.0999999940395,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "xp",
+    "width": 1024,
+    "height": 768,
+    "domReadyMs": 1100.300000011921,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "xp",
+    "width": 1280,
+    "height": 720,
+    "domReadyMs": 865.3000000119209,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "xp",
+    "width": 1366,
+    "height": 768,
+    "domReadyMs": 818,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "xp",
+    "width": 1600,
+    "height": 900,
+    "domReadyMs": 916.4000000059605,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "xp",
+    "width": 1920,
+    "height": 1080,
+    "domReadyMs": 947.7000000178814,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "mix",
+    "width": 1024,
+    "height": 768,
+    "domReadyMs": 677.0999999940395,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "mix",
+    "width": 1280,
+    "height": 720,
+    "domReadyMs": 765,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "mix",
+    "width": 1366,
+    "height": 768,
+    "domReadyMs": 756.1999999880791,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "mix",
+    "width": 1600,
+    "height": 900,
+    "domReadyMs": 830.8000000119209,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "chrome",
+    "version": "156.0.8078.80",
+    "theme": "mix",
+    "width": 1920,
+    "height": 1080,
+    "domReadyMs": 1060.7999999821186,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "classic",
+    "width": 1024,
+    "height": 768,
+    "domReadyMs": 955.2999999821186,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "classic",
+    "width": 1280,
+    "height": 720,
+    "domReadyMs": 336.09999999403954,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "classic",
+    "width": 1366,
+    "height": 768,
+    "domReadyMs": 346,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "classic",
+    "width": 1600,
+    "height": 900,
+    "domReadyMs": 516.6000000238419,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "classic",
+    "width": 1920,
+    "height": 1080,
+    "domReadyMs": 1249,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "win2000",
+    "width": 1024,
+    "height": 768,
+    "domReadyMs": 931.6000000238419,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "win2000",
+    "width": 1280,
+    "height": 720,
+    "domReadyMs": 813.7999999821186,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "win2000",
+    "width": 1366,
+    "height": 768,
+    "domReadyMs": 842.7000000178814,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "win2000",
+    "width": 1600,
+    "height": 900,
+    "domReadyMs": 1019.4000000059605,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "win2000",
+    "width": 1920,
+    "height": 1080,
+    "domReadyMs": 1153.9000000059605,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "xp",
+    "width": 1024,
+    "height": 768,
+    "domReadyMs": 1154.800000011921,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "xp",
+    "width": 1280,
+    "height": 720,
+    "domReadyMs": 638.5999999940395,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "xp",
+    "width": 1366,
+    "height": 768,
+    "domReadyMs": 730,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "xp",
+    "width": 1600,
+    "height": 900,
+    "domReadyMs": 982.3000000119209,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "xp",
+    "width": 1920,
+    "height": 1080,
+    "domReadyMs": 1066.300000011921,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "mix",
+    "width": 1024,
+    "height": 768,
+    "domReadyMs": 807.6999999880791,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "mix",
+    "width": 1280,
+    "height": 720,
+    "domReadyMs": 702.5,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "mix",
+    "width": 1366,
+    "height": 768,
+    "domReadyMs": 843.9000000059605,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "mix",
+    "width": 1600,
+    "height": 900,
+    "domReadyMs": 774.2999999821186,
+    "viewportScreenshot": true
+  },
+  {
+    "channel": "msedge",
+    "version": "156.0.4314.58",
+    "theme": "mix",
+    "width": 1920,
+    "height": 1080,
+    "domReadyMs": 880.1999999880791,
+    "viewportScreenshot": true
+  },
+  {
+    "firefox": "BLOCKED",
+    "error": "Error: browserType.launch: spawn UNKNOWN\nCall log:\n\u001b[2m  - <launching> C:\\Users\\Davi LRD\\AppData\\Local\\ms-playwright\\firefox-1555\\firefox\\firefox.exe -no-remote -headless -profile C:\\Users\\DAVILR~1\\AppData\\Local\\Temp\\playwright_firefoxdev_profile-Fk7Paq -juggler-pipe -silent\u001b[22m\n"
+  }
+]
