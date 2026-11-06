@@ -1,3 +1,5 @@
+import {getLaunchPackage} from './runtime37/launchPackage';
+import {gameQaState,gameQaLabel,gameQaNotice} from './qaState004h';import type {Language} from '../core/i18n';
 import {RuntimeLibrary} from './runtime37/RuntimeLibrary';import {runtimeAction,runtimeProfileId} from './runtime37/integration';
 import {gameControlsManual,type ControlsManual} from './gameControls';
 import {GameControlsHelp} from './GameControlsHelp';
@@ -11,7 +13,7 @@ import {BatchImportModal} from './BatchImportModal';
 import {SaveManagerModal} from './SaveManagerModal';
 import {StorageModal} from './StorageModal';
 import {ExoConverterModal} from './ExoConverterModal';
-import {removeGameCompletely,getGamePackage} from './storageManager';
+import {removeGameCompletely} from './storageManager';
 import {Icon} from '../components/Icon';
 import {GameGenreBadge} from './GameGenreBadge';
 import {read, write} from '../storage/local';
@@ -21,6 +23,7 @@ import '../styles/retroGameLauncher.css';
 
 interface RetroGameLauncherProps {
   open: (id: AppId) => void;
+  language?:Language;
 }
 
 const PREDEFINED_COLLECTIONS = [
@@ -42,8 +45,8 @@ const PREDEFINED_COLLECTIONS = [
   'Clássicos de LAN House'
 ];
 
-export function RetroGameLauncher({open}: RetroGameLauncherProps) {
-  const [verifiedSelected,setVerifiedSelected]=useState<string|null>(null);
+export function RetroGameLauncher({open,language='pt-BR'}: RetroGameLauncherProps) {
+  const [verifiedSelected,setVerifiedSelected]=useState<string|null>(null);const [packageFailure,setPackageFailure]=useState<string|null>(null);
   const [runtimeOpen,setRuntimeOpen]=useState(false);const [runtimeInitial,setRuntimeInitial]=useState<string|undefined>();
   const [controlsManual,setControlsManual]=useState<ControlsManual|null>(null);
   const [manualOpen,setManualOpen]=useState(false);
@@ -67,7 +70,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
     return catalog.find(g => g.id === selectedId) || catalog[0];
   }, [catalog, selectedId]);
 
-  useEffect(()=>{let live=true;setVerifiedSelected(null);if(selectedGame?.metadataOrigin==='user-imported')void getGamePackage(selectedGame.id).then(data=>{if(live&&data)setVerifiedSelected(selectedGame.id)}).catch(()=>{});return ()=>{live=false}},[selectedGame]);
+  useEffect(()=>{let live=true;setVerifiedSelected(null);setPackageFailure(null);if(selectedGame?.engineId==='dosbox-wasm'&&selectedGame.id!=='dos-disquete'&&selectedGame.isPlayable)void getLaunchPackage(selectedGame).then(data=>{if(live){if(data)setVerifiedSelected(selectedGame.id);else setPackageFailure(selectedGame.id)}}).catch(e=>{if(live){setPackageFailure(selectedGame.id);setStatusMessage(String(e))}});return ()=>{live=false}},[selectedGame]);
   // Filtering
   const filteredGames = useMemo(() => {
     return catalog.filter(game => {
@@ -126,6 +129,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
   }
 
   function toggleInstall(game: GameEntry) {
+    if(!game.isPlayable){setStatusMessage(gameQaNotice(language));return}
     if(game.metadataOrigin==='licensed-builtin'){setStatusMessage('Pacote oficial incluído nesta edição, disponível em modo somente leitura.');return}if(game.metadataOrigin==='user-imported'){setStatusMessage('Pacote instalado: use Remover Jogo para liberar os bytes, preservando saves.');return}
 
     const nextInstalled = game.isInstalled
@@ -160,7 +164,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
       setStatusMessage('Jogo em modo de acervo/museu. Apenas títulos compatíveis possuem execução web.');
       return;
     }
-    if(game.metadataOrigin==='user-imported'){try{if(!await getGamePackage(game.id))throw Error('Pacote ausente no armazenamento.');}catch(error){setStatusMessage('Não foi possível iniciar: '+String(error));return}}
+    if(game.engineId==='dosbox-wasm'&&game.id!=='dos-disquete'){try{if(!await getLaunchPackage(game))throw Error('Pacote ausente no armazenamento.');}catch(error){setStatusMessage('Não foi possível iniciar: '+String(error));return}}
     // Record history
     const history = read<{id: string; at: string}[]>('gameHistory', []);
     write('gameHistory', [{id: game.id, at: new Date().toISOString()}, ...history.slice(0, 49)]);
@@ -195,6 +199,8 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
       setStatusMessage('Benchmark ativado: 3.000 entradas sintéticas carregadas.');
     }
   }
+
+  function getQaBadge(game:GameEntry){const state=gameQaState(game,packageFailure===game.id);return state?<span className={'badge qa-state qa-state-'+state} data-qa-state={state}>{state} — {gameQaLabel(state,language)}</span>:getStatusBadge(game.status)}
 
   function getStatusBadge(status: GameStatus) {
     switch (status) {
@@ -381,7 +387,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
                       <td>{game.platformDisplay}</td>
                       <td>{game.genre}</td>
                       <td>{game.developer}</td>
-                      <td>{getStatusBadge(game.status)}</td>
+                      <td>{getQaBadge(game)}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -401,16 +407,16 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
                 </div>
               </div>
 
-              <h2>{selectedGame.title}</h2>
+              <h2>{selectedGame.title}</h2>{gameQaState(selectedGame)&&<p className="qa-notice">{gameQaNotice(language)}</p>}
               <div className="details-status-row">
-                {getStatusBadge(selectedGame.status)}
+                {getQaBadge(selectedGame)}
                 <span className="platform-pill">{selectedGame.platformDisplay}</span>
               </div>
 
               <div className="details-actions">{runtimeProfileId(selectedGame)&&<button onClick={()=>{setRuntimeInitial(runtimeProfileId(selectedGame));setRuntimeOpen(true)}}>{runtimeAction(selectedGame)?.canPlay?'Gerenciar instalação':runtimeAction(selectedGame)?.buttonLabel||'37 clássicos'}</button>}{gameControlsManual(selectedGame.preparedProfileId||runtimeProfileId(selectedGame)||selectedGame.id,selectedGame.title)&&<button onClick={()=>setControlsManual(gameControlsManual(selectedGame.preparedProfileId||runtimeProfileId(selectedGame)||selectedGame.id,selectedGame.title))}>Controles / Ajuda</button>}
-                {selectedGame.isPlayable&&(selectedGame.metadataOrigin!=='user-imported'||verifiedSelected===selectedGame.id) ? (
+                {selectedGame.isPlayable&&(selectedGame.engineId!=='dosbox-wasm'||selectedGame.id==='dos-disquete'||verifiedSelected===selectedGame.id) ? (
                   <button className="play-button" onClick={() => handlePlay(selectedGame)}>
-                    ▶ Iniciar Jogo
+                    {gameQaState(selectedGame)?({'pt-BR':'▶ Iniciar teste',en:'▶ Start test',es:'▶ Iniciar prueba'}[language]):'▶ Iniciar Jogo'}
                   </button>
                 ) : (
                   <button className="play-button disabled" disabled title="Este título está preservado como ficha histórica/museu ou requer que o usuário importe os arquivos originais da sua cópia licenciada via '+ Adicionar Jogo'.">
@@ -538,7 +544,7 @@ export function RetroGameLauncher({open}: RetroGameLauncherProps) {
         <span>Total no Catálogo: {catalog.length}</span>
       </footer>
 
-      {runtimeOpen&&<RuntimeLibrary initial={runtimeInitial} onClose={()=>{setRuntimeOpen(false);setCatalog(loadBaseCatalog())}} onPlay={handlePlay}/>}
+      {runtimeOpen&&<RuntimeLibrary language={language} initial={runtimeInitial} onClose={()=>{setRuntimeOpen(false);setCatalog(loadBaseCatalog())}} onPlay={handlePlay}/>}
       {controlsManual&&<GameControlsHelp manual={controlsManual} onClose={()=>setControlsManual(null)}/>}
       {/* 10-step Add Game Wizard */}
       <AddGameWizard

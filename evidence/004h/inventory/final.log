@@ -1,0 +1,12 @@
+{
+  "catalogRows": 83,
+  "uniqueIds": 83,
+  "targetProfiles": 37,
+  "states": {
+    "B": 4,
+    "D": 10,
+    "E": 7,
+    "F": 15,
+    "C": 1
+  }
+}

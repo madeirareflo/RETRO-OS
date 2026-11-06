@@ -54,11 +54,11 @@ export function AppHost({id,open,close,prefs,setPrefs,active,request,activateSav
   const lang = prefs.language || 'pt-BR';
   switch(id){
     case 'dos-freedoom':return <DosGame language={lang} builtin="freedoom" active={active} close={close}/>;
-    case 'dos-klab':return <DosGame builtin="klab" active={active} close={close}/>;
-    case 'dos-skyroads':return <DosGame builtin="skyroads" active={active} close={close}/>;
-    case 'retrolauncher':return <RetroGameLauncher open={open}/>;
-    case 'dos-imported':return <DosGame imported active={active} close={close}/>;
-    case 'dosgame':return <DosGame active={active} close={close}/>;
+    case 'dos-klab':return <DosGame language={lang} builtin="klab" active={active} close={close}/>;
+    case 'dos-skyroads':return <DosGame language={lang} builtin="skyroads" active={active} close={close}/>;
+    case 'retrolauncher':return <RetroGameLauncher language={lang} open={open}/>;
+    case 'dos-imported':return <DosGame language={lang} imported active={active} close={close}/>;
+    case 'dosgame':return <DosGame language={lang} active={active} close={close}/>;
     case 'gamecenter':return <GameCenter open={open} prefs={prefs}/>;
     case 'naval':return <LocalNaval/>;
     case 'tasks':return <TaskManager/>;

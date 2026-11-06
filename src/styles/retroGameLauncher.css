@@ -725,3 +725,4 @@
 
 .retro-game-launcher .rgl-branding{color:inherit}.retro-game-launcher .rgl-workspace{min-height:0}.retro-game-launcher .rgl-main-view{min-width:0}.retro-game-launcher .rgl-sidebar,.retro-game-launcher .rgl-details-panel{flex-shrink:0}
 .retro-game-launcher .rgl-top-bar .rgl-branding h1,.retro-game-launcher .rgl-top-bar .rgl-branding>span{color:#000}
+.qa-state-B{background:#fff1b5;color:#503700}.qa-state-C{background:#e5f0ff;color:#163c70}.qa-state-D{background:#ffefd5;color:#603c00}.qa-state-E{background:#e8dcff;color:#42206a}.qa-state-F{background:#e0e0e0;color:#333}.qa-state-G{background:#ffe1e1;color:#700}.qa-notice{font-size:11px;border:1px solid #808080;padding:5px}
