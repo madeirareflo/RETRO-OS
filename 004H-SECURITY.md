@@ -13,7 +13,7 @@ Desenvolvimento privado, sem push/deploy/merge na main e sem backend social. Nen
 
 ## Varredura e limites
 
-`evidence/004h/security-scan.json`: 3305 arquivos rastreados no momento da varredura; assinaturas comuns de chaves em textos atuais sem achados; nomes suspeitos de SQLite/DB/env/chaves no histórico alcançável sem achados. Hashes dos oito ZIPs conferidos. O scan não é busca exaustiva por entropia de todos os blobs históricos nem prova de ausência universal de segredos. Deve ser ampliado antes de qualquer publicação; não se concede GO público.
+`evidence/004h/security-scan.json`: 3439 arquivos rastreados no momento da varredura; assinaturas comuns de chaves em textos atuais sem achados; nomes suspeitos de SQLite/DB/env/chaves no histórico alcançável sem achados. Hashes dos oito ZIPs conferidos. O scan não é busca exaustiva por entropia de todos os blobs históricos nem prova de ausência universal de segredos. Deve ser ampliado antes de qualquer publicação; não se concede GO público.
 
 O inventário eXoDOS herdado contém metadados, não arquivos de jogos comerciais. Não foi copiado seu conteúdo para a build. Sem inclusão de SQLite social, perfil de navegador, cookies, credenciais ou node_modules no bundle. O bundle terá somente a branch privada com sua ancestralidade, não todas as refs/worktrees. Os dados dos jogos historicamente presentes continuam sujeitos ao relatório jurídico/documental; nenhum direito é inferido do termo shareware.
 

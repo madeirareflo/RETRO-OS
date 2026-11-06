@@ -1,0 +1,13 @@
+a32c855aa9d9883059220204695f5bc25e91dc6d 004H-12: complete private browser acceptance and technical validation
+498abc7cc71895e10389a4df51283e7cc9efa6b0 004H-11: preserve desktop and internet regression with resolution evidence
+1257ef79c648177fb80cd2fc40bdb082357b227c 004H-10: expose honest QA states and block unavailable package launches
+efb7d2bb0b80dcccdf36efe5fff3f6df3d3832ec 004H-09: audit package terms and remove unsupported redistribution claims
+a53ddc85f7b2f970b949bd14b5b613927d6db826 004H-08: document engine feasibility without integrating unvalidated ports
+650fec93bbd190389c229246794d4bda3f384913 004H-07: validate actual imported bytes and reject corrupt reimports
+1a2a4ce92189dc9e8731ceb9cb53794aa1e06dd1 004H-06: acknowledge durable native saves and preserve newest progress
+81f587678c60ded1895e06b42701493e886361c7 004H-05: preserve individual native gameplay and Quake Heretic evidence
+0b45adeb1fbab58ef3f70e50537d92278534c5eb 004H-04: validate scoped Prince controls and native keyboard release
+9ac0d095cf112038bcf49ffed1dcf1e0fe6ad027 004H-03: scope keyboard and mouse bridge, release input and bypass absent Quake peripherals
+e33971d55b6205ca8ca2a6e58f50179fe6c4d570 004H-02: record individual package audit and observed playability blockers
+27ae4a1d60e5b576c0f3307ee75754ddb3606d3c 004H-01: reconcile 37 target profiles and hash all eight real packages
+717609640baa1032a8f64a2c3351f79c68f67b1a 004H-00: audit private base, public ancestry and executable baseline
